@@ -1,0 +1,10 @@
+¿Cuántos elementos quieres añadir?
+Numero de elementos a añadir: 
+Introduce 10 elementos
+
+
+Imprimimos la pila SIN MODIFICAR: 1 2 3 4 5 6 7 8 9 5 
+
+Substituimos x por y donde sea necesario...
+
+Imprimimos la pila MODIFICADA: 1 2 3 4 1999 6 7 8 9 1999 

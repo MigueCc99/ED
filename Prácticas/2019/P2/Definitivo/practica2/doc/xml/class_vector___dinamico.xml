@@ -1,0 +1,454 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="class_vector___dinamico" kind="class" language="C++" prot="public">
+    <compoundname>Vector_Dinamico</compoundname>
+    <includes refid="vector__dinamico_8h" local="no">vector_dinamico.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_vector___dinamico_1a979957915b8a7b247d62720d7afed600" prot="private" static="no" mutable="no">
+        <type>T *</type>
+        <definition>T* Vector_Dinamico&lt; T &gt;::datos</definition>
+        <argsstring></argsstring>
+        <name>datos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vector_dinamico.h" line="47" column="7" bodyfile="include/vector_dinamico.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_vector___dinamico_1afdc191eed18585e94d6f192b2dda15be" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Vector_Dinamico&lt; T &gt;::nelementos</definition>
+        <argsstring></argsstring>
+        <name>nelementos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vector_dinamico.h" line="48" column="9" bodyfile="include/vector_dinamico.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_vector___dinamico_1a2c3b4e8f676a2c74c2f82afedddd4cfe" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Vector_Dinamico&lt; T &gt;::reservados</definition>
+        <argsstring></argsstring>
+        <name>reservados</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vector_dinamico.h" line="49" column="9" bodyfile="include/vector_dinamico.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_vector___dinamico_1aff1df0a1ee3621516de0914371c76e7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Vector_Dinamico&lt; T &gt;::Vector_Dinamico</definition>
+        <argsstring>()</argsstring>
+        <name>Vector_Dinamico</name>
+        <briefdescription>
+<para>Constructor por defecto de la clase. Crea el <ref refid="class_vector___dinamico" kindref="compound">Vector_Dinamico</ref> vacío. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vector_dinamico.h" line="56" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_vector___dinamico_1a611c037875e8d283e8a636481ae58948" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Vector_Dinamico&lt; T &gt;::Vector_Dinamico</definition>
+        <argsstring>(int n)</argsstring>
+        <name>Vector_Dinamico</name>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Constructor de la clase. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>número elementos a reservar </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Crea el <ref refid="class_vector___dinamico" kindref="compound">Vector_Dinamico</ref> con un número de elementos reeservados n </para>
+</simplesect>
+<simplesect kind="pre"><para>n debe considerarse: 0 &lt;= n </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vector_dinamico.h" line="64" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_vector___dinamico_1af555ebdf8afb084abee718a6514be8a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Vector_Dinamico&lt; T &gt;::Vector_Dinamico</definition>
+        <argsstring>(const Vector_Dinamico &amp;original)</argsstring>
+        <name>Vector_Dinamico</name>
+        <param>
+          <type>const <ref refid="class_vector___dinamico" kindref="compound">Vector_Dinamico</ref> &amp;</type>
+          <declname>original</declname>
+        </param>
+        <briefdescription>
+<para>Constructor de copias de la clase. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>original.datos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>original.numElementos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>número de elementos </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>original.reservados</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>número de reservados </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vector_dinamico.h" line="72" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_vector___dinamico_1a7a804c69350b7e514cd1b294c3ed9da1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Vector_Dinamico&lt; T &gt;::~Vector_Dinamico</definition>
+        <argsstring>()</argsstring>
+        <name>~Vector_Dinamico</name>
+        <briefdescription>
+<para>Destructor de la clase. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>puntero de datos apunta a 0 <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vector_dinamico.h" line="78" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_vector___dinamico_1af4050e799003ac92ab8da36d8bd5bb00" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Vector_Dinamico&lt; T &gt;::size</definition>
+        <argsstring>() const</argsstring>
+        <name>size</name>
+        <briefdescription>
+<para>size </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Devuelve en número de reservados </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vector_dinamico.h" line="84" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_vector___dinamico_1a568649cf848f2155b4d5eb6ee527bb6c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Vector_Dinamico&lt; T &gt;::getNumElementos</definition>
+        <argsstring>() const</argsstring>
+        <name>getNumElementos</name>
+        <briefdescription>
+<para>getNumElementos </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Devuelve el número de elementos ocupados del vector </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vector_dinamico.h" line="90" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_vector___dinamico_1a1b7bf3f5b5dd748bbb55b8e2cd448c94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Vector_Dinamico&lt; T &gt;::resize</definition>
+        <argsstring>(int n)</argsstring>
+        <name>resize</name>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>resize </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>número de elementos a reservar </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>redimensiona el vector a n elementos reservados </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vector_dinamico.h" line="97" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_vector___dinamico_1a93666466d9a2bf8bc4f2a217d5f94bf9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>T &amp;</type>
+        <definition>T&amp; Vector_Dinamico&lt; T &gt;::operator[]</definition>
+        <argsstring>(const int i)</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>const int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>Sorbrecarga del operador[]. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>entero que indica una posicion </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>elemento T de la posicion i </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vector_dinamico.h" line="104" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_vector___dinamico_1a3129decf0d63405ced07ded86d5b05f3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const T &amp;</type>
+        <definition>const T&amp; Vector_Dinamico&lt; T &gt;::operator[]</definition>
+        <argsstring>(const int i) const</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>const int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>Sorbrecarga constante del operador[]. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>entero que indica una posicion </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>elemento T de la posicion i </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vector_dinamico.h" line="111" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_vector___dinamico_1a095f58bf99c0eee405111354cfa34e01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_vector___dinamico" kindref="compound">Vector_Dinamico</ref> &amp;</type>
+        <definition>Vector_Dinamico&amp; Vector_Dinamico&lt; T &gt;::operator=</definition>
+        <argsstring>(const Vector_Dinamico &amp;original)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="class_vector___dinamico" kindref="compound">Vector_Dinamico</ref> &amp;</type>
+          <declname>original</declname>
+        </param>
+        <briefdescription>
+<para>Sobrecarga del operador=. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>original</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_vector___dinamico" kindref="compound">Vector_Dinamico</ref> a copiar </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>copia el contenido del <ref refid="class_vector___dinamico" kindref="compound">Vector_Dinamico</ref> original en el <ref refid="class_vector___dinamico" kindref="compound">Vector_Dinamico</ref> *this </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vector_dinamico.h" line="119" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_vector___dinamico_1a700424b8040723180b1c1893671097f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Vector_Dinamico&lt; T &gt;::aniadeElemento</definition>
+        <argsstring>(const T &amp;elemento)</argsstring>
+        <name>aniadeElemento</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>elemento</declname>
+        </param>
+        <briefdescription>
+<para>aniadeElemento </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>elemento</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>elemento de tipo T a añadir </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>el elemento de tipo T es añadido al final del <ref refid="class_vector___dinamico" kindref="compound">Vector_Dinamico</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vector_dinamico.h" line="126" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_vector___dinamico_1a040a253f525f881d7e5280ac62073965" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Vector_Dinamico&lt; T &gt;::borrarElemento</definition>
+        <argsstring>(const int posicion)</argsstring>
+        <name>borrarElemento</name>
+        <param>
+          <type>const int</type>
+          <declname>posicion</declname>
+        </param>
+        <briefdescription>
+<para>borrarElemento </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>posicion</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>posición del elemento a eliminar </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>el elemento de tipo T de la posición posición es eliminado del <ref refid="class_vector___dinamico" kindref="compound">Vector_Dinamico</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vector_dinamico.h" line="134" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_vector___dinamico_1ab40f55577bcab2af4a0f6a9e7965b05a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Vector_Dinamico&lt; T &gt;::modificaElemento</definition>
+        <argsstring>(const int posicion, const T &amp;elemento)</argsstring>
+        <name>modificaElemento</name>
+        <param>
+          <type>const int</type>
+          <declname>posicion</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>elemento</declname>
+        </param>
+        <briefdescription>
+<para>modificaElemento </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>posicion</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>posición del elemento a modificar </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>elemento</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>elemento de tipo T para modificar </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>el elemento elemento es añadido en la posicion posicion del <ref refid="class_vector___dinamico" kindref="compound">Vector_Dinamico</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vector_dinamico.h" line="143" column="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>T.D.A <ref refid="class_vector___dinamico" kindref="compound">Vector_Dinamico</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Una instancia <emphasis>vector_dinamico</emphasis> del tipo de datos abstracto <computeroutput><ref refid="class_vector___dinamico" kindref="compound">Vector_Dinamico</ref></computeroutput> es un objeto que representa un conjunto de elementos. A su vez, esta instancia <ref refid="class_vector___dinamico" kindref="compound">Vector_Dinamico</ref> se compone de un puntero a T, un numElementos y un reservados</para>
+<para>Lo representamos como</para>
+<para>datos numElementos reservados</para>
+<para>Un ejemplo de su uso: <programlisting filename="test_ingredientes.cpp"></programlisting></para>
+<para><simplesect kind="author"><para>Miguel Ángel Campos Cubillas </para>
+</simplesect>
+<simplesect kind="date"><para>Octubre 2019 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="include/vector_dinamico.h" line="31" column="22" bodyfile="include/vector_dinamico.h" bodystart="31" bodyend="145"/>
+    <listofallmembers>
+      <member refid="class_vector___dinamico_1a700424b8040723180b1c1893671097f6" prot="public" virt="non-virtual"><scope>Vector_Dinamico</scope><name>aniadeElemento</name></member>
+      <member refid="class_vector___dinamico_1a040a253f525f881d7e5280ac62073965" prot="public" virt="non-virtual"><scope>Vector_Dinamico</scope><name>borrarElemento</name></member>
+      <member refid="class_vector___dinamico_1a979957915b8a7b247d62720d7afed600" prot="private" virt="non-virtual"><scope>Vector_Dinamico</scope><name>datos</name></member>
+      <member refid="class_vector___dinamico_1a568649cf848f2155b4d5eb6ee527bb6c" prot="public" virt="non-virtual"><scope>Vector_Dinamico</scope><name>getNumElementos</name></member>
+      <member refid="class_vector___dinamico_1ab40f55577bcab2af4a0f6a9e7965b05a" prot="public" virt="non-virtual"><scope>Vector_Dinamico</scope><name>modificaElemento</name></member>
+      <member refid="class_vector___dinamico_1afdc191eed18585e94d6f192b2dda15be" prot="private" virt="non-virtual"><scope>Vector_Dinamico</scope><name>nelementos</name></member>
+      <member refid="class_vector___dinamico_1a095f58bf99c0eee405111354cfa34e01" prot="public" virt="non-virtual"><scope>Vector_Dinamico</scope><name>operator=</name></member>
+      <member refid="class_vector___dinamico_1a93666466d9a2bf8bc4f2a217d5f94bf9" prot="public" virt="non-virtual"><scope>Vector_Dinamico</scope><name>operator[]</name></member>
+      <member refid="class_vector___dinamico_1a3129decf0d63405ced07ded86d5b05f3" prot="public" virt="non-virtual"><scope>Vector_Dinamico</scope><name>operator[]</name></member>
+      <member refid="class_vector___dinamico_1a2c3b4e8f676a2c74c2f82afedddd4cfe" prot="private" virt="non-virtual"><scope>Vector_Dinamico</scope><name>reservados</name></member>
+      <member refid="class_vector___dinamico_1a1b7bf3f5b5dd748bbb55b8e2cd448c94" prot="public" virt="non-virtual"><scope>Vector_Dinamico</scope><name>resize</name></member>
+      <member refid="class_vector___dinamico_1af4050e799003ac92ab8da36d8bd5bb00" prot="public" virt="non-virtual"><scope>Vector_Dinamico</scope><name>size</name></member>
+      <member refid="class_vector___dinamico_1aff1df0a1ee3621516de0914371c76e7d" prot="public" virt="non-virtual"><scope>Vector_Dinamico</scope><name>Vector_Dinamico</name></member>
+      <member refid="class_vector___dinamico_1a611c037875e8d283e8a636481ae58948" prot="public" virt="non-virtual"><scope>Vector_Dinamico</scope><name>Vector_Dinamico</name></member>
+      <member refid="class_vector___dinamico_1af555ebdf8afb084abee718a6514be8a7" prot="public" virt="non-virtual"><scope>Vector_Dinamico</scope><name>Vector_Dinamico</name></member>
+      <member refid="class_vector___dinamico_1a7a804c69350b7e514cd1b294c3ed9da1" prot="public" virt="non-virtual"><scope>Vector_Dinamico</scope><name>~Vector_Dinamico</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

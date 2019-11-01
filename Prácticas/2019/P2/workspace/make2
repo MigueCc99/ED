@@ -1,0 +1,32 @@
+##########################################################################
+# Fichero: makefile
+# ALL: destino simbolico
+##########################################################################
+BIN = ./bin
+INCLUDE = ./include
+LIB = ./lib 
+OBJ = ./obj 
+SRC = ./src
+##########################################################################
+all	:	$(BIN)/test_ingredientes clean
+##########################################################################
+$(BIN)/test_ingredientes : $(OBJ)/test_ingredientes.o $(OBJ)/ingredientes
+	@echo Creando el ejcutable bin/test_ingredientes...
+	g++ -o $(BIN)/test_ingredientes $(OBJ)/test_ingredientes.o $(OBJ)/ingredientes.o
+
+$(OBJ)/ingredientes.o : $(SRC)/ingredientes.o $(INCLUDE)/ingredientes.h $(INCLUDE)/vector_dinamico.h
+	@echo Creando el modulo objeto obj/ingredientes.o...
+	g++ -c -I$(INCLUDE) -o $(OBJ)/ingredientes.o $(SRC)/ingredientes.cpp
+
+$(OBJ)/ingrediente.o : $(SRC)/ingrediente.o $(INCLUDE)/ingrediente.h
+	@echo Creando el modulo objeto obj/ingrediente.o...
+	g++ -c -I$(INCLUDE) -o $(OBJ)/ingrediente.o $(SRC)/ingrediente.cpp
+
+$(OBJ)/vector_dinamico.o : $(SRC)/vector_dinamico.o $(INCLUDE)/vector_dinamico.h
+	@echo Creando el modulo objeto obj/vector_dinamico.o...
+	g++ -c -I$(INCLUDE) -o $(OBJ)/vector_dinamico.o $(SRC)/vector_dinamico.cpp
+##########################################################################
+clean:
+	@echo Borrando los ficheros .o del directorio obj...
+	rm obj/*.o
+##########################################################################

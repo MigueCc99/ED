@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="rep_vector__dinamico" kind="page">
+    <compoundname>repVector_Dinamico</compoundname>
+    <title>Rep del TDA Vector_Dinamico</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<sect1 id="rep_vector__dinamico_1invVector_Dinamico">
+<title>Invariante de la representación</title>
+<para>El invariante es <emphasis>puntero</emphasis> *datos válido</para>
+</sect1>
+<sect1 id="rep_vector__dinamico_1faVector_Dinamico">
+<title>Función de abstracción</title>
+<para>Un objeto válido <emphasis>rep</emphasis> del TDA <ref refid="class_vector___dinamico" kindref="compound">Vector_Dinamico</ref> representa al valor</para>
+<para>{datos, numElementos, reservados} </para>
+</sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

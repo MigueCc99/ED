@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="rep_ingredientes" kind="page">
+    <compoundname>repIngredientes</compoundname>
+    <title>Rep del TDA Ingredientes</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<sect1 id="rep_ingredientes_1invIngredientes">
+<title>Invariante de la representación</title>
+<para>El invariante es <emphasis><ref refid="class_vector___dinamico" kindref="compound">Vector_Dinamico</ref></emphasis> de ingredientes llamado datos válido</para>
+</sect1>
+<sect1 id="rep_ingredientes_1faIngredientes">
+<title>Función de abstracción</title>
+<para>Un objeto válido <emphasis>rep</emphasis> del TDA <ref refid="class_ingredientes" kindref="compound">Ingredientes</ref> representa al valor</para>
+<para>{datos} </para>
+</sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>
