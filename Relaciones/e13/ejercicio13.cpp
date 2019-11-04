@@ -20,6 +20,8 @@ int numVocales (const string c){
   return vocales;
 }
 
+
+// hola
 struct prioridad{
   bool operator() (string a, string b){
     if (numVocales(a) == numVocales(b))
