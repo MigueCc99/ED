@@ -17,23 +17,79 @@ template <class T>
 class Ventana{
 private:
 
-  stack<T> izquierda;
-  stack<T> derecha;
+  stack<T> pila;
+  stack<T> pila_aux;
 
 public:
-  void insertar (int izd_dcha, T &elemento){
-    if(izd_dcha == 0)
-      izquierda.push(elemento);
-    else
-      derecha.push(elemento);
+
+  void insertar (T elemento){
+    pila.push(elemento);
   }
 
-  void borrar (int izd_dcha, int posicion){
-    if(izd_dcha == 0){
-      assert(posicion>=0 && posicion<=izquierda.size());
-      izquierda
+  void moverIzquierda (){
+    pila.push(pila_aux.top());
+    pila_aux.pop();
+  }
+
+  void moverDerecha (){
+    pila_aux.push(pila.top());
+    pila.pop();
+  }
+
+  void eliminar (){
+    pila.pop();
+  }
+
+  void mostrarIzquierda (){
+    while(!pila.empty()){
+      cout << pila.top() << endl;
+      pila.pop();
     }
-
   }
 
+  void mostrarDerecha (){
+    while(!pila_aux.empty()){
+      cout << pila_aux.top() << endl;
+      pila_aux.pop();
+    }
+  }
 };
+
+int main (int argc, char *argv[]){
+  Ventana<char> caracteres;
+
+  caracteres.insertar('e');
+	caracteres.insertar('p');
+	caracteres.insertar('e');
+	caracteres.insertar('p');
+
+	cout << "Izquierda: \n";
+	caracteres.mostrarIzquierda();
+
+	caracteres.insertar('e');
+	caracteres.insertar('p');
+	caracteres.insertar('e');
+	caracteres.insertar('p');
+
+	caracteres.moverDerecha();
+	caracteres.moverIzquierda();
+
+	cout << "Izquierda: \n";
+	caracteres.mostrarIzquierda();
+	cout << "Derecha: \n";
+	caracteres.mostrarDerecha();
+
+	caracteres.insertar('e');
+	caracteres.insertar('p');
+	caracteres.insertar('e');
+	caracteres.insertar('p');
+
+	caracteres.eliminar();
+
+	cout << "Izquierda: \n";
+	caracteres.mostrarIzquierda();
+
+
+	return(0);
+
+}
