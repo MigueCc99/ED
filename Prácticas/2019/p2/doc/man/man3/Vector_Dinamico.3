@@ -1,0 +1,318 @@
+.TH "Vector_Dinamico< T >" 3 "Jueves, 31 de Octubre de 2019" "Version 0.1" "Práctica 2 - Estructura de Datos" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Vector_Dinamico< T > \- T\&.D\&.A \fBVector_Dinamico\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <vector_dinamico\&.hpp>\fP
+.SS "Métodos públicos"
+
+.in +1c
+.ti -1c
+.RI "\fBVector_Dinamico\fP ()"
+.br
+.RI "Constructor por defecto de la clase\&. Crea el \fBVector_Dinamico\fP vacío\&. "
+.ti -1c
+.RI "\fBVector_Dinamico\fP (int n)"
+.br
+.RI "Constructor de la clase\&. "
+.ti -1c
+.RI "\fBVector_Dinamico\fP (const \fBVector_Dinamico\fP &original)"
+.br
+.RI "Constructor de copias de la clase\&. "
+.ti -1c
+.RI "\fB~Vector_Dinamico\fP ()"
+.br
+.RI "Destructor de la clase\&. "
+.ti -1c
+.RI "int \fBsize\fP () const"
+.br
+.RI "size "
+.ti -1c
+.RI "int \fBgetNumElementos\fP () const"
+.br
+.RI "getNumElementos "
+.ti -1c
+.RI "void \fBresize\fP (int n)"
+.br
+.RI "resize "
+.ti -1c
+.RI "T & \fBoperator[]\fP (const int i)"
+.br
+.RI "Sorbrecarga del operador[]\&. "
+.ti -1c
+.RI "const T & \fBoperator[]\fP (const int i) const"
+.br
+.RI "Sorbrecarga constante del operador[]\&. "
+.ti -1c
+.RI "\fBVector_Dinamico\fP & \fBoperator=\fP (const \fBVector_Dinamico\fP &original)"
+.br
+.RI "Sobrecarga del operador=\&. "
+.ti -1c
+.RI "void \fBaniadeElemento\fP (const T &elemento)"
+.br
+.RI "aniadeElemento "
+.ti -1c
+.RI "void \fBborrarElemento\fP (const int posicion)"
+.br
+.RI "borrarElemento "
+.ti -1c
+.RI "void \fBmodificaElemento\fP (const int posicion, const T &elemento)"
+.br
+.RI "modificaElemento "
+.in -1c
+.SH "Descripción detallada"
+.PP 
+
+.SS "template<class T>
+.br
+class Vector_Dinamico< T >"
+T\&.D\&.A \fBVector_Dinamico\fP\&. 
+
+Una instancia \fIvector_dinamico\fP del tipo de datos abstracto \fC\fBVector_Dinamico\fP\fP es un objeto que representa un conjunto de elementos\&. A su vez, esta instancia \fBVector_Dinamico\fP se compone de un puntero a T, un numElementos y un reservados
+.PP
+Lo representamos como
+.PP
+datos numElementos reservados
+.PP
+Un ejemplo de su uso: 
+.PP
+.nf
+
+.fi
+.PP
+.PP
+\fBAutor\fP
+.RS 4
+Miguel Ángel Campos Cubillas 
+.RE
+.PP
+\fBFecha\fP
+.RS 4
+Octubre 2019 
+.RE
+.PP
+
+.PP
+Definición en la línea 33 del archivo vector_dinamico\&.hpp\&.
+.SH "Documentación del constructor y destructor"
+.PP 
+.SS "template<class T> \fBVector_Dinamico\fP< T >::\fBVector_Dinamico\fP (int n)\fC [inline]\fP"
+
+.PP
+Constructor de la clase\&. 
+.PP
+\fBParámetros\fP
+.RS 4
+\fIn\fP número elementos a reservar 
+.RE
+.PP
+\fBDevuelve\fP
+.RS 4
+Crea el \fBVector_Dinamico\fP con un número de elementos reeservados n 
+.RE
+.PP
+\fBPrecondición\fP
+.RS 4
+n debe considerarse: 0 <= n 
+.RE
+.PP
+
+.PP
+Definición en la línea 68 del archivo vector_dinamico\&.hpp\&.
+.SS "template<class T> \fBVector_Dinamico\fP< T >::\fBVector_Dinamico\fP (const \fBVector_Dinamico\fP< T > & original)\fC [inline]\fP"
+
+.PP
+Constructor de copias de la clase\&. 
+.PP
+\fBParámetros\fP
+.RS 4
+\fIoriginal\&.datos\fP 
+.br
+\fIoriginal\&.numElementos\fP número de elementos 
+.br
+\fIoriginal\&.reservados\fP número de reservados 
+.RE
+.PP
+
+.PP
+Definición en la línea 84 del archivo vector_dinamico\&.hpp\&.
+.SS "template<class T> \fBVector_Dinamico\fP< T >::~\fBVector_Dinamico\fP ()\fC [inline]\fP"
+
+.PP
+Destructor de la clase\&. 
+.PP
+\fBDevuelve\fP
+.RS 4
+puntero de datos apunta a 0 
+.br
+ 
+.RE
+.PP
+
+.PP
+Definición en la línea 103 del archivo vector_dinamico\&.hpp\&.
+.SH "Documentación de las funciones miembro"
+.PP 
+.SS "template<class T> void \fBVector_Dinamico\fP< T >::aniadeElemento (const T & elemento)\fC [inline]\fP"
+
+.PP
+aniadeElemento 
+.PP
+\fBParámetros\fP
+.RS 4
+\fIelemento\fP elemento de tipo T a añadir 
+.RE
+.PP
+\fBDevuelve\fP
+.RS 4
+el elemento de tipo T es añadido al final del \fBVector_Dinamico\fP 
+.RE
+.PP
+
+.PP
+Definición en la línea 199 del archivo vector_dinamico\&.hpp\&.
+.SS "template<class T> void \fBVector_Dinamico\fP< T >::borrarElemento (const int posicion)\fC [inline]\fP"
+
+.PP
+borrarElemento 
+.PP
+\fBParámetros\fP
+.RS 4
+\fIposicion\fP posición del elemento a eliminar 
+.RE
+.PP
+\fBDevuelve\fP
+.RS 4
+el elemento de tipo T de la posición posición es eliminado del \fBVector_Dinamico\fP 
+.RE
+.PP
+
+.PP
+Definición en la línea 217 del archivo vector_dinamico\&.hpp\&.
+.SS "template<class T> int \fBVector_Dinamico\fP< T >::getNumElementos () const\fC [inline]\fP"
+
+.PP
+getNumElementos 
+.PP
+\fBDevuelve\fP
+.RS 4
+Devuelve el número de elementos ocupados del vector 
+.RE
+.PP
+
+.PP
+Definición en la línea 120 del archivo vector_dinamico\&.hpp\&.
+.SS "template<class T> void \fBVector_Dinamico\fP< T >::modificaElemento (const int posicion, const T & elemento)\fC [inline]\fP"
+
+.PP
+modificaElemento 
+.PP
+\fBParámetros\fP
+.RS 4
+\fIposicion\fP posición del elemento a modificar 
+.br
+\fIelemento\fP elemento de tipo T para modificar 
+.RE
+.PP
+\fBDevuelve\fP
+.RS 4
+el elemento elemento es añadido en la posicion posicion del \fBVector_Dinamico\fP 
+.RE
+.PP
+
+.PP
+Definición en la línea 232 del archivo vector_dinamico\&.hpp\&.
+.SS "template<class T> \fBVector_Dinamico\fP& \fBVector_Dinamico\fP< T >::operator= (const \fBVector_Dinamico\fP< T > & original)\fC [inline]\fP"
+
+.PP
+Sobrecarga del operador=\&. 
+.PP
+\fBParámetros\fP
+.RS 4
+\fIoriginal\fP \fBVector_Dinamico\fP a copiar 
+.RE
+.PP
+\fBDevuelve\fP
+.RS 4
+copia el contenido del \fBVector_Dinamico\fP original en el \fBVector_Dinamico\fP *this 
+.RE
+.PP
+
+.PP
+Definición en la línea 180 del archivo vector_dinamico\&.hpp\&.
+.SS "template<class T> T& \fBVector_Dinamico\fP< T >::operator[] (const int i)\fC [inline]\fP"
+
+.PP
+Sorbrecarga del operador[]\&. 
+.PP
+\fBParámetros\fP
+.RS 4
+\fIi\fP entero que indica una posicion 
+.RE
+.PP
+\fBDevuelve\fP
+.RS 4
+elemento T de la posicion i 
+.RE
+.PP
+
+.PP
+Definición en la línea 159 del archivo vector_dinamico\&.hpp\&.
+.SS "template<class T> const T& \fBVector_Dinamico\fP< T >::operator[] (const int i) const\fC [inline]\fP"
+
+.PP
+Sorbrecarga constante del operador[]\&. 
+.PP
+\fBParámetros\fP
+.RS 4
+\fIi\fP entero que indica una posicion 
+.RE
+.PP
+\fBDevuelve\fP
+.RS 4
+elemento T de la posicion i 
+.RE
+.PP
+
+.PP
+Definición en la línea 169 del archivo vector_dinamico\&.hpp\&.
+.SS "template<class T> void \fBVector_Dinamico\fP< T >::resize (int n)\fC [inline]\fP"
+
+.PP
+resize 
+.PP
+\fBParámetros\fP
+.RS 4
+\fIn\fP número de elementos a reservar 
+.RE
+.PP
+\fBDevuelve\fP
+.RS 4
+redimensiona el vector a n elementos reservados 
+.RE
+.PP
+
+.PP
+Definición en la línea 129 del archivo vector_dinamico\&.hpp\&.
+.SS "template<class T> int \fBVector_Dinamico\fP< T >::size () const\fC [inline]\fP"
+
+.PP
+size 
+.PP
+\fBDevuelve\fP
+.RS 4
+Devuelve en número de reservados 
+.RE
+.PP
+
+.PP
+Definición en la línea 112 del archivo vector_dinamico\&.hpp\&.
+
+.SH "Autor"
+.PP 
+Generado automáticamente por Doxygen para Práctica 2 - Estructura de Datos del código fuente\&.

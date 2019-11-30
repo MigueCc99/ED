@@ -1,0 +1,428 @@
+.TH "Ingrediente" 3 "Jueves, 31 de Octubre de 2019" "Version 0.1" "Práctica 2 - Estructura de Datos" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Ingrediente \- T\&.D\&.A \fBIngrediente\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <ingrediente\&.h>\fP
+.SS "Métodos públicos"
+
+.in +1c
+.ti -1c
+.RI "\fBIngrediente\fP ()"
+.br
+.RI "Constructor por defecto de la clase\&. Crea el ingrediente {'nulo',0,0,0,0,0,'nulo'}\&. "
+.ti -1c
+.RI "\fBIngrediente\fP (string nombre, int calorias, int hidratos, int proteinas, int grasas, int fibras, string tipo)"
+.br
+.RI "Constructor de la clase\&. "
+.ti -1c
+.RI "\fBIngrediente\fP (const \fBIngrediente\fP &ingrediente)"
+.br
+.RI "Constructor de copia de la clase\&. "
+.ti -1c
+.RI "\fBIngrediente\fP & \fBoperator=\fP (const \fBIngrediente\fP &ingrediente)"
+.br
+.RI "Sobrecarga del operador=\&. "
+.ti -1c
+.RI "const string \fBgetNombre\fP () const"
+.br
+.RI "getNombre "
+.ti -1c
+.RI "const int \fBgetCalorias\fP () const"
+.br
+.RI "getCalorias "
+.ti -1c
+.RI "const int \fBgetHidratos\fP () const"
+.br
+.RI "getHidratos "
+.ti -1c
+.RI "const int \fBgetProteinas\fP () const"
+.br
+.RI "getProteinas "
+.ti -1c
+.RI "const int \fBgetGrasas\fP () const"
+.br
+.RI "getGrasas "
+.ti -1c
+.RI "const int \fBgetFibras\fP () const"
+.br
+.RI "getFibras "
+.ti -1c
+.RI "const string \fBgetTipo\fP () const"
+.br
+.RI "getTipo "
+.ti -1c
+.RI "void \fBsetNombre\fP (string nombre)"
+.br
+.RI "setNombre "
+.ti -1c
+.RI "void \fBsetCalorias\fP (int calorias)"
+.br
+.RI "setCalorias "
+.ti -1c
+.RI "void \fBsetHidratos\fP (int hidratos)"
+.br
+.RI "setHidratos "
+.ti -1c
+.RI "void \fBsetProteinas\fP (int proteinas)"
+.br
+.RI "setProteinas "
+.ti -1c
+.RI "void \fBsetGrasas\fP (int grasas)"
+.br
+.RI "setGrasas "
+.ti -1c
+.RI "void \fBsetFibras\fP (int fibras)"
+.br
+.RI "setFibras "
+.ti -1c
+.RI "void \fBsetTipo\fP (string tipo)"
+.br
+.RI "setTipo "
+.in -1c
+.SS "Amigas"
+
+.in +1c
+.ti -1c
+.RI "ostream & \fBoperator<<\fP (ostream &os, const \fBIngrediente\fP &ingrediente)"
+.br
+.RI "Salida de un \fBIngrediente\fP a ostream\&. "
+.ti -1c
+.RI "istream & \fBoperator>>\fP (istream &is, \fBIngrediente\fP &ingrediente)"
+.br
+.RI "Entrada de un \fBIngrediente\fP desde istream\&. "
+.in -1c
+.SH "Descripción detallada"
+.PP 
+T\&.D\&.A \fBIngrediente\fP\&. 
+
+Una instancia \fIingr\fP del tipo de datos abstracto \fC\fBIngrediente\fP\fP es un objeto que representa un ingrediente\&. A su vez, este ingrediente se compone de dos cadenas de caracteres, un nombre y un tipo de ingrediente\&. Además dispone enteros que determinan la cantidad de calorias, hidratos, proteinas, grasas y fibras que contiene el ingrediente\&.
+.PP
+Lo representamos como
+.PP
+nombre, calorías, hidratos, proteinas, grasas, fibras, tipo\&.
+.PP
+Un ejemplo de su uso: 
+.PP
+.nf
+
+.fi
+.PP
+.PP
+\fBAutor\fP
+.RS 4
+Miguel Ángel Campos Cubillas 
+.RE
+.PP
+\fBFecha\fP
+.RS 4
+Octubre 2019 
+.RE
+.PP
+
+.PP
+Definición en la línea 33 del archivo ingrediente\&.h\&.
+.SH "Documentación del constructor y destructor"
+.PP 
+.SS "Ingrediente::Ingrediente (string nombre, int calorias, int hidratos, int proteinas, int grasas, int fibras, string tipo)"
+
+.PP
+Constructor de la clase\&. 
+.PP
+\fBParámetros\fP
+.RS 4
+\fInombre\fP nombre del ingrediente a construir 
+.br
+\fIcalorias\fP cantidad de calorias del ingrediente a construir 
+.br
+\fIhidratos\fP cantidad de hidratos del ingrediente a construir 
+.br
+\fIproteinas\fP cantidad de proteinas del ingrediente a construir 
+.br
+\fIgrasas\fP cantidad de grasas del ingrediente a construir 
+.br
+\fIfibras\fP cantidad de fibras del ingrediente a construir 
+.br
+\fItipo\fP tipo de ingrediente del ingrediente a construir 
+.RE
+.PP
+\fBDevuelve\fP
+.RS 4
+Crea el ingrediente {nombre,calorias,hidratos,proteinas,grasas,fibras,tipo} 
+.RE
+.PP
+\fBPrecondición\fP
+.RS 4
+0 <= rep\&.hidratos <= 100 && 0 <= rep\&.proteinas <= 100 && 0 <= rep\&.grasas <= 100 && 0 <= rep\&.fibras <= 100 
+.RE
+.PP
+
+.SS "Ingrediente::Ingrediente (const \fBIngrediente\fP & ingrediente)"
+
+.PP
+Constructor de copia de la clase\&. 
+.PP
+\fBParámetros\fP
+.RS 4
+\fIingrediente\fP a copiar 
+.RE
+.PP
+
+.SH "Documentación de las funciones miembro"
+.PP 
+.SS "const int Ingrediente::getCalorias () const"
+
+.PP
+getCalorias 
+.PP
+\fBDevuelve\fP
+.RS 4
+Devuelve las calorias del ingrediente 
+.RE
+.PP
+
+.SS "const int Ingrediente::getFibras () const"
+
+.PP
+getFibras 
+.PP
+\fBDevuelve\fP
+.RS 4
+Devuelve las fibras del ingrediente 
+.RE
+.PP
+
+.SS "const int Ingrediente::getGrasas () const"
+
+.PP
+getGrasas 
+.PP
+\fBDevuelve\fP
+.RS 4
+Devuelve las grasas del ingrediente 
+.RE
+.PP
+
+.SS "const int Ingrediente::getHidratos () const"
+
+.PP
+getHidratos 
+.PP
+\fBDevuelve\fP
+.RS 4
+Devuelve los hidratos del ingrediente 
+.RE
+.PP
+
+.SS "const string Ingrediente::getNombre () const"
+
+.PP
+getNombre 
+.PP
+\fBDevuelve\fP
+.RS 4
+Devuelve el nombre del ingrediente 
+.RE
+.PP
+
+.SS "const int Ingrediente::getProteinas () const"
+
+.PP
+getProteinas 
+.PP
+\fBDevuelve\fP
+.RS 4
+Devuelve las proteinas del ingrediente 
+.RE
+.PP
+
+.SS "const string Ingrediente::getTipo () const"
+
+.PP
+getTipo 
+.PP
+\fBDevuelve\fP
+.RS 4
+Devuelve el tipo de ingrediente del ingrediente 
+.RE
+.PP
+
+.SS "\fBIngrediente\fP& Ingrediente::operator= (const \fBIngrediente\fP & ingrediente)"
+
+.PP
+Sobrecarga del operador=\&. 
+.PP
+\fBParámetros\fP
+.RS 4
+\fIingrediente\fP ingrediente a igualar al objeto implícito 
+.RE
+.PP
+
+.SS "void Ingrediente::setCalorias (int calorias)"
+
+.PP
+setCalorias 
+.PP
+\fBParámetros\fP
+.RS 4
+\fIcalorias\fP calorias a asignar 
+.RE
+.PP
+\fBDevuelve\fP
+.RS 4
+Asigna al objeto implícito una cantidad de calorias 
+.RE
+.PP
+
+.SS "void Ingrediente::setFibras (int fibras)"
+
+.PP
+setFibras 
+.PP
+\fBParámetros\fP
+.RS 4
+\fIfibras\fP fibras a asignar 
+.RE
+.PP
+\fBDevuelve\fP
+.RS 4
+Asigna al objeto implícito una cantidad de fibras 
+.RE
+.PP
+
+.SS "void Ingrediente::setGrasas (int grasas)"
+
+.PP
+setGrasas 
+.PP
+\fBParámetros\fP
+.RS 4
+\fIgrasas\fP grasas a asignar 
+.RE
+.PP
+\fBDevuelve\fP
+.RS 4
+Asigna al objeto implícito una cantidad de grasas 
+.RE
+.PP
+
+.SS "void Ingrediente::setHidratos (int hidratos)"
+
+.PP
+setHidratos 
+.PP
+\fBParámetros\fP
+.RS 4
+\fIhidratos\fP hidratos a asignar 
+.RE
+.PP
+\fBDevuelve\fP
+.RS 4
+Asigna al objeto implícito una cantidad de hidratos 
+.RE
+.PP
+
+.SS "void Ingrediente::setNombre (string nombre)"
+
+.PP
+setNombre 
+.PP
+\fBParámetros\fP
+.RS 4
+\fInombre\fP nombre a asignar 
+.RE
+.PP
+\fBDevuelve\fP
+.RS 4
+Asigna al objeto implícito un nombre 
+.RE
+.PP
+
+.SS "void Ingrediente::setProteinas (int proteinas)"
+
+.PP
+setProteinas 
+.PP
+\fBParámetros\fP
+.RS 4
+\fIproteinas\fP proteinas a asignar 
+.RE
+.PP
+\fBDevuelve\fP
+.RS 4
+Asigna al objeto implícito una cantidad de proteinas 
+.RE
+.PP
+
+.SS "void Ingrediente::setTipo (string tipo)"
+
+.PP
+setTipo 
+.PP
+\fBParámetros\fP
+.RS 4
+\fItipo\fP tipo de ingrediente a asignar 
+.RE
+.PP
+\fBDevuelve\fP
+.RS 4
+Asigna al objeto implícito un tipo de ingrediente 
+.RE
+.PP
+
+.SH "Documentación de las funciones relacionadas y clases amigas"
+.PP 
+.SS "ostream& operator<< (ostream & os, const \fBIngrediente\fP & ingrediente)\fC [friend]\fP"
+
+.PP
+Salida de un \fBIngrediente\fP a ostream\&. 
+.PP
+\fBParámetros\fP
+.RS 4
+\fIos\fP de salida 
+.br
+\fIingrediente\fP \fBIngrediente\fP a escribir 
+.RE
+.PP
+\fBPostcondición\fP
+.RS 4
+Se obtiene en \fIos\fP varias cadenas con los atributos de ingrediente con \fI{nombre\fP,calorias,hidratos,proteinas,grasas,fibras,tipo} 
+.br
+ 
+.RE
+.PP
+
+.SS "istream& operator>> (istream & is, \fBIngrediente\fP & ingrediente)\fC [friend]\fP"
+
+.PP
+Entrada de un \fBIngrediente\fP desde istream\&. 
+.PP
+\fBParámetros\fP
+.RS 4
+\fIis\fP stream de entrada 
+.br
+\fIingrediente\fP \fBIngrediente\fP que recibe 
+.RE
+.PP
+\fBValores devueltos\fP
+.RS 4
+\fIEl\fP \fBIngrediente\fP leído en ingrediente 
+.RE
+.PP
+\fBPrecondición\fP
+.RS 4
+La entrada tiene el formato nombre;calorias;hidratos;proteinas;grasas;fibras;tipo; con \fInombre\fP, \fIcalorias\fP, \fIhidratos\fP, \fIproteinas\fP, \fIgrasas\fP, \fIfibras\fP, \fItipo\fP 
+.br
+ 
+.RE
+.PP
+
+
+.SH "Autor"
+.PP 
+Generado automáticamente por Doxygen para Práctica 2 - Estructura de Datos del código fuente\&.
