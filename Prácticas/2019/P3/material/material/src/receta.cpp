@@ -84,6 +84,7 @@ istream &operator>>(istream &is, Receta &receta){
     string::iterator auxiliar;
 
     getline(is,aux,salto_linea);
+    aux += ';';
         for(it = aux.begin(); it < aux.end(); ++it){
             if((*it) != delim)
                 sub_aux += (*it);
@@ -101,11 +102,13 @@ istream &operator>>(istream &is, Receta &receta){
                     else if(sub > auxiliar)
                         second += (*sub);
                 }
+                cout << "Primer elemento: " << first << " Segundo elemento: " << second << endl;
                 par = make_pair(first,stoul(second));
                 ings.push_back(par); 
                 first = second = "";               
                 sub_aux = "";
             }    
+
         }
     
 /*

@@ -35,10 +35,10 @@ int main(int argc,char *argv[]){
   
   f.seekg(0);
   /***********************************************************************/
-  /*
+  
   //SECTION 3: Test sobre TDA recetas. Operadores de lectura y escritura
   
-  recetas rall;
+  Recetas rall;
   f>>rall;
   cout<<"Todas las recetas: "<<endl<<rall<<endl;
   cout<<"Numero de recetas "<<rall.size()<<endl;

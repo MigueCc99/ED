@@ -12,6 +12,8 @@
 #include <map>
 using namespace std;
 
+#include "receta.h"
+
 /**
   * @brief T.D.A Recetas
   *  
@@ -35,6 +37,21 @@ class Recetas{
 private:
     map<string,Receta> datos;
 public:
+
+  Recetas();
+
+  Recetas(map<string,Receta> datos);
+
+  Recetas(const Recetas &recetas);
+
+  const int size();
+
+  Recetas & operator=(const Recetas &recetas);
+
+  friend ostream &operator<<(ostream &os, const Recetas &recetas);
+
+  friend istream &operator>>(istream &is, Recetas &recetas);
+
 
     /**
       * @brief Clase para iterar sobre los ingredientes 
