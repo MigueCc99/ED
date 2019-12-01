@@ -28,15 +28,15 @@ int main(int argc, char *argv[])
  string linea;
  getline(f,linea);
 
- ingrediente i;
+ Ingrediente i;
  f>>i;
  cout<<"Leido ingrediente:"<<endl;
  cout<<"Nombre " <<i.getNombre()<<endl;
  cout<<"Calorias "<<i.getCalorias()<<endl;
- cout<<"Hc "<<i.getHc()<<endl;
+ cout<<"Hc "<<i.getHidratos()<<endl;
  cout<<"Proteinas "<<i.getProteinas()<<endl;
  cout<<"Grasas "<<i.getGrasas()<<endl;
- cout<<"Fibra "<<i.getFibra()<<endl;
+ cout<<"Fibra "<<i.getFibras()<<endl;
  cout<<"Tipo "<<i.getTipo()<<endl;
  cout<<endl<<"Ahora probamos la sobrecarga de salida:\t"<<i<<endl;
  
@@ -47,7 +47,7 @@ int main(int argc, char *argv[])
  //esta bien. Y por lo tanto la operación de insertar
  //Ponemos el puntero del fichero al principio
  f.seekg(0);
- ingredientes all_ingre;
+ Ingredientes all_ingre;
  cout<<"Lectura de todos los ingredientes"<<endl;
  f>>all_ingre;
 
@@ -58,35 +58,36 @@ int main(int argc, char *argv[])
  cin.get();
  /******************************************************************************************/
  //Section 3: Sobre ingredientes comprobamos  que la indexacion por tipo funciona
-  
+ 
   cout<<"Imprimos por tipo "<<endl;
-  all_ingre.ImprimirPorTipo(cout);
+  all_ingre.imprimirPorTipo(cout);
   
   cout<<endl<<"Pulse una tecla para continuar..."<<endl<<endl;
   cin.get();
   
  /******************************************************************************************/
  //SECTION 4: Sobre ingredientes comprobamos consultar por nombre, size y borrar
+ 
   cout<<endl<<endl;
-  cout<<"El numero de ingredientes son "<<all_ingre.size()<<endl;
+  cout<<"El numero de ingredientes son "<<all_ingre.getNumIngredientes()<<endl;
   
   cout<<"Dime un nombre de ingrediente:";
   string n;
   getline(cin,n);
-  ingrediente ing=all_ingre.get(n);
+  Ingrediente ing=all_ingre.get(n);
   if (ing.getNombre()!="Undefined"){
     cout<<"Información del ingrediente "<<ing<<endl;
     cout<<"Pulse una tecla para continuar...."<<endl;
     cin.get();
     
     //borra por nombre del ingrediente
-    all_ingre.borrar(n);
+    all_ingre.borrarIngredienteXNombre(n);
     cout<<"Tras el borrado de "<<ing.getNombre()<<" los ingredientes son:"<<endl<<all_ingre;
-    cout<<"Numero de ingredientes tras el borrado son "<<all_ingre.size()<<endl;
+    cout<<"Numero de ingredientes tras el borrado son "<<all_ingre.getNumIngredientes()<<endl;
     cout<<"Pulse una tecla para continuar ...."<<endl;
     cin.get();
     cout<<"Ahora los vemos ordenados por tipo"<<endl;
-    all_ingre.ImprimirPorTipo(cout);
+    all_ingre.imprimirPorTipo(cout);
    }
    else{
 	   cout<<"El ingrediente "<<n<<" no aparece "<<endl;
@@ -96,6 +97,7 @@ int main(int argc, char *argv[])
   cin.get();
   /******************************************************************************************/
   //SECTION 5: Obtiene los tipos diferentes y los  ingredientes de un tipo concreto
+  
    vector<string> tipos=all_ingre.getTipos();
    cout<<"Los tipos de alimentos son:"<<endl;
    for (int i=0;i<tipos.size(); ++i){
@@ -105,15 +107,16 @@ int main(int argc, char *argv[])
    cin.get();
   
    string tipo="Molusco";
-   ingredientes ingre_tipo=all_ingre.getIngredienteTipo(tipo);
+   Ingredientes ingre_tipo=all_ingre.getIngredientesTipo(tipo);
    cout<<"Los ingredientes de tipo "<<tipo<<" son: "<<endl<<ingre_tipo<<endl;
-   
+
    /******************************************************************************************/
    //SECTION 6: Probamos el iterador de ingredientes
+   
    cout<<endl<<"Impresión de los datos con el iterador"<<endl;
    cout<<endl<<"Pulsa una tecla"<<endl;
    cin.get();
-   ingredientes::iterator it;
+   Ingredientes::iterator it;
    for (it=all_ingre.begin();it!=all_ingre.end();++it){
 	   cout<<*it;
    }

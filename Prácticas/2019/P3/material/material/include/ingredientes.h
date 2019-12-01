@@ -18,7 +18,7 @@ using namespace std;
   * que representa un conjunto de ingredientes. A su vez, esta instancia ingredientes se compone
   * de un Vector_Dinamico de Ingredientes. 
   * 
-  * Lo representamos como
+  * Lo representamos como:
   * 
   * datos
   * 
@@ -26,7 +26,7 @@ using namespace std;
   * @include test_ingredientes.cpp
   * 
   * @author Miguel Ángel Campos Cubillas
-  * @date Octubre 2019 
+  * @date Noviembre 2019 
   */ 
 
 class Ingredientes{
@@ -149,7 +149,7 @@ public:
       * @brief ordenaPorTipo
       * @return ordena los Ingredientes por tipo y los devuelve en un objeto de tipo Ingredientes
       */
-    Ingredientes ordenaPorTipo();
+    void ordenaPorTipo();
 
     /**
       * @brief ordenaPorTipo
@@ -182,23 +182,118 @@ public:
       */
     friend istream &operator>>(istream &is, Ingredientes &ingredientes);
 
+    /**
+      * @brief Clase para iterar sobre los ingredientes 
+      */
     class iterator{
       private:
         vector<Ingrediente>::iterator it;
+      public:
+
+        iterator & operator++(){
+          ++it;
+          return *this;
+        }
+
+        iterator & operator--(){
+          --it;
+          return *this;
+        }
+
+        Ingrediente & operator*(){
+          return (*it);
+        }
+
+        bool operator==(const iterator &i){
+          return i.it == it;
+        }
+
+        bool operator!=(const iterator &i){
+          return i.it != it;
+        }
+
+        iterator & operator=(const iterator &i){
+          it = i.it;
+          return *this;
+        }
+
+        friend class Ingredientes;
     };
 
+    /**
+      * @brief Clase para iterar sobre los ingredientes (modo const)
+      */
     class const_iterator{
       private:
         vector<Ingrediente>::const_iterator it;
+      public:
+
+        const_iterator & operator++(){
+          ++it;
+          return *this;
+        }
+
+        const_iterator & operator--(){
+          --it;
+          return *this;
+        }
+
+        const Ingrediente & operator*() const{
+          return (*it);
+        }
+
+        bool operator==(const const_iterator &i) const{
+          return i.it == it;
+        }
+
+        bool operator!=(const const_iterator &i) const{
+          return i.it != it;
+        }
+
+        const_iterator & operator=(const const_iterator &i){
+          it = i.it;
+          return *this;
+        }
+
+        friend class Ingredientes;
+
     };
 
-    iterator begin();
+    /**
+      * @brief Inicializa un iterator al comienzo de Ingredientes
+      */
+    iterator begin(){
+      iterator i;
+      i.it = datos.begin();
+      return i;
+    }
 
-    iterator end();
+    /**
+      * @brief Inicializa un iterator al final de Ingredientes
+      */
+    iterator end(){
+      iterator i;
+      i.it = datos.end();
+      return i;
+    }
+
+    /**
+      * @brief Inicializa un const_iterator al comienzo de Ingredientes
+      */  
+    const_iterator begin()const{
+      const_iterator i;
+      i.it = datos.begin();
+      return i;
+    }
     
-    const_iterator begin()const;
-    
-    const_iterator end()const;
+    /**
+      * @brief Inicializa un const_iterator al final de Ingredientes
+      */
+    const_iterator end()const{
+      const_iterator i;
+      i.it = datos.end();
+      return i;
+    }
 
 };
 

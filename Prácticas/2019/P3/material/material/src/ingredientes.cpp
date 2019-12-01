@@ -1,14 +1,16 @@
 #include "ingredientes.h"
 
-Ingredientes::Ingredientes() : datos(0) {}
+Ingredientes::Ingredientes() : datos(0), indice_tipo(0) {}
 
 void Ingredientes::insertarIngrediente(const Ingrediente &ingrediente){
-    datos.aniadeElemento(ingrediente);
+    datos.push_back(ingrediente);
     ordenaPorNombre();
+    indice_tipo.push_back(getNumIngredientes()-1);
+    ordenaPorTipo();
 }
 
 void Ingredientes::borrarIngrediente(const int nroIngrediente){
-    datos.borrarElemento(nroIngrediente);
+    datos.erase(datos.begin()+nroIngrediente);
 }
 
 void Ingredientes::borrarIngredienteXNombre(const string &nombre){
@@ -22,7 +24,7 @@ void Ingredientes::borrarIngredienteXNombre(const string &nombre){
 }
 
 void Ingredientes::modificaIngrediente(const int i, const Ingrediente &ingrediente){
-    datos.modificaElemento(i, ingrediente);
+    datos.insert(datos.begin()+i, ingrediente);
 }
 
 Ingrediente Ingredientes::getIngrediente(const int i){
@@ -38,7 +40,7 @@ Ingrediente Ingredientes::get(const string &nombre){
 }
 
 const int Ingredientes::getNumIngredientes() const{
-    return this->datos.getNumElementos();
+    return this->datos.size();
 }
 
 string Ingredientes::getInformacion(const string nombre){
@@ -54,17 +56,17 @@ string Ingredientes::getInformacion(const string nombre){
     return info;
 }
 
-Vector_Dinamico<string> Ingredientes::getTipos(){
-    Vector_Dinamico<string> tipos;
+vector<string> Ingredientes::getTipos(){
+    vector<string> tipos;
     bool encontrado = false;
     for (int i = 0; i < getNumIngredientes(); i++){
-        for (int j = 0; j < tipos.getNumElementos() && !encontrado; j++){
+        for (int j = 0; j < tipos.size() && !encontrado; j++){
             if (tipos[j] == datos[i].getTipo())
                 encontrado = true;
         }
         if (!encontrado){
             if (!datos[i].getTipo().empty())
-                tipos.aniadeElemento(datos[i].getTipo());
+                tipos.push_back(datos[i].getTipo());
         }else{encontrado = false;}
     }
     return tipos;
@@ -88,33 +90,33 @@ const Ingrediente& Ingredientes::operator[](const int i) const{
 
 void Ingredientes::ordenaPorNombre(){
     Ingrediente aux;
-    for (int i = 1; i < getNumIngredientes(); i++)
-        for (int j = 0; j < getNumIngredientes() - 1; j++)
-            if (getIngrediente(j).getNombre() > getIngrediente(j + 1).getNombre()){
-                aux = getIngrediente(j);
-                modificaIngrediente(j, getIngrediente(j + 1));
-                modificaIngrediente(j + 1, aux);
+    for(int i=1; i < getNumIngredientes()-1; i++){
+        for(int j=0; j < getNumIngredientes()-1; j++){
+            if(datos[j].getNombre() > datos[j+1].getNombre()){
+                aux = datos[j];
+                datos[j] = datos[j+1];
+                datos[j+1] = aux;
             }
+        }
+    }
 }
 
-Ingredientes Ingredientes::ordenaPorTipo(){
-    Ingredientes ordenadosXTipo = *this;
-    Ingrediente aux;
-    for (int i = 1; i < ordenadosXTipo.getNumIngredientes(); i++)
-        for (int j = i; j < ordenadosXTipo.getNumIngredientes() - 1; j++)
-            if (ordenadosXTipo.getIngrediente(i).getTipo() > ordenadosXTipo.getIngrediente(j + 1).getTipo()){
-                aux = ordenadosXTipo.getIngrediente(i);
-                ordenadosXTipo.modificaIngrediente(i, getIngrediente(j + 1));
-                ordenadosXTipo.modificaIngrediente(j + 1, aux);
-            }            
-    return ordenadosXTipo;
+void Ingredientes::ordenaPorTipo(){
+    int aux;
+    for(int i=1; i < getNumIngredientes()-1; i++){
+        for(int j=0; j < getNumIngredientes()-1; j++){
+            if((getIngrediente(indice_tipo[j]).getTipo() > getIngrediente(indice_tipo[j+1]).getTipo()) && (getIngrediente(indice_tipo[j]).getNombre() > getIngrediente(indice_tipo[j+1]).getNombre())){
+                aux = indice_tipo[j];
+                indice_tipo[j] = indice_tipo[j+1];
+                indice_tipo[j+1] = aux;
+            }
+        }
+    }
 }
 
 void Ingredientes::imprimirPorTipo(ostream &os){
-    Ingredientes aux = ordenaPorTipo();
-    os << aux;
-    //ordenaPorTipo();
-    //os << *this;
+    for(int i=0; i<getNumIngredientes(); i++)
+        cout << datos[indice_tipo[i]] << endl;
 }
 
 void Ingredientes::getEstadistica(const string tipo){
@@ -224,9 +226,5 @@ istream &operator>>(istream &is, Ingredientes &ingredientes){
         is >> aux;
         ingredientes.insertarIngrediente(aux);
     }
-    //ingredientes.ordenaPorNombre();
     return is;
 }
-
-
-

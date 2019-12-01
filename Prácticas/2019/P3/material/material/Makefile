@@ -4,7 +4,7 @@ OBJ = obj
 BIN = bin
 CXX = g++
 CPPFLAGS = -Wall -g  -I$(INC) -c --std=c++11
-all:$(BIN)/test_ingredientes $(BIN)/tipos_ingredientes $(BIN)/test_receta 
+all:$(BIN)/test_ingredientes $(BIN)/test_receta 
 
 # ************ Generación de documentación ******************
 documentacion:
@@ -22,7 +22,7 @@ $(OBJ)/test_ingredientes.o: $(SRC)/test_ingredientes.cpp $(INC)/ingrediente.h $(
 	$(CXX) $(CPPFLAGS)  $(SRC)/test_ingredientes.cpp -o  $(OBJ)/test_ingredientes.o 
 		
 	
-$(OBJ)/ingredientes.o: $(SRC)/ingredientes.cpp $(INC)/ingredientes.h $(INC)/VD.h $(INC)/VD.cpp $(INC)/ingrediente.h
+$(OBJ)/ingredientes.o: $(SRC)/ingredientes.cpp $(INC)/ingredientes.h $(INC)/ingrediente.h
 	$(CXX) $(CPPFLAGS)  $(SRC)/ingredientes.cpp -o  $(OBJ)/ingredientes.o 	
 
 $(OBJ)/ingrediente.o: $(SRC)/ingrediente.cpp $(INC)/ingrediente.h 

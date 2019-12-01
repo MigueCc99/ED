@@ -15,13 +15,13 @@ int main(int argc,char *argv[]){
   /***********************************************************************/
   
   //SECTION 1: Test sobre TDA receta. Operadores de entrada y salida
-  receta r;
+  Receta r;
   f>>r;
   cout<<"La receta leida es "<<r<<endl;
   cout<<"Pulse una tecla para continuar"<<endl;
   cin.get();
   /***********************************************************************/
-
+/*
   //Section 2: Comprueba el iterador de receta
   receta::iterator it;
   cout<<"Los ingredientes de la receta "<<r.getNombre()<<" son:"<<endl;
@@ -35,7 +35,7 @@ int main(int argc,char *argv[]){
   
   f.seekg(0);
   /***********************************************************************/
-  
+  /*
   //SECTION 3: Test sobre TDA recetas. Operadores de lectura y escritura
   
   recetas rall;
@@ -45,7 +45,7 @@ int main(int argc,char *argv[]){
   cout<<"Pulse una tecla para continuar"<<endl;
   cin.get(); 
   /***********************************************************************/
-  
+  /*
   //SECTION 4: Consultar una receta por codigo
   cout<<"Dime el codigo de una receta:";
   string c;
@@ -57,7 +57,7 @@ int main(int argc,char *argv[]){
 	  cout<<"La receta con codigo "<<c<<" no existe"<<endl;
   }
   /***********************************************************************/
-  
+  /*
   //SECTION 5: Borramos la receta con un código. Comprobamos el 
   //funcionamiento del iterador de recetas
   rall.borrar(c);
@@ -69,6 +69,6 @@ int main(int argc,char *argv[]){
   }
   cout<<endl;
   cout<<"Numero de recetas "<<rall.size()<<endl;
-  
+ */ 
 
 }
