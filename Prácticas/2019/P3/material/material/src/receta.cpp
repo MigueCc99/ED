@@ -44,35 +44,87 @@ ostream &operator<<(ostream &os, const Receta &receta){
     os << receta.nombre << ";";
 
     for(Receta::const_iterator it=receta.begin(); it!=receta.end();++it)
-        os << (*it).first << " " << (*it).second;
-
+        os << (*it).first << " " << (*it).second << ";";
+/*
     os << receta.calorias << " ";
     os << receta.hc << " ";
     os << receta.grasas << " ";
     os << receta.proteinas << " ";
     os << receta.fibra << " ";
-
+*/
     return os;
 }
 
 istream &operator>>(istream &is, Receta &receta){
-    string code, nombre;
-    string plato;
+    string code, nombre, plato;
+    string aux;
+    string sub_aux;
     list<pair<string,unsigned int> > ings;
     pair<string,unsigned int> par;
     string first, second;
-    unsigned int unsig = 10;
-    bool f = true;
-    bool esp = true;
+    bool fin = false;
+    unsigned int u = 10;
     char salto_linea = '\n';
-    char delim = ';';
     char espacio = ' ';
-    char aux;
+    char delim = ';';
 
     getline(is, code, delim);
     getline(is, plato, delim);
     getline(is, nombre, delim);
 
+    string::iterator it;
+    string::iterator sub;
+    string::iterator test;
+    string::iterator auxiliar;
+
+    getline(is,aux,salto_linea);
+        for(it = aux.begin(); it < aux.end(); ++it){
+            if((*it) != delim)
+                sub_aux += (*it);
+            else{
+                sub = sub_aux.end();
+                test = sub-1;
+                if((*test) == '0' or (*test) == '1' or (*test) == '2' or (*test) == '3' or (*test) == '4' or (*test) == '5'
+                    or (*test) == '6' or (*test) == '7' or (*test) == '8' or (*test) == '9')
+                    while((*sub) != espacio)
+                        --sub;
+                auxiliar = sub;
+                for(sub = sub_aux.begin(); sub < sub_aux.end(); ++sub){
+                    if(sub < auxiliar)
+                        first += (*sub);
+                    else if(sub > auxiliar)
+                        second += (*sub);
+                }
+                par = make_pair(first,stoul(second));
+                ings.push_back(par); 
+                first = second = "";               
+                sub_aux = "";
+            }    
+        }
+    
+/*
+    while(getline(is,aux,delim) && !fin){
+        it = aux.end();
+        test = it-1;
+        if((*test) == '0' or (*test) == '1' or (*test) == '2' or (*test) == '3' or (*test) == '4' or (*test) == '5'
+            or (*test) == '6' or (*test) == '7' or (*test) == '8' or (*test) == '9')
+            while((*it) != espacio)
+                --it;
+        auxiliar = it;
+        for(it = aux.begin(); it < aux.end(); ++it){
+            if(it < auxiliar)
+                first += (*it);
+            else if(it > auxiliar)
+                second += (*it);
+        }
+        par = make_pair(first,u);
+        ings.push_back(par);
+        cout << "Primer elemento: " << first << " Segundo elemento: " << second << endl;
+        first = second = "";
+        
+    }
+*/
+/*
     while(aux != salto_linea){
         is.get(aux);
         //cout << "aux: " << aux << endl;
@@ -95,10 +147,10 @@ istream &operator>>(istream &is, Receta &receta){
         }
         cout << "Primer elemento: " << first << " Segundo elemento: " << second << endl;
     }
+*/    
+    Receta r(code,stoi(plato), nombre, ings);
     
-    Receta auxiliar(code,stoi(plato), nombre, ings);
-    
-    receta = auxiliar;
+    receta = r;
 
     return is;
 }
