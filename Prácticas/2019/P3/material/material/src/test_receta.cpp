@@ -21,9 +21,9 @@ int main(int argc,char *argv[]){
   cout<<"Pulse una tecla para continuar"<<endl;
   cin.get();
   /***********************************************************************/
-/*
+
   //Section 2: Comprueba el iterador de receta
-  receta::iterator it;
+  Receta::iterator it;
   cout<<"Los ingredientes de la receta "<<r.getNombre()<<" son:"<<endl;
   for (it=r.begin();it!=r.end();++it){
 	  cout<<(*it).first<<"\t"<<(*it).second<<"\t";

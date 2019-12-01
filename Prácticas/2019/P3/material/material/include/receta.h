@@ -50,6 +50,10 @@ public:
 
     Receta & operator=(const Receta &receta);
 
+    const string getNombre() const;
+
+    const int ningredientes();
+
     friend ostream &operator<<(ostream &os, const Receta &receta);
 
     friend istream &operator>>(istream &is, Receta &receta);

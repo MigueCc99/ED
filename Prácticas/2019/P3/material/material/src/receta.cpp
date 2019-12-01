@@ -38,6 +38,14 @@ Receta & Receta::operator=(const Receta &receta){
     return *this;
 }
 
+const string Receta::getNombre() const{
+      return this->nombre;
+}
+
+const int Receta::ningredientes(){
+    return ings.size();
+}
+
 ostream &operator<<(ostream &os, const Receta &receta){
     os << receta.code << ";";
     os << receta.plato <<  ";";
@@ -62,8 +70,6 @@ istream &operator>>(istream &is, Receta &receta){
     list<pair<string,unsigned int> > ings;
     pair<string,unsigned int> par;
     string first, second;
-    bool fin = false;
-    unsigned int u = 10;
     char salto_linea = '\n';
     char espacio = ' ';
     char delim = ';';

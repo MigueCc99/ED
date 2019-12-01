@@ -182,6 +182,28 @@ public:
       */
     friend istream &operator>>(istream &is, Ingredientes &ingredientes);
 
+
+    int * obtenerDatosCalorias();
+
+    int * obtenerDatosHc();
+
+    int * obtenerDatosProteinas();
+
+    int * obtenerDatosGrasas();
+
+    int * obtenerDatosFibras();
+
+    float obtener_promedio(int *datos);
+
+    float obtener_varianza(int *datos);
+
+    float obtener_desviacion(float varianza, int *datos);
+
+    void obtener_desviaciones();
+
+    void getEstadistico();
+
+
     /**
       * @brief Clase para iterar sobre los ingredientes 
       */
