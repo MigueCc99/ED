@@ -48,6 +48,8 @@ public:
 
   Recetas & operator=(const Recetas &recetas);
 
+  Receta & operator[](const string key);
+
   friend ostream &operator<<(ostream &os, const Recetas &recetas);
 
   friend istream &operator>>(istream &is, Recetas &recetas);

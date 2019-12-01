@@ -45,7 +45,7 @@ int main(int argc,char *argv[]){
   cout<<"Pulse una tecla para continuar"<<endl;
   cin.get(); 
   /***********************************************************************/
-  /*
+  
   //SECTION 4: Consultar una receta por codigo
   cout<<"Dime el codigo de una receta:";
   string c;

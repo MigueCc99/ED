@@ -15,7 +15,7 @@ void Receta::copiar(const Receta &receta){
 Receta::Receta(){
     code = "NULO";
     plato = 0;
-    nombre = "NULO";
+    nombre = "Undefined";
     string nulo("NULO");
     calorias,hc,grasas,proteinas,fibra = 0;
 }
@@ -40,6 +40,10 @@ Receta & Receta::operator=(const Receta &receta){
 
 const string Receta::getNombre() const{
       return this->nombre;
+}
+
+const string Receta::getCode() const{
+    return this->code;
 }
 
 const int Receta::ningredientes(){
@@ -102,7 +106,6 @@ istream &operator>>(istream &is, Receta &receta){
                     else if(sub > auxiliar)
                         second += (*sub);
                 }
-                cout << "Primer elemento: " << first << " Segundo elemento: " << second << endl;
                 par = make_pair(first,stoul(second));
                 ings.push_back(par); 
                 first = second = "";               

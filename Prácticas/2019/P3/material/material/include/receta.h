@@ -52,6 +52,8 @@ public:
 
     const string getNombre() const;
 
+    const string getCode() const;
+
     const int ningredientes();
 
     friend ostream &operator<<(ostream &os, const Receta &receta);

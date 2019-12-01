@@ -14,6 +14,10 @@
       return datos.size();
   }
 
+  Receta & Recetas::operator[](const string key){
+      return datos[key];
+  }
+
   Recetas & Recetas::operator=(const Recetas &recetas){
       if(this != &recetas){
           this->datos = recetas.datos;
@@ -34,7 +38,8 @@
       while (is.peek() != EOF){
           is >> auxiliar; 
           i_receta = auxiliar.begin();
-          recetas.datos.insert(std::pair<string,Receta>((*i_receta).first,auxiliar));
+          recetas.datos.insert(std::pair<string,Receta>(auxiliar.getCode(),auxiliar));
+          cout << auxiliar.getCode() << endl;
       }
 
       return is;
