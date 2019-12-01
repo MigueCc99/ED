@@ -57,18 +57,18 @@ int main(int argc,char *argv[]){
 	  cout<<"La receta con codigo "<<c<<" no existe"<<endl;
   }
   /***********************************************************************/
-  /*
+  
   //SECTION 5: Borramos la receta con un código. Comprobamos el 
   //funcionamiento del iterador de recetas
   rall.borrar(c);
   cout<<"Tras el borrado "<<endl;
-  recetas::iterator its;
+  Recetas::iterator its;
   for (its=rall.begin();its!=rall.end();++its){
 	cout<<*its<<endl;  
 	  
   }
   cout<<endl;
   cout<<"Numero de recetas "<<rall.size()<<endl;
- */ 
+ 
 
 }

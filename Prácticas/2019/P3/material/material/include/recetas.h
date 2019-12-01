@@ -46,6 +46,8 @@ public:
 
   const int size();
 
+  void borrar(const string key);
+
   Recetas & operator=(const Recetas &recetas);
 
   Receta & operator[](const string key);

@@ -14,6 +14,10 @@
       return datos.size();
   }
 
+  void Recetas::borrar(const string key){
+      this->datos.erase(key);
+  }
+
   Receta & Recetas::operator[](const string key){
       return datos[key];
   }
