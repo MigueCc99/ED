@@ -1,0 +1,189 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.16">
+  <compound refid="class_receta_1_1const__iterator" kind="class"><name>Receta::const_iterator</name>
+    <member refid="class_receta_1_1const__iterator_1ad33750400848ee13fa02e783a116a6e0" kind="variable"><name>it</name></member>
+    <member refid="class_receta_1_1const__iterator_1aa89c775820d25d3de1743f0d60d69cdd" kind="friend"><name>Receta</name></member>
+    <member refid="class_receta_1_1const__iterator_1a7e13e736fb129cc5b0540d8506edea9e" kind="function"><name>operator++</name></member>
+    <member refid="class_receta_1_1const__iterator_1a8e00e793bd1eb39abbfb3838c016e237" kind="function"><name>operator--</name></member>
+    <member refid="class_receta_1_1const__iterator_1ae2a3ed81534beffea58d78756c9aeb22" kind="function"><name>operator*</name></member>
+    <member refid="class_receta_1_1const__iterator_1a164ae979a5fabd2edc409e9af1f91ca8" kind="function"><name>operator==</name></member>
+    <member refid="class_receta_1_1const__iterator_1ac353238e9b5c1f3a33a863dfda1d5c61" kind="function"><name>operator!=</name></member>
+    <member refid="class_receta_1_1const__iterator_1a437befc7fa2238f91e925e22840d804e" kind="function"><name>operator=</name></member>
+  </compound>
+  <compound refid="class_ingredientes_1_1const__iterator" kind="class"><name>Ingredientes::const_iterator</name>
+    <member refid="class_ingredientes_1_1const__iterator_1a9b367bb1f827fa5de9f0266e80adf02c" kind="variable"><name>it</name></member>
+    <member refid="class_ingredientes_1_1const__iterator_1a1a8c7f96971fda9a9b26b6d2a72e548b" kind="friend"><name>Ingredientes</name></member>
+    <member refid="class_ingredientes_1_1const__iterator_1a65ceda30adc427d6f29359ea5bc194de" kind="function"><name>operator++</name></member>
+    <member refid="class_ingredientes_1_1const__iterator_1aa069e2d5165a9690c411c516cb0930a7" kind="function"><name>operator--</name></member>
+    <member refid="class_ingredientes_1_1const__iterator_1ab6146a3efeee1f52623aa733a4bd4fc9" kind="function"><name>operator*</name></member>
+    <member refid="class_ingredientes_1_1const__iterator_1adc549ffc966900cfabdc87e02e0ee02b" kind="function"><name>operator==</name></member>
+    <member refid="class_ingredientes_1_1const__iterator_1a4894a635351685d4f541a20b7da9af09" kind="function"><name>operator!=</name></member>
+    <member refid="class_ingredientes_1_1const__iterator_1a9d817c2d61fa0a72c59d2e9e98f01390" kind="function"><name>operator=</name></member>
+  </compound>
+  <compound refid="class_recetas_1_1const__iterator" kind="class"><name>Recetas::const_iterator</name>
+    <member refid="class_recetas_1_1const__iterator_1a49382a977dd96feca686e85d28804b49" kind="variable"><name>it</name></member>
+    <member refid="class_recetas_1_1const__iterator_1acbf7ff62084899901495168937b96214" kind="friend"><name>Recetas</name></member>
+    <member refid="class_recetas_1_1const__iterator_1ad85840a6e1f6211a9610aca99749cef9" kind="function"><name>operator++</name></member>
+    <member refid="class_recetas_1_1const__iterator_1a7f8fb0dd990048d60b1772d03a5094b7" kind="function"><name>operator--</name></member>
+    <member refid="class_recetas_1_1const__iterator_1a51d9b9bbbdfa9781f46eba1b909633c9" kind="function"><name>operator*</name></member>
+    <member refid="class_recetas_1_1const__iterator_1a0bdfc3826cc856574e2ada44d6c38087" kind="function"><name>operator==</name></member>
+    <member refid="class_recetas_1_1const__iterator_1ab96e145f821a31d697a8175595ddec40" kind="function"><name>operator!=</name></member>
+    <member refid="class_recetas_1_1const__iterator_1ae59a377c12e8021150945875a6bc63e3" kind="function"><name>operator=</name></member>
+  </compound>
+  <compound refid="class_ingrediente" kind="class"><name>Ingrediente</name>
+    <member refid="class_ingrediente_1a57f2f0125f393fdd52de048a69804cb1" kind="variable"><name>nombre</name></member>
+    <member refid="class_ingrediente_1ae21c7e26bae086a2935dd38322e814cf" kind="variable"><name>calorias</name></member>
+    <member refid="class_ingrediente_1ae4ae10c3e9c1a6a7e003b62379ed4e34" kind="variable"><name>hidratos</name></member>
+    <member refid="class_ingrediente_1ae49d5e5fc787603247ce4f75871a32a4" kind="variable"><name>proteinas</name></member>
+    <member refid="class_ingrediente_1a59ae44f20f6679d33f2e007043aca6c3" kind="variable"><name>grasas</name></member>
+    <member refid="class_ingrediente_1a4256c6fd9e4f28ed35528af22a73afca" kind="variable"><name>fibras</name></member>
+    <member refid="class_ingrediente_1a44f6a782f64fbb3777faed251ca50127" kind="variable"><name>tipo</name></member>
+    <member refid="class_ingrediente_1a783737eeeee2e340c25f3907c93585d6" kind="function"><name>copiar</name></member>
+    <member refid="class_ingrediente_1ac39e59564451be4c0e12af8ce3d40afb" kind="function"><name>Ingrediente</name></member>
+    <member refid="class_ingrediente_1ac7fc4a4ac7efac10bc6c583819242d53" kind="function"><name>Ingrediente</name></member>
+    <member refid="class_ingrediente_1a49271eb24114ff26846f41696884a8da" kind="function"><name>Ingrediente</name></member>
+    <member refid="class_ingrediente_1ad8094c826e5afac5cd99242b66d870f0" kind="function"><name>operator=</name></member>
+    <member refid="class_ingrediente_1af487c2d1e772199c006b9e914088653a" kind="function"><name>getNombre</name></member>
+    <member refid="class_ingrediente_1ac5481304477b6f6b6b237a98345cc581" kind="function"><name>getCalorias</name></member>
+    <member refid="class_ingrediente_1a07418ed4b6db1c3857cf1c7cda1dc92a" kind="function"><name>getHidratos</name></member>
+    <member refid="class_ingrediente_1a8a4685a78101dde5ed338a53567e9346" kind="function"><name>getProteinas</name></member>
+    <member refid="class_ingrediente_1a6337fb89787d82ff24cb38d3b3e69f74" kind="function"><name>getGrasas</name></member>
+    <member refid="class_ingrediente_1a5a64b636d41295ee57dfa22db8cfd413" kind="function"><name>getFibras</name></member>
+    <member refid="class_ingrediente_1a575ae44e1daae178ca5d6512cadddf93" kind="function"><name>getTipo</name></member>
+    <member refid="class_ingrediente_1af5cbc31813b9aa568f08d769c85f985f" kind="function"><name>setNombre</name></member>
+    <member refid="class_ingrediente_1ad2150e5049aa395abc3f7da9164d5430" kind="function"><name>setCalorias</name></member>
+    <member refid="class_ingrediente_1abf42e65d643bbdb76070c5a3ed48fbf8" kind="function"><name>setHidratos</name></member>
+    <member refid="class_ingrediente_1a7fac9206151fa666bb82dcc25dacb129" kind="function"><name>setProteinas</name></member>
+    <member refid="class_ingrediente_1ab0f8de13b5e2d52cfcc490f5d563f601" kind="function"><name>setGrasas</name></member>
+    <member refid="class_ingrediente_1a35dd8594cd303cf34b3446b3063565ab" kind="function"><name>setFibras</name></member>
+    <member refid="class_ingrediente_1a4afc3ff52fad5910b1ff945d2be237ed" kind="function"><name>setTipo</name></member>
+    <member refid="class_ingrediente_1af6c4fcbf227d983c422d57f1f3397477" kind="friend"><name>operator&lt;&lt;</name></member>
+    <member refid="class_ingrediente_1a79984dcd8864cb7625d3bf29335bf4c3" kind="friend"><name>operator&gt;&gt;</name></member>
+  </compound>
+  <compound refid="class_ingredientes" kind="class"><name>Ingredientes</name>
+    <member refid="class_ingredientes_1a0d179d0ffec925fda2a931e022c0f87c" kind="variable"><name>datos</name></member>
+    <member refid="class_ingredientes_1a0702f3e37510eada2125dbb5735e7604" kind="variable"><name>indice_tipo</name></member>
+    <member refid="class_ingredientes_1a4599533b7d0530fe6fdd68006b3f0bde" kind="function"><name>Ingredientes</name></member>
+    <member refid="class_ingredientes_1aa49df6c8d8c48cca8591a620b2d15cc3" kind="function"><name>insertarIngrediente</name></member>
+    <member refid="class_ingredientes_1aaf94717166c3e624390ac5abe136d06a" kind="function"><name>borrarIngrediente</name></member>
+    <member refid="class_ingredientes_1a7c0b7746dfc25fba382518fe8522a046" kind="function"><name>borrarIngredienteXNombre</name></member>
+    <member refid="class_ingredientes_1a7e56b2666e0c566ba5799d8848669dd4" kind="function"><name>modificaIngrediente</name></member>
+    <member refid="class_ingredientes_1aeb8017d2e1182f78e3935ca72b766ef8" kind="function"><name>getIngrediente</name></member>
+    <member refid="class_ingredientes_1a97dea81c4db6348691c55e9db5ef3619" kind="function"><name>get</name></member>
+    <member refid="class_ingredientes_1a485db5688382e8068feb4680caea9a5f" kind="function"><name>getNumIngredientes</name></member>
+    <member refid="class_ingredientes_1a2f30f251726c114a425e655a07a21d80" kind="function"><name>getInformacion</name></member>
+    <member refid="class_ingredientes_1a9869f4642af46cd91d426c9a4e22019a" kind="function"><name>getTipos</name></member>
+    <member refid="class_ingredientes_1ad49a4d1142a214e8c077871efed59c60" kind="function"><name>getIngredientesTipo</name></member>
+    <member refid="class_ingredientes_1ac1a637a4b2fb6e7ce99f59ffea7e5eec" kind="function"><name>operator[]</name></member>
+    <member refid="class_ingredientes_1a2279d66f71d1fdc39f8560b406d83760" kind="function"><name>operator[]</name></member>
+    <member refid="class_ingredientes_1a44039882f9e87d1e6fc0a97bf9cac579" kind="function"><name>ordenaPorNombre</name></member>
+    <member refid="class_ingredientes_1aadb58cad448a8983ece8d87803439034" kind="function"><name>ordenaPorTipo</name></member>
+    <member refid="class_ingredientes_1ab56b335eeb1662c1869d428df28fb035" kind="function"><name>imprimirPorTipo</name></member>
+    <member refid="class_ingredientes_1a0ee5c7350ec2956cf1f36d8a6e718347" kind="function"><name>getEstadistica</name></member>
+    <member refid="class_ingredientes_1afccf277d57a0d27f6a9ab6c7f3a3a954" kind="function"><name>obtenerDatosCalorias</name></member>
+    <member refid="class_ingredientes_1aef39d8820ac7f3e2aea585436124b0df" kind="function"><name>obtenerDatosHc</name></member>
+    <member refid="class_ingredientes_1acf0d27096141cca1108bf38d876230f6" kind="function"><name>obtenerDatosProteinas</name></member>
+    <member refid="class_ingredientes_1afb8cbed9e81b56175a6fdc04f2d73ca1" kind="function"><name>obtenerDatosGrasas</name></member>
+    <member refid="class_ingredientes_1abe2bf4ef266352d9a10896f98ae794f5" kind="function"><name>obtenerDatosFibras</name></member>
+    <member refid="class_ingredientes_1a482df358a0cc18f0e1aca28246547df2" kind="function"><name>obtener_promedio</name></member>
+    <member refid="class_ingredientes_1ac9d7e56a91a4e92b24aa4721c3d51efb" kind="function"><name>obtener_varianza</name></member>
+    <member refid="class_ingredientes_1a1a4e05bbe75fd58a191607f285f9fc08" kind="function"><name>obtener_desviacion</name></member>
+    <member refid="class_ingredientes_1a1d7f5971d3062d18228bf8a00518add4" kind="function"><name>obtener_desviaciones</name></member>
+    <member refid="class_ingredientes_1a03a0d01130ccbafb9d32781902213d1c" kind="function"><name>getEstadistico</name></member>
+    <member refid="class_ingredientes_1af714f2431abc9f391271a5ce36d20fba" kind="function"><name>begin</name></member>
+    <member refid="class_ingredientes_1a743696bb30ce1ff6d970496be6273383" kind="function"><name>end</name></member>
+    <member refid="class_ingredientes_1a18c3774d89ce0e1f12b29e381d77f795" kind="function"><name>begin</name></member>
+    <member refid="class_ingredientes_1a952de40063794632409a027d166cd6c9" kind="function"><name>end</name></member>
+    <member refid="class_ingredientes_1a11a8ab6e1628b050812fbf57b33265ea" kind="friend"><name>operator&lt;&lt;</name></member>
+    <member refid="class_ingredientes_1a2f2a26cb7e5d982fcbe248027671937d" kind="friend"><name>operator&gt;&gt;</name></member>
+  </compound>
+  <compound refid="class_ingredientes_1_1iterator" kind="class"><name>Ingredientes::iterator</name>
+    <member refid="class_ingredientes_1_1iterator_1aee7b139c3e51613587b38e47f67a1f38" kind="variable"><name>it</name></member>
+    <member refid="class_ingredientes_1_1iterator_1a1a8c7f96971fda9a9b26b6d2a72e548b" kind="friend"><name>Ingredientes</name></member>
+    <member refid="class_ingredientes_1_1iterator_1afc3cec14af8dad173afab85ad29e04e5" kind="function"><name>operator++</name></member>
+    <member refid="class_ingredientes_1_1iterator_1ac201c4291be38d5c5f0ce85b189ae029" kind="function"><name>operator--</name></member>
+    <member refid="class_ingredientes_1_1iterator_1ae0a925e6da382460e59d85aa21984930" kind="function"><name>operator*</name></member>
+    <member refid="class_ingredientes_1_1iterator_1a1ae8b326420322ce6ecded7dc8212f4a" kind="function"><name>operator==</name></member>
+    <member refid="class_ingredientes_1_1iterator_1a08b673984da153bde04dd66096e455dd" kind="function"><name>operator!=</name></member>
+    <member refid="class_ingredientes_1_1iterator_1a763e4a199da02fa210d84467b8b07d05" kind="function"><name>operator=</name></member>
+  </compound>
+  <compound refid="class_recetas_1_1iterator" kind="class"><name>Recetas::iterator</name>
+    <member refid="class_recetas_1_1iterator_1aa425caecb174fd3455ec9319ee30faa2" kind="variable"><name>it</name></member>
+    <member refid="class_recetas_1_1iterator_1acbf7ff62084899901495168937b96214" kind="friend"><name>Recetas</name></member>
+    <member refid="class_recetas_1_1iterator_1a581d4ace2e334adbc57c0bb1990818db" kind="function"><name>operator++</name></member>
+    <member refid="class_recetas_1_1iterator_1a070e52c6ae080c101cac5087894f0849" kind="function"><name>operator--</name></member>
+    <member refid="class_recetas_1_1iterator_1ab7794bc2ee2ed1d64e6bdc427a179804" kind="function"><name>operator*</name></member>
+    <member refid="class_recetas_1_1iterator_1a4ea866f5cae1059b03b61abb0a54b379" kind="function"><name>operator==</name></member>
+    <member refid="class_recetas_1_1iterator_1acb36c627cc157885eeff3edb2052eeb1" kind="function"><name>operator!=</name></member>
+    <member refid="class_recetas_1_1iterator_1a9fa5910bdf0c9457cb8e9c0802476b33" kind="function"><name>operator=</name></member>
+  </compound>
+  <compound refid="class_receta_1_1iterator" kind="class"><name>Receta::iterator</name>
+    <member refid="class_receta_1_1iterator_1a869d7e040d04c76572d68df666a0145f" kind="variable"><name>it</name></member>
+    <member refid="class_receta_1_1iterator_1aa89c775820d25d3de1743f0d60d69cdd" kind="friend"><name>Receta</name></member>
+    <member refid="class_receta_1_1iterator_1ac317a274806d5a997b05c1769e778f0c" kind="function"><name>operator++</name></member>
+    <member refid="class_receta_1_1iterator_1a947072ef3cfd2c22edf441b46bbc527b" kind="function"><name>operator--</name></member>
+    <member refid="class_receta_1_1iterator_1ac92a938a938d40831293d77b5850b797" kind="function"><name>operator*</name></member>
+    <member refid="class_receta_1_1iterator_1a19f1086a313909f0fcd3a387d0c01d94" kind="function"><name>operator==</name></member>
+    <member refid="class_receta_1_1iterator_1a1d348facec39ca741fca3fa6aaa8a934" kind="function"><name>operator!=</name></member>
+    <member refid="class_receta_1_1iterator_1abcf49f80de72cc14c8b0e49c5fcab73f" kind="function"><name>operator=</name></member>
+  </compound>
+  <compound refid="class_receta" kind="class"><name>Receta</name>
+    <member refid="class_receta_1adb1e8560135fc7eaa706f17968a1cf54" kind="variable"><name>code</name></member>
+    <member refid="class_receta_1ab1522528f2bc25bc08d8e36898c80425" kind="variable"><name>plato</name></member>
+    <member refid="class_receta_1af3f8bcc9778afab1987c82e7b5e53d07" kind="variable"><name>nombre</name></member>
+    <member refid="class_receta_1a859805a3106fa033b8010fe602e1f4c6" kind="variable"><name>ings</name></member>
+    <member refid="class_receta_1a97eddf6d134cee91b82714c1de258e68" kind="variable"><name>calorias</name></member>
+    <member refid="class_receta_1a78a3630107fb41cb1b4075664defd4cc" kind="variable"><name>hc</name></member>
+    <member refid="class_receta_1aa9c9cc526a85bc92c0dde3ee78c0de5d" kind="variable"><name>grasas</name></member>
+    <member refid="class_receta_1a20396252691f2a78e09ff170ec0df8d3" kind="variable"><name>proteinas</name></member>
+    <member refid="class_receta_1a49c91277688f42c3d904e242511be00b" kind="variable"><name>fibra</name></member>
+    <member refid="class_receta_1a507bee2a7acf0f095f7f5f539fa26900" kind="function"><name>Receta</name></member>
+    <member refid="class_receta_1aec652197fc45e41e6c20e10fe504a1e6" kind="function"><name>Receta</name></member>
+    <member refid="class_receta_1acb5bb989fb0a5c57cf85146f936a544d" kind="function"><name>Receta</name></member>
+    <member refid="class_receta_1a6651b572a5b3df06e11d51fc49b36201" kind="function"><name>operator=</name></member>
+    <member refid="class_receta_1ac8a501375a19e653dc302c0b8e3521eb" kind="function"><name>getNombre</name></member>
+    <member refid="class_receta_1a2822d63fe8ea293434bfbc518d0b23f0" kind="function"><name>getCode</name></member>
+    <member refid="class_receta_1a06b8d8f633037580798daf0adbf5e145" kind="function"><name>ningredientes</name></member>
+    <member refid="class_receta_1ab02ca172c4fe07ae50536e0f22299464" kind="function"><name>begin</name></member>
+    <member refid="class_receta_1a65d46cc6760bf2079f23f769253c91d3" kind="function"><name>end</name></member>
+    <member refid="class_receta_1a13de69b62e8ecefd1ef5a437f95be0ea" kind="function"><name>begin</name></member>
+    <member refid="class_receta_1a002638d4140f2bf36cce10f98c8b893b" kind="function"><name>end</name></member>
+    <member refid="class_receta_1a80137137b6d575163a2abccf9e4082ac" kind="friend"><name>operator&lt;&lt;</name></member>
+    <member refid="class_receta_1a812dfa7fcc7baa5767968177e5158dd9" kind="friend"><name>operator&gt;&gt;</name></member>
+    <member refid="class_receta_1a6dc6c415bac8c93911f18abd0106bc07" kind="function"><name>copiar</name></member>
+  </compound>
+  <compound refid="class_recetas" kind="class"><name>Recetas</name>
+    <member refid="class_recetas_1a06489b0bb52e931e188fb471ff6e42f2" kind="variable"><name>datos</name></member>
+    <member refid="class_recetas_1a8b29501af53be41d740ffb31d61e7590" kind="function"><name>Recetas</name></member>
+    <member refid="class_recetas_1abaab6aa870733db8feb3f298304d3a7d" kind="function"><name>Recetas</name></member>
+    <member refid="class_recetas_1a319168cd2bb248978f7ae2489c16e548" kind="function"><name>Recetas</name></member>
+    <member refid="class_recetas_1a6ba67d84c73f5fbced2a3bd849f00c69" kind="function"><name>size</name></member>
+    <member refid="class_recetas_1a09b86a8a08f7ac76109328958aae1f5a" kind="function"><name>borrar</name></member>
+    <member refid="class_recetas_1ab1445c6ad46bc6f99a24c9962569a86a" kind="function"><name>operator=</name></member>
+    <member refid="class_recetas_1a61ecc05b9a9569d44b913e8b9be6b0ab" kind="function"><name>operator[]</name></member>
+    <member refid="class_recetas_1a8ca28bf55e2306eb4695f359382f9b83" kind="function"><name>begin</name></member>
+    <member refid="class_recetas_1a0ecd852b30d02a203b7c06dbf4420311" kind="function"><name>end</name></member>
+    <member refid="class_recetas_1a0ebc21c8c47afc23d890eb71c671775e" kind="function"><name>begin</name></member>
+    <member refid="class_recetas_1a98eb0106975e82d7dead2b95effc7102" kind="function"><name>end</name></member>
+    <member refid="class_recetas_1adb6d54e863ef0136dff7510973614cb5" kind="friend"><name>operator&lt;&lt;</name></member>
+    <member refid="class_recetas_1a7d25a1b1132b5dd271d11c7010bfc331" kind="friend"><name>operator&gt;&gt;</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="ingrediente_8h" kind="file"><name>ingrediente.h</name>
+  </compound>
+  <compound refid="ingredientes_8h" kind="file"><name>ingredientes.h</name>
+  </compound>
+  <compound refid="receta_8h" kind="file"><name>receta.h</name>
+  </compound>
+  <compound refid="recetas_8h" kind="file"><name>recetas.h</name>
+  </compound>
+  <compound refid="rep_receta" kind="page"><name>repReceta</name>
+  </compound>
+  <compound refid="rep_ingrediente" kind="page"><name>repIngrediente</name>
+  </compound>
+  <compound refid="rep_ingredientes" kind="page"><name>repIngredientes</name>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
+  </compound>
+</doxygenindex>

@@ -1,0 +1,238 @@
+\hypertarget{class_recetas}{}\doxysection{Referencia de la Clase Recetas}
+\label{class_recetas}\index{Recetas@{Recetas}}
+
+
+T.\+D.\+A \mbox{\hyperlink{class_recetas}{Recetas}}.  
+
+
+
+
+{\ttfamily \#include $<$recetas.\+h$>$}
+
+\doxysubsection*{Clases}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_recetas_1_1const__iterator}{const\+\_\+iterator}}
+\begin{DoxyCompactList}\small\item\em Clase para iterar sobre los ingredientes (modo const) \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_recetas_1_1iterator}{iterator}}
+\begin{DoxyCompactList}\small\item\em Clase para iterar sobre los ingredientes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_recetas_a8b29501af53be41d740ffb31d61e7590}\label{class_recetas_a8b29501af53be41d740ffb31d61e7590}} 
+\mbox{\hyperlink{class_recetas_a8b29501af53be41d740ffb31d61e7590}{Recetas}} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto de la clase. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_recetas_abaab6aa870733db8feb3f298304d3a7d}{Recetas}} (map$<$ string, \mbox{\hyperlink{class_receta}{Receta}} $>$ datos)
+\begin{DoxyCompactList}\small\item\em Constructor de la clase. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_recetas_a319168cd2bb248978f7ae2489c16e548}{Recetas}} (const \mbox{\hyperlink{class_recetas}{Recetas}} \&recetas)
+\begin{DoxyCompactList}\small\item\em Constructor de copia de la clase. \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{class_recetas_a6ba67d84c73f5fbced2a3bd849f00c69}{size}} ()
+\begin{DoxyCompactList}\small\item\em size \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_recetas_a09b86a8a08f7ac76109328958aae1f5a}{borrar}} (const string key)
+\begin{DoxyCompactList}\small\item\em borrar \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_recetas}{Recetas}} \& \mbox{\hyperlink{class_recetas_ab1445c6ad46bc6f99a24c9962569a86a}{operator=}} (const \mbox{\hyperlink{class_recetas}{Recetas}} \&recetas)
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador=. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_receta}{Receta}} \& \mbox{\hyperlink{class_recetas_a61ecc05b9a9569d44b913e8b9be6b0ab}{operator\mbox{[}$\,$\mbox{]}}} (const string key)
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador\mbox{[}\mbox{]}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_recetas_a8ca28bf55e2306eb4695f359382f9b83}\label{class_recetas_a8ca28bf55e2306eb4695f359382f9b83}} 
+\mbox{\hyperlink{class_recetas_1_1iterator}{iterator}} \mbox{\hyperlink{class_recetas_a8ca28bf55e2306eb4695f359382f9b83}{begin}} ()
+\begin{DoxyCompactList}\small\item\em Inicializa un iterator al comienzo de \mbox{\hyperlink{class_receta}{Receta}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_recetas_a0ecd852b30d02a203b7c06dbf4420311}\label{class_recetas_a0ecd852b30d02a203b7c06dbf4420311}} 
+\mbox{\hyperlink{class_recetas_1_1iterator}{iterator}} \mbox{\hyperlink{class_recetas_a0ecd852b30d02a203b7c06dbf4420311}{end}} ()
+\begin{DoxyCompactList}\small\item\em Inicializa un iterator al final de \mbox{\hyperlink{class_receta}{Receta}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_recetas_a0ebc21c8c47afc23d890eb71c671775e}\label{class_recetas_a0ebc21c8c47afc23d890eb71c671775e}} 
+\mbox{\hyperlink{class_recetas_1_1const__iterator}{const\+\_\+iterator}} \mbox{\hyperlink{class_recetas_a0ebc21c8c47afc23d890eb71c671775e}{begin}} () const
+\begin{DoxyCompactList}\small\item\em Inicializa un \mbox{\hyperlink{class_recetas_1_1const__iterator}{const\+\_\+iterator}} al comienzo de \mbox{\hyperlink{class_receta}{Receta}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_recetas_a98eb0106975e82d7dead2b95effc7102}\label{class_recetas_a98eb0106975e82d7dead2b95effc7102}} 
+\mbox{\hyperlink{class_recetas_1_1const__iterator}{const\+\_\+iterator}} \mbox{\hyperlink{class_recetas_a98eb0106975e82d7dead2b95effc7102}{end}} () const
+\begin{DoxyCompactList}\small\item\em Inicializa un \mbox{\hyperlink{class_recetas_1_1const__iterator}{const\+\_\+iterator}} al final de \mbox{\hyperlink{class_receta}{Receta}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Amigas}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \mbox{\hyperlink{class_recetas_adb6d54e863ef0136dff7510973614cb5}{operator$<$$<$}} (ostream \&os, const \mbox{\hyperlink{class_recetas}{Recetas}} \&recetas)
+\begin{DoxyCompactList}\small\item\em Salida de \mbox{\hyperlink{class_recetas}{Recetas}} a ostream. \end{DoxyCompactList}\item 
+istream \& \mbox{\hyperlink{class_recetas_a7d25a1b1132b5dd271d11c7010bfc331}{operator$>$$>$}} (istream \&is, \mbox{\hyperlink{class_recetas}{Recetas}} \&recetas)
+\begin{DoxyCompactList}\small\item\em Entrada de \mbox{\hyperlink{class_recetas}{Recetas}} desde istream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+T.\+D.\+A \mbox{\hyperlink{class_recetas}{Recetas}}. 
+
+Una instancia {\itshape ingr} del tipo de datos abstracto {\ttfamily \mbox{\hyperlink{class_recetas}{Recetas}}} representa un conjunto de recetas.
+
+Lo representamos como
+
+datos
+
+Un ejemplo de su uso\+: 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+
+\begin{DoxyAuthor}{Autor}
+Miguel Ángel Campos Cubillas 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Fecha}
+Noviembre 2019 
+\end{DoxyDate}
+
+
+Definición en la línea 34 del archivo recetas.\+h.
+
+
+
+\doxysubsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{class_recetas_abaab6aa870733db8feb3f298304d3a7d}\label{class_recetas_abaab6aa870733db8feb3f298304d3a7d}} 
+\index{Recetas@{Recetas}!Recetas@{Recetas}}
+\index{Recetas@{Recetas}!Recetas@{Recetas}}
+\doxysubsubsection{\texorpdfstring{Recetas()}{Recetas()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Recetas\+::\+Recetas (\begin{DoxyParamCaption}\item[{map$<$ string, \mbox{\hyperlink{class_receta}{Receta}} $>$}]{datos }\end{DoxyParamCaption})}
+
+
+
+Constructor de la clase. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em datos} & un map que representa una clave unívoca y una receta asociada \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Crea \mbox{\hyperlink{class_recetas}{Recetas}} \{datos\} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_recetas_a319168cd2bb248978f7ae2489c16e548}\label{class_recetas_a319168cd2bb248978f7ae2489c16e548}} 
+\index{Recetas@{Recetas}!Recetas@{Recetas}}
+\index{Recetas@{Recetas}!Recetas@{Recetas}}
+\doxysubsubsection{\texorpdfstring{Recetas()}{Recetas()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Recetas\+::\+Recetas (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_recetas}{Recetas}} \&}]{recetas }\end{DoxyParamCaption})}
+
+
+
+Constructor de copia de la clase. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em recetas} & a copiar \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_recetas_a09b86a8a08f7ac76109328958aae1f5a}\label{class_recetas_a09b86a8a08f7ac76109328958aae1f5a}} 
+\index{Recetas@{Recetas}!borrar@{borrar}}
+\index{borrar@{borrar}!Recetas@{Recetas}}
+\doxysubsubsection{\texorpdfstring{borrar()}{borrar()}}
+{\footnotesize\ttfamily void Recetas\+::borrar (\begin{DoxyParamCaption}\item[{const string}]{key }\end{DoxyParamCaption})}
+
+
+
+borrar 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em key} & clave que referencia a la receta a borrar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+elimina la receta asociada a la clave key 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_recetas_ab1445c6ad46bc6f99a24c9962569a86a}\label{class_recetas_ab1445c6ad46bc6f99a24c9962569a86a}} 
+\index{Recetas@{Recetas}!operator=@{operator=}}
+\index{operator=@{operator=}!Recetas@{Recetas}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_recetas}{Recetas}}\& Recetas\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_recetas}{Recetas}} \&}]{recetas }\end{DoxyParamCaption})}
+
+
+
+Sobrecarga del operador=. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em recetas} & recetas a igualar al objeto implícito \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_recetas_a61ecc05b9a9569d44b913e8b9be6b0ab}\label{class_recetas_a61ecc05b9a9569d44b913e8b9be6b0ab}} 
+\index{Recetas@{Recetas}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Recetas@{Recetas}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_receta}{Receta}}\& Recetas\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{const string}]{key }\end{DoxyParamCaption})}
+
+
+
+Sobrecarga del operador\mbox{[}\mbox{]}. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em key} & clave asociada a la receta a devolver \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+devuelve la receta asociada a la clave key 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_recetas_a6ba67d84c73f5fbced2a3bd849f00c69}\label{class_recetas_a6ba67d84c73f5fbced2a3bd849f00c69}} 
+\index{Recetas@{Recetas}!size@{size}}
+\index{size@{size}!Recetas@{Recetas}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily const int Recetas\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+size 
+
+\begin{DoxyReturn}{Devuelve}
+Devuelve el número de recetas 
+\end{DoxyReturn}
+
+
+\doxysubsection{Documentación de las funciones relacionadas y clases amigas}
+\mbox{\Hypertarget{class_recetas_adb6d54e863ef0136dff7510973614cb5}\label{class_recetas_adb6d54e863ef0136dff7510973614cb5}} 
+\index{Recetas@{Recetas}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Recetas@{Recetas}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{os,  }\item[{const \mbox{\hyperlink{class_recetas}{Recetas}} \&}]{recetas }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Salida de \mbox{\hyperlink{class_recetas}{Recetas}} a ostream. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em os} & de salida \\
+\hline
+{\em recetas} & \mbox{\hyperlink{class_recetas}{Recetas}} a escribir \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondición}
+Se obtiene en {\itshape os} la recetas con {\itshape \{datos\}} ~\newline
+ 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_recetas_a7d25a1b1132b5dd271d11c7010bfc331}\label{class_recetas_a7d25a1b1132b5dd271d11c7010bfc331}} 
+\index{Recetas@{Recetas}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Recetas@{Recetas}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
+{\footnotesize\ttfamily istream\& operator$>$$>$ (\begin{DoxyParamCaption}\item[{istream \&}]{is,  }\item[{\mbox{\hyperlink{class_recetas}{Recetas}} \&}]{recetas }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Entrada de \mbox{\hyperlink{class_recetas}{Recetas}} desde istream. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em is} & stream de entrada \\
+\hline
+{\em recetas} & \mbox{\hyperlink{class_recetas}{Recetas}} que recibe \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Valores devueltos}
+{\em Las} & \mbox{\hyperlink{class_recetas}{Recetas}} leído en ingrediente \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyPrecond}{Precondición}
+La entrada tiene el formato datos con {\itshape datos} 
+\end{DoxyPrecond}
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{recetas_8h}{recetas.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,832 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="class_ingrediente" kind="class" language="C++" prot="public">
+    <compoundname>Ingrediente</compoundname>
+    <includes refid="ingrediente_8h" local="no">ingrediente.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_ingrediente_1a57f2f0125f393fdd52de048a69804cb1" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Ingrediente::nombre</definition>
+        <argsstring></argsstring>
+        <name>nombre</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>nombre </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ingrediente.h" line="52" column="12" bodyfile="include/ingrediente.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ingrediente_1ae21c7e26bae086a2935dd38322e814cf" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Ingrediente::calorias</definition>
+        <argsstring></argsstring>
+        <name>calorias</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>calorias </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ingrediente.h" line="53" column="9" bodyfile="include/ingrediente.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ingrediente_1ae4ae10c3e9c1a6a7e003b62379ed4e34" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Ingrediente::hidratos</definition>
+        <argsstring></argsstring>
+        <name>hidratos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>hidratos </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ingrediente.h" line="54" column="9" bodyfile="include/ingrediente.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ingrediente_1ae49d5e5fc787603247ce4f75871a32a4" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Ingrediente::proteinas</definition>
+        <argsstring></argsstring>
+        <name>proteinas</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>proteinas </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ingrediente.h" line="55" column="9" bodyfile="include/ingrediente.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ingrediente_1a59ae44f20f6679d33f2e007043aca6c3" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Ingrediente::grasas</definition>
+        <argsstring></argsstring>
+        <name>grasas</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>grasas </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ingrediente.h" line="56" column="9" bodyfile="include/ingrediente.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ingrediente_1a4256c6fd9e4f28ed35528af22a73afca" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Ingrediente::fibras</definition>
+        <argsstring></argsstring>
+        <name>fibras</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>fibras </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ingrediente.h" line="57" column="9" bodyfile="include/ingrediente.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ingrediente_1a44f6a782f64fbb3777faed251ca50127" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Ingrediente::tipo</definition>
+        <argsstring></argsstring>
+        <name>tipo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>tipo </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ingrediente.h" line="58" column="12" bodyfile="include/ingrediente.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_ingrediente_1a783737eeeee2e340c25f3907c93585d6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ingrediente::copiar</definition>
+        <argsstring>(const Ingrediente &amp;ingrediente)</argsstring>
+        <name>copiar</name>
+        <param>
+          <type>const <ref refid="class_ingrediente" kindref="compound">Ingrediente</ref> &amp;</type>
+          <declname>ingrediente</declname>
+        </param>
+        <briefdescription>
+<para>Método privado Copiar. Copia los datos miembro de ingrediente en los del objeto implícito. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ingrediente.nombre</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ingrediente.calorias</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ingrediente.hidratos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ingrediente.proteinas</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ingrediente.grasas</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ingrediente.fibras</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ingrediente.tipo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ingrediente.h" line="70" column="10"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_ingrediente_1ac39e59564451be4c0e12af8ce3d40afb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Ingrediente::Ingrediente</definition>
+        <argsstring>()</argsstring>
+        <name>Ingrediente</name>
+        <briefdescription>
+<para>Constructor por defecto de la clase. Crea el ingrediente {&quot;nulo&quot;,0,0,0,0,0,&quot;nulo&quot;}. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ingrediente.h" line="77" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ingrediente_1ac7fc4a4ac7efac10bc6c583819242d53" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Ingrediente::Ingrediente</definition>
+        <argsstring>(string nombre, int calorias, int hidratos, int proteinas, int grasas, int fibras, string tipo)</argsstring>
+        <name>Ingrediente</name>
+        <param>
+          <type>string</type>
+          <declname>nombre</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>calorias</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>hidratos</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>proteinas</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>grasas</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>fibras</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>tipo</declname>
+        </param>
+        <briefdescription>
+<para>Constructor de la clase. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nombre</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nombre del ingrediente a construir </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>calorias</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>cantidad de calorias del ingrediente a construir </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hidratos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>cantidad de hidratos del ingrediente a construir </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>proteinas</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>cantidad de proteinas del ingrediente a construir </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>grasas</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>cantidad de grasas del ingrediente a construir </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fibras</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>cantidad de fibras del ingrediente a construir </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tipo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>tipo de ingrediente del ingrediente a construir </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Crea el ingrediente {nombre,calorias,hidratos,proteinas,grasas,fibras,tipo} </para>
+</simplesect>
+<simplesect kind="pre"><para>0 &lt;= rep.hidratos &lt;= 100 &amp;&amp; 0 &lt;= rep.proteinas &lt;= 100 &amp;&amp; 0 &lt;= rep.grasas &lt;= 100 &amp;&amp; 0 &lt;= rep.fibras &lt;= 100 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ingrediente.h" line="91" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ingrediente_1a49271eb24114ff26846f41696884a8da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Ingrediente::Ingrediente</definition>
+        <argsstring>(const Ingrediente &amp;ingrediente)</argsstring>
+        <name>Ingrediente</name>
+        <param>
+          <type>const <ref refid="class_ingrediente" kindref="compound">Ingrediente</ref> &amp;</type>
+          <declname>ingrediente</declname>
+        </param>
+        <briefdescription>
+<para>Constructor de copia de la clase. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ingrediente</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a copiar </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ingrediente.h" line="97" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ingrediente_1ad8094c826e5afac5cd99242b66d870f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_ingrediente" kindref="compound">Ingrediente</ref> &amp;</type>
+        <definition>Ingrediente&amp; Ingrediente::operator=</definition>
+        <argsstring>(const Ingrediente &amp;ingrediente)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="class_ingrediente" kindref="compound">Ingrediente</ref> &amp;</type>
+          <declname>ingrediente</declname>
+        </param>
+        <briefdescription>
+<para>Sobrecarga del operador=. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ingrediente</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ingrediente a igualar al objeto implícito </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ingrediente.h" line="103" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ingrediente_1af487c2d1e772199c006b9e914088653a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const string</type>
+        <definition>const string Ingrediente::getNombre</definition>
+        <argsstring>() const</argsstring>
+        <name>getNombre</name>
+        <briefdescription>
+<para>getNombre </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Devuelve el nombre del ingrediente </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ingrediente.h" line="109" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ingrediente_1ac5481304477b6f6b6b237a98345cc581" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const int</type>
+        <definition>const int Ingrediente::getCalorias</definition>
+        <argsstring>() const</argsstring>
+        <name>getCalorias</name>
+        <briefdescription>
+<para>getCalorias </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Devuelve las calorias del ingrediente </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ingrediente.h" line="115" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ingrediente_1a07418ed4b6db1c3857cf1c7cda1dc92a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const int</type>
+        <definition>const int Ingrediente::getHidratos</definition>
+        <argsstring>() const</argsstring>
+        <name>getHidratos</name>
+        <briefdescription>
+<para>getHidratos </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Devuelve los hidratos del ingrediente </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ingrediente.h" line="121" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ingrediente_1a8a4685a78101dde5ed338a53567e9346" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const int</type>
+        <definition>const int Ingrediente::getProteinas</definition>
+        <argsstring>() const</argsstring>
+        <name>getProteinas</name>
+        <briefdescription>
+<para>getProteinas </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Devuelve las proteinas del ingrediente </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ingrediente.h" line="127" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ingrediente_1a6337fb89787d82ff24cb38d3b3e69f74" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const int</type>
+        <definition>const int Ingrediente::getGrasas</definition>
+        <argsstring>() const</argsstring>
+        <name>getGrasas</name>
+        <briefdescription>
+<para>getGrasas </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Devuelve las grasas del ingrediente </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ingrediente.h" line="133" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ingrediente_1a5a64b636d41295ee57dfa22db8cfd413" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const int</type>
+        <definition>const int Ingrediente::getFibras</definition>
+        <argsstring>() const</argsstring>
+        <name>getFibras</name>
+        <briefdescription>
+<para>getFibras </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Devuelve las fibras del ingrediente </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ingrediente.h" line="139" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ingrediente_1a575ae44e1daae178ca5d6512cadddf93" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const string</type>
+        <definition>const string Ingrediente::getTipo</definition>
+        <argsstring>() const</argsstring>
+        <name>getTipo</name>
+        <briefdescription>
+<para>getTipo </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Devuelve el tipo de ingrediente del ingrediente </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ingrediente.h" line="145" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ingrediente_1af5cbc31813b9aa568f08d769c85f985f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ingrediente::setNombre</definition>
+        <argsstring>(string nombre)</argsstring>
+        <name>setNombre</name>
+        <param>
+          <type>string</type>
+          <declname>nombre</declname>
+        </param>
+        <briefdescription>
+<para>setNombre </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nombre</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nombre a asignar </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Asigna al objeto implícito un nombre </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ingrediente.h" line="152" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ingrediente_1ad2150e5049aa395abc3f7da9164d5430" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ingrediente::setCalorias</definition>
+        <argsstring>(int calorias)</argsstring>
+        <name>setCalorias</name>
+        <param>
+          <type>int</type>
+          <declname>calorias</declname>
+        </param>
+        <briefdescription>
+<para>setCalorias </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>calorias</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>calorias a asignar </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Asigna al objeto implícito una cantidad de calorias </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ingrediente.h" line="159" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ingrediente_1abf42e65d643bbdb76070c5a3ed48fbf8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ingrediente::setHidratos</definition>
+        <argsstring>(int hidratos)</argsstring>
+        <name>setHidratos</name>
+        <param>
+          <type>int</type>
+          <declname>hidratos</declname>
+        </param>
+        <briefdescription>
+<para>setHidratos </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>hidratos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>hidratos a asignar </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Asigna al objeto implícito una cantidad de hidratos </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ingrediente.h" line="166" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ingrediente_1a7fac9206151fa666bb82dcc25dacb129" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ingrediente::setProteinas</definition>
+        <argsstring>(int proteinas)</argsstring>
+        <name>setProteinas</name>
+        <param>
+          <type>int</type>
+          <declname>proteinas</declname>
+        </param>
+        <briefdescription>
+<para>setProteinas </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>proteinas</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>proteinas a asignar </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Asigna al objeto implícito una cantidad de proteinas </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ingrediente.h" line="173" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ingrediente_1ab0f8de13b5e2d52cfcc490f5d563f601" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ingrediente::setGrasas</definition>
+        <argsstring>(int grasas)</argsstring>
+        <name>setGrasas</name>
+        <param>
+          <type>int</type>
+          <declname>grasas</declname>
+        </param>
+        <briefdescription>
+<para>setGrasas </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>grasas</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>grasas a asignar </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Asigna al objeto implícito una cantidad de grasas </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ingrediente.h" line="180" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ingrediente_1a35dd8594cd303cf34b3446b3063565ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ingrediente::setFibras</definition>
+        <argsstring>(int fibras)</argsstring>
+        <name>setFibras</name>
+        <param>
+          <type>int</type>
+          <declname>fibras</declname>
+        </param>
+        <briefdescription>
+<para>setFibras </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fibras</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>fibras a asignar </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Asigna al objeto implícito una cantidad de fibras </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ingrediente.h" line="187" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ingrediente_1a4afc3ff52fad5910b1ff945d2be237ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ingrediente::setTipo</definition>
+        <argsstring>(string tipo)</argsstring>
+        <name>setTipo</name>
+        <param>
+          <type>string</type>
+          <declname>tipo</declname>
+        </param>
+        <briefdescription>
+<para>setTipo </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tipo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>tipo de ingrediente a asignar </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Asigna al objeto implícito un tipo de ingrediente </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ingrediente.h" line="194" column="10"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_ingrediente_1af6c4fcbf227d983c422d57f1f3397477" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend ostream &amp;</type>
+        <definition>ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(ostream &amp;os, const Ingrediente &amp;ingrediente)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_ingrediente" kindref="compound">Ingrediente</ref> &amp;</type>
+          <declname>ingrediente</declname>
+        </param>
+        <briefdescription>
+<para>Salida de un <ref refid="class_ingrediente" kindref="compound">Ingrediente</ref> a ostream. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>os</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>de salida </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ingrediente</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_ingrediente" kindref="compound">Ingrediente</ref> a escribir </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="post"><para>Se obtiene en <emphasis>os</emphasis> varias cadenas con los atributos de ingrediente con <emphasis>{nombre</emphasis>,calorias,hidratos,proteinas,grasas,fibras,tipo} <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ingrediente.h" line="203" column="12"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_ingrediente_1a79984dcd8864cb7625d3bf29335bf4c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend istream &amp;</type>
+        <definition>istream&amp; operator&gt;&gt;</definition>
+        <argsstring>(istream &amp;is, Ingrediente &amp;ingrediente)</argsstring>
+        <name>operator&gt;&gt;</name>
+        <param>
+          <type>istream &amp;</type>
+          <declname>is</declname>
+        </param>
+        <param>
+          <type><ref refid="class_ingrediente" kindref="compound">Ingrediente</ref> &amp;</type>
+          <declname>ingrediente</declname>
+        </param>
+        <briefdescription>
+<para>Entrada de un <ref refid="class_ingrediente" kindref="compound">Ingrediente</ref> desde istream. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>is</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>stream de entrada </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ingrediente</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_ingrediente" kindref="compound">Ingrediente</ref> que recibe </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>El</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_ingrediente" kindref="compound">Ingrediente</ref> leído en ingrediente </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="pre"><para>La entrada tiene el formato nombre;calorias;hidratos;proteinas;grasas;fibras;tipo; con <emphasis>nombre</emphasis>, <emphasis>calorias</emphasis>, <emphasis>hidratos</emphasis>, <emphasis>proteinas</emphasis>, <emphasis>grasas</emphasis>, <emphasis>fibras</emphasis>, <emphasis>tipo</emphasis> <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ingrediente.h" line="213" column="20"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>T.D.A <ref refid="class_ingrediente" kindref="compound">Ingrediente</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Una instancia <emphasis>ingr</emphasis> del tipo de datos abstracto <computeroutput><ref refid="class_ingrediente" kindref="compound">Ingrediente</ref></computeroutput> es un objeto que representa un ingrediente. A su vez, este ingrediente se compone de dos cadenas de caracteres, un nombre y un tipo de ingrediente. Además dispone enteros que determinan la cantidad de calorias, hidratos, proteinas, grasas y fibras que contiene el ingrediente.</para>
+<para>Lo representamos como</para>
+<para>nombre, calorías, hidratos, proteinas, grasas, fibras, tipo.</para>
+<para>Un ejemplo de su uso: <programlisting filename="test_ingredientes.cpp"></programlisting></para>
+<para><simplesect kind="author"><para>Miguel Ángel Campos Cubillas </para>
+</simplesect>
+<simplesect kind="date"><para>Octubre 2019 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="include/ingrediente.h" line="33" column="18" bodyfile="include/ingrediente.h" bodystart="33" bodyend="215"/>
+    <listofallmembers>
+      <member refid="class_ingrediente_1ae21c7e26bae086a2935dd38322e814cf" prot="private" virt="non-virtual"><scope>Ingrediente</scope><name>calorias</name></member>
+      <member refid="class_ingrediente_1a783737eeeee2e340c25f3907c93585d6" prot="private" virt="non-virtual"><scope>Ingrediente</scope><name>copiar</name></member>
+      <member refid="class_ingrediente_1a4256c6fd9e4f28ed35528af22a73afca" prot="private" virt="non-virtual"><scope>Ingrediente</scope><name>fibras</name></member>
+      <member refid="class_ingrediente_1ac5481304477b6f6b6b237a98345cc581" prot="public" virt="non-virtual"><scope>Ingrediente</scope><name>getCalorias</name></member>
+      <member refid="class_ingrediente_1a5a64b636d41295ee57dfa22db8cfd413" prot="public" virt="non-virtual"><scope>Ingrediente</scope><name>getFibras</name></member>
+      <member refid="class_ingrediente_1a6337fb89787d82ff24cb38d3b3e69f74" prot="public" virt="non-virtual"><scope>Ingrediente</scope><name>getGrasas</name></member>
+      <member refid="class_ingrediente_1a07418ed4b6db1c3857cf1c7cda1dc92a" prot="public" virt="non-virtual"><scope>Ingrediente</scope><name>getHidratos</name></member>
+      <member refid="class_ingrediente_1af487c2d1e772199c006b9e914088653a" prot="public" virt="non-virtual"><scope>Ingrediente</scope><name>getNombre</name></member>
+      <member refid="class_ingrediente_1a8a4685a78101dde5ed338a53567e9346" prot="public" virt="non-virtual"><scope>Ingrediente</scope><name>getProteinas</name></member>
+      <member refid="class_ingrediente_1a575ae44e1daae178ca5d6512cadddf93" prot="public" virt="non-virtual"><scope>Ingrediente</scope><name>getTipo</name></member>
+      <member refid="class_ingrediente_1a59ae44f20f6679d33f2e007043aca6c3" prot="private" virt="non-virtual"><scope>Ingrediente</scope><name>grasas</name></member>
+      <member refid="class_ingrediente_1ae4ae10c3e9c1a6a7e003b62379ed4e34" prot="private" virt="non-virtual"><scope>Ingrediente</scope><name>hidratos</name></member>
+      <member refid="class_ingrediente_1ac39e59564451be4c0e12af8ce3d40afb" prot="public" virt="non-virtual"><scope>Ingrediente</scope><name>Ingrediente</name></member>
+      <member refid="class_ingrediente_1ac7fc4a4ac7efac10bc6c583819242d53" prot="public" virt="non-virtual"><scope>Ingrediente</scope><name>Ingrediente</name></member>
+      <member refid="class_ingrediente_1a49271eb24114ff26846f41696884a8da" prot="public" virt="non-virtual"><scope>Ingrediente</scope><name>Ingrediente</name></member>
+      <member refid="class_ingrediente_1a57f2f0125f393fdd52de048a69804cb1" prot="private" virt="non-virtual"><scope>Ingrediente</scope><name>nombre</name></member>
+      <member refid="class_ingrediente_1af6c4fcbf227d983c422d57f1f3397477" prot="public" virt="non-virtual"><scope>Ingrediente</scope><name>operator&lt;&lt;</name></member>
+      <member refid="class_ingrediente_1ad8094c826e5afac5cd99242b66d870f0" prot="public" virt="non-virtual"><scope>Ingrediente</scope><name>operator=</name></member>
+      <member refid="class_ingrediente_1a79984dcd8864cb7625d3bf29335bf4c3" prot="public" virt="non-virtual"><scope>Ingrediente</scope><name>operator&gt;&gt;</name></member>
+      <member refid="class_ingrediente_1ae49d5e5fc787603247ce4f75871a32a4" prot="private" virt="non-virtual"><scope>Ingrediente</scope><name>proteinas</name></member>
+      <member refid="class_ingrediente_1ad2150e5049aa395abc3f7da9164d5430" prot="public" virt="non-virtual"><scope>Ingrediente</scope><name>setCalorias</name></member>
+      <member refid="class_ingrediente_1a35dd8594cd303cf34b3446b3063565ab" prot="public" virt="non-virtual"><scope>Ingrediente</scope><name>setFibras</name></member>
+      <member refid="class_ingrediente_1ab0f8de13b5e2d52cfcc490f5d563f601" prot="public" virt="non-virtual"><scope>Ingrediente</scope><name>setGrasas</name></member>
+      <member refid="class_ingrediente_1abf42e65d643bbdb76070c5a3ed48fbf8" prot="public" virt="non-virtual"><scope>Ingrediente</scope><name>setHidratos</name></member>
+      <member refid="class_ingrediente_1af5cbc31813b9aa568f08d769c85f985f" prot="public" virt="non-virtual"><scope>Ingrediente</scope><name>setNombre</name></member>
+      <member refid="class_ingrediente_1a7fac9206151fa666bb82dcc25dacb129" prot="public" virt="non-virtual"><scope>Ingrediente</scope><name>setProteinas</name></member>
+      <member refid="class_ingrediente_1a4afc3ff52fad5910b1ff945d2be237ed" prot="public" virt="non-virtual"><scope>Ingrediente</scope><name>setTipo</name></member>
+      <member refid="class_ingrediente_1a44f6a782f64fbb3777faed251ca50127" prot="private" virt="non-virtual"><scope>Ingrediente</scope><name>tipo</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

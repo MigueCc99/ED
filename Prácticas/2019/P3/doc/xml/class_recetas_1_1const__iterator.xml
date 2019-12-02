@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="class_recetas_1_1const__iterator" kind="class" language="C++" prot="public">
+    <compoundname>Recetas::const_iterator</compoundname>
+    <includes refid="recetas_8h" local="no">recetas.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_recetas_1_1const__iterator_1a49382a977dd96feca686e85d28804b49" prot="private" static="no" mutable="no">
+        <type>map&lt; string, <ref refid="class_receta" kindref="compound">Receta</ref> &gt;::<ref refid="class_recetas_1_1const__iterator" kindref="compound">const_iterator</ref></type>
+        <definition>map&lt;string,Receta&gt;::const_iterator Recetas::const_iterator::it</definition>
+        <argsstring></argsstring>
+        <name>it</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/recetas.h" line="158" column="34" bodyfile="include/recetas.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_recetas_1_1const__iterator_1acbf7ff62084899901495168937b96214" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class Recetas</definition>
+        <argsstring></argsstring>
+        <name>Recetas</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/recetas.h" line="188" column="11" bodyfile="include/recetas.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_recetas_1_1const__iterator_1ad85840a6e1f6211a9610aca99749cef9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_recetas_1_1const__iterator" kindref="compound">const_iterator</ref> &amp;</type>
+        <definition>const_iterator&amp; Recetas::const_iterator::operator++</definition>
+        <argsstring>()</argsstring>
+        <name>operator++</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/recetas.h" line="161" column="27" bodyfile="include/recetas.h" bodystart="161" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="class_recetas_1_1const__iterator_1a7f8fb0dd990048d60b1772d03a5094b7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_recetas_1_1const__iterator" kindref="compound">const_iterator</ref> &amp;</type>
+        <definition>const_iterator&amp; Recetas::const_iterator::operator--</definition>
+        <argsstring>()</argsstring>
+        <name>operator--</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/recetas.h" line="166" column="27" bodyfile="include/recetas.h" bodystart="166" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="class_recetas_1_1const__iterator_1a51d9b9bbbdfa9781f46eba1b909633c9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="class_receta" kindref="compound">Receta</ref> &amp;</type>
+        <definition>const Receta&amp; Recetas::const_iterator::operator*</definition>
+        <argsstring>() const</argsstring>
+        <name>operator*</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/recetas.h" line="171" column="25" bodyfile="include/recetas.h" bodystart="171" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="class_recetas_1_1const__iterator_1a0bdfc3826cc856574e2ada44d6c38087" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Recetas::const_iterator::operator==</definition>
+        <argsstring>(const const_iterator &amp;i) const</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="class_recetas_1_1const__iterator" kindref="compound">const_iterator</ref> &amp;</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/recetas.h" line="175" column="16" bodyfile="include/recetas.h" bodystart="175" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="class_recetas_1_1const__iterator_1ab96e145f821a31d697a8175595ddec40" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Recetas::const_iterator::operator!=</definition>
+        <argsstring>(const const_iterator &amp;i) const</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="class_recetas_1_1const__iterator" kindref="compound">const_iterator</ref> &amp;</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/recetas.h" line="179" column="16" bodyfile="include/recetas.h" bodystart="179" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="class_recetas_1_1const__iterator_1ae59a377c12e8021150945875a6bc63e3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_recetas_1_1const__iterator" kindref="compound">const_iterator</ref> &amp;</type>
+        <definition>const_iterator&amp; Recetas::const_iterator::operator=</definition>
+        <argsstring>(const const_iterator &amp;i)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="class_recetas_1_1const__iterator" kindref="compound">const_iterator</ref> &amp;</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/recetas.h" line="183" column="27" bodyfile="include/recetas.h" bodystart="183" bodyend="186"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Clase para iterar sobre los ingredientes (modo const) </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/recetas.h" line="156" column="25" bodyfile="include/recetas.h" bodystart="156" bodyend="189"/>
+    <listofallmembers>
+      <member refid="class_recetas_1_1const__iterator_1a49382a977dd96feca686e85d28804b49" prot="private" virt="non-virtual"><scope>Recetas::const_iterator</scope><name>it</name></member>
+      <member refid="class_recetas_1_1const__iterator_1ab96e145f821a31d697a8175595ddec40" prot="public" virt="non-virtual"><scope>Recetas::const_iterator</scope><name>operator!=</name></member>
+      <member refid="class_recetas_1_1const__iterator_1a51d9b9bbbdfa9781f46eba1b909633c9" prot="public" virt="non-virtual"><scope>Recetas::const_iterator</scope><name>operator*</name></member>
+      <member refid="class_recetas_1_1const__iterator_1ad85840a6e1f6211a9610aca99749cef9" prot="public" virt="non-virtual"><scope>Recetas::const_iterator</scope><name>operator++</name></member>
+      <member refid="class_recetas_1_1const__iterator_1a7f8fb0dd990048d60b1772d03a5094b7" prot="public" virt="non-virtual"><scope>Recetas::const_iterator</scope><name>operator--</name></member>
+      <member refid="class_recetas_1_1const__iterator_1ae59a377c12e8021150945875a6bc63e3" prot="public" virt="non-virtual"><scope>Recetas::const_iterator</scope><name>operator=</name></member>
+      <member refid="class_recetas_1_1const__iterator_1a0bdfc3826cc856574e2ada44d6c38087" prot="public" virt="non-virtual"><scope>Recetas::const_iterator</scope><name>operator==</name></member>
+      <member refid="class_recetas_1_1const__iterator_1acbf7ff62084899901495168937b96214" prot="public" virt="non-virtual"><scope>Recetas::const_iterator</scope><name>Recetas</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

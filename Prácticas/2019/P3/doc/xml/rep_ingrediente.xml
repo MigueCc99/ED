@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="rep_ingrediente" kind="page">
+    <compoundname>repIngrediente</compoundname>
+    <title>Rep del TDA Ingrediente</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<sect1 id="rep_ingrediente_1invIngrediente">
+<title>Invariante de la representación</title>
+<para>El invariante es <emphasis>0</emphasis> &lt;= rep.hidratos &lt;= 100 <emphasis>0</emphasis> &lt;= rep.proteinas &lt;= 100 <emphasis>0</emphasis> &lt;= rep.grasas &lt;= 100 <emphasis>0</emphasis> &lt;= rep.fibras &lt;= 100</para>
+</sect1>
+<sect1 id="rep_ingrediente_1faIngrediente">
+<title>Función de abstracción</title>
+<para>Un objeto válido <emphasis>rep</emphasis> del TDA <ref refid="class_ingrediente" kindref="compound">Ingrediente</ref> representa al valor</para>
+<para>{Nombre, Calorias, Hidratos, Proteinas, Grasas, Fibras, Tipo} </para>
+</sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

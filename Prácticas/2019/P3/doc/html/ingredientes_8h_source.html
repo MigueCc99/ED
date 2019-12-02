@@ -1,0 +1,261 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Práctica 3 - Estructura de Datos: Fichero Fuente include/ingredientes.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Práctica 3 - Estructura de Datos
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">ingredientes.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="ingredientes_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef _INGREDIENTES_H_</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define _INGREDIENTES_H_</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ingrediente_8h.html">ingrediente.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_ingredientes.html">   32</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_ingredientes.html">Ingredientes</a>{</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    vector&lt;Ingrediente&gt; datos; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    vector&lt;int&gt; indice_tipo;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="class_ingredientes.html">Ingredientes</a>();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">void</span> insertarIngrediente(<span class="keyword">const</span> <a class="code" href="class_ingrediente.html">Ingrediente</a> &amp;ingrediente);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">void</span> borrarIngrediente(<span class="keyword">const</span> <span class="keywordtype">int</span> nroIngrediente);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">void</span> borrarIngredienteXNombre(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;nombre);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">void</span> modificaIngrediente(<span class="keyword">const</span> <span class="keywordtype">int</span> i, <span class="keyword">const</span> <a class="code" href="class_ingrediente.html">Ingrediente</a> &amp;ingrediente);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <a class="code" href="class_ingrediente.html">Ingrediente</a> getIngrediente(<span class="keyword">const</span> <span class="keywordtype">int</span> i);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <a class="code" href="class_ingrediente.html">Ingrediente</a> get(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;nombre);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> getNumIngredientes() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordtype">string</span> getInformacion(<span class="keyword">const</span> <span class="keywordtype">string</span> nombre);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    vector&lt;string&gt; getTipos();</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    </div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <a class="code" href="class_ingredientes.html">Ingredientes</a> getIngredientesTipo(<span class="keyword">const</span> <span class="keywordtype">string</span> tipo);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <a class="code" href="class_ingrediente.html">Ingrediente</a> &amp;operator[](<span class="keyword">const</span> <span class="keywordtype">int</span> i);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="keyword">const</span> <a class="code" href="class_ingrediente.html">Ingrediente</a> &amp;operator[](<span class="keyword">const</span> <span class="keywordtype">int</span> i) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160; </div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <span class="keywordtype">void</span> ordenaPorNombre();</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160; </div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keywordtype">void</span> ordenaPorTipo();</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keywordtype">void</span> imprimirPorTipo(ostream &amp;os);</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160; </div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="keywordtype">void</span> getEstadistica(<span class="keyword">const</span> <span class="keywordtype">string</span> tipo);</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160; </div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="keyword">friend</span> ostream &amp;operator&lt;&lt;(ostream &amp;os, <span class="keyword">const</span> <a class="code" href="class_ingredientes.html">Ingredientes</a> &amp;ingredientes);</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160; </div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    <span class="keyword">friend</span> istream &amp;operator&gt;&gt;(istream &amp;is, <a class="code" href="class_ingredientes.html">Ingredientes</a> &amp;ingredientes);</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160; </div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160; </div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <span class="keywordtype">int</span> * obtenerDatosCalorias();</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160; </div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <span class="keywordtype">int</span> * obtenerDatosHc();</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160; </div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <span class="keywordtype">int</span> * obtenerDatosProteinas();</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160; </div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <span class="keywordtype">int</span> * obtenerDatosGrasas();</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160; </div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <span class="keywordtype">int</span> * obtenerDatosFibras();</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160; </div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <span class="keywordtype">float</span> obtener_promedio(<span class="keywordtype">int</span> *datos);</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160; </div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <span class="keywordtype">float</span> obtener_varianza(<span class="keywordtype">int</span> *datos);</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160; </div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <span class="keywordtype">float</span> obtener_desviacion(<span class="keywordtype">float</span> varianza, <span class="keywordtype">int</span> *datos);</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160; </div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <span class="keywordtype">void</span> obtener_desviaciones();</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160; </div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    <span class="keywordtype">void</span> getEstadistico();</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160; </div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160; </div>
+<div class="line"><a name="l00210"></a><span class="lineno"><a class="line" href="class_ingredientes_1_1iterator.html">  210</a></span>&#160;    <span class="keyword">class </span><a class="code" href="class_ingredientes_1_1iterator.html">iterator</a>{</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;      <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;        vector&lt;Ingrediente&gt;::iterator it;</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;      <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160; </div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;        <a class="code" href="class_ingredientes_1_1iterator.html">iterator</a> &amp; operator++(){</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;          ++it;</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;          <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        }</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160; </div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        <a class="code" href="class_ingredientes_1_1iterator.html">iterator</a> &amp; operator--(){</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;          --it;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;          <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        }</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160; </div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        <a class="code" href="class_ingrediente.html">Ingrediente</a> &amp; operator*(){</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;          <span class="keywordflow">return</span> (*it);</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        }</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160; </div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        <span class="keywordtype">bool</span> operator==(<span class="keyword">const</span> <a class="code" href="class_ingredientes_1_1iterator.html">iterator</a> &amp;i){</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;          <span class="keywordflow">return</span> i.it == it;</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        }</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160; </div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        <span class="keywordtype">bool</span> operator!=(<span class="keyword">const</span> <a class="code" href="class_ingredientes_1_1iterator.html">iterator</a> &amp;i){</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;          <span class="keywordflow">return</span> i.it != it;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        }</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160; </div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        <a class="code" href="class_ingredientes_1_1iterator.html">iterator</a> &amp; operator=(<span class="keyword">const</span> <a class="code" href="class_ingredientes_1_1iterator.html">iterator</a> &amp;i){</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;          it = i.it;</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;          <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        }</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160; </div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_ingredientes.html">Ingredientes</a>;</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    };</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160; </div>
+<div class="line"><a name="l00248"></a><span class="lineno"><a class="line" href="class_ingredientes_1_1const__iterator.html">  248</a></span>&#160;    <span class="keyword">class </span><a class="code" href="class_ingredientes_1_1const__iterator.html">const_iterator</a>{</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;      <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        vector&lt;Ingrediente&gt;::const_iterator it;</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;      <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160; </div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        <a class="code" href="class_ingredientes_1_1const__iterator.html">const_iterator</a> &amp; operator++(){</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;          ++it;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;          <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;        }</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160; </div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;        <a class="code" href="class_ingredientes_1_1const__iterator.html">const_iterator</a> &amp; operator--(){</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;          --it;</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;          <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        }</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160; </div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        <span class="keyword">const</span> <a class="code" href="class_ingrediente.html">Ingrediente</a> &amp; operator*()<span class="keyword"> const</span>{</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;          <span class="keywordflow">return</span> (*it);</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        }</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160; </div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        <span class="keywordtype">bool</span> operator==(<span class="keyword">const</span> <a class="code" href="class_ingredientes_1_1const__iterator.html">const_iterator</a> &amp;i)<span class="keyword"> const</span>{</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;          <span class="keywordflow">return</span> i.it == it;</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        }</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160; </div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        <span class="keywordtype">bool</span> operator!=(<span class="keyword">const</span> <a class="code" href="class_ingredientes_1_1const__iterator.html">const_iterator</a> &amp;i)<span class="keyword"> const</span>{</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;          <span class="keywordflow">return</span> i.it != it;</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        }</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160; </div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        <a class="code" href="class_ingredientes_1_1const__iterator.html">const_iterator</a> &amp; operator=(<span class="keyword">const</span> <a class="code" href="class_ingredientes_1_1const__iterator.html">const_iterator</a> &amp;i){</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;          it = i.it;</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;          <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;        }</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160; </div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_ingredientes.html">Ingredientes</a>;</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160; </div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    };</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160; </div>
+<div class="line"><a name="l00287"></a><span class="lineno"><a class="line" href="class_ingredientes.html#af714f2431abc9f391271a5ce36d20fba">  287</a></span>&#160;    <a class="code" href="class_ingredientes_1_1iterator.html">iterator</a> <a class="code" href="class_ingredientes.html#af714f2431abc9f391271a5ce36d20fba">begin</a>(){</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;      <a class="code" href="class_ingredientes_1_1iterator.html">iterator</a> i;</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;      i.it = datos.begin();</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;      <span class="keywordflow">return</span> i;</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    }</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160; </div>
+<div class="line"><a name="l00296"></a><span class="lineno"><a class="line" href="class_ingredientes.html#a743696bb30ce1ff6d970496be6273383">  296</a></span>&#160;    <a class="code" href="class_ingredientes_1_1iterator.html">iterator</a> <a class="code" href="class_ingredientes.html#a743696bb30ce1ff6d970496be6273383">end</a>(){</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;      <a class="code" href="class_ingredientes_1_1iterator.html">iterator</a> i;</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;      i.it = datos.end();</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;      <span class="keywordflow">return</span> i;</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    }</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160; </div>
+<div class="line"><a name="l00305"></a><span class="lineno"><a class="line" href="class_ingredientes.html#a18c3774d89ce0e1f12b29e381d77f795">  305</a></span>&#160;    <a class="code" href="class_ingredientes_1_1const__iterator.html">const_iterator</a> <a class="code" href="class_ingredientes.html#a18c3774d89ce0e1f12b29e381d77f795">begin</a>()<span class="keyword">const</span>{</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;      <a class="code" href="class_ingredientes_1_1const__iterator.html">const_iterator</a> i;</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;      i.it = datos.begin();</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;      <span class="keywordflow">return</span> i;</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    }</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    </div>
+<div class="line"><a name="l00314"></a><span class="lineno"><a class="line" href="class_ingredientes.html#a952de40063794632409a027d166cd6c9">  314</a></span>&#160;    <a class="code" href="class_ingredientes_1_1const__iterator.html">const_iterator</a> <a class="code" href="class_ingredientes.html#a952de40063794632409a027d166cd6c9">end</a>()<span class="keyword">const</span>{</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;      <a class="code" href="class_ingredientes_1_1const__iterator.html">const_iterator</a> i;</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;      i.it = datos.end();</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;      <span class="keywordflow">return</span> i;</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    }</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160; </div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;};</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160; </div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_ingredientes_1_1const__iterator_html"><div class="ttname"><a href="class_ingredientes_1_1const__iterator.html">Ingredientes::const_iterator</a></div><div class="ttdoc">Clase para iterar sobre los ingredientes (modo const)</div><div class="ttdef"><b>Definition:</b> <a href="ingredientes_8h_source.html#l00248">ingredientes.h:248</a></div></div>
+<div class="ttc" id="aclass_ingredientes_html"><div class="ttname"><a href="class_ingredientes.html">Ingredientes</a></div><div class="ttdoc">T.D.A Ingredientes.</div><div class="ttdef"><b>Definition:</b> <a href="ingredientes_8h_source.html#l00032">ingredientes.h:32</a></div></div>
+<div class="ttc" id="aclass_ingredientes_html_a18c3774d89ce0e1f12b29e381d77f795"><div class="ttname"><a href="class_ingredientes.html#a18c3774d89ce0e1f12b29e381d77f795">Ingredientes::begin</a></div><div class="ttdeci">const_iterator begin() const</div><div class="ttdoc">Inicializa un const_iterator al comienzo de Ingredientes.</div><div class="ttdef"><b>Definition:</b> <a href="ingredientes_8h_source.html#l00305">ingredientes.h:305</a></div></div>
+<div class="ttc" id="aclass_ingredientes_html_a743696bb30ce1ff6d970496be6273383"><div class="ttname"><a href="class_ingredientes.html#a743696bb30ce1ff6d970496be6273383">Ingredientes::end</a></div><div class="ttdeci">iterator end()</div><div class="ttdoc">Inicializa un iterator al final de Ingredientes.</div><div class="ttdef"><b>Definition:</b> <a href="ingredientes_8h_source.html#l00296">ingredientes.h:296</a></div></div>
+<div class="ttc" id="aclass_ingredientes_1_1iterator_html"><div class="ttname"><a href="class_ingredientes_1_1iterator.html">Ingredientes::iterator</a></div><div class="ttdoc">Clase para iterar sobre los ingredientes.</div><div class="ttdef"><b>Definition:</b> <a href="ingredientes_8h_source.html#l00210">ingredientes.h:210</a></div></div>
+<div class="ttc" id="aingrediente_8h_html"><div class="ttname"><a href="ingrediente_8h.html">ingrediente.h</a></div><div class="ttdoc">Fichero cabecera del TDA Ingrediente.</div></div>
+<div class="ttc" id="aclass_ingredientes_html_af714f2431abc9f391271a5ce36d20fba"><div class="ttname"><a href="class_ingredientes.html#af714f2431abc9f391271a5ce36d20fba">Ingredientes::begin</a></div><div class="ttdeci">iterator begin()</div><div class="ttdoc">Inicializa un iterator al comienzo de Ingredientes.</div><div class="ttdef"><b>Definition:</b> <a href="ingredientes_8h_source.html#l00287">ingredientes.h:287</a></div></div>
+<div class="ttc" id="aclass_ingrediente_html"><div class="ttname"><a href="class_ingrediente.html">Ingrediente</a></div><div class="ttdoc">T.D.A Ingrediente.</div><div class="ttdef"><b>Definition:</b> <a href="ingrediente_8h_source.html#l00033">ingrediente.h:33</a></div></div>
+<div class="ttc" id="aclass_ingredientes_html_a952de40063794632409a027d166cd6c9"><div class="ttname"><a href="class_ingredientes.html#a952de40063794632409a027d166cd6c9">Ingredientes::end</a></div><div class="ttdeci">const_iterator end() const</div><div class="ttdoc">Inicializa un const_iterator al final de Ingredientes.</div><div class="ttdef"><b>Definition:</b> <a href="ingredientes_8h_source.html#l00314">ingredientes.h:314</a></div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.16
+</small></address>
+</body>
+</html>
