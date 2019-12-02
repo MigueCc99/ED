@@ -15,17 +15,18 @@ using namespace std;
 /**
   * @brief T.D.A Receta
   *  
-  * Una instancia @e ingr del tipo de datos abstracto @c Ingrediente es un objeto
-  * que representa un ingrediente. A su vez, este ingrediente se compone de dos cadenas 
-  * de caracteres, un nombre y un tipo de ingrediente. Además dispone enteros que determinan
-  * la cantidad de calorias, hidratos, proteinas, grasas y fibras que contiene el ingrediente.
+  * Una instancia @e ingr del tipo de datos abstracto @c Receta es un objeto
+  * que representa una Receta. A su vez, esta Receta se compone de un código que la representa
+  * únicamente, un entero que representa el tipo de plato que compone (1º,2º,3º), un nombre,
+  * una lista de ingredientes y finalmente una secuencia de float que determinan las calorias,
+  * hidratos de carbono, grasas, proteinas y fibras de la receta
   * 
   * Lo representamos como
   * 
-  * nombre, calorías, hidratos, proteinas, grasas, fibras, tipo.
+  * code, plato, nombre, ingredientes, calorias, hc, grasas, proteinas, fibra
   * 
   * Un ejemplo de su uso:
-  * @include test_ingredientes.cpp
+  * @include test_receta.cpp
   * 
   * @author Miguel Ángel Campos Cubillas
   * @date Octubre 2019 
@@ -33,31 +34,92 @@ using namespace std;
 
 class Receta{
 private:
-
-    string code;
-    unsigned int plato;
-    string nombre;
-    list<pair<string,unsigned int> > ings;
-    float calorias,hc,grasas,proteinas,fibra;
+/**
+  * @page repReceta Rep del TDA Receta
+  * 
+  * @section invReceta Invariante de la representación
+  * 
+  * El invariante es \e  code, plato, nombre, ings, calorias, hc, grasas, proteinas,fibra
+  * que representan la invariante de Receta
+  * 
+  * @section faReceta Función de abstracción
+  * 
+  * Un objeto válido @e rep del TDA Receta representa al valor
+  * 
+  * {code, plato, nombre, ings, calorias, hc, grasas, proteinas,fibra}
+  */
+    string code;                              /**< code */
+    unsigned int plato;                       /**< plato */
+    string nombre;                            /**< nombre */
+    list<pair<string,unsigned int> > ings;    /**< ings */
+    float calorias,hc,grasas,proteinas,fibra; /**< calorias, hc, grasas, proteinas, fibra */
 
 public:
 
+    /**
+    * @brief Constructor por defecto de la clase
+    */
     Receta();
 
+    /**
+    * @brief Constructor de la clase
+    * @param code código de la receta a construir
+    * @param plato entero que representa el tipo de plato a construir
+    * @param nombre string que representa el nombre de la receta a construir
+    * @param ings lista de ingredientes de la receta a construir
+    * @return Crea la receta {code,plato,nombre,ings}
+    * @pre code = "Ri" &&  1 <= rep.plato <= 3
+    */
     Receta(string code, int plato, string nombre, list<pair<string,unsigned int> > ings);
 
+    /**
+     * @brief Constructor de copia de la clase
+     * @param receta a copiar
+     */    
     Receta(const Receta &receta);
 
+
+    /**
+     * @brief Sobrecarga del operador=
+     * @param receta receta a igualar al objeto implícito
+     */ 
     Receta & operator=(const Receta &receta);
 
+    /**
+     * @brief getNombre
+     * @return Devuelve el nombre de la receta
+     */
     const string getNombre() const;
 
+    /**
+     * @brief getCode
+     * @return Devuelve el code de la receta
+     */
     const string getCode() const;
 
+    /**
+     * @brief ningredientes
+     * @return Devuelve el número de ingredientes de la receta
+     */
     const int ningredientes();
 
+    /**
+     * @brief Salida de una Receta a ostream
+     * @param os de salida
+     * @param receta Receta a escribir
+     * @post Se obtiene en \a os la receta
+     * con \e {code,plato,nombre,ings}  
+     */
     friend ostream &operator<<(ostream &os, const Receta &receta);
 
+    /**
+     * @brief Entrada de un Receta desde istream
+     * @param is stream de entrada
+     * @param receta Receta que recibe
+     * @retval El Receta leído en ingrediente
+     * @pre La entrada tiene el formato code;plato;nombre;ings
+     * con \e code, \e plato, \e nombre, \e ings
+     */
     friend istream &operator>>(istream &is, Receta &receta);
 
     /**

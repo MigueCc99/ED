@@ -17,43 +17,99 @@ using namespace std;
 /**
   * @brief T.D.A Recetas
   *  
-  * Una instancia @e ingr del tipo de datos abstracto @c Ingrediente es un objeto
-  * que representa un ingrediente. A su vez, este ingrediente se compone de dos cadenas 
-  * de caracteres, un nombre y un tipo de ingrediente. Además dispone enteros que determinan
-  * la cantidad de calorias, hidratos, proteinas, grasas y fibras que contiene el ingrediente.
+  * Una instancia @e ingr del tipo de datos abstracto @c Recetas representa un conjunto de 
+  * recetas.
   * 
   * Lo representamos como
   * 
-  * nombre, calorías, hidratos, proteinas, grasas, fibras, tipo.
+  * datos
   * 
   * Un ejemplo de su uso:
-  * @include test_ingredientes.cpp
+  * @include test_recetas.cpp
   * 
   * @author Miguel Ángel Campos Cubillas
-  * @date Octubre 2019 
+  * @date Noviembre 2019 
   */ 
 
 class Recetas{
 private:
+/**
+  * @page repReceta Rep del TDA Recetas
+  * 
+  * @section invRecetas Invariante de la representación
+  * 
+  * El invariante es \e  datos, un vector dinamico
+  * 
+  * @section faRecetas Función de abstracción
+  * 
+  * Un objeto válido @e rep del TDA Recetas representa al valor
+  * 
+  * {datos}
+  */
     map<string,Receta> datos;
 public:
 
+  /**
+    * @brief Constructor por defecto de la clase
+    */
   Recetas();
 
+  /**
+    * @brief Constructor de la clase
+    * @param datos un map que representa una clave unívoca y una receta asociada
+    * @return Crea Recetas {datos}
+    */
   Recetas(map<string,Receta> datos);
 
+  /**
+     * @brief Constructor de copia de la clase
+     * @param recetas a copiar
+     */    
   Recetas(const Recetas &recetas);
 
+  /**
+    * @brief size
+    * @return Devuelve el número de recetas 
+    */
   const int size();
 
+   /**
+     * @brief borrar
+     * @param key clave que referencia a la receta a borrar
+     * @return elimina la receta asociada a la clave key
+     */
   void borrar(const string key);
 
+  /**
+     * @brief Sobrecarga del operador=
+     * @param recetas recetas a igualar al objeto implícito
+     */ 
   Recetas & operator=(const Recetas &recetas);
 
+    /**
+     * @brief Sobrecarga del operador[]
+     * @param key clave asociada a la receta a devolver
+     * @return devuelve la receta asociada a la clave key
+     */ 
   Receta & operator[](const string key);
 
+    /**
+     * @brief Salida de Recetas a ostream
+     * @param os de salida
+     * @param recetas Recetas a escribir
+     * @post Se obtiene en \a os la recetas
+     * con \e {datos}  
+     */
   friend ostream &operator<<(ostream &os, const Recetas &recetas);
 
+    /**
+     * @brief Entrada de Recetas desde istream
+     * @param is stream de entrada
+     * @param recetas Recetas que recibe
+     * @retval Las Recetas leído en ingrediente
+     * @pre La entrada tiene el formato datos
+     * con \e datos
+     */
   friend istream &operator>>(istream &is, Recetas &recetas);
 
 
