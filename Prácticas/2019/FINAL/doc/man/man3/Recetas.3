@@ -1,0 +1,247 @@
+.TH "Recetas" 3 "Domingo, 1 de Diciembre de 2019" "Version 0.1" "Práctica 3 - Estructura de Datos" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Recetas \- T\&.D\&.A \fBRecetas\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <recetas\&.h>\fP
+.SS "Clases"
+
+.in +1c
+.ti -1c
+.RI "class \fBconst_iterator\fP"
+.br
+.RI "Clase para iterar sobre los ingredientes (modo const) "
+.ti -1c
+.RI "class \fBiterator\fP"
+.br
+.RI "Clase para iterar sobre los ingredientes\&. "
+.in -1c
+.SS "Métodos públicos"
+
+.in +1c
+.ti -1c
+.RI "\fBRecetas\fP ()"
+.br
+.RI "Constructor por defecto de la clase\&. "
+.ti -1c
+.RI "\fBRecetas\fP (map< string, \fBReceta\fP > datos)"
+.br
+.RI "Constructor de la clase\&. "
+.ti -1c
+.RI "\fBRecetas\fP (const \fBRecetas\fP &recetas)"
+.br
+.RI "Constructor de copia de la clase\&. "
+.ti -1c
+.RI "const int \fBsize\fP ()"
+.br
+.RI "size "
+.ti -1c
+.RI "void \fBborrar\fP (const string key)"
+.br
+.RI "borrar "
+.ti -1c
+.RI "\fBRecetas\fP & \fBoperator=\fP (const \fBRecetas\fP &recetas)"
+.br
+.RI "Sobrecarga del operador=\&. "
+.ti -1c
+.RI "\fBReceta\fP & \fBoperator[]\fP (const string key)"
+.br
+.RI "Sobrecarga del operador[]\&. "
+.ti -1c
+.RI "\fBiterator\fP \fBbegin\fP ()"
+.br
+.RI "Inicializa un iterator al comienzo de \fBReceta\fP\&. "
+.ti -1c
+.RI "\fBiterator\fP \fBend\fP ()"
+.br
+.RI "Inicializa un iterator al final de \fBReceta\fP\&. "
+.ti -1c
+.RI "\fBconst_iterator\fP \fBbegin\fP () const"
+.br
+.RI "Inicializa un \fBconst_iterator\fP al comienzo de \fBReceta\fP\&. "
+.ti -1c
+.RI "\fBconst_iterator\fP \fBend\fP () const"
+.br
+.RI "Inicializa un \fBconst_iterator\fP al final de \fBReceta\fP\&. "
+.in -1c
+.SS "Amigas"
+
+.in +1c
+.ti -1c
+.RI "ostream & \fBoperator<<\fP (ostream &os, const \fBRecetas\fP &recetas)"
+.br
+.RI "Salida de \fBRecetas\fP a ostream\&. "
+.ti -1c
+.RI "istream & \fBoperator>>\fP (istream &is, \fBRecetas\fP &recetas)"
+.br
+.RI "Entrada de \fBRecetas\fP desde istream\&. "
+.in -1c
+.SH "Descripción detallada"
+.PP 
+T\&.D\&.A \fBRecetas\fP\&. 
+
+Una instancia \fIingr\fP del tipo de datos abstracto \fC\fBRecetas\fP\fP representa un conjunto de recetas\&.
+.PP
+Lo representamos como
+.PP
+datos
+.PP
+Un ejemplo de su uso: 
+.PP
+.nf
+
+.fi
+.PP
+.PP
+\fBAutor\fP
+.RS 4
+Miguel Ángel Campos Cubillas 
+.RE
+.PP
+\fBFecha\fP
+.RS 4
+Noviembre 2019 
+.RE
+.PP
+
+.PP
+Definición en la línea 34 del archivo recetas\&.h\&.
+.SH "Documentación del constructor y destructor"
+.PP 
+.SS "Recetas::Recetas (map< string, \fBReceta\fP > datos)"
+
+.PP
+Constructor de la clase\&. 
+.PP
+\fBParámetros\fP
+.RS 4
+\fIdatos\fP un map que representa una clave unívoca y una receta asociada 
+.RE
+.PP
+\fBDevuelve\fP
+.RS 4
+Crea \fBRecetas\fP {datos} 
+.RE
+.PP
+
+.SS "Recetas::Recetas (const \fBRecetas\fP & recetas)"
+
+.PP
+Constructor de copia de la clase\&. 
+.PP
+\fBParámetros\fP
+.RS 4
+\fIrecetas\fP a copiar 
+.RE
+.PP
+
+.SH "Documentación de las funciones miembro"
+.PP 
+.SS "void Recetas::borrar (const string key)"
+
+.PP
+borrar 
+.PP
+\fBParámetros\fP
+.RS 4
+\fIkey\fP clave que referencia a la receta a borrar 
+.RE
+.PP
+\fBDevuelve\fP
+.RS 4
+elimina la receta asociada a la clave key 
+.RE
+.PP
+
+.SS "\fBRecetas\fP& Recetas::operator= (const \fBRecetas\fP & recetas)"
+
+.PP
+Sobrecarga del operador=\&. 
+.PP
+\fBParámetros\fP
+.RS 4
+\fIrecetas\fP recetas a igualar al objeto implícito 
+.RE
+.PP
+
+.SS "\fBReceta\fP& Recetas::operator[] (const string key)"
+
+.PP
+Sobrecarga del operador[]\&. 
+.PP
+\fBParámetros\fP
+.RS 4
+\fIkey\fP clave asociada a la receta a devolver 
+.RE
+.PP
+\fBDevuelve\fP
+.RS 4
+devuelve la receta asociada a la clave key 
+.RE
+.PP
+
+.SS "const int Recetas::size ()"
+
+.PP
+size 
+.PP
+\fBDevuelve\fP
+.RS 4
+Devuelve el número de recetas 
+.RE
+.PP
+
+.SH "Documentación de las funciones relacionadas y clases amigas"
+.PP 
+.SS "ostream& operator<< (ostream & os, const \fBRecetas\fP & recetas)\fC [friend]\fP"
+
+.PP
+Salida de \fBRecetas\fP a ostream\&. 
+.PP
+\fBParámetros\fP
+.RS 4
+\fIos\fP de salida 
+.br
+\fIrecetas\fP \fBRecetas\fP a escribir 
+.RE
+.PP
+\fBPostcondición\fP
+.RS 4
+Se obtiene en \fIos\fP la recetas con \fI{datos}\fP 
+.br
+ 
+.RE
+.PP
+
+.SS "istream& operator>> (istream & is, \fBRecetas\fP & recetas)\fC [friend]\fP"
+
+.PP
+Entrada de \fBRecetas\fP desde istream\&. 
+.PP
+\fBParámetros\fP
+.RS 4
+\fIis\fP stream de entrada 
+.br
+\fIrecetas\fP \fBRecetas\fP que recibe 
+.RE
+.PP
+\fBValores devueltos\fP
+.RS 4
+\fILas\fP \fBRecetas\fP leído en ingrediente 
+.RE
+.PP
+\fBPrecondición\fP
+.RS 4
+La entrada tiene el formato datos con \fIdatos\fP 
+.RE
+.PP
+
+
+.SH "Autor"
+.PP 
+Generado automáticamente por Doxygen para Práctica 3 - Estructura de Datos del código fuente\&.

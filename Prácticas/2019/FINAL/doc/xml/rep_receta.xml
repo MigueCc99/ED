@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="rep_receta" kind="page">
+    <compoundname>repReceta</compoundname>
+    <title>Rep del TDA Receta</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<sect1 id="rep_receta_1invReceta">
+<title>Invariante de la representación</title>
+<para>El invariante es <emphasis>code</emphasis>, plato, nombre, ings, calorias, hc, grasas, proteinas,fibra que representan la invariante de <ref refid="class_receta" kindref="compound">Receta</ref></para>
+</sect1>
+<sect1 id="rep_receta_1faReceta">
+<title>Función de abstracción</title>
+<para>Un objeto válido <emphasis>rep</emphasis> del TDA <ref refid="class_receta" kindref="compound">Receta</ref> representa al valor</para>
+<para>{code, plato, nombre, ings, calorias, hc, grasas, proteinas,fibra}</para>
+</sect1>
+<sect1 id="rep_receta_1invRecetas">
+<title>Invariante de la representación</title>
+<para>El invariante es <emphasis>datos</emphasis>, un vector dinamico</para>
+</sect1>
+<sect1 id="rep_receta_1faRecetas">
+<title>Función de abstracción</title>
+<para>Un objeto válido <emphasis>rep</emphasis> del TDA <ref refid="class_recetas" kindref="compound">Recetas</ref> representa al valor</para>
+<para>{datos} </para>
+</sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

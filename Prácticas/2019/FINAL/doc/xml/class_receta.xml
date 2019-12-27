@@ -1,0 +1,535 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="class_receta" kind="class" language="C++" prot="public">
+    <compoundname>Receta</compoundname>
+    <includes refid="receta_8h" local="no">receta.h</includes>
+    <innerclass refid="class_receta_1_1const__iterator" prot="public">Receta::const_iterator</innerclass>
+    <innerclass refid="class_receta_1_1iterator" prot="public">Receta::iterator</innerclass>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_receta_1adb1e8560135fc7eaa706f17968a1cf54" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Receta::code</definition>
+        <argsstring></argsstring>
+        <name>code</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>code </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/receta.h" line="51" column="12" bodyfile="include/receta.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_receta_1ab1522528f2bc25bc08d8e36898c80425" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int Receta::plato</definition>
+        <argsstring></argsstring>
+        <name>plato</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>plato </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/receta.h" line="52" column="18" bodyfile="include/receta.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_receta_1af3f8bcc9778afab1987c82e7b5e53d07" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Receta::nombre</definition>
+        <argsstring></argsstring>
+        <name>nombre</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>nombre </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/receta.h" line="53" column="12" bodyfile="include/receta.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_receta_1a859805a3106fa033b8010fe602e1f4c6" prot="private" static="no" mutable="no">
+        <type>list&lt; pair&lt; string, unsigned int &gt; &gt;</type>
+        <definition>list&lt;pair&lt;string,unsigned int&gt; &gt; Receta::ings</definition>
+        <argsstring></argsstring>
+        <name>ings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ings </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/receta.h" line="54" column="10" bodyfile="include/receta.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_receta_1a97eddf6d134cee91b82714c1de258e68" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Receta::calorias</definition>
+        <argsstring></argsstring>
+        <name>calorias</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/receta.h" line="55" column="11" bodyfile="include/receta.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_receta_1a78a3630107fb41cb1b4075664defd4cc" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Receta::hc</definition>
+        <argsstring></argsstring>
+        <name>hc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/receta.h" line="55" column="19" bodyfile="include/receta.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_receta_1aa9c9cc526a85bc92c0dde3ee78c0de5d" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Receta::grasas</definition>
+        <argsstring></argsstring>
+        <name>grasas</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/receta.h" line="55" column="21" bodyfile="include/receta.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_receta_1a20396252691f2a78e09ff170ec0df8d3" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Receta::proteinas</definition>
+        <argsstring></argsstring>
+        <name>proteinas</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/receta.h" line="55" column="27" bodyfile="include/receta.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_receta_1a49c91277688f42c3d904e242511be00b" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Receta::fibra</definition>
+        <argsstring></argsstring>
+        <name>fibra</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>calorias, hc, grasas, proteinas, fibra </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/receta.h" line="55" column="36" bodyfile="include/receta.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_receta_1a507bee2a7acf0f095f7f5f539fa26900" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Receta::Receta</definition>
+        <argsstring>()</argsstring>
+        <name>Receta</name>
+        <briefdescription>
+<para>Constructor por defecto de la clase. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/receta.h" line="62" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_receta_1aec652197fc45e41e6c20e10fe504a1e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Receta::Receta</definition>
+        <argsstring>(string code, int plato, string nombre, list&lt; pair&lt; string, unsigned int &gt; &gt; ings)</argsstring>
+        <name>Receta</name>
+        <param>
+          <type>string</type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>plato</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>nombre</declname>
+        </param>
+        <param>
+          <type>list&lt; pair&lt; string, unsigned int &gt; &gt;</type>
+          <declname>ings</declname>
+        </param>
+        <briefdescription>
+<para>Constructor de la clase. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>código de la receta a construir </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>plato</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>entero que representa el tipo de plato a construir </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nombre</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string que representa el nombre de la receta a construir </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ings</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>lista de ingredientes de la receta a construir </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Crea la receta {code,plato,nombre,ings} </para>
+</simplesect>
+<simplesect kind="pre"><para>code = &quot;Ri&quot; &amp;&amp; 1 &lt;= rep.plato &lt;= 3 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/receta.h" line="73" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_receta_1acb5bb989fb0a5c57cf85146f936a544d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Receta::Receta</definition>
+        <argsstring>(const Receta &amp;receta)</argsstring>
+        <name>Receta</name>
+        <param>
+          <type>const <ref refid="class_receta" kindref="compound">Receta</ref> &amp;</type>
+          <declname>receta</declname>
+        </param>
+        <briefdescription>
+<para>Constructor de copia de la clase. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>receta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a copiar </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/receta.h" line="79" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_receta_1a6651b572a5b3df06e11d51fc49b36201" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_receta" kindref="compound">Receta</ref> &amp;</type>
+        <definition>Receta&amp; Receta::operator=</definition>
+        <argsstring>(const Receta &amp;receta)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="class_receta" kindref="compound">Receta</ref> &amp;</type>
+          <declname>receta</declname>
+        </param>
+        <briefdescription>
+<para>Sobrecarga del operador=. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>receta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>receta a igualar al objeto implícito </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/receta.h" line="86" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_receta_1ac8a501375a19e653dc302c0b8e3521eb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const string</type>
+        <definition>const string Receta::getNombre</definition>
+        <argsstring>() const</argsstring>
+        <name>getNombre</name>
+        <briefdescription>
+<para>getNombre </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Devuelve el nombre de la receta </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/receta.h" line="92" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_receta_1a2822d63fe8ea293434bfbc518d0b23f0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const string</type>
+        <definition>const string Receta::getCode</definition>
+        <argsstring>() const</argsstring>
+        <name>getCode</name>
+        <briefdescription>
+<para>getCode </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Devuelve el code de la receta </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/receta.h" line="98" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_receta_1a06b8d8f633037580798daf0adbf5e145" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const int</type>
+        <definition>const int Receta::ningredientes</definition>
+        <argsstring>()</argsstring>
+        <name>ningredientes</name>
+        <briefdescription>
+<para>ningredientes </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Devuelve el número de ingredientes de la receta </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/receta.h" line="104" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_receta_1ab02ca172c4fe07ae50536e0f22299464" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_receta_1_1iterator" kindref="compound">iterator</ref></type>
+        <definition>iterator Receta::begin</definition>
+        <argsstring>()</argsstring>
+        <name>begin</name>
+        <briefdescription>
+<para>Inicializa un iterator al comienzo de <ref refid="class_receta" kindref="compound">Receta</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/receta.h" line="205" column="14" bodyfile="include/receta.h" bodystart="205" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="function" id="class_receta_1a65d46cc6760bf2079f23f769253c91d3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_receta_1_1iterator" kindref="compound">iterator</ref></type>
+        <definition>iterator Receta::end</definition>
+        <argsstring>()</argsstring>
+        <name>end</name>
+        <briefdescription>
+<para>Inicializa un iterator al final de <ref refid="class_receta" kindref="compound">Receta</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/receta.h" line="214" column="14" bodyfile="include/receta.h" bodystart="214" bodyend="218"/>
+      </memberdef>
+      <memberdef kind="function" id="class_receta_1a13de69b62e8ecefd1ef5a437f95be0ea" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_receta_1_1const__iterator" kindref="compound">const_iterator</ref></type>
+        <definition>const_iterator Receta::begin</definition>
+        <argsstring>() const</argsstring>
+        <name>begin</name>
+        <briefdescription>
+<para>Inicializa un <ref refid="class_receta_1_1const__iterator" kindref="compound">const_iterator</ref> al comienzo de <ref refid="class_receta" kindref="compound">Receta</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/receta.h" line="223" column="20" bodyfile="include/receta.h" bodystart="223" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="function" id="class_receta_1a002638d4140f2bf36cce10f98c8b893b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_receta_1_1const__iterator" kindref="compound">const_iterator</ref></type>
+        <definition>const_iterator Receta::end</definition>
+        <argsstring>() const</argsstring>
+        <name>end</name>
+        <briefdescription>
+<para>Inicializa un <ref refid="class_receta_1_1const__iterator" kindref="compound">const_iterator</ref> al final de <ref refid="class_receta" kindref="compound">Receta</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/receta.h" line="231" column="20" bodyfile="include/receta.h" bodystart="231" bodyend="235"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_receta_1a80137137b6d575163a2abccf9e4082ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend ostream &amp;</type>
+        <definition>ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(ostream &amp;os, const Receta &amp;receta)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_receta" kindref="compound">Receta</ref> &amp;</type>
+          <declname>receta</declname>
+        </param>
+        <briefdescription>
+<para>Salida de una <ref refid="class_receta" kindref="compound">Receta</ref> a ostream. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>os</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>de salida </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>receta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_receta" kindref="compound">Receta</ref> a escribir </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="post"><para>Se obtiene en <emphasis>os</emphasis> la receta con <emphasis>{code</emphasis>,plato,nombre,ings} <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/receta.h" line="113" column="12"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_receta_1a812dfa7fcc7baa5767968177e5158dd9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend istream &amp;</type>
+        <definition>istream&amp; operator&gt;&gt;</definition>
+        <argsstring>(istream &amp;is, Receta &amp;receta)</argsstring>
+        <name>operator&gt;&gt;</name>
+        <param>
+          <type>istream &amp;</type>
+          <declname>is</declname>
+        </param>
+        <param>
+          <type><ref refid="class_receta" kindref="compound">Receta</ref> &amp;</type>
+          <declname>receta</declname>
+        </param>
+        <briefdescription>
+<para>Entrada de un <ref refid="class_receta" kindref="compound">Receta</ref> desde istream. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>is</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>stream de entrada </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>receta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_receta" kindref="compound">Receta</ref> que recibe </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>El</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_receta" kindref="compound">Receta</ref> leído en ingrediente </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="pre"><para>La entrada tiene el formato code;plato;nombre;ings con <emphasis>code</emphasis>, <emphasis>plato</emphasis>, <emphasis>nombre</emphasis>, <emphasis>ings</emphasis> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/receta.h" line="123" column="20"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_receta_1a6dc6c415bac8c93911f18abd0106bc07" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Receta::copiar</definition>
+        <argsstring>(const Receta &amp;receta)</argsstring>
+        <name>copiar</name>
+        <param>
+          <type>const <ref refid="class_receta" kindref="compound">Receta</ref> &amp;</type>
+          <declname>receta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/receta.h" line="239" column="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>T.D.A <ref refid="class_receta" kindref="compound">Receta</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Una instancia <emphasis>ingr</emphasis> del tipo de datos abstracto <computeroutput><ref refid="class_receta" kindref="compound">Receta</ref></computeroutput> es un objeto que representa una <ref refid="class_receta" kindref="compound">Receta</ref>. A su vez, esta <ref refid="class_receta" kindref="compound">Receta</ref> se compone de un código que la representa únicamente, un entero que representa el tipo de plato que compone (1º,2º,3º), un nombre, una lista de ingredientes y finalmente una secuencia de float que determinan las calorias, hidratos de carbono, grasas, proteinas y fibras de la receta</para>
+<para>Lo representamos como</para>
+<para>code, plato, nombre, ingredientes, calorias, hc, grasas, proteinas, fibra</para>
+<para>Un ejemplo de su uso: <programlisting filename="test_receta.cpp"></programlisting></para>
+<para><simplesect kind="author"><para>Miguel Ángel Campos Cubillas </para>
+</simplesect>
+<simplesect kind="date"><para>Octubre 2019 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="include/receta.h" line="35" column="13" bodyfile="include/receta.h" bodystart="35" bodyend="241"/>
+    <listofallmembers>
+      <member refid="class_receta_1ab02ca172c4fe07ae50536e0f22299464" prot="public" virt="non-virtual"><scope>Receta</scope><name>begin</name></member>
+      <member refid="class_receta_1a13de69b62e8ecefd1ef5a437f95be0ea" prot="public" virt="non-virtual"><scope>Receta</scope><name>begin</name></member>
+      <member refid="class_receta_1a97eddf6d134cee91b82714c1de258e68" prot="private" virt="non-virtual"><scope>Receta</scope><name>calorias</name></member>
+      <member refid="class_receta_1adb1e8560135fc7eaa706f17968a1cf54" prot="private" virt="non-virtual"><scope>Receta</scope><name>code</name></member>
+      <member refid="class_receta_1a6dc6c415bac8c93911f18abd0106bc07" prot="private" virt="non-virtual"><scope>Receta</scope><name>copiar</name></member>
+      <member refid="class_receta_1a65d46cc6760bf2079f23f769253c91d3" prot="public" virt="non-virtual"><scope>Receta</scope><name>end</name></member>
+      <member refid="class_receta_1a002638d4140f2bf36cce10f98c8b893b" prot="public" virt="non-virtual"><scope>Receta</scope><name>end</name></member>
+      <member refid="class_receta_1a49c91277688f42c3d904e242511be00b" prot="private" virt="non-virtual"><scope>Receta</scope><name>fibra</name></member>
+      <member refid="class_receta_1a2822d63fe8ea293434bfbc518d0b23f0" prot="public" virt="non-virtual"><scope>Receta</scope><name>getCode</name></member>
+      <member refid="class_receta_1ac8a501375a19e653dc302c0b8e3521eb" prot="public" virt="non-virtual"><scope>Receta</scope><name>getNombre</name></member>
+      <member refid="class_receta_1aa9c9cc526a85bc92c0dde3ee78c0de5d" prot="private" virt="non-virtual"><scope>Receta</scope><name>grasas</name></member>
+      <member refid="class_receta_1a78a3630107fb41cb1b4075664defd4cc" prot="private" virt="non-virtual"><scope>Receta</scope><name>hc</name></member>
+      <member refid="class_receta_1a859805a3106fa033b8010fe602e1f4c6" prot="private" virt="non-virtual"><scope>Receta</scope><name>ings</name></member>
+      <member refid="class_receta_1a06b8d8f633037580798daf0adbf5e145" prot="public" virt="non-virtual"><scope>Receta</scope><name>ningredientes</name></member>
+      <member refid="class_receta_1af3f8bcc9778afab1987c82e7b5e53d07" prot="private" virt="non-virtual"><scope>Receta</scope><name>nombre</name></member>
+      <member refid="class_receta_1a80137137b6d575163a2abccf9e4082ac" prot="public" virt="non-virtual"><scope>Receta</scope><name>operator&lt;&lt;</name></member>
+      <member refid="class_receta_1a6651b572a5b3df06e11d51fc49b36201" prot="public" virt="non-virtual"><scope>Receta</scope><name>operator=</name></member>
+      <member refid="class_receta_1a812dfa7fcc7baa5767968177e5158dd9" prot="public" virt="non-virtual"><scope>Receta</scope><name>operator&gt;&gt;</name></member>
+      <member refid="class_receta_1ab1522528f2bc25bc08d8e36898c80425" prot="private" virt="non-virtual"><scope>Receta</scope><name>plato</name></member>
+      <member refid="class_receta_1a20396252691f2a78e09ff170ec0df8d3" prot="private" virt="non-virtual"><scope>Receta</scope><name>proteinas</name></member>
+      <member refid="class_receta_1a507bee2a7acf0f095f7f5f539fa26900" prot="public" virt="non-virtual"><scope>Receta</scope><name>Receta</name></member>
+      <member refid="class_receta_1aec652197fc45e41e6c20e10fe504a1e6" prot="public" virt="non-virtual"><scope>Receta</scope><name>Receta</name></member>
+      <member refid="class_receta_1acb5bb989fb0a5c57cf85146f936a544d" prot="public" virt="non-virtual"><scope>Receta</scope><name>Receta</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

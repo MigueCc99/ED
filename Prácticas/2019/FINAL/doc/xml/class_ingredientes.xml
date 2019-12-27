@@ -1,0 +1,832 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="class_ingredientes" kind="class" language="C++" prot="public">
+    <compoundname>Ingredientes</compoundname>
+    <includes refid="ingredientes_8h" local="no">ingredientes.h</includes>
+    <innerclass refid="class_ingredientes_1_1const__iterator" prot="public">Ingredientes::const_iterator</innerclass>
+    <innerclass refid="class_ingredientes_1_1iterator" prot="public">Ingredientes::iterator</innerclass>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_ingredientes_1a0d179d0ffec925fda2a931e022c0f87c" prot="private" static="no" mutable="no">
+        <type>vector&lt; <ref refid="class_ingrediente" kindref="compound">Ingrediente</ref> &gt;</type>
+        <definition>vector&lt;Ingrediente&gt; Ingredientes::datos</definition>
+        <argsstring></argsstring>
+        <name>datos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>datos </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ingredientes.h" line="48" column="12" bodyfile="include/ingredientes.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ingredientes_1a0702f3e37510eada2125dbb5735e7604" prot="private" static="no" mutable="no">
+        <type>vector&lt; int &gt;</type>
+        <definition>vector&lt;int&gt; Ingredientes::indice_tipo</definition>
+        <argsstring></argsstring>
+        <name>indice_tipo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ingredientes.h" line="49" column="12" bodyfile="include/ingredientes.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_ingredientes_1a4599533b7d0530fe6fdd68006b3f0bde" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Ingredientes::Ingredientes</definition>
+        <argsstring>()</argsstring>
+        <name>Ingredientes</name>
+        <briefdescription>
+<para>Constructor por defecto de la clase. Crea el conjunto de ingredientes vacío. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ingredientes.h" line="55" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ingredientes_1aa49df6c8d8c48cca8591a620b2d15cc3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ingredientes::insertarIngrediente</definition>
+        <argsstring>(const Ingrediente &amp;ingrediente)</argsstring>
+        <name>insertarIngrediente</name>
+        <param>
+          <type>const <ref refid="class_ingrediente" kindref="compound">Ingrediente</ref> &amp;</type>
+          <declname>ingrediente</declname>
+        </param>
+        <briefdescription>
+<para>insertarIngrediente </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ingrediente</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_ingrediente" kindref="compound">Ingrediente</ref> a insertar </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Inserta en el objeto implícito el <ref refid="class_ingrediente" kindref="compound">Ingrediente</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ingredientes.h" line="61" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ingredientes_1aaf94717166c3e624390ac5abe136d06a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ingredientes::borrarIngrediente</definition>
+        <argsstring>(const int nroIngrediente)</argsstring>
+        <name>borrarIngrediente</name>
+        <param>
+          <type>const int</type>
+          <declname>nroIngrediente</declname>
+        </param>
+        <briefdescription>
+<para>borrarIngrediente </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nroIngrediente</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>posición del <ref refid="class_ingrediente" kindref="compound">Ingrediente</ref> a borrar </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Borra el <ref refid="class_ingrediente" kindref="compound">Ingrediente</ref> de la posición nroIngrediente del objeto implícito </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ingredientes.h" line="68" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ingredientes_1a7c0b7746dfc25fba382518fe8522a046" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ingredientes::borrarIngredienteXNombre</definition>
+        <argsstring>(const string &amp;nombre)</argsstring>
+        <name>borrarIngredienteXNombre</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>nombre</declname>
+        </param>
+        <briefdescription>
+<para>borraIngredienteXNombre </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nombre</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>del <ref refid="class_ingrediente" kindref="compound">Ingrediente</ref> a borrar </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Borra el <ref refid="class_ingrediente" kindref="compound">Ingrediente</ref> del conjunto cuyo nombre coincide con el parámetro </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ingredientes.h" line="75" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ingredientes_1a7e56b2666e0c566ba5799d8848669dd4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ingredientes::modificaIngrediente</definition>
+        <argsstring>(const int i, const Ingrediente &amp;ingrediente)</argsstring>
+        <name>modificaIngrediente</name>
+        <param>
+          <type>const int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_ingrediente" kindref="compound">Ingrediente</ref> &amp;</type>
+          <declname>ingrediente</declname>
+        </param>
+        <briefdescription>
+<para>modificaIngrediente </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>posición del <ref refid="class_ingrediente" kindref="compound">Ingrediente</ref> a modificar </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ingrediente</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_ingrediente" kindref="compound">Ingrediente</ref> para modificar </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Modifica el <ref refid="class_ingrediente" kindref="compound">Ingrediente</ref> de la posición i por el &quot;ingrediente&quot; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ingredientes.h" line="83" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ingredientes_1aeb8017d2e1182f78e3935ca72b766ef8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_ingrediente" kindref="compound">Ingrediente</ref></type>
+        <definition>Ingrediente Ingredientes::getIngrediente</definition>
+        <argsstring>(const int i)</argsstring>
+        <name>getIngrediente</name>
+        <param>
+          <type>const int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>getIngrediente </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>posición del <ref refid="class_ingrediente" kindref="compound">Ingrediente</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Devuelve el <ref refid="class_ingrediente" kindref="compound">Ingrediente</ref> de la posición i </para>
+</simplesect>
+<simplesect kind="pre"><para>i debe de ser un valor válido </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ingredientes.h" line="91" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ingredientes_1a97dea81c4db6348691c55e9db5ef3619" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_ingrediente" kindref="compound">Ingrediente</ref></type>
+        <definition>Ingrediente Ingredientes::get</definition>
+        <argsstring>(const string &amp;nombre)</argsstring>
+        <name>get</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>nombre</declname>
+        </param>
+        <briefdescription>
+<para>get </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nombre</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nombre del ingrediente </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Devuelve el <ref refid="class_ingrediente" kindref="compound">Ingrediente</ref> cuyo nombre es equivalente al parametro </para>
+</simplesect>
+<simplesect kind="pre"><para>nombre debe de ser un nombre válido </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ingredientes.h" line="99" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ingredientes_1a485db5688382e8068feb4680caea9a5f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const int</type>
+        <definition>const int Ingredientes::getNumIngredientes</definition>
+        <argsstring>() const</argsstring>
+        <name>getNumIngredientes</name>
+        <briefdescription>
+<para>getNumIngredientes </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Devuelve el número de ingredientes del conjunto </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ingredientes.h" line="105" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ingredientes_1a2f30f251726c114a425e655a07a21d80" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string Ingredientes::getInformacion</definition>
+        <argsstring>(const string nombre)</argsstring>
+        <name>getInformacion</name>
+        <param>
+          <type>const string</type>
+          <declname>nombre</declname>
+        </param>
+        <briefdescription>
+<para>getInformación </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nombre</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nombre del ingrediente </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Devuelve la nformación del ingrediente cuyo nombre es equivalente al parametro </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ingredientes.h" line="112" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ingredientes_1a9869f4642af46cd91d426c9a4e22019a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; string &gt;</type>
+        <definition>vector&lt;string&gt; Ingredientes::getTipos</definition>
+        <argsstring>()</argsstring>
+        <name>getTipos</name>
+        <briefdescription>
+<para>getTipos </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Devuelve un Vector_Dinamico de tipo string con los tipos de los ingredientes del conjunto </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ingredientes.h" line="118" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ingredientes_1ad49a4d1142a214e8c077871efed59c60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_ingredientes" kindref="compound">Ingredientes</ref></type>
+        <definition>Ingredientes Ingredientes::getIngredientesTipo</definition>
+        <argsstring>(const string tipo)</argsstring>
+        <name>getIngredientesTipo</name>
+        <param>
+          <type>const string</type>
+          <declname>tipo</declname>
+        </param>
+        <briefdescription>
+<para>getIngredientesTipos </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tipo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>tipo de los ingredientes a buscar </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="class_ingredientes" kindref="compound">Ingredientes</ref> cuyo tipo coincide con el parametro tipo </para>
+</simplesect>
+<simplesect kind="pre"><para>tipo existente </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ingredientes.h" line="126" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ingredientes_1ac1a637a4b2fb6e7ce99f59ffea7e5eec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_ingrediente" kindref="compound">Ingrediente</ref> &amp;</type>
+        <definition>Ingrediente&amp; Ingredientes::operator[]</definition>
+        <argsstring>(const int i)</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>const int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>Sorbrecarga del operador[]. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>entero que indica una posicion </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="class_ingrediente" kindref="compound">Ingrediente</ref> de la posicion i </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ingredientes.h" line="133" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ingredientes_1a2279d66f71d1fdc39f8560b406d83760" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="class_ingrediente" kindref="compound">Ingrediente</ref> &amp;</type>
+        <definition>const Ingrediente&amp; Ingredientes::operator[]</definition>
+        <argsstring>(const int i) const</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>const int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>Sorbrecarga constante del operador[]. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>entero que indica una posicion </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="class_ingrediente" kindref="compound">Ingrediente</ref> de la posicion i </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ingredientes.h" line="140" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ingredientes_1a44039882f9e87d1e6fc0a97bf9cac579" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ingredientes::ordenaPorNombre</definition>
+        <argsstring>()</argsstring>
+        <name>ordenaPorNombre</name>
+        <briefdescription>
+<para>ordenaPorNombre </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>ordena los <ref refid="class_ingredientes" kindref="compound">Ingredientes</ref> por orden alfabético </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ingredientes.h" line="146" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ingredientes_1aadb58cad448a8983ece8d87803439034" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ingredientes::ordenaPorTipo</definition>
+        <argsstring>()</argsstring>
+        <name>ordenaPorTipo</name>
+        <briefdescription>
+<para>ordenaPorTipo </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>ordena los <ref refid="class_ingredientes" kindref="compound">Ingredientes</ref> por tipo y los devuelve en un objeto de tipo <ref refid="class_ingredientes" kindref="compound">Ingredientes</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ingredientes.h" line="152" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ingredientes_1ab56b335eeb1662c1869d428df28fb035" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ingredientes::imprimirPorTipo</definition>
+        <argsstring>(ostream &amp;os)</argsstring>
+        <name>imprimirPorTipo</name>
+        <param>
+          <type>ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+<para>ordenaPorTipo </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>ordena los <ref refid="class_ingredientes" kindref="compound">Ingredientes</ref> del objeto implícito en otra instancia de <ref refid="class_ingredientes" kindref="compound">Ingredientes</ref> por tipo y la imprime </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ingredientes.h" line="159" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ingredientes_1a0ee5c7350ec2956cf1f36d8a6e718347" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ingredientes::getEstadistica</definition>
+        <argsstring>(const string tipo)</argsstring>
+        <name>getEstadistica</name>
+        <param>
+          <type>const string</type>
+          <declname>tipo</declname>
+        </param>
+        <briefdescription>
+<para>getEstadistica </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>calcula datos estadísticos acerca del conjunto de <ref refid="class_ingredientes" kindref="compound">Ingredientes</ref> del tipo indicado por el string tipo <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ingredientes.h" line="166" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ingredientes_1afccf277d57a0d27f6a9ab6c7f3a3a954" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int *</type>
+        <definition>int* Ingredientes::obtenerDatosCalorias</definition>
+        <argsstring>()</argsstring>
+        <name>obtenerDatosCalorias</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ingredientes.h" line="186" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ingredientes_1aef39d8820ac7f3e2aea585436124b0df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int *</type>
+        <definition>int* Ingredientes::obtenerDatosHc</definition>
+        <argsstring>()</argsstring>
+        <name>obtenerDatosHc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ingredientes.h" line="188" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ingredientes_1acf0d27096141cca1108bf38d876230f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int *</type>
+        <definition>int* Ingredientes::obtenerDatosProteinas</definition>
+        <argsstring>()</argsstring>
+        <name>obtenerDatosProteinas</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ingredientes.h" line="190" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ingredientes_1afb8cbed9e81b56175a6fdc04f2d73ca1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int *</type>
+        <definition>int* Ingredientes::obtenerDatosGrasas</definition>
+        <argsstring>()</argsstring>
+        <name>obtenerDatosGrasas</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ingredientes.h" line="192" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ingredientes_1abe2bf4ef266352d9a10896f98ae794f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int *</type>
+        <definition>int* Ingredientes::obtenerDatosFibras</definition>
+        <argsstring>()</argsstring>
+        <name>obtenerDatosFibras</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ingredientes.h" line="194" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ingredientes_1a482df358a0cc18f0e1aca28246547df2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Ingredientes::obtener_promedio</definition>
+        <argsstring>(int *datos)</argsstring>
+        <name>obtener_promedio</name>
+        <param>
+          <type>int *</type>
+          <declname>datos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ingredientes.h" line="196" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ingredientes_1ac9d7e56a91a4e92b24aa4721c3d51efb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Ingredientes::obtener_varianza</definition>
+        <argsstring>(int *datos)</argsstring>
+        <name>obtener_varianza</name>
+        <param>
+          <type>int *</type>
+          <declname>datos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ingredientes.h" line="198" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ingredientes_1a1a4e05bbe75fd58a191607f285f9fc08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Ingredientes::obtener_desviacion</definition>
+        <argsstring>(float varianza, int *datos)</argsstring>
+        <name>obtener_desviacion</name>
+        <param>
+          <type>float</type>
+          <declname>varianza</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>datos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ingredientes.h" line="200" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ingredientes_1a1d7f5971d3062d18228bf8a00518add4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ingredientes::obtener_desviaciones</definition>
+        <argsstring>()</argsstring>
+        <name>obtener_desviaciones</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ingredientes.h" line="202" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ingredientes_1a03a0d01130ccbafb9d32781902213d1c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ingredientes::getEstadistico</definition>
+        <argsstring>()</argsstring>
+        <name>getEstadistico</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ingredientes.h" line="204" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ingredientes_1af714f2431abc9f391271a5ce36d20fba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_ingredientes_1_1iterator" kindref="compound">iterator</ref></type>
+        <definition>iterator Ingredientes::begin</definition>
+        <argsstring>()</argsstring>
+        <name>begin</name>
+        <briefdescription>
+<para>Inicializa un iterator al comienzo de <ref refid="class_ingredientes" kindref="compound">Ingredientes</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ingredientes.h" line="287" column="14" bodyfile="include/ingredientes.h" bodystart="287" bodyend="291"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ingredientes_1a743696bb30ce1ff6d970496be6273383" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_ingredientes_1_1iterator" kindref="compound">iterator</ref></type>
+        <definition>iterator Ingredientes::end</definition>
+        <argsstring>()</argsstring>
+        <name>end</name>
+        <briefdescription>
+<para>Inicializa un iterator al final de <ref refid="class_ingredientes" kindref="compound">Ingredientes</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ingredientes.h" line="296" column="14" bodyfile="include/ingredientes.h" bodystart="296" bodyend="300"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ingredientes_1a18c3774d89ce0e1f12b29e381d77f795" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_ingredientes_1_1const__iterator" kindref="compound">const_iterator</ref></type>
+        <definition>const_iterator Ingredientes::begin</definition>
+        <argsstring>() const</argsstring>
+        <name>begin</name>
+        <briefdescription>
+<para>Inicializa un <ref refid="class_ingredientes_1_1const__iterator" kindref="compound">const_iterator</ref> al comienzo de <ref refid="class_ingredientes" kindref="compound">Ingredientes</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ingredientes.h" line="305" column="20" bodyfile="include/ingredientes.h" bodystart="305" bodyend="309"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ingredientes_1a952de40063794632409a027d166cd6c9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_ingredientes_1_1const__iterator" kindref="compound">const_iterator</ref></type>
+        <definition>const_iterator Ingredientes::end</definition>
+        <argsstring>() const</argsstring>
+        <name>end</name>
+        <briefdescription>
+<para>Inicializa un <ref refid="class_ingredientes_1_1const__iterator" kindref="compound">const_iterator</ref> al final de <ref refid="class_ingredientes" kindref="compound">Ingredientes</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ingredientes.h" line="314" column="20" bodyfile="include/ingredientes.h" bodystart="314" bodyend="318"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_ingredientes_1a11a8ab6e1628b050812fbf57b33265ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend ostream &amp;</type>
+        <definition>ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(ostream &amp;os, const Ingredientes &amp;ingredientes)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_ingredientes" kindref="compound">Ingredientes</ref> &amp;</type>
+          <declname>ingredientes</declname>
+        </param>
+        <briefdescription>
+<para>Salida de <ref refid="class_ingredientes" kindref="compound">Ingredientes</ref> a ostream. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>os</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>stream de salida </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ingredientes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_ingredientes" kindref="compound">Ingredientes</ref> a escribir </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="post"><para>Se obtiene en <emphasis>os</emphasis> los ingredientes con <emphasis>ingrediente</emphasis> los ingredientes del conjunto </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ingredientes.h" line="174" column="12"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_ingredientes_1a2f2a26cb7e5d982fcbe248027671937d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend istream &amp;</type>
+        <definition>istream&amp; operator&gt;&gt;</definition>
+        <argsstring>(istream &amp;is, Ingredientes &amp;ingredientes)</argsstring>
+        <name>operator&gt;&gt;</name>
+        <param>
+          <type>istream &amp;</type>
+          <declname>is</declname>
+        </param>
+        <param>
+          <type><ref refid="class_ingredientes" kindref="compound">Ingredientes</ref> &amp;</type>
+          <declname>ingredientes</declname>
+        </param>
+        <briefdescription>
+<para>Entrada de <ref refid="class_ingredientes" kindref="compound">Ingredientes</ref> a istream. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>is</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>stream de entrada </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ingredientes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_ingredientes" kindref="compound">Ingredientes</ref> que reciben los ingredientes </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>Los</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ingredientes leidos en ingredientes </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="pre"><para>La entrada tiene el formato ingredientes con <emphasis>ingrediente</emphasis> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ingredientes.h" line="183" column="20"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>T.D.A <ref refid="class_ingredientes" kindref="compound">Ingredientes</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Una instancia <emphasis>ingredientes</emphasis> del tipo de datos abstracto <computeroutput><ref refid="class_ingredientes" kindref="compound">Ingredientes</ref></computeroutput> es un objeto que representa un conjunto de ingredientes. A su vez, esta instancia ingredientes se compone de un Vector_Dinamico de <ref refid="class_ingredientes" kindref="compound">Ingredientes</ref>.</para>
+<para>Lo representamos como:</para>
+<para>datos</para>
+<para>Un ejemplo de su uso: <programlisting filename="test_ingredientes.cpp"></programlisting></para>
+<para><simplesect kind="author"><para>Miguel Ángel Campos Cubillas </para>
+</simplesect>
+<simplesect kind="date"><para>Noviembre 2019 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="include/ingredientes.h" line="32" column="19" bodyfile="include/ingredientes.h" bodystart="32" bodyend="320"/>
+    <listofallmembers>
+      <member refid="class_ingredientes_1af714f2431abc9f391271a5ce36d20fba" prot="public" virt="non-virtual"><scope>Ingredientes</scope><name>begin</name></member>
+      <member refid="class_ingredientes_1a18c3774d89ce0e1f12b29e381d77f795" prot="public" virt="non-virtual"><scope>Ingredientes</scope><name>begin</name></member>
+      <member refid="class_ingredientes_1aaf94717166c3e624390ac5abe136d06a" prot="public" virt="non-virtual"><scope>Ingredientes</scope><name>borrarIngrediente</name></member>
+      <member refid="class_ingredientes_1a7c0b7746dfc25fba382518fe8522a046" prot="public" virt="non-virtual"><scope>Ingredientes</scope><name>borrarIngredienteXNombre</name></member>
+      <member refid="class_ingredientes_1a0d179d0ffec925fda2a931e022c0f87c" prot="private" virt="non-virtual"><scope>Ingredientes</scope><name>datos</name></member>
+      <member refid="class_ingredientes_1a743696bb30ce1ff6d970496be6273383" prot="public" virt="non-virtual"><scope>Ingredientes</scope><name>end</name></member>
+      <member refid="class_ingredientes_1a952de40063794632409a027d166cd6c9" prot="public" virt="non-virtual"><scope>Ingredientes</scope><name>end</name></member>
+      <member refid="class_ingredientes_1a97dea81c4db6348691c55e9db5ef3619" prot="public" virt="non-virtual"><scope>Ingredientes</scope><name>get</name></member>
+      <member refid="class_ingredientes_1a0ee5c7350ec2956cf1f36d8a6e718347" prot="public" virt="non-virtual"><scope>Ingredientes</scope><name>getEstadistica</name></member>
+      <member refid="class_ingredientes_1a03a0d01130ccbafb9d32781902213d1c" prot="public" virt="non-virtual"><scope>Ingredientes</scope><name>getEstadistico</name></member>
+      <member refid="class_ingredientes_1a2f30f251726c114a425e655a07a21d80" prot="public" virt="non-virtual"><scope>Ingredientes</scope><name>getInformacion</name></member>
+      <member refid="class_ingredientes_1aeb8017d2e1182f78e3935ca72b766ef8" prot="public" virt="non-virtual"><scope>Ingredientes</scope><name>getIngrediente</name></member>
+      <member refid="class_ingredientes_1ad49a4d1142a214e8c077871efed59c60" prot="public" virt="non-virtual"><scope>Ingredientes</scope><name>getIngredientesTipo</name></member>
+      <member refid="class_ingredientes_1a485db5688382e8068feb4680caea9a5f" prot="public" virt="non-virtual"><scope>Ingredientes</scope><name>getNumIngredientes</name></member>
+      <member refid="class_ingredientes_1a9869f4642af46cd91d426c9a4e22019a" prot="public" virt="non-virtual"><scope>Ingredientes</scope><name>getTipos</name></member>
+      <member refid="class_ingredientes_1ab56b335eeb1662c1869d428df28fb035" prot="public" virt="non-virtual"><scope>Ingredientes</scope><name>imprimirPorTipo</name></member>
+      <member refid="class_ingredientes_1a0702f3e37510eada2125dbb5735e7604" prot="private" virt="non-virtual"><scope>Ingredientes</scope><name>indice_tipo</name></member>
+      <member refid="class_ingredientes_1a4599533b7d0530fe6fdd68006b3f0bde" prot="public" virt="non-virtual"><scope>Ingredientes</scope><name>Ingredientes</name></member>
+      <member refid="class_ingredientes_1aa49df6c8d8c48cca8591a620b2d15cc3" prot="public" virt="non-virtual"><scope>Ingredientes</scope><name>insertarIngrediente</name></member>
+      <member refid="class_ingredientes_1a7e56b2666e0c566ba5799d8848669dd4" prot="public" virt="non-virtual"><scope>Ingredientes</scope><name>modificaIngrediente</name></member>
+      <member refid="class_ingredientes_1a1a4e05bbe75fd58a191607f285f9fc08" prot="public" virt="non-virtual"><scope>Ingredientes</scope><name>obtener_desviacion</name></member>
+      <member refid="class_ingredientes_1a1d7f5971d3062d18228bf8a00518add4" prot="public" virt="non-virtual"><scope>Ingredientes</scope><name>obtener_desviaciones</name></member>
+      <member refid="class_ingredientes_1a482df358a0cc18f0e1aca28246547df2" prot="public" virt="non-virtual"><scope>Ingredientes</scope><name>obtener_promedio</name></member>
+      <member refid="class_ingredientes_1ac9d7e56a91a4e92b24aa4721c3d51efb" prot="public" virt="non-virtual"><scope>Ingredientes</scope><name>obtener_varianza</name></member>
+      <member refid="class_ingredientes_1afccf277d57a0d27f6a9ab6c7f3a3a954" prot="public" virt="non-virtual"><scope>Ingredientes</scope><name>obtenerDatosCalorias</name></member>
+      <member refid="class_ingredientes_1abe2bf4ef266352d9a10896f98ae794f5" prot="public" virt="non-virtual"><scope>Ingredientes</scope><name>obtenerDatosFibras</name></member>
+      <member refid="class_ingredientes_1afb8cbed9e81b56175a6fdc04f2d73ca1" prot="public" virt="non-virtual"><scope>Ingredientes</scope><name>obtenerDatosGrasas</name></member>
+      <member refid="class_ingredientes_1aef39d8820ac7f3e2aea585436124b0df" prot="public" virt="non-virtual"><scope>Ingredientes</scope><name>obtenerDatosHc</name></member>
+      <member refid="class_ingredientes_1acf0d27096141cca1108bf38d876230f6" prot="public" virt="non-virtual"><scope>Ingredientes</scope><name>obtenerDatosProteinas</name></member>
+      <member refid="class_ingredientes_1a11a8ab6e1628b050812fbf57b33265ea" prot="public" virt="non-virtual"><scope>Ingredientes</scope><name>operator&lt;&lt;</name></member>
+      <member refid="class_ingredientes_1a2f2a26cb7e5d982fcbe248027671937d" prot="public" virt="non-virtual"><scope>Ingredientes</scope><name>operator&gt;&gt;</name></member>
+      <member refid="class_ingredientes_1ac1a637a4b2fb6e7ce99f59ffea7e5eec" prot="public" virt="non-virtual"><scope>Ingredientes</scope><name>operator[]</name></member>
+      <member refid="class_ingredientes_1a2279d66f71d1fdc39f8560b406d83760" prot="public" virt="non-virtual"><scope>Ingredientes</scope><name>operator[]</name></member>
+      <member refid="class_ingredientes_1a44039882f9e87d1e6fc0a97bf9cac579" prot="public" virt="non-virtual"><scope>Ingredientes</scope><name>ordenaPorNombre</name></member>
+      <member refid="class_ingredientes_1aadb58cad448a8983ece8d87803439034" prot="public" virt="non-virtual"><scope>Ingredientes</scope><name>ordenaPorTipo</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
