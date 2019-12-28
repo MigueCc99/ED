@@ -35,6 +35,8 @@ public:
     */    
   Acciones(const Acciones &acciones);
 
+  const int size();
+
   /**
     * @brief Sobrecarga del operador=
     * @param acciones acciones a igualar al objeto implícito

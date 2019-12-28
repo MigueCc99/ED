@@ -165,3 +165,7 @@ istream &operator>>(istream &is, Receta &receta){
 
     return is;
 }
+
+void Receta::valor_nutricional(){
+    
+}

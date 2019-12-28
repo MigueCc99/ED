@@ -103,6 +103,8 @@ public:
      */
     const int ningredientes();
 
+    void valor_nutricional();
+
     /**
      * @brief Salida de una Receta a ostream
      * @param os de salida
