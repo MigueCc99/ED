@@ -32,8 +32,34 @@ const string \mbox{\hyperlink{class_receta_ac8a501375a19e653dc302c0b8e3521eb}{ge
 \begin{DoxyCompactList}\small\item\em get\+Nombre \end{DoxyCompactList}\item 
 const string \mbox{\hyperlink{class_receta_a2822d63fe8ea293434bfbc518d0b23f0}{get\+Code}} () const
 \begin{DoxyCompactList}\small\item\em get\+Code \end{DoxyCompactList}\item 
+const float \mbox{\hyperlink{class_receta_a6843da885b9c6dde786bcffa79b9bd05}{get\+Calorias}} () const
+\begin{DoxyCompactList}\small\item\em get\+Calorias \end{DoxyCompactList}\item 
+const float \mbox{\hyperlink{class_receta_af09f8f43a072dbe8f507b2e2232a30db}{get\+Hc}} () const
+\begin{DoxyCompactList}\small\item\em get\+Hc \end{DoxyCompactList}\item 
+const float \mbox{\hyperlink{class_receta_a55b3a0e40709b2974e1e6e303b7207f8}{get\+Grasas}} () const
+\begin{DoxyCompactList}\small\item\em get\+Grasas \end{DoxyCompactList}\item 
+const float \mbox{\hyperlink{class_receta_a356d13d721cdc9b52b8c0883ae950bd6}{get\+Proteinas}} () const
+\begin{DoxyCompactList}\small\item\em get\+Proteinas \end{DoxyCompactList}\item 
+const float \mbox{\hyperlink{class_receta_a0086c7891debe181051087a9cec1b1c4}{get\+Fibras}} () const
+\begin{DoxyCompactList}\small\item\em get\+Fibras \end{DoxyCompactList}\item 
 const int \mbox{\hyperlink{class_receta_a06b8d8f633037580798daf0adbf5e145}{ningredientes}} ()
 \begin{DoxyCompactList}\small\item\em ningredientes \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_receta_aca744705502cb5bb664a8cc0a738b458}{set\+Calorias}} (float calorias)
+\begin{DoxyCompactList}\small\item\em set\+Calorias \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_receta_a068018acdd4a6e0bcece800984ef9423}{set\+Hc}} (float hc)
+\begin{DoxyCompactList}\small\item\em set\+Hc \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_receta_a08a537f0b6598c4f1c3c31c4e8cf0cbd}{set\+Grasas}} (float grasas)
+\begin{DoxyCompactList}\small\item\em set\+Grasas \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_receta_ab5adfe6295075176f29c2c83f9eeadf2}{set\+Proteinas}} (float proteinas)
+\begin{DoxyCompactList}\small\item\em set\+Proteinas \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_receta_ae3da21e878f6b5f44e14a8eb19ee0db6}{set\+Fibra}} (float fibra)
+\begin{DoxyCompactList}\small\item\em set\+Fibra \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_receta_a686d2134c6ae879602f81ba9c6be5b21}\label{class_receta_a686d2134c6ae879602f81ba9c6be5b21}} 
+void {\bfseries obtiene\+Nutricional} (\mbox{\hyperlink{class_ingredientes}{Ingredientes}} \&ingredientes)
+\item 
+\mbox{\Hypertarget{class_receta_a6d473ac07d9005a93d671ebb86da356d}\label{class_receta_a6d473ac07d9005a93d671ebb86da356d}} 
+void {\bfseries muestra\+Nutricional} ()
+\item 
 \mbox{\Hypertarget{class_receta_ab02ca172c4fe07ae50536e0f22299464}\label{class_receta_ab02ca172c4fe07ae50536e0f22299464}} 
 \mbox{\hyperlink{class_receta_1_1iterator}{iterator}} \mbox{\hyperlink{class_receta_ab02ca172c4fe07ae50536e0f22299464}{begin}} ()
 \begin{DoxyCompactList}\small\item\em Inicializa un iterator al comienzo de \mbox{\hyperlink{class_receta}{Receta}}. \end{DoxyCompactList}\item 
@@ -77,7 +103,7 @@ Octubre 2019
 \end{DoxyDate}
 
 
-Definición en la línea 35 del archivo receta.\+h.
+Definición en la línea 36 del archivo receta.\+h.
 
 
 
@@ -127,6 +153,19 @@ Constructor de copia de la clase.
 
 
 \doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_receta_a6843da885b9c6dde786bcffa79b9bd05}\label{class_receta_a6843da885b9c6dde786bcffa79b9bd05}} 
+\index{Receta@{Receta}!getCalorias@{getCalorias}}
+\index{getCalorias@{getCalorias}!Receta@{Receta}}
+\doxysubsubsection{\texorpdfstring{getCalorias()}{getCalorias()}}
+{\footnotesize\ttfamily const float Receta\+::get\+Calorias (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+get\+Calorias 
+
+\begin{DoxyReturn}{Devuelve}
+Devuelve las calorias de la receta 
+\end{DoxyReturn}
 \mbox{\Hypertarget{class_receta_a2822d63fe8ea293434bfbc518d0b23f0}\label{class_receta_a2822d63fe8ea293434bfbc518d0b23f0}} 
 \index{Receta@{Receta}!getCode@{getCode}}
 \index{getCode@{getCode}!Receta@{Receta}}
@@ -140,6 +179,45 @@ get\+Code
 \begin{DoxyReturn}{Devuelve}
 Devuelve el code de la receta 
 \end{DoxyReturn}
+\mbox{\Hypertarget{class_receta_a0086c7891debe181051087a9cec1b1c4}\label{class_receta_a0086c7891debe181051087a9cec1b1c4}} 
+\index{Receta@{Receta}!getFibras@{getFibras}}
+\index{getFibras@{getFibras}!Receta@{Receta}}
+\doxysubsubsection{\texorpdfstring{getFibras()}{getFibras()}}
+{\footnotesize\ttfamily const float Receta\+::get\+Fibras (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+get\+Fibras 
+
+\begin{DoxyReturn}{Devuelve}
+Devuelve las fibras de la receta 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_receta_a55b3a0e40709b2974e1e6e303b7207f8}\label{class_receta_a55b3a0e40709b2974e1e6e303b7207f8}} 
+\index{Receta@{Receta}!getGrasas@{getGrasas}}
+\index{getGrasas@{getGrasas}!Receta@{Receta}}
+\doxysubsubsection{\texorpdfstring{getGrasas()}{getGrasas()}}
+{\footnotesize\ttfamily const float Receta\+::get\+Grasas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+get\+Grasas 
+
+\begin{DoxyReturn}{Devuelve}
+Devuelve las grasas de la receta 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_receta_af09f8f43a072dbe8f507b2e2232a30db}\label{class_receta_af09f8f43a072dbe8f507b2e2232a30db}} 
+\index{Receta@{Receta}!getHc@{getHc}}
+\index{getHc@{getHc}!Receta@{Receta}}
+\doxysubsubsection{\texorpdfstring{getHc()}{getHc()}}
+{\footnotesize\ttfamily const float Receta\+::get\+Hc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+get\+Hc 
+
+\begin{DoxyReturn}{Devuelve}
+Devuelve los hidratos de carbono de la receta 
+\end{DoxyReturn}
 \mbox{\Hypertarget{class_receta_ac8a501375a19e653dc302c0b8e3521eb}\label{class_receta_ac8a501375a19e653dc302c0b8e3521eb}} 
 \index{Receta@{Receta}!getNombre@{getNombre}}
 \index{getNombre@{getNombre}!Receta@{Receta}}
@@ -152,6 +230,19 @@ get\+Nombre
 
 \begin{DoxyReturn}{Devuelve}
 Devuelve el nombre de la receta 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_receta_a356d13d721cdc9b52b8c0883ae950bd6}\label{class_receta_a356d13d721cdc9b52b8c0883ae950bd6}} 
+\index{Receta@{Receta}!getProteinas@{getProteinas}}
+\index{getProteinas@{getProteinas}!Receta@{Receta}}
+\doxysubsubsection{\texorpdfstring{getProteinas()}{getProteinas()}}
+{\footnotesize\ttfamily const float Receta\+::get\+Proteinas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+get\+Proteinas 
+
+\begin{DoxyReturn}{Devuelve}
+Devuelve las proteinas de la receta 
 \end{DoxyReturn}
 \mbox{\Hypertarget{class_receta_a06b8d8f633037580798daf0adbf5e145}\label{class_receta_a06b8d8f633037580798daf0adbf5e145}} 
 \index{Receta@{Receta}!ningredientes@{ningredientes}}
@@ -181,6 +272,71 @@ Sobrecarga del operador=.
 {\em receta} & receta a igualar al objeto implícito \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{class_receta_aca744705502cb5bb664a8cc0a738b458}\label{class_receta_aca744705502cb5bb664a8cc0a738b458}} 
+\index{Receta@{Receta}!setCalorias@{setCalorias}}
+\index{setCalorias@{setCalorias}!Receta@{Receta}}
+\doxysubsubsection{\texorpdfstring{setCalorias()}{setCalorias()}}
+{\footnotesize\ttfamily void Receta\+::set\+Calorias (\begin{DoxyParamCaption}\item[{float}]{calorias }\end{DoxyParamCaption})}
+
+
+
+set\+Calorias 
+
+\begin{DoxyReturn}{Devuelve}
+actualiza las calorias de la receta 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_receta_ae3da21e878f6b5f44e14a8eb19ee0db6}\label{class_receta_ae3da21e878f6b5f44e14a8eb19ee0db6}} 
+\index{Receta@{Receta}!setFibra@{setFibra}}
+\index{setFibra@{setFibra}!Receta@{Receta}}
+\doxysubsubsection{\texorpdfstring{setFibra()}{setFibra()}}
+{\footnotesize\ttfamily void Receta\+::set\+Fibra (\begin{DoxyParamCaption}\item[{float}]{fibra }\end{DoxyParamCaption})}
+
+
+
+set\+Fibra 
+
+\begin{DoxyReturn}{Devuelve}
+actualiza las fibras de la receta 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_receta_a08a537f0b6598c4f1c3c31c4e8cf0cbd}\label{class_receta_a08a537f0b6598c4f1c3c31c4e8cf0cbd}} 
+\index{Receta@{Receta}!setGrasas@{setGrasas}}
+\index{setGrasas@{setGrasas}!Receta@{Receta}}
+\doxysubsubsection{\texorpdfstring{setGrasas()}{setGrasas()}}
+{\footnotesize\ttfamily void Receta\+::set\+Grasas (\begin{DoxyParamCaption}\item[{float}]{grasas }\end{DoxyParamCaption})}
+
+
+
+set\+Grasas 
+
+\begin{DoxyReturn}{Devuelve}
+actualiza las grasas de la receta 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_receta_a068018acdd4a6e0bcece800984ef9423}\label{class_receta_a068018acdd4a6e0bcece800984ef9423}} 
+\index{Receta@{Receta}!setHc@{setHc}}
+\index{setHc@{setHc}!Receta@{Receta}}
+\doxysubsubsection{\texorpdfstring{setHc()}{setHc()}}
+{\footnotesize\ttfamily void Receta\+::set\+Hc (\begin{DoxyParamCaption}\item[{float}]{hc }\end{DoxyParamCaption})}
+
+
+
+set\+Hc 
+
+\begin{DoxyReturn}{Devuelve}
+actualiza los hidratos de carbono de la receta 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_receta_ab5adfe6295075176f29c2c83f9eeadf2}\label{class_receta_ab5adfe6295075176f29c2c83f9eeadf2}} 
+\index{Receta@{Receta}!setProteinas@{setProteinas}}
+\index{setProteinas@{setProteinas}!Receta@{Receta}}
+\doxysubsubsection{\texorpdfstring{setProteinas()}{setProteinas()}}
+{\footnotesize\ttfamily void Receta\+::set\+Proteinas (\begin{DoxyParamCaption}\item[{float}]{proteinas }\end{DoxyParamCaption})}
+
+
+
+set\+Proteinas 
+
+\begin{DoxyReturn}{Devuelve}
+actualiza las proteinas de la receta 
+\end{DoxyReturn}
 
 
 \doxysubsection{Documentación de las funciones relacionadas y clases amigas}

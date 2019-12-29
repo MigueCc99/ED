@@ -35,7 +35,7 @@ public:
     */    
   Acciones(const Acciones &acciones);
 
-  int getAriedad(string accion);
+  unsigned char getAriedad(string accion);
 
   /**
     * @brief Sobrecarga del operador=

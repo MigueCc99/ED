@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="struct_arbol_binario_1_1info__nodo" kind="struct" language="C++" prot="private">
+    <compoundname>ArbolBinario::info_nodo</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_arbol_binario_1_1info__nodo_1ac010219cb5ca20e2e25530839aca587a" prot="public" static="no" mutable="no">
+        <type>T</type>
+        <definition>T ArbolBinario&lt; T &gt;::info_nodo::et</definition>
+        <argsstring></argsstring>
+        <name>et</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/arbolbinario.h" line="25" column="7" bodyfile="include/arbolbinario.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_arbol_binario_1_1info__nodo_1adc97502851c4fbf79e63c8f5ff51f9d5" prot="public" static="no" mutable="no">
+        <type>info_nodo *</type>
+        <definition>info_nodo* ArbolBinario&lt; T &gt;::info_nodo::padre</definition>
+        <argsstring></argsstring>
+        <name>padre</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/arbolbinario.h" line="26" column="16" bodyfile="include/arbolbinario.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_arbol_binario_1_1info__nodo_1ad99755f4fec90f1b32c4d60ec88a7856" prot="public" static="no" mutable="no">
+        <type>info_nodo *</type>
+        <definition>info_nodo* ArbolBinario&lt; T &gt;::info_nodo::hizq</definition>
+        <argsstring></argsstring>
+        <name>hizq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/arbolbinario.h" line="27" column="16" bodyfile="include/arbolbinario.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_arbol_binario_1_1info__nodo_1af05a633561cd318185f16b1e5006f0da" prot="public" static="no" mutable="no">
+        <type>info_nodo *</type>
+        <definition>info_nodo* ArbolBinario&lt; T &gt;::info_nodo::hder</definition>
+        <argsstring></argsstring>
+        <name>hder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/arbolbinario.h" line="28" column="16" bodyfile="include/arbolbinario.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_arbol_binario_1_1info__nodo_1a0636fb5af573fa024872954da99e08fd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ArbolBinario&lt; T &gt;::info_nodo::info_nodo</definition>
+        <argsstring>()</argsstring>
+        <name>info_nodo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/arbolbinario.h" line="29" column="5" bodyfile="include/arbolbinario.h" bodystart="29" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_arbol_binario_1_1info__nodo_1a298b155ece6a61d935469b0f9071505d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ArbolBinario&lt; T &gt;::info_nodo::info_nodo</definition>
+        <argsstring>(const T &amp;e)</argsstring>
+        <name>info_nodo</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/arbolbinario.h" line="30" column="5" bodyfile="include/arbolbinario.h" bodystart="30" bodyend="30"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>ArbolBinario&lt; T &gt;::info_nodo</label>
+        <childnode refid="1" relation="usage">
+          <edgelabel>padre</edgelabel>
+          <edgelabel>hder</edgelabel>
+          <edgelabel>hizq</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/arbolbinario.h" line="24" column="18" bodyfile="include/arbolbinario.h" bodystart="24" bodyend="31"/>
+    <listofallmembers>
+      <member refid="struct_arbol_binario_1_1info__nodo_1ac010219cb5ca20e2e25530839aca587a" prot="public" virt="non-virtual"><scope>ArbolBinario::info_nodo</scope><name>et</name></member>
+      <member refid="struct_arbol_binario_1_1info__nodo_1af05a633561cd318185f16b1e5006f0da" prot="public" virt="non-virtual"><scope>ArbolBinario::info_nodo</scope><name>hder</name></member>
+      <member refid="struct_arbol_binario_1_1info__nodo_1ad99755f4fec90f1b32c4d60ec88a7856" prot="public" virt="non-virtual"><scope>ArbolBinario::info_nodo</scope><name>hizq</name></member>
+      <member refid="struct_arbol_binario_1_1info__nodo_1a0636fb5af573fa024872954da99e08fd" prot="public" virt="non-virtual"><scope>ArbolBinario::info_nodo</scope><name>info_nodo</name></member>
+      <member refid="struct_arbol_binario_1_1info__nodo_1a298b155ece6a61d935469b0f9071505d" prot="public" virt="non-virtual"><scope>ArbolBinario::info_nodo</scope><name>info_nodo</name></member>
+      <member refid="struct_arbol_binario_1_1info__nodo_1adc97502851c4fbf79e63c8f5ff51f9d5" prot="public" virt="non-virtual"><scope>ArbolBinario::info_nodo</scope><name>padre</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

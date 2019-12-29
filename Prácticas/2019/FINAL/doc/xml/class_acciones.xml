@@ -1,0 +1,313 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="class_acciones" kind="class" language="C++" prot="public">
+    <compoundname>Acciones</compoundname>
+    <innerclass refid="class_acciones_1_1const__iterator" prot="public">Acciones::const_iterator</innerclass>
+    <innerclass refid="class_acciones_1_1iterator" prot="public">Acciones::iterator</innerclass>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_acciones_1a82bf836fd1536c465d8feaa42e35546c" prot="private" static="no" mutable="no">
+        <type>map&lt; string, unsigned char &gt;</type>
+        <definition>map&lt;string, unsigned char &gt; Acciones::datos</definition>
+        <argsstring></argsstring>
+        <name>datos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/acciones.h" line="17" column="7" bodyfile="include/acciones.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_acciones_1a52ddbeeba4e5f331305ce7202c6035f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Acciones::Acciones</definition>
+        <argsstring>()</argsstring>
+        <name>Acciones</name>
+        <briefdescription>
+<para>Constructor por defecto de la clase. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/acciones.h" line="23" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_acciones_1a74d03fe7642470ed4af3901cc09b5de3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Acciones::Acciones</definition>
+        <argsstring>(map&lt; string, unsigned char &gt; datos)</argsstring>
+        <name>Acciones</name>
+        <param>
+          <type>map&lt; string, unsigned char &gt;</type>
+          <declname>datos</declname>
+        </param>
+        <briefdescription>
+<para>Constructor de la clase. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>datos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>un map que representa una clave unívoca y una accion asociada </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Crea <ref refid="class_acciones" kindref="compound">Acciones</ref> {datos} </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/acciones.h" line="30" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_acciones_1ad744a13ef964c5f35c2d7c3e332933c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Acciones::Acciones</definition>
+        <argsstring>(const Acciones &amp;acciones)</argsstring>
+        <name>Acciones</name>
+        <param>
+          <type>const <ref refid="class_acciones" kindref="compound">Acciones</ref> &amp;</type>
+          <declname>acciones</declname>
+        </param>
+        <briefdescription>
+<para>Constructor de copia de la clase. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>acciones</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a copiar </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/acciones.h" line="36" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_acciones_1acde0f486eedb90ca55a9d8a483d6f847" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned char</type>
+        <definition>unsigned char Acciones::getAriedad</definition>
+        <argsstring>(string accion)</argsstring>
+        <name>getAriedad</name>
+        <param>
+          <type>string</type>
+          <declname>accion</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/acciones.h" line="38" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_acciones_1a4c8df508541c2bf55fe72704a04afeb7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_acciones" kindref="compound">Acciones</ref> &amp;</type>
+        <definition>Acciones&amp; Acciones::operator=</definition>
+        <argsstring>(const Acciones &amp;acciones)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="class_acciones" kindref="compound">Acciones</ref> &amp;</type>
+          <declname>acciones</declname>
+        </param>
+        <briefdescription>
+<para>Sobrecarga del operador=. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>acciones</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>acciones a igualar al objeto implícito </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/acciones.h" line="44" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_acciones_1a1a74f7e62810e656d5decf1a28480c1f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_acciones_1_1iterator" kindref="compound">iterator</ref></type>
+        <definition>iterator Acciones::begin</definition>
+        <argsstring>()</argsstring>
+        <name>begin</name>
+        <briefdescription>
+<para>Inicializa un iterator al comienzo de <ref refid="class_acciones" kindref="compound">Acciones</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/acciones.h" line="142" column="12" bodyfile="include/acciones.h" bodystart="142" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="class_acciones_1ad5374e47df1c307470cc1400233f5e20" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_acciones_1_1iterator" kindref="compound">iterator</ref></type>
+        <definition>iterator Acciones::end</definition>
+        <argsstring>()</argsstring>
+        <name>end</name>
+        <briefdescription>
+<para>Inicializa un iterator al final de <ref refid="class_acciones" kindref="compound">Acciones</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/acciones.h" line="151" column="12" bodyfile="include/acciones.h" bodystart="151" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="class_acciones_1ad90c56418f6c7b62c6da9f2a944e1205" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_acciones_1_1const__iterator" kindref="compound">const_iterator</ref></type>
+        <definition>const_iterator Acciones::begin</definition>
+        <argsstring>() const</argsstring>
+        <name>begin</name>
+        <briefdescription>
+<para>Inicializa un <ref refid="class_acciones_1_1const__iterator" kindref="compound">const_iterator</ref> al comienzo de <ref refid="class_acciones" kindref="compound">Acciones</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/acciones.h" line="160" column="18" bodyfile="include/acciones.h" bodystart="160" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="class_acciones_1a746840a76a82bd56c0ca6284c8ab5c26" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_acciones_1_1const__iterator" kindref="compound">const_iterator</ref></type>
+        <definition>const_iterator Acciones::end</definition>
+        <argsstring>() const</argsstring>
+        <name>end</name>
+        <briefdescription>
+<para>Inicializa un <ref refid="class_acciones_1_1const__iterator" kindref="compound">const_iterator</ref> al final de <ref refid="class_acciones" kindref="compound">Acciones</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/acciones.h" line="169" column="18" bodyfile="include/acciones.h" bodystart="169" bodyend="173"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_acciones_1af3953cc74a70d0d3cb2b2b174d45690c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend ostream &amp;</type>
+        <definition>ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(ostream &amp;os, const Acciones &amp;acciones)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_acciones" kindref="compound">Acciones</ref> &amp;</type>
+          <declname>acciones</declname>
+        </param>
+        <briefdescription>
+<para>Salida de <ref refid="class_acciones" kindref="compound">Acciones</ref> a ostream. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>os</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>de salida </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>acciones</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_acciones" kindref="compound">Acciones</ref> a escribir </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="post"><para>Se obtiene en <emphasis>os</emphasis> la acciones con <emphasis>{datos}</emphasis> <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/acciones.h" line="53" column="10"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_acciones_1a6d77f879289451ddda3b4b328458a68e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend istream &amp;</type>
+        <definition>istream&amp; operator&gt;&gt;</definition>
+        <argsstring>(istream &amp;is, Acciones &amp;acciones)</argsstring>
+        <name>operator&gt;&gt;</name>
+        <param>
+          <type>istream &amp;</type>
+          <declname>is</declname>
+        </param>
+        <param>
+          <type><ref refid="class_acciones" kindref="compound">Acciones</ref> &amp;</type>
+          <declname>acciones</declname>
+        </param>
+        <briefdescription>
+<para>Entrada de <ref refid="class_acciones" kindref="compound">Acciones</ref> desde istream. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>is</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>stream de entrada </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>acciones</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_acciones" kindref="compound">Acciones</ref> que recibe </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>Las</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_acciones" kindref="compound">Acciones</ref> leído en acciones </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="pre"><para>La entrada tiene el formato datos con <emphasis>datos</emphasis> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/acciones.h" line="63" column="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/acciones.h" line="15" column="15" bodyfile="include/acciones.h" bodystart="15" bodyend="175"/>
+    <listofallmembers>
+      <member refid="class_acciones_1a52ddbeeba4e5f331305ce7202c6035f3" prot="public" virt="non-virtual"><scope>Acciones</scope><name>Acciones</name></member>
+      <member refid="class_acciones_1a74d03fe7642470ed4af3901cc09b5de3" prot="public" virt="non-virtual"><scope>Acciones</scope><name>Acciones</name></member>
+      <member refid="class_acciones_1ad744a13ef964c5f35c2d7c3e332933c3" prot="public" virt="non-virtual"><scope>Acciones</scope><name>Acciones</name></member>
+      <member refid="class_acciones_1a1a74f7e62810e656d5decf1a28480c1f" prot="public" virt="non-virtual"><scope>Acciones</scope><name>begin</name></member>
+      <member refid="class_acciones_1ad90c56418f6c7b62c6da9f2a944e1205" prot="public" virt="non-virtual"><scope>Acciones</scope><name>begin</name></member>
+      <member refid="class_acciones_1a82bf836fd1536c465d8feaa42e35546c" prot="private" virt="non-virtual"><scope>Acciones</scope><name>datos</name></member>
+      <member refid="class_acciones_1ad5374e47df1c307470cc1400233f5e20" prot="public" virt="non-virtual"><scope>Acciones</scope><name>end</name></member>
+      <member refid="class_acciones_1a746840a76a82bd56c0ca6284c8ab5c26" prot="public" virt="non-virtual"><scope>Acciones</scope><name>end</name></member>
+      <member refid="class_acciones_1acde0f486eedb90ca55a9d8a483d6f847" prot="public" virt="non-virtual"><scope>Acciones</scope><name>getAriedad</name></member>
+      <member refid="class_acciones_1af3953cc74a70d0d3cb2b2b174d45690c" prot="public" virt="non-virtual"><scope>Acciones</scope><name>operator&lt;&lt;</name></member>
+      <member refid="class_acciones_1a4c8df508541c2bf55fe72704a04afeb7" prot="public" virt="non-virtual"><scope>Acciones</scope><name>operator=</name></member>
+      <member refid="class_acciones_1a6d77f879289451ddda3b4b328458a68e" prot="public" virt="non-virtual"><scope>Acciones</scope><name>operator&gt;&gt;</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

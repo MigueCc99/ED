@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['receta_2eh_59',['receta.h',['../receta_8h.html',1,'']]],
-  ['recetas_2eh_60',['recetas.h',['../recetas_8h.html',1,'']]]
+  ['ingrediente_2eh_101',['ingrediente.h',['../ingrediente_8h.html',1,'']]],
+  ['ingredientes_2eh_102',['ingredientes.h',['../ingredientes_8h.html',1,'']]]
 ];

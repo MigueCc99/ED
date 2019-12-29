@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/recetas.h" line="158" column="34" bodyfile="include/recetas.h" bodystart="158" bodyend="-1"/>
+        <location file="include/recetas.h" line="156" column="34" bodyfile="include/recetas.h" bodystart="156" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="friend">
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/recetas.h" line="188" column="11" bodyfile="include/recetas.h" bodystart="188" bodyend="-1"/>
+        <location file="include/recetas.h" line="186" column="11" bodyfile="include/recetas.h" bodystart="186" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -45,7 +45,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/recetas.h" line="161" column="27" bodyfile="include/recetas.h" bodystart="161" bodyend="164"/>
+        <location file="include/recetas.h" line="159" column="27" bodyfile="include/recetas.h" bodystart="159" bodyend="162"/>
       </memberdef>
       <memberdef kind="function" id="class_recetas_1_1const__iterator_1a7f8fb0dd990048d60b1772d03a5094b7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="class_recetas_1_1const__iterator" kindref="compound">const_iterator</ref> &amp;</type>
@@ -58,7 +58,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/recetas.h" line="166" column="27" bodyfile="include/recetas.h" bodystart="166" bodyend="169"/>
+        <location file="include/recetas.h" line="164" column="27" bodyfile="include/recetas.h" bodystart="164" bodyend="167"/>
       </memberdef>
       <memberdef kind="function" id="class_recetas_1_1const__iterator_1a51d9b9bbbdfa9781f46eba1b909633c9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>const <ref refid="class_receta" kindref="compound">Receta</ref> &amp;</type>
@@ -71,7 +71,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/recetas.h" line="171" column="25" bodyfile="include/recetas.h" bodystart="171" bodyend="173"/>
+        <location file="include/recetas.h" line="169" column="25" bodyfile="include/recetas.h" bodystart="169" bodyend="171"/>
       </memberdef>
       <memberdef kind="function" id="class_recetas_1_1const__iterator_1a0bdfc3826cc856574e2ada44d6c38087" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -88,7 +88,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/recetas.h" line="175" column="16" bodyfile="include/recetas.h" bodystart="175" bodyend="177"/>
+        <location file="include/recetas.h" line="173" column="16" bodyfile="include/recetas.h" bodystart="173" bodyend="175"/>
       </memberdef>
       <memberdef kind="function" id="class_recetas_1_1const__iterator_1ab96e145f821a31d697a8175595ddec40" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -105,7 +105,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/recetas.h" line="179" column="16" bodyfile="include/recetas.h" bodystart="179" bodyend="181"/>
+        <location file="include/recetas.h" line="177" column="16" bodyfile="include/recetas.h" bodystart="177" bodyend="179"/>
       </memberdef>
       <memberdef kind="function" id="class_recetas_1_1const__iterator_1ae59a377c12e8021150945875a6bc63e3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="class_recetas_1_1const__iterator" kindref="compound">const_iterator</ref> &amp;</type>
@@ -122,7 +122,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/recetas.h" line="183" column="27" bodyfile="include/recetas.h" bodystart="183" bodyend="186"/>
+        <location file="include/recetas.h" line="181" column="27" bodyfile="include/recetas.h" bodystart="181" bodyend="184"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -130,7 +130,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="include/recetas.h" line="156" column="25" bodyfile="include/recetas.h" bodystart="156" bodyend="189"/>
+    <location file="include/recetas.h" line="154" column="25" bodyfile="include/recetas.h" bodystart="154" bodyend="187"/>
     <listofallmembers>
       <member refid="class_recetas_1_1const__iterator_1a49382a977dd96feca686e85d28804b49" prot="private" virt="non-virtual"><scope>Recetas::const_iterator</scope><name>it</name></member>
       <member refid="class_recetas_1_1const__iterator_1ab96e145f821a31d697a8175595ddec40" prot="public" virt="non-virtual"><scope>Recetas::const_iterator</scope><name>operator!=</name></member>

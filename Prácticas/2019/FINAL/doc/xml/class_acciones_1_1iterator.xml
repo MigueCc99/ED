@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="class_acciones_1_1iterator" kind="class" language="C++" prot="public">
+    <compoundname>Acciones::iterator</compoundname>
+    <includes refid="acciones_8h" local="no">acciones.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_acciones_1_1iterator_1a78664257c712a8501c023c73e5708655" prot="private" static="no" mutable="no">
+        <type>map&lt; string, unsigned char &gt;::<ref refid="class_acciones_1_1iterator" kindref="compound">iterator</ref></type>
+        <definition>map&lt;string,unsigned char&gt;::iterator Acciones::iterator::it</definition>
+        <argsstring></argsstring>
+        <name>it</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/acciones.h" line="70" column="22" bodyfile="include/acciones.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_acciones_1_1iterator_1aab022c3664dbdb7864f97a2f7ce9d187" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class Acciones</definition>
+        <argsstring></argsstring>
+        <name>Acciones</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/acciones.h" line="99" column="7" bodyfile="include/acciones.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_acciones_1_1iterator_1a26e8e10523050711179f07ee547795bc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_acciones_1_1iterator" kindref="compound">iterator</ref> &amp;</type>
+        <definition>iterator&amp; Acciones::iterator::operator++</definition>
+        <argsstring>()</argsstring>
+        <name>operator++</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/acciones.h" line="73" column="17" bodyfile="include/acciones.h" bodystart="73" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="class_acciones_1_1iterator_1abc7813930ab6035eb7dd4874e815bc15" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_acciones_1_1iterator" kindref="compound">iterator</ref> &amp;</type>
+        <definition>iterator&amp; Acciones::iterator::operator--</definition>
+        <argsstring>()</argsstring>
+        <name>operator--</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/acciones.h" line="78" column="17" bodyfile="include/acciones.h" bodystart="78" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="class_acciones_1_1iterator_1a44375a863d53a910a96bcf7117378bf7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>pair&lt; const string, unsigned char &gt; &amp;</type>
+        <definition>pair&lt;const string,unsigned char &gt;&amp; Acciones::iterator::operator*</definition>
+        <argsstring>()</argsstring>
+        <name>operator*</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/acciones.h" line="83" column="13" bodyfile="include/acciones.h" bodystart="83" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="class_acciones_1_1iterator_1a409b98e836fe41badd40f25d47c4f016" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Acciones::iterator::operator==</definition>
+        <argsstring>(const iterator &amp;i)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="class_acciones_1_1iterator" kindref="compound">iterator</ref> &amp;</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/acciones.h" line="87" column="12" bodyfile="include/acciones.h" bodystart="87" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="class_acciones_1_1iterator_1aa0ee950062bc9d5f4a7fb6e8d7a4c286" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Acciones::iterator::operator!=</definition>
+        <argsstring>(const iterator &amp;i)</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="class_acciones_1_1iterator" kindref="compound">iterator</ref> &amp;</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/acciones.h" line="91" column="12" bodyfile="include/acciones.h" bodystart="91" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="class_acciones_1_1iterator_1ae79dbbe70c5e3cbc879b7dd32969d70a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_acciones_1_1iterator" kindref="compound">iterator</ref> &amp;</type>
+        <definition>iterator&amp; Acciones::iterator::operator=</definition>
+        <argsstring>(const iterator &amp;i)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="class_acciones_1_1iterator" kindref="compound">iterator</ref> &amp;</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/acciones.h" line="95" column="17" bodyfile="include/acciones.h" bodystart="95" bodyend="98"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Clase para iterar sobre las acciones. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/acciones.h" line="68" column="17" bodyfile="include/acciones.h" bodystart="68" bodyend="100"/>
+    <listofallmembers>
+      <member refid="class_acciones_1_1iterator_1aab022c3664dbdb7864f97a2f7ce9d187" prot="public" virt="non-virtual"><scope>Acciones::iterator</scope><name>Acciones</name></member>
+      <member refid="class_acciones_1_1iterator_1a78664257c712a8501c023c73e5708655" prot="private" virt="non-virtual"><scope>Acciones::iterator</scope><name>it</name></member>
+      <member refid="class_acciones_1_1iterator_1aa0ee950062bc9d5f4a7fb6e8d7a4c286" prot="public" virt="non-virtual"><scope>Acciones::iterator</scope><name>operator!=</name></member>
+      <member refid="class_acciones_1_1iterator_1a44375a863d53a910a96bcf7117378bf7" prot="public" virt="non-virtual"><scope>Acciones::iterator</scope><name>operator*</name></member>
+      <member refid="class_acciones_1_1iterator_1a26e8e10523050711179f07ee547795bc" prot="public" virt="non-virtual"><scope>Acciones::iterator</scope><name>operator++</name></member>
+      <member refid="class_acciones_1_1iterator_1abc7813930ab6035eb7dd4874e815bc15" prot="public" virt="non-virtual"><scope>Acciones::iterator</scope><name>operator--</name></member>
+      <member refid="class_acciones_1_1iterator_1ae79dbbe70c5e3cbc879b7dd32969d70a" prot="public" virt="non-virtual"><scope>Acciones::iterator</scope><name>operator=</name></member>
+      <member refid="class_acciones_1_1iterator_1a409b98e836fe41badd40f25d47c4f016" prot="public" virt="non-virtual"><scope>Acciones::iterator</scope><name>operator==</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

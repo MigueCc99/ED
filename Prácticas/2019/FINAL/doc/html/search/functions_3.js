@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['imprimirportipo_81',['imprimirPorTipo',['../class_ingredientes.html#ab56b335eeb1662c1869d428df28fb035',1,'Ingredientes']]],
-  ['ingrediente_82',['Ingrediente',['../class_ingrediente.html#ac39e59564451be4c0e12af8ce3d40afb',1,'Ingrediente::Ingrediente()'],['../class_ingrediente.html#ac7fc4a4ac7efac10bc6c583819242d53',1,'Ingrediente::Ingrediente(string nombre, int calorias, int hidratos, int proteinas, int grasas, int fibras, string tipo)'],['../class_ingrediente.html#a49271eb24114ff26846f41696884a8da',1,'Ingrediente::Ingrediente(const Ingrediente &amp;ingrediente)']]],
-  ['ingredientes_83',['Ingredientes',['../class_ingredientes.html#a4599533b7d0530fe6fdd68006b3f0bde',1,'Ingredientes']]],
-  ['insertaringrediente_84',['insertarIngrediente',['../class_ingredientes.html#aa49df6c8d8c48cca8591a620b2d15cc3',1,'Ingredientes']]]
+  ['empty_115',['empty',['../class_arbol_binario.html#a574a76889f9bb8a80080288a16f9441f',1,'ArbolBinario']]],
+  ['end_116',['end',['../class_receta.html#a65d46cc6760bf2079f23f769253c91d3',1,'Receta::end()'],['../class_receta.html#a002638d4140f2bf36cce10f98c8b893b',1,'Receta::end() const'],['../class_recetas.html#a0ecd852b30d02a203b7c06dbf4420311',1,'Recetas::end()'],['../class_recetas.html#a98eb0106975e82d7dead2b95effc7102',1,'Recetas::end() const'],['../class_ingredientes.html#a743696bb30ce1ff6d970496be6273383',1,'Ingredientes::end()'],['../class_ingredientes.html#a952de40063794632409a027d166cd6c9',1,'Ingredientes::end() const'],['../class_acciones.html#ad5374e47df1c307470cc1400233f5e20',1,'Acciones::end()'],['../class_acciones.html#a746840a76a82bd56c0ca6284c8ab5c26',1,'Acciones::end() const']]],
+  ['endinorden_117',['endinorden',['../class_arbol_binario.html#a62a0048bb6d35947409496b55b5bd303',1,'ArbolBinario']]],
+  ['endpostorden_118',['endpostorden',['../class_arbol_binario.html#ad4ead2ad6b0e81f185fb540184a15bdb',1,'ArbolBinario']]],
+  ['endpreorden_119',['endpreorden',['../class_arbol_binario.html#ad1c64408fd252fa134125d7ca5717e3a',1,'ArbolBinario']]]
 ];

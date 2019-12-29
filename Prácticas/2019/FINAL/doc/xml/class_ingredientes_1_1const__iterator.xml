@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ingredientes.h" line="250" column="33" bodyfile="include/ingredientes.h" bodystart="250" bodyend="-1"/>
+        <location file="include/ingredientes.h" line="252" column="33" bodyfile="include/ingredientes.h" bodystart="252" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="friend">
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ingredientes.h" line="280" column="9" bodyfile="include/ingredientes.h" bodystart="280" bodyend="-1"/>
+        <location file="include/ingredientes.h" line="282" column="9" bodyfile="include/ingredientes.h" bodystart="282" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -45,7 +45,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ingredientes.h" line="253" column="25" bodyfile="include/ingredientes.h" bodystart="253" bodyend="256"/>
+        <location file="include/ingredientes.h" line="255" column="25" bodyfile="include/ingredientes.h" bodystart="255" bodyend="258"/>
       </memberdef>
       <memberdef kind="function" id="class_ingredientes_1_1const__iterator_1aa069e2d5165a9690c411c516cb0930a7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="class_ingredientes_1_1const__iterator" kindref="compound">const_iterator</ref> &amp;</type>
@@ -58,7 +58,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ingredientes.h" line="258" column="25" bodyfile="include/ingredientes.h" bodystart="258" bodyend="261"/>
+        <location file="include/ingredientes.h" line="260" column="25" bodyfile="include/ingredientes.h" bodystart="260" bodyend="263"/>
       </memberdef>
       <memberdef kind="function" id="class_ingredientes_1_1const__iterator_1ab6146a3efeee1f52623aa733a4bd4fc9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>const <ref refid="class_ingrediente" kindref="compound">Ingrediente</ref> &amp;</type>
@@ -71,7 +71,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ingredientes.h" line="263" column="28" bodyfile="include/ingredientes.h" bodystart="263" bodyend="265"/>
+        <location file="include/ingredientes.h" line="265" column="28" bodyfile="include/ingredientes.h" bodystart="265" bodyend="267"/>
       </memberdef>
       <memberdef kind="function" id="class_ingredientes_1_1const__iterator_1adc549ffc966900cfabdc87e02e0ee02b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -88,7 +88,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ingredientes.h" line="267" column="14" bodyfile="include/ingredientes.h" bodystart="267" bodyend="269"/>
+        <location file="include/ingredientes.h" line="269" column="14" bodyfile="include/ingredientes.h" bodystart="269" bodyend="271"/>
       </memberdef>
       <memberdef kind="function" id="class_ingredientes_1_1const__iterator_1a4894a635351685d4f541a20b7da9af09" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -105,7 +105,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ingredientes.h" line="271" column="14" bodyfile="include/ingredientes.h" bodystart="271" bodyend="273"/>
+        <location file="include/ingredientes.h" line="273" column="14" bodyfile="include/ingredientes.h" bodystart="273" bodyend="275"/>
       </memberdef>
       <memberdef kind="function" id="class_ingredientes_1_1const__iterator_1a9d817c2d61fa0a72c59d2e9e98f01390" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="class_ingredientes_1_1const__iterator" kindref="compound">const_iterator</ref> &amp;</type>
@@ -122,7 +122,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ingredientes.h" line="275" column="25" bodyfile="include/ingredientes.h" bodystart="275" bodyend="278"/>
+        <location file="include/ingredientes.h" line="277" column="25" bodyfile="include/ingredientes.h" bodystart="277" bodyend="280"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -130,7 +130,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="include/ingredientes.h" line="248" column="25" bodyfile="include/ingredientes.h" bodystart="248" bodyend="282"/>
+    <location file="include/ingredientes.h" line="250" column="25" bodyfile="include/ingredientes.h" bodystart="250" bodyend="284"/>
     <listofallmembers>
       <member refid="class_ingredientes_1_1const__iterator_1a1a8c7f96971fda9a9b26b6d2a72e548b" prot="public" virt="non-virtual"><scope>Ingredientes::const_iterator</scope><name>Ingredientes</name></member>
       <member refid="class_ingredientes_1_1const__iterator_1a9b367bb1f827fa5de9f0266e80adf02c" prot="private" virt="non-virtual"><scope>Ingredientes::const_iterator</scope><name>it</name></member>

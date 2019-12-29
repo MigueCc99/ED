@@ -28,9 +28,21 @@
         <childnode refid="2" relation="include">
         </childnode>
       </node>
+      <node id="3">
+        <label>include/receta.h</label>
+        <link refid="receta_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>include/recetas.h</label>
+        <link refid="recetas_8h"/>
+      </node>
       <node id="2">
         <label>include/ingredientes.h</label>
         <link refid="ingredientes_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
       </node>
     </invincdepgraph>
     <innerclass refid="class_ingrediente" prot="public">Ingrediente</innerclass>

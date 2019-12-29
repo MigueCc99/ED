@@ -1,10 +1,20 @@
 var searchData=
 [
-  ['imprimirportipo_21',['imprimirPorTipo',['../class_ingredientes.html#ab56b335eeb1662c1869d428df28fb035',1,'Ingredientes']]],
-  ['ingrediente_22',['Ingrediente',['../class_ingrediente.html',1,'Ingrediente'],['../class_ingrediente.html#ac39e59564451be4c0e12af8ce3d40afb',1,'Ingrediente::Ingrediente()'],['../class_ingrediente.html#ac7fc4a4ac7efac10bc6c583819242d53',1,'Ingrediente::Ingrediente(string nombre, int calorias, int hidratos, int proteinas, int grasas, int fibras, string tipo)'],['../class_ingrediente.html#a49271eb24114ff26846f41696884a8da',1,'Ingrediente::Ingrediente(const Ingrediente &amp;ingrediente)']]],
-  ['ingrediente_2eh_23',['ingrediente.h',['../ingrediente_8h.html',1,'']]],
-  ['ingredientes_24',['Ingredientes',['../class_ingredientes.html',1,'Ingredientes'],['../class_ingredientes.html#a4599533b7d0530fe6fdd68006b3f0bde',1,'Ingredientes::Ingredientes()']]],
-  ['ingredientes_2eh_25',['ingredientes.h',['../ingredientes_8h.html',1,'']]],
-  ['insertaringrediente_26',['insertarIngrediente',['../class_ingredientes.html#aa49df6c8d8c48cca8591a620b2d15cc3',1,'Ingredientes']]],
-  ['iterator_27',['iterator',['../class_ingredientes_1_1iterator.html',1,'Ingredientes::iterator'],['../class_recetas_1_1iterator.html',1,'Recetas::iterator'],['../class_receta_1_1iterator.html',1,'Receta::iterator']]]
+  ['get_17',['get',['../class_ingredientes.html#a97dea81c4db6348691c55e9db5ef3619',1,'Ingredientes']]],
+  ['getcalorias_18',['getCalorias',['../class_receta.html#a6843da885b9c6dde786bcffa79b9bd05',1,'Receta::getCalorias()'],['../class_ingrediente.html#ac5481304477b6f6b6b237a98345cc581',1,'Ingrediente::getCalorias()']]],
+  ['getcode_19',['getCode',['../class_receta.html#a2822d63fe8ea293434bfbc518d0b23f0',1,'Receta']]],
+  ['getestadistica_20',['getEstadistica',['../class_ingredientes.html#a0ee5c7350ec2956cf1f36d8a6e718347',1,'Ingredientes']]],
+  ['getfibras_21',['getFibras',['../class_receta.html#a0086c7891debe181051087a9cec1b1c4',1,'Receta::getFibras()'],['../class_ingrediente.html#a5a64b636d41295ee57dfa22db8cfd413',1,'Ingrediente::getFibras()']]],
+  ['getgrasas_22',['getGrasas',['../class_receta.html#a55b3a0e40709b2974e1e6e303b7207f8',1,'Receta::getGrasas()'],['../class_ingrediente.html#a6337fb89787d82ff24cb38d3b3e69f74',1,'Ingrediente::getGrasas()']]],
+  ['gethc_23',['getHc',['../class_receta.html#af09f8f43a072dbe8f507b2e2232a30db',1,'Receta']]],
+  ['gethidratos_24',['getHidratos',['../class_ingrediente.html#a07418ed4b6db1c3857cf1c7cda1dc92a',1,'Ingrediente']]],
+  ['getinformacion_25',['getInformacion',['../class_ingredientes.html#a2f30f251726c114a425e655a07a21d80',1,'Ingredientes']]],
+  ['getingrediente_26',['getIngrediente',['../class_ingredientes.html#aeb8017d2e1182f78e3935ca72b766ef8',1,'Ingredientes']]],
+  ['getingredientestipo_27',['getIngredientesTipo',['../class_ingredientes.html#ad49a4d1142a214e8c077871efed59c60',1,'Ingredientes']]],
+  ['getnombre_28',['getNombre',['../class_receta.html#ac8a501375a19e653dc302c0b8e3521eb',1,'Receta::getNombre()'],['../class_ingrediente.html#af487c2d1e772199c006b9e914088653a',1,'Ingrediente::getNombre()']]],
+  ['getnumingredientes_29',['getNumIngredientes',['../class_ingredientes.html#a485db5688382e8068feb4680caea9a5f',1,'Ingredientes']]],
+  ['getproteinas_30',['getProteinas',['../class_receta.html#a356d13d721cdc9b52b8c0883ae950bd6',1,'Receta::getProteinas()'],['../class_ingrediente.html#a8a4685a78101dde5ed338a53567e9346',1,'Ingrediente::getProteinas()']]],
+  ['getraiz_31',['getRaiz',['../class_arbol_binario.html#a8ced95c7eae98ffd79eb46dcc99df523',1,'ArbolBinario']]],
+  ['gettipo_32',['getTipo',['../class_ingrediente.html#a575ae44e1daae178ca5d6512cadddf93',1,'Ingrediente']]],
+  ['gettipos_33',['getTipos',['../class_ingredientes.html#a9869f4642af46cd91d426c9a4e22019a',1,'Ingredientes']]]
 ];

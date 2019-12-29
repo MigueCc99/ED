@@ -1,0 +1,1600 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="class_arbol_binario" kind="class" language="C++" prot="public">
+    <compoundname>ArbolBinario</compoundname>
+    <includes refid="arbolbinario_8h" local="no">arbolbinario.h</includes>
+    <innerclass refid="struct_arbol_binario_1_1info__nodo" prot="private">ArbolBinario::info_nodo</innerclass>
+    <innerclass refid="class_arbol_binario_1_1inorden__iterador" prot="public">ArbolBinario::inorden_iterador</innerclass>
+    <innerclass refid="class_arbol_binario_1_1nodo" prot="public">ArbolBinario::nodo</innerclass>
+    <innerclass refid="class_arbol_binario_1_1postorden__iterador" prot="public">ArbolBinario::postorden_iterador</innerclass>
+    <innerclass refid="class_arbol_binario_1_1preorden__iterador" prot="public">ArbolBinario::preorden_iterador</innerclass>
+    <templateparamlist>
+      <param>
+        <type>class</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_arbol_binario_1a116619c6d1e1f8af4ebc95399a062801" prot="private" static="no" mutable="no">
+        <type>info_nodo *</type>
+        <definition>info_nodo* ArbolBinario&lt; T &gt;::raiz</definition>
+        <argsstring></argsstring>
+        <name>raiz</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/arbolbinario.h" line="166" column="14" bodyfile="include/arbolbinario.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_arbol_binario_1a2f4333678ab24a80ea88f05151d3b5ab" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ArbolBinario&lt; T &gt;::CopiarInfo</definition>
+        <argsstring>(info_nodo *&amp;dest, const info_nodo *const &amp;source)</argsstring>
+        <name>CopiarInfo</name>
+        <param>
+          <type>info_nodo *&amp;</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>const info_nodo *const &amp;</type>
+          <declname>source</declname>
+        </param>
+        <briefdescription>
+<para>Copiar un subarbol en otro. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dest</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>objeto donde queda la copia. ES MODIFICADO </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>source</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>objeto desde el que se copia. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/arbolbinario.h" line="39" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_arbol_binario_1a9a9320b7ec787b55a9fd65c041fea135" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ArbolBinario&lt; T &gt;::BorrarInfo</definition>
+        <argsstring>(info_nodo *&amp;d)</argsstring>
+        <name>BorrarInfo</name>
+        <param>
+          <type>info_nodo *&amp;</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Borra toda la información asociada a un subarbol <linebreak/>
+ </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>raiz del subarbol a borrar. ES MODIFICADO </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/arbolbinario.h" line="45" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_arbol_binario_1abd35b63011c7bc50852ab039ea8500f0" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int ArbolBinario&lt; T &gt;::numero_nodos</definition>
+        <argsstring>(const info_nodo *d) const</argsstring>
+        <name>numero_nodos</name>
+        <param>
+          <type>const info_nodo *</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Devuelve el numero de nodos del subarbol. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>raiz del subarbol </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/arbolbinario.h" line="51" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_arbol_binario_1a8618907c8154d008f64252403e871bf4" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ArbolBinario&lt; T &gt;::iguales</definition>
+        <argsstring>(const info_nodo *s1, const info_nodo *s2) const</argsstring>
+        <name>iguales</name>
+        <param>
+          <type>const info_nodo *</type>
+          <declname>s1</declname>
+        </param>
+        <param>
+          <type>const info_nodo *</type>
+          <declname>s2</declname>
+        </param>
+        <briefdescription>
+<para>Devuelve true si los dos subarboles son iguales. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>raiz del primer subarbol </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>s2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>raiz del segundo subarbol </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>: el tipo T debe tener definido el operador == </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/arbolbinario.h" line="60" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_arbol_binario_1aca7d7c365ead3aa2040ffc64e1dfb1f4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ArbolBinario&lt; T &gt;::InsertarHijoIzquierda</definition>
+        <argsstring>(info_nodo *n, info_nodo *sub)</argsstring>
+        <name>InsertarHijoIzquierda</name>
+        <param>
+          <type>info_nodo *</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>info_nodo *</type>
+          <declname>sub</declname>
+        </param>
+        <briefdescription>
+<para>. Inserta un subarbol como hijo a la izquierda de uno dado </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>subarbol al que se le inserta un nuevo subarbol como hijo a la izquierda. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sub</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>raiz del subarbol que se inserta <linebreak/>
+ </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>el subarbol hijo a la izquierda de n es eliminado </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/arbolbinario.h" line="68" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_arbol_binario_1a87341ffccfe5ef304783c70adf86238d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ArbolBinario&lt; T &gt;::InsertarHijoIzquierda</definition>
+        <argsstring>(info_nodo *n, const T &amp;e)</argsstring>
+        <name>InsertarHijoIzquierda</name>
+        <param>
+          <type>info_nodo *</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>. Inserta un subarbol como hijo a la izquierda de uno dado que consta de un solo nodo </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>subarbol al que se le inserta un nuevo subarbol como hijo a la izquierda. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>etiqueta de la raiz del subarbol que se inserta </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>el subarbol hijo a la izquierda de n es eliminado </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/arbolbinario.h" line="76" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_arbol_binario_1a8f4971f20eb2a059b9b1ae117e7fe912" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ArbolBinario&lt; T &gt;::InsertarHijoDerecha</definition>
+        <argsstring>(info_nodo *n, info_nodo *sub)</argsstring>
+        <name>InsertarHijoDerecha</name>
+        <param>
+          <type>info_nodo *</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>info_nodo *</type>
+          <declname>sub</declname>
+        </param>
+        <briefdescription>
+<para>. Inserta un subarbol como hijo a la derecha de uno dado </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>subarbol al que se le inserta un nuevo subarbol como hijo a la derecha. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sub</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>raiz del subarbol que se inserta <linebreak/>
+ </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>el subarbol hijo a la derecha de n es eliminado </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/arbolbinario.h" line="84" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_arbol_binario_1ad625a7ef38fa30f0420b101e1655b4aa" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ArbolBinario&lt; T &gt;::InsertarHijoDerecha</definition>
+        <argsstring>(info_nodo *n, const T &amp;e)</argsstring>
+        <name>InsertarHijoDerecha</name>
+        <param>
+          <type>info_nodo *</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>. Inserta un subarbol como hijo a la derecha de uno dado que consta de un solo nodo </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>subarbol al que se le inserta un nuevo subarbol como hijo a la derecha. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>etiqueta de la raiz del subarbol que se inserta </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>el subarbol hijo a la derecha de n es eliminado </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/arbolbinario.h" line="92" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_arbol_binario_1a289083bf048ca95e482264ccf0ce4f42" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ArbolBinario&lt; T &gt;::PodarHijoIzquierda</definition>
+        <argsstring>(info_nodo *n)</argsstring>
+        <name>PodarHijoIzquierda</name>
+        <param>
+          <type>info_nodo *</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Elimina el hijo a la izquierda del subarbol dado. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>subarbol al que se le poda el hijo a la izquierda. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>: el hijo a la izquierda es puesto a nulo tras la ejecucion </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/arbolbinario.h" line="98" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_arbol_binario_1afe7738999aed926e580faf68078bbe46" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ArbolBinario&lt; T &gt;::PodarHijoDerecha</definition>
+        <argsstring>(info_nodo *n)</argsstring>
+        <name>PodarHijoDerecha</name>
+        <param>
+          <type>info_nodo *</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Elimina el hijo a la derecha del subarbol dado. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>subarbol al que se le poda el hijo a la derecha. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>: el hijo a la derecha es puesto a nulo tras la ejecucion </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/arbolbinario.h" line="104" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_arbol_binario_1a307e743bfe1264ff6cba2d484f0eb578" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>info_nodo *</type>
+        <definition>info_nodo* ArbolBinario&lt; T &gt;::PodarHijoIzq_GetSubtree</definition>
+        <argsstring>(info_nodo *n)</argsstring>
+        <name>PodarHijoIzq_GetSubtree</name>
+        <param>
+          <type>info_nodo *</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Elimina el hijo a la izquierda del subarbol sin borrarlo. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>subarbol al que se le poda el hijo a la derecha. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>: el subarbol hijo a la izquierda </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/arbolbinario.h" line="110" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_arbol_binario_1a4cb0bca4695c076648c41e968e7dae48" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>info_nodo *</type>
+        <definition>info_nodo* ArbolBinario&lt; T &gt;::PodarHijoDer_GetSubtree</definition>
+        <argsstring>(info_nodo *n)</argsstring>
+        <name>PodarHijoDer_GetSubtree</name>
+        <param>
+          <type>info_nodo *</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Elimina el hijo a la derecha del subarbol sin borrarlo. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>subarbol al que se le poda el hijo a la derecha. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>: el subarbol hijo a la derecha </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/arbolbinario.h" line="117" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_arbol_binario_1a1a7dd97d706bfcf3c60a4cca1352f79c" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ArbolBinario&lt; T &gt;::RecorridoPreorden</definition>
+        <argsstring>(ostream &amp;os, const info_nodo *n) const</argsstring>
+        <name>RecorridoPreorden</name>
+        <param>
+          <type>ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const info_nodo *</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Obtiene en un flujo de salida el recorrido Preorden del subarbol. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>os</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>flujo de salida.ES MODIFICADO </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>subarbol sobre el que se obtiene el recorrido en preorden </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/arbolbinario.h" line="125" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_arbol_binario_1a84f79da821dfe396411e9a3145222199" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ArbolBinario&lt; T &gt;::RecorridoPostorden</definition>
+        <argsstring>(ostream &amp;os, const info_nodo *n) const</argsstring>
+        <name>RecorridoPostorden</name>
+        <param>
+          <type>ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const info_nodo *</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Obtiene en un flujo de salida el recorrido PostOrden del subarbol. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>os</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>flujo de salida.ES MODIFICADO </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>subarbol sobre el que se obtiene el recorrido en postorden </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/arbolbinario.h" line="132" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_arbol_binario_1a072dec8f8e0f43d3e4ec295702a287ec" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ArbolBinario&lt; T &gt;::RecorridoInorden</definition>
+        <argsstring>(ostream &amp;os, const info_nodo *n) const</argsstring>
+        <name>RecorridoInorden</name>
+        <param>
+          <type>ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const info_nodo *</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Obtiene en un flujo de salida el recorrido inorden del subarbol. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>os</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>flujo de salida.ES MODIFICADO </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>subarbol sobre el que se obtiene el recorrido en inorden </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/arbolbinario.h" line="139" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_arbol_binario_1a4030c86c360d2b07538ed03680d3fb89" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ArbolBinario&lt; T &gt;::RecorridoNiveles</definition>
+        <argsstring>(ostream &amp;os, const info_nodo *n) const</argsstring>
+        <name>RecorridoNiveles</name>
+        <param>
+          <type>ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const info_nodo *</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Escribe en un flujo de salida del subarbol por niveles. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>os</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>flujo de salida. ES MODIFICADO </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>subarbol sobre el que se obtiene el recorrido por niveles </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>: si un nodo es nulo se pone _ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/arbolbinario.h" line="146" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_arbol_binario_1a4bc2c798ca826b372308d4c26e0ff4cb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ArbolBinario&lt; T &gt;::Lee</definition>
+        <argsstring>(istream &amp;is, info_nodo *&amp;n)</argsstring>
+        <name>Lee</name>
+        <param>
+          <type>istream &amp;</type>
+          <declname>is</declname>
+        </param>
+        <param>
+          <type>info_nodo *&amp;</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Lee un subarbol del flujo. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>is</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>flujo de entrada. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>subarbol que se lee. ES MODIFICADO </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>si no existe el nodo aparece una x si existe una n </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/arbolbinario.h" line="153" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_arbol_binario_1a7f3b03ed5ed75ad3ea38c18f93470616" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ArbolBinario&lt; T &gt;::Escribe</definition>
+        <argsstring>(ostream &amp;os, const info_nodo *n) const</argsstring>
+        <name>Escribe</name>
+        <param>
+          <type>ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const info_nodo *</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Escribe un subarbol en el flujo. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>is</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>flujo de salida </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>subarbol que se escribe. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>si no existe el nodo aparece una x si existe una n </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/arbolbinario.h" line="160" column="8"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_arbol_binario_1a1bad900ff9a1a811446c5e729e92fc5e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ArbolBinario&lt; T &gt;::ArbolBinario</definition>
+        <argsstring>()</argsstring>
+        <name>ArbolBinario</name>
+        <briefdescription>
+<para>Constructor por defecto. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/arbolbinario.h" line="177" column="5" bodyfile="include/arbolbinario.h" bodystart="177" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="class_arbol_binario_1a9d4e385399072873beb86170628449bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ArbolBinario&lt; T &gt;::ArbolBinario</definition>
+        <argsstring>(const T &amp;e)</argsstring>
+        <name>ArbolBinario</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Constructor con parametros. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/arbolbinario.h" line="184" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_arbol_binario_1a9f2da510e19bff23fd061ff0f1309433" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ArbolBinario&lt; T &gt;::ArbolBinario</definition>
+        <argsstring>(typename ArbolBinario&lt; T &gt;::nodo n)</argsstring>
+        <name>ArbolBinario</name>
+        <param>
+          <type>typename <ref refid="class_arbol_binario" kindref="compound">ArbolBinario</ref>&lt; T &gt;::<ref refid="class_arbol_binario_1_1nodo" kindref="compound">nodo</ref></type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/arbolbinario.h" line="185" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_arbol_binario_1a3be887e389952b296ea5af62852621d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ArbolBinario&lt; T &gt;::ArbolBinario</definition>
+        <argsstring>(const ArbolBinario&lt; T &gt; &amp;ab)</argsstring>
+        <name>ArbolBinario</name>
+        <param>
+          <type>const <ref refid="class_arbol_binario" kindref="compound">ArbolBinario</ref>&lt; T &gt; &amp;</type>
+          <declname>ab</declname>
+        </param>
+        <briefdescription>
+<para>Constructor por copia. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/arbolbinario.h" line="189" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_arbol_binario_1af1f1594a37b45c20b4fcbab88613d52d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ArbolBinario&lt; T &gt;::~ArbolBinario</definition>
+        <argsstring>()</argsstring>
+        <name>~ArbolBinario</name>
+        <briefdescription>
+<para>Destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/arbolbinario.h" line="194" column="5" bodyfile="include/arbolbinario.h" bodystart="194" bodyend="194"/>
+      </memberdef>
+      <memberdef kind="function" id="class_arbol_binario_1a3817bd260b6cb4687eef91928d94be17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_arbol_binario" kindref="compound">ArbolBinario</ref>&lt; T &gt; &amp;</type>
+        <definition>ArbolBinario&lt;T&gt;&amp; ArbolBinario&lt; T &gt;::operator=</definition>
+        <argsstring>(const ArbolBinario&lt; T &gt; &amp;ab)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="class_arbol_binario" kindref="compound">ArbolBinario</ref>&lt; T &gt; &amp;</type>
+          <declname>ab</declname>
+        </param>
+        <briefdescription>
+<para>Operador de asignacion. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ab</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>arbol binario del que se copia </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/arbolbinario.h" line="199" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_arbol_binario_1a8ced95c7eae98ffd79eb46dcc99df523" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_arbol_binario" kindref="compound">ArbolBinario</ref>&lt; T &gt;::<ref refid="class_arbol_binario_1_1nodo" kindref="compound">nodo</ref></type>
+        <definition>ArbolBinario&lt;T&gt;::nodo ArbolBinario&lt; T &gt;::getRaiz</definition>
+        <argsstring>() const</argsstring>
+        <name>getRaiz</name>
+        <briefdescription>
+<para>Obtiene un nodo apuntando a la raiz del arbol. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/arbolbinario.h" line="205" column="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_arbol_binario_1a82155da74eeeac7e52b9b0cc2f2d05f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_arbol_binario" kindref="compound">ArbolBinario</ref>&lt; T &gt;::<ref refid="class_arbol_binario_1_1nodo" kindref="compound">nodo</ref></type>
+        <definition>ArbolBinario&lt;T&gt;::nodo ArbolBinario&lt; T &gt;::Insertar_Hi</definition>
+        <argsstring>(typename ArbolBinario&lt; T &gt;::nodo n, const T &amp;e)</argsstring>
+        <name>Insertar_Hi</name>
+        <param>
+          <type>typename <ref refid="class_arbol_binario" kindref="compound">ArbolBinario</ref>&lt; T &gt;::<ref refid="class_arbol_binario_1_1nodo" kindref="compound">nodo</ref></type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Inserta un subarbol como hijo izquierdo del nodo. Este suabarbol solamente tiene un nodo. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>posicion del nodo donde insertar el subarbol como hijo izquierdo </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>etiqueta de la raiz del subarbol que se inserta </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/arbolbinario.h" line="211" column="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_arbol_binario_1aa917f4b80d735b3494e1793de9457fb4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_arbol_binario" kindref="compound">ArbolBinario</ref>&lt; T &gt;::<ref refid="class_arbol_binario_1_1nodo" kindref="compound">nodo</ref></type>
+        <definition>ArbolBinario&lt;T&gt;::nodo ArbolBinario&lt; T &gt;::Insertar_Hi</definition>
+        <argsstring>(typename ArbolBinario&lt; T &gt;::nodo n, ArbolBinario&lt; T &gt; &amp;tree)</argsstring>
+        <name>Insertar_Hi</name>
+        <param>
+          <type>typename <ref refid="class_arbol_binario" kindref="compound">ArbolBinario</ref>&lt; T &gt;::<ref refid="class_arbol_binario_1_1nodo" kindref="compound">nodo</ref></type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type><ref refid="class_arbol_binario" kindref="compound">ArbolBinario</ref>&lt; T &gt; &amp;</type>
+          <declname>tree</declname>
+        </param>
+        <briefdescription>
+<para>Inserta un subarbol como hijo izquierdo del nodo. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>posicion del nodo donde insertar el subarbol como hijo izquierdo </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tree:subarbol</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>que se inserta. ES MODIFICADO </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/arbolbinario.h" line="218" column="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_arbol_binario_1a1896b66e7b38f98ea4010e131998f376" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_arbol_binario" kindref="compound">ArbolBinario</ref>&lt; T &gt;::<ref refid="class_arbol_binario_1_1nodo" kindref="compound">nodo</ref></type>
+        <definition>ArbolBinario&lt;T&gt;::nodo ArbolBinario&lt; T &gt;::Insertar_Hd</definition>
+        <argsstring>(typename ArbolBinario&lt; T &gt;::nodo n, const T &amp;e)</argsstring>
+        <name>Insertar_Hd</name>
+        <param>
+          <type>typename <ref refid="class_arbol_binario" kindref="compound">ArbolBinario</ref>&lt; T &gt;::<ref refid="class_arbol_binario_1_1nodo" kindref="compound">nodo</ref></type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Inserta un subarbol como hijo derecho del nodo. Este suabarbol solamente tiene un nodo. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>posicion del nodo donde insertar el subarbol como hijo derecho </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>etiqueta de la raiz del subarbol que se inserta </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/arbolbinario.h" line="225" column="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_arbol_binario_1a7e0b2453f969c6289809aaba1f03fe62" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_arbol_binario" kindref="compound">ArbolBinario</ref>&lt; T &gt;::<ref refid="class_arbol_binario_1_1nodo" kindref="compound">nodo</ref></type>
+        <definition>ArbolBinario&lt;T&gt;::nodo ArbolBinario&lt; T &gt;::Insertar_Hd</definition>
+        <argsstring>(typename ArbolBinario&lt; T &gt;::nodo n, ArbolBinario&lt; T &gt; &amp;tree)</argsstring>
+        <name>Insertar_Hd</name>
+        <param>
+          <type>typename <ref refid="class_arbol_binario" kindref="compound">ArbolBinario</ref>&lt; T &gt;::<ref refid="class_arbol_binario_1_1nodo" kindref="compound">nodo</ref></type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type><ref refid="class_arbol_binario" kindref="compound">ArbolBinario</ref>&lt; T &gt; &amp;</type>
+          <declname>tree</declname>
+        </param>
+        <briefdescription>
+<para>Inserta un subarbol como hijo derecho del nodo. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>posicion del nodo donde insertar el subarbol como hijo derecho </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tree</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>subarbol que se inserta. ES MODIFICADO </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/arbolbinario.h" line="232" column="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_arbol_binario_1afaa11ef16d36b20bb116a1ec892e0e46" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ArbolBinario&lt; T &gt;::Podar_Hi</definition>
+        <argsstring>(typename ArbolBinario&lt; T &gt;::nodo pos)</argsstring>
+        <name>Podar_Hi</name>
+        <param>
+          <type>typename <ref refid="class_arbol_binario" kindref="compound">ArbolBinario</ref>&lt; T &gt;::<ref refid="class_arbol_binario_1_1nodo" kindref="compound">nodo</ref></type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+<para>Poda el hijo izquierdo del nodo dado @pos: posicion del nodo. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/arbolbinario.h" line="239" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_arbol_binario_1a08564b2f73b4013437572860de8aafad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ArbolBinario&lt; T &gt;::Podar_Hd</definition>
+        <argsstring>(typename ArbolBinario&lt; T &gt;::nodo pos)</argsstring>
+        <name>Podar_Hd</name>
+        <param>
+          <type>typename <ref refid="class_arbol_binario" kindref="compound">ArbolBinario</ref>&lt; T &gt;::<ref refid="class_arbol_binario_1_1nodo" kindref="compound">nodo</ref></type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+<para>Poda el hijo derecho del nodo dado @pos: posicion del nodo. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/arbolbinario.h" line="246" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_arbol_binario_1ae48b89acb45fc83cc67ca8e78e31f903" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_arbol_binario" kindref="compound">ArbolBinario</ref>&lt; T &gt;</type>
+        <definition>ArbolBinario&lt;T&gt; ArbolBinario&lt; T &gt;::PodarHi_GetSubtree</definition>
+        <argsstring>(typename ArbolBinario&lt; T &gt;::nodo pos)</argsstring>
+        <name>PodarHi_GetSubtree</name>
+        <param>
+          <type>typename <ref refid="class_arbol_binario" kindref="compound">ArbolBinario</ref>&lt; T &gt;::<ref refid="class_arbol_binario_1_1nodo" kindref="compound">nodo</ref></type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+<para>Poda el hijo derecho o izquierda del nodo del nodo dado @pos: posicion del nodo. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>un arbol nuevo con esta rama eliminada </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/arbolbinario.h" line="253" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_arbol_binario_1a2292c407fe19a90088d9c1e23b58bdbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_arbol_binario" kindref="compound">ArbolBinario</ref>&lt; T &gt;</type>
+        <definition>ArbolBinario&lt;T&gt; ArbolBinario&lt; T &gt;::PodarHd_GetSubtree</definition>
+        <argsstring>(typename ArbolBinario&lt; T &gt;::nodo pos)</argsstring>
+        <name>PodarHd_GetSubtree</name>
+        <param>
+          <type>typename <ref refid="class_arbol_binario" kindref="compound">ArbolBinario</ref>&lt; T &gt;::<ref refid="class_arbol_binario_1_1nodo" kindref="compound">nodo</ref></type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/arbolbinario.h" line="254" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_arbol_binario_1a9afe576ade74a09a9b19fb0874749cdb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ArbolBinario&lt; T &gt;::Sustituye_Subarbol</definition>
+        <argsstring>(typename ArbolBinario&lt; T &gt;::nodo pos_this, const ArbolBinario&lt; T &gt; &amp;a, typename ArbolBinario&lt; T &gt;::nodo pos_a)</argsstring>
+        <name>Sustituye_Subarbol</name>
+        <param>
+          <type>typename <ref refid="class_arbol_binario" kindref="compound">ArbolBinario</ref>&lt; T &gt;::<ref refid="class_arbol_binario_1_1nodo" kindref="compound">nodo</ref></type>
+          <declname>pos_this</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_arbol_binario" kindref="compound">ArbolBinario</ref>&lt; T &gt; &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>typename <ref refid="class_arbol_binario" kindref="compound">ArbolBinario</ref>&lt; T &gt;::<ref refid="class_arbol_binario_1_1nodo" kindref="compound">nodo</ref></type>
+          <declname>pos_a</declname>
+        </param>
+        <briefdescription>
+<para>Se sustituye el subarbol por otro subarbol de otro arbol. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos_this</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>posicion de la raiz del subarbol a ser copiado. El que hubiese previo se elimina. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>arbol fuente. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pos_a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>posicion de la raiz del suarbol de <emphasis>a</emphasis> que va a ser copiado. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/arbolbinario.h" line="262" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_arbol_binario_1a667e476cc2058a4edbafa546bba5ec0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ArbolBinario&lt; T &gt;::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <briefdescription>
+<para>Borra todo arbol, dejandolo como un arbol vacio. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/arbolbinario.h" line="268" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_arbol_binario_1a574a76889f9bb8a80080288a16f9441f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ArbolBinario&lt; T &gt;::empty</definition>
+        <argsstring>() const</argsstring>
+        <name>empty</name>
+        <briefdescription>
+<para>Arbol vacio. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Devuelve si el arbol es vacio (true), y falso en caso contrario </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/arbolbinario.h" line="274" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_arbol_binario_1a3df34c7cbcbaa42b68884e5fcde93334" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int ArbolBinario&lt; T &gt;::size</definition>
+        <argsstring>() const</argsstring>
+        <name>size</name>
+        <briefdescription>
+<para>Tamaño de un arbol. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Devuelve el numero de nodos que tiene el arbol </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/arbolbinario.h" line="281" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_arbol_binario_1a238f5acc35279cca386b0b68ae20de42" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ArbolBinario&lt; T &gt;::operator==</definition>
+        <argsstring>(const ArbolBinario&lt; T &gt; &amp;a) const</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="class_arbol_binario" kindref="compound">ArbolBinario</ref>&lt; T &gt; &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+<para>Igualdad entre dos arboles. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>arbo binario con el que se compara </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true si los dos arboles son iguales false en caso contrario </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/arbolbinario.h" line="288" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_arbol_binario_1ac773f91e274ab6ec695492e5dfea4fff" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ArbolBinario&lt; T &gt;::operator!=</definition>
+        <argsstring>(const ArbolBinario&lt; T &gt; &amp;a) const</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="class_arbol_binario" kindref="compound">ArbolBinario</ref>&lt; T &gt; &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+<para>Desigualdad entre dos arboles. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>arbo binario con el que se compara </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true si los dos arboles son distintos false en caso contrario </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/arbolbinario.h" line="295" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_arbol_binario_1af8cd1ed84675bcb2075ba1a502d8ee39" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ArbolBinario&lt; T &gt;::RecorridoPreOrden</definition>
+        <argsstring>(ostream &amp;os) const</argsstring>
+        <name>RecorridoPreOrden</name>
+        <param>
+          <type>ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+<para>Recorrido en Preorden. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>os</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>flujo sobre el que se da el recorrido del arbol en preorden </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/arbolbinario.h" line="302" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_arbol_binario_1a717119bc343e038c8af7c00423c9b103" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ArbolBinario&lt; T &gt;::RecorridoInOrden</definition>
+        <argsstring>(ostream &amp;os) const</argsstring>
+        <name>RecorridoInOrden</name>
+        <param>
+          <type>ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+<para>Recorrido en Inorden. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>os</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>flujo sobre el que se da el recorrido del arbol en Inorden </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/arbolbinario.h" line="307" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_arbol_binario_1aa8380fa17126e49693942ddeadf3adc5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ArbolBinario&lt; T &gt;::RecorridoPostOrden</definition>
+        <argsstring>(ostream &amp;os) const</argsstring>
+        <name>RecorridoPostOrden</name>
+        <param>
+          <type>ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+<para>Recorrido en Postorden. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>os</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>flujo sobre el que se da el recorrido del arbol en Postorden </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/arbolbinario.h" line="313" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_arbol_binario_1af1617842b59246c0bbb6e2a81b7638b6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ArbolBinario&lt; T &gt;::RecorridoNiveles</definition>
+        <argsstring>(ostream &amp;os) const</argsstring>
+        <name>RecorridoNiveles</name>
+        <param>
+          <type>ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+<para>Recorrido por niveles. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>os</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>flujo sobre el que se da el recorrido del arbol por niveles </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/arbolbinario.h" line="318" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_arbol_binario_1aa0fc3ba9f91f7167d1f83df2f3b1a8b9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_arbol_binario_1_1preorden__iterador" kindref="compound">preorden_iterador</ref></type>
+        <definition>preorden_iterador ArbolBinario&lt; T &gt;::beginpreorden</definition>
+        <argsstring>() const</argsstring>
+        <name>beginpreorden</name>
+        <briefdescription>
+<para>Comienzo de un iterador <ref refid="class_arbol_binario_1_1preorden__iterador" kindref="compound">preorden_iterador</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>un iterador de tipo preorden apuntando a la raiz </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/arbolbinario.h" line="705" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_arbol_binario_1ad1c64408fd252fa134125d7ca5717e3a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_arbol_binario_1_1preorden__iterador" kindref="compound">preorden_iterador</ref></type>
+        <definition>preorden_iterador ArbolBinario&lt; T &gt;::endpreorden</definition>
+        <argsstring>() const</argsstring>
+        <name>endpreorden</name>
+        <briefdescription>
+<para>Final de un iterador <ref refid="class_arbol_binario_1_1preorden__iterador" kindref="compound">preorden_iterador</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>un iterador de tipo preorden apuntando al final </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/arbolbinario.h" line="710" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_arbol_binario_1af55ee35607b74ebc3036dc9c5c1c2ce7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_arbol_binario_1_1inorden__iterador" kindref="compound">inorden_iterador</ref></type>
+        <definition>inorden_iterador ArbolBinario&lt; T &gt;::begininorden</definition>
+        <argsstring>() const</argsstring>
+        <name>begininorden</name>
+        <briefdescription>
+<para>Comienzo de un iterador <ref refid="class_arbol_binario_1_1inorden__iterador" kindref="compound">inorden_iterador</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>un iterador de tipo inorden apuntando a la raiz </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/arbolbinario.h" line="717" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_arbol_binario_1a62a0048bb6d35947409496b55b5bd303" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_arbol_binario_1_1inorden__iterador" kindref="compound">inorden_iterador</ref></type>
+        <definition>inorden_iterador ArbolBinario&lt; T &gt;::endinorden</definition>
+        <argsstring>() const</argsstring>
+        <name>endinorden</name>
+        <briefdescription>
+<para>Final de un iterador <ref refid="class_arbol_binario_1_1inorden__iterador" kindref="compound">inorden_iterador</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>un iterador de tipo inorden apuntando al final </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/arbolbinario.h" line="722" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_arbol_binario_1a1bcccd1312f5127ad811c90dad94931d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_arbol_binario_1_1postorden__iterador" kindref="compound">postorden_iterador</ref></type>
+        <definition>postorden_iterador ArbolBinario&lt; T &gt;::beginpostorden</definition>
+        <argsstring>() const</argsstring>
+        <name>beginpostorden</name>
+        <briefdescription>
+<para>Comienzo de un iterador <ref refid="class_arbol_binario_1_1postorden__iterador" kindref="compound">postorden_iterador</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>un iterador de tipo postorden apuntando a la raiz </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/arbolbinario.h" line="729" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_arbol_binario_1ad4ead2ad6b0e81f185fb540184a15bdb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_arbol_binario_1_1postorden__iterador" kindref="compound">postorden_iterador</ref></type>
+        <definition>postorden_iterador ArbolBinario&lt; T &gt;::endpostorden</definition>
+        <argsstring>() const</argsstring>
+        <name>endpostorden</name>
+        <briefdescription>
+<para>Final de un iterador <ref refid="class_arbol_binario_1_1postorden__iterador" kindref="compound">postorden_iterador</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>un iterador de tipo postorden apuntando al final </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/arbolbinario.h" line="734" column="24"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_arbol_binario_1a58c82e89a546bd6f38ad116466eabcb8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class U</type>
+          </param>
+        </templateparamlist>
+        <type>friend ostream &amp;</type>
+        <definition>ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(ostream &amp;os, const ArbolBinario&lt; U &gt; &amp;ab)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_arbol_binario" kindref="compound">ArbolBinario</ref>&lt; U &gt; &amp;</type>
+          <declname>ab</declname>
+        </param>
+        <briefdescription>
+<para>Escritura de un arbol binario. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>os</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>flujo de salida </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ab</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>arbol binario que se escribe </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/arbolbinario.h" line="745" column="12"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_arbol_binario_1a917493bedd4f7e4430d3283f367ce599" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class U</type>
+          </param>
+        </templateparamlist>
+        <type>friend istream &amp;</type>
+        <definition>istream&amp; operator&gt;&gt;</definition>
+        <argsstring>(istream &amp;is, ArbolBinario&lt; U &gt; &amp;ab)</argsstring>
+        <name>operator&gt;&gt;</name>
+        <param>
+          <type>istream &amp;</type>
+          <declname>is</declname>
+        </param>
+        <param>
+          <type><ref refid="class_arbol_binario" kindref="compound">ArbolBinario</ref>&lt; U &gt; &amp;</type>
+          <declname>ab</declname>
+        </param>
+        <briefdescription>
+<para>Lectura de un arbol binario. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>os</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>flujo de entrada </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ab</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>arbol binario sobre el que se lee </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/arbolbinario.h" line="753" column="21"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>TDA <ref refid="class_arbol_binario" kindref="compound">ArbolBinario</ref> @doc Definición : Una instancia <emphasis>a</emphasis> del tipo de dato abstracto <ref refid="class_arbol_binario" kindref="compound">ArbolBinario</ref> sobre un dominio T se puede construir como:<itemizedlist>
+<listitem><para>Un objeto vacío si no contiene ningun elemento</para>
+</listitem><listitem><para>Un arbol que contiene un elemento destacad la raíz con un valor e en el dominio T denominado etiqueta y dos subarboles (Ti:subarbol izquierdo, y Td:subarbol derecho) del T.D.A Arbolbinario sobre T. Se establece una relación padre-hijo entre cada nodo y los nodos raíz de los subarboles ( si existen) que cuelgan de el. Lo denotamos como {e,{Ti},{Td}} Para poder usar el TDA <ref refid="class_arbol_binario" kindref="compound">ArbolBinario</ref> se debe incluir <ref refid="arbolbinario_8h_source" kindref="compound">ArbolBinario.h</ref> Son mutables. El espacio requerido para el almacenamiento es O(n) siendo n el numero de nodos. </para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <location file="include/arbolbinario.h" line="22" column="19" bodyfile="include/arbolbinario.h" bodystart="22" bodyend="757"/>
+    <listofallmembers>
+      <member refid="class_arbol_binario_1a1bad900ff9a1a811446c5e729e92fc5e" prot="public" virt="non-virtual"><scope>ArbolBinario</scope><name>ArbolBinario</name></member>
+      <member refid="class_arbol_binario_1a9d4e385399072873beb86170628449bb" prot="public" virt="non-virtual"><scope>ArbolBinario</scope><name>ArbolBinario</name></member>
+      <member refid="class_arbol_binario_1a9f2da510e19bff23fd061ff0f1309433" prot="public" virt="non-virtual"><scope>ArbolBinario</scope><name>ArbolBinario</name></member>
+      <member refid="class_arbol_binario_1a3be887e389952b296ea5af62852621d5" prot="public" virt="non-virtual"><scope>ArbolBinario</scope><name>ArbolBinario</name></member>
+      <member refid="class_arbol_binario_1af55ee35607b74ebc3036dc9c5c1c2ce7" prot="public" virt="non-virtual"><scope>ArbolBinario</scope><name>begininorden</name></member>
+      <member refid="class_arbol_binario_1a1bcccd1312f5127ad811c90dad94931d" prot="public" virt="non-virtual"><scope>ArbolBinario</scope><name>beginpostorden</name></member>
+      <member refid="class_arbol_binario_1aa0fc3ba9f91f7167d1f83df2f3b1a8b9" prot="public" virt="non-virtual"><scope>ArbolBinario</scope><name>beginpreorden</name></member>
+      <member refid="class_arbol_binario_1a9a9320b7ec787b55a9fd65c041fea135" prot="private" virt="non-virtual"><scope>ArbolBinario</scope><name>BorrarInfo</name></member>
+      <member refid="class_arbol_binario_1a667e476cc2058a4edbafa546bba5ec0f" prot="public" virt="non-virtual"><scope>ArbolBinario</scope><name>clear</name></member>
+      <member refid="class_arbol_binario_1a2f4333678ab24a80ea88f05151d3b5ab" prot="private" virt="non-virtual"><scope>ArbolBinario</scope><name>CopiarInfo</name></member>
+      <member refid="class_arbol_binario_1a574a76889f9bb8a80080288a16f9441f" prot="public" virt="non-virtual"><scope>ArbolBinario</scope><name>empty</name></member>
+      <member refid="class_arbol_binario_1a62a0048bb6d35947409496b55b5bd303" prot="public" virt="non-virtual"><scope>ArbolBinario</scope><name>endinorden</name></member>
+      <member refid="class_arbol_binario_1ad4ead2ad6b0e81f185fb540184a15bdb" prot="public" virt="non-virtual"><scope>ArbolBinario</scope><name>endpostorden</name></member>
+      <member refid="class_arbol_binario_1ad1c64408fd252fa134125d7ca5717e3a" prot="public" virt="non-virtual"><scope>ArbolBinario</scope><name>endpreorden</name></member>
+      <member refid="class_arbol_binario_1a7f3b03ed5ed75ad3ea38c18f93470616" prot="private" virt="non-virtual"><scope>ArbolBinario</scope><name>Escribe</name></member>
+      <member refid="class_arbol_binario_1a8ced95c7eae98ffd79eb46dcc99df523" prot="public" virt="non-virtual"><scope>ArbolBinario</scope><name>getRaiz</name></member>
+      <member refid="class_arbol_binario_1a8618907c8154d008f64252403e871bf4" prot="private" virt="non-virtual"><scope>ArbolBinario</scope><name>iguales</name></member>
+      <member refid="class_arbol_binario_1a1896b66e7b38f98ea4010e131998f376" prot="public" virt="non-virtual"><scope>ArbolBinario</scope><name>Insertar_Hd</name></member>
+      <member refid="class_arbol_binario_1a7e0b2453f969c6289809aaba1f03fe62" prot="public" virt="non-virtual"><scope>ArbolBinario</scope><name>Insertar_Hd</name></member>
+      <member refid="class_arbol_binario_1a82155da74eeeac7e52b9b0cc2f2d05f2" prot="public" virt="non-virtual"><scope>ArbolBinario</scope><name>Insertar_Hi</name></member>
+      <member refid="class_arbol_binario_1aa917f4b80d735b3494e1793de9457fb4" prot="public" virt="non-virtual"><scope>ArbolBinario</scope><name>Insertar_Hi</name></member>
+      <member refid="class_arbol_binario_1a8f4971f20eb2a059b9b1ae117e7fe912" prot="private" virt="non-virtual"><scope>ArbolBinario</scope><name>InsertarHijoDerecha</name></member>
+      <member refid="class_arbol_binario_1ad625a7ef38fa30f0420b101e1655b4aa" prot="private" virt="non-virtual"><scope>ArbolBinario</scope><name>InsertarHijoDerecha</name></member>
+      <member refid="class_arbol_binario_1aca7d7c365ead3aa2040ffc64e1dfb1f4" prot="private" virt="non-virtual"><scope>ArbolBinario</scope><name>InsertarHijoIzquierda</name></member>
+      <member refid="class_arbol_binario_1a87341ffccfe5ef304783c70adf86238d" prot="private" virt="non-virtual"><scope>ArbolBinario</scope><name>InsertarHijoIzquierda</name></member>
+      <member refid="class_arbol_binario_1a4bc2c798ca826b372308d4c26e0ff4cb" prot="private" virt="non-virtual"><scope>ArbolBinario</scope><name>Lee</name></member>
+      <member refid="class_arbol_binario_1abd35b63011c7bc50852ab039ea8500f0" prot="private" virt="non-virtual"><scope>ArbolBinario</scope><name>numero_nodos</name></member>
+      <member refid="class_arbol_binario_1ac773f91e274ab6ec695492e5dfea4fff" prot="public" virt="non-virtual"><scope>ArbolBinario</scope><name>operator!=</name></member>
+      <member refid="class_arbol_binario_1a58c82e89a546bd6f38ad116466eabcb8" prot="public" virt="non-virtual"><scope>ArbolBinario</scope><name>operator&lt;&lt;</name></member>
+      <member refid="class_arbol_binario_1a3817bd260b6cb4687eef91928d94be17" prot="public" virt="non-virtual"><scope>ArbolBinario</scope><name>operator=</name></member>
+      <member refid="class_arbol_binario_1a238f5acc35279cca386b0b68ae20de42" prot="public" virt="non-virtual"><scope>ArbolBinario</scope><name>operator==</name></member>
+      <member refid="class_arbol_binario_1a917493bedd4f7e4430d3283f367ce599" prot="public" virt="non-virtual"><scope>ArbolBinario</scope><name>operator&gt;&gt;</name></member>
+      <member refid="class_arbol_binario_1a08564b2f73b4013437572860de8aafad" prot="public" virt="non-virtual"><scope>ArbolBinario</scope><name>Podar_Hd</name></member>
+      <member refid="class_arbol_binario_1afaa11ef16d36b20bb116a1ec892e0e46" prot="public" virt="non-virtual"><scope>ArbolBinario</scope><name>Podar_Hi</name></member>
+      <member refid="class_arbol_binario_1a2292c407fe19a90088d9c1e23b58bdbd" prot="public" virt="non-virtual"><scope>ArbolBinario</scope><name>PodarHd_GetSubtree</name></member>
+      <member refid="class_arbol_binario_1ae48b89acb45fc83cc67ca8e78e31f903" prot="public" virt="non-virtual"><scope>ArbolBinario</scope><name>PodarHi_GetSubtree</name></member>
+      <member refid="class_arbol_binario_1a4cb0bca4695c076648c41e968e7dae48" prot="private" virt="non-virtual"><scope>ArbolBinario</scope><name>PodarHijoDer_GetSubtree</name></member>
+      <member refid="class_arbol_binario_1afe7738999aed926e580faf68078bbe46" prot="private" virt="non-virtual"><scope>ArbolBinario</scope><name>PodarHijoDerecha</name></member>
+      <member refid="class_arbol_binario_1a307e743bfe1264ff6cba2d484f0eb578" prot="private" virt="non-virtual"><scope>ArbolBinario</scope><name>PodarHijoIzq_GetSubtree</name></member>
+      <member refid="class_arbol_binario_1a289083bf048ca95e482264ccf0ce4f42" prot="private" virt="non-virtual"><scope>ArbolBinario</scope><name>PodarHijoIzquierda</name></member>
+      <member refid="class_arbol_binario_1a116619c6d1e1f8af4ebc95399a062801" prot="private" virt="non-virtual"><scope>ArbolBinario</scope><name>raiz</name></member>
+      <member refid="class_arbol_binario_1a717119bc343e038c8af7c00423c9b103" prot="public" virt="non-virtual"><scope>ArbolBinario</scope><name>RecorridoInOrden</name></member>
+      <member refid="class_arbol_binario_1a072dec8f8e0f43d3e4ec295702a287ec" prot="private" virt="non-virtual"><scope>ArbolBinario</scope><name>RecorridoInorden</name></member>
+      <member refid="class_arbol_binario_1a4030c86c360d2b07538ed03680d3fb89" prot="private" virt="non-virtual"><scope>ArbolBinario</scope><name>RecorridoNiveles</name></member>
+      <member refid="class_arbol_binario_1af1617842b59246c0bbb6e2a81b7638b6" prot="public" virt="non-virtual"><scope>ArbolBinario</scope><name>RecorridoNiveles</name></member>
+      <member refid="class_arbol_binario_1aa8380fa17126e49693942ddeadf3adc5" prot="public" virt="non-virtual"><scope>ArbolBinario</scope><name>RecorridoPostOrden</name></member>
+      <member refid="class_arbol_binario_1a84f79da821dfe396411e9a3145222199" prot="private" virt="non-virtual"><scope>ArbolBinario</scope><name>RecorridoPostorden</name></member>
+      <member refid="class_arbol_binario_1a1a7dd97d706bfcf3c60a4cca1352f79c" prot="private" virt="non-virtual"><scope>ArbolBinario</scope><name>RecorridoPreorden</name></member>
+      <member refid="class_arbol_binario_1af8cd1ed84675bcb2075ba1a502d8ee39" prot="public" virt="non-virtual"><scope>ArbolBinario</scope><name>RecorridoPreOrden</name></member>
+      <member refid="class_arbol_binario_1a3df34c7cbcbaa42b68884e5fcde93334" prot="public" virt="non-virtual"><scope>ArbolBinario</scope><name>size</name></member>
+      <member refid="class_arbol_binario_1a9afe576ade74a09a9b19fb0874749cdb" prot="public" virt="non-virtual"><scope>ArbolBinario</scope><name>Sustituye_Subarbol</name></member>
+      <member refid="class_arbol_binario_1af1f1594a37b45c20b4fcbab88613d52d" prot="public" virt="non-virtual"><scope>ArbolBinario</scope><name>~ArbolBinario</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

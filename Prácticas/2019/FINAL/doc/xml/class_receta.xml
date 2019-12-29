@@ -18,7 +18,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/receta.h" line="51" column="12" bodyfile="include/receta.h" bodystart="51" bodyend="-1"/>
+        <location file="include/receta.h" line="52" column="12" bodyfile="include/receta.h" bodystart="52" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_receta_1ab1522528f2bc25bc08d8e36898c80425" prot="private" static="no" mutable="no">
         <type>unsigned int</type>
@@ -32,7 +32,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/receta.h" line="52" column="18" bodyfile="include/receta.h" bodystart="52" bodyend="-1"/>
+        <location file="include/receta.h" line="53" column="18" bodyfile="include/receta.h" bodystart="53" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_receta_1af3f8bcc9778afab1987c82e7b5e53d07" prot="private" static="no" mutable="no">
         <type>string</type>
@@ -46,7 +46,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/receta.h" line="53" column="12" bodyfile="include/receta.h" bodystart="53" bodyend="-1"/>
+        <location file="include/receta.h" line="54" column="12" bodyfile="include/receta.h" bodystart="54" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_receta_1a859805a3106fa033b8010fe602e1f4c6" prot="private" static="no" mutable="no">
         <type>list&lt; pair&lt; string, unsigned int &gt; &gt;</type>
@@ -60,7 +60,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/receta.h" line="54" column="10" bodyfile="include/receta.h" bodystart="54" bodyend="-1"/>
+        <location file="include/receta.h" line="55" column="10" bodyfile="include/receta.h" bodystart="55" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_receta_1a97eddf6d134cee91b82714c1de258e68" prot="private" static="no" mutable="no">
         <type>float</type>
@@ -73,7 +73,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/receta.h" line="55" column="11" bodyfile="include/receta.h" bodystart="55" bodyend="-1"/>
+        <location file="include/receta.h" line="56" column="11" bodyfile="include/receta.h" bodystart="56" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_receta_1a78a3630107fb41cb1b4075664defd4cc" prot="private" static="no" mutable="no">
         <type>float</type>
@@ -86,7 +86,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/receta.h" line="55" column="19" bodyfile="include/receta.h" bodystart="55" bodyend="-1"/>
+        <location file="include/receta.h" line="56" column="19" bodyfile="include/receta.h" bodystart="56" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_receta_1aa9c9cc526a85bc92c0dde3ee78c0de5d" prot="private" static="no" mutable="no">
         <type>float</type>
@@ -99,7 +99,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/receta.h" line="55" column="21" bodyfile="include/receta.h" bodystart="55" bodyend="-1"/>
+        <location file="include/receta.h" line="56" column="21" bodyfile="include/receta.h" bodystart="56" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_receta_1a20396252691f2a78e09ff170ec0df8d3" prot="private" static="no" mutable="no">
         <type>float</type>
@@ -112,7 +112,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/receta.h" line="55" column="27" bodyfile="include/receta.h" bodystart="55" bodyend="-1"/>
+        <location file="include/receta.h" line="56" column="27" bodyfile="include/receta.h" bodystart="56" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_receta_1a49c91277688f42c3d904e242511be00b" prot="private" static="no" mutable="no">
         <type>float</type>
@@ -126,7 +126,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/receta.h" line="55" column="36" bodyfile="include/receta.h" bodystart="55" bodyend="-1"/>
+        <location file="include/receta.h" line="56" column="36" bodyfile="include/receta.h" bodystart="56" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -142,7 +142,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/receta.h" line="62" column="5"/>
+        <location file="include/receta.h" line="63" column="5"/>
       </memberdef>
       <memberdef kind="function" id="class_receta_1aec652197fc45e41e6c20e10fe504a1e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -210,7 +210,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/receta.h" line="73" column="5"/>
+        <location file="include/receta.h" line="74" column="5"/>
       </memberdef>
       <memberdef kind="function" id="class_receta_1acb5bb989fb0a5c57cf85146f936a544d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -238,7 +238,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/receta.h" line="79" column="5"/>
+        <location file="include/receta.h" line="80" column="5"/>
       </memberdef>
       <memberdef kind="function" id="class_receta_1a6651b572a5b3df06e11d51fc49b36201" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_receta" kindref="compound">Receta</ref> &amp;</type>
@@ -266,7 +266,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/receta.h" line="86" column="13"/>
+        <location file="include/receta.h" line="87" column="13"/>
       </memberdef>
       <memberdef kind="function" id="class_receta_1ac8a501375a19e653dc302c0b8e3521eb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>const string</type>
@@ -283,7 +283,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/receta.h" line="92" column="18"/>
+        <location file="include/receta.h" line="93" column="18"/>
       </memberdef>
       <memberdef kind="function" id="class_receta_1a2822d63fe8ea293434bfbc518d0b23f0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>const string</type>
@@ -300,7 +300,92 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/receta.h" line="98" column="18"/>
+        <location file="include/receta.h" line="99" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_receta_1a6843da885b9c6dde786bcffa79b9bd05" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const float</type>
+        <definition>const float Receta::getCalorias</definition>
+        <argsstring>() const</argsstring>
+        <name>getCalorias</name>
+        <briefdescription>
+<para>getCalorias </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Devuelve las calorias de la receta </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/receta.h" line="105" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_receta_1af09f8f43a072dbe8f507b2e2232a30db" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const float</type>
+        <definition>const float Receta::getHc</definition>
+        <argsstring>() const</argsstring>
+        <name>getHc</name>
+        <briefdescription>
+<para>getHc </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Devuelve los hidratos de carbono de la receta </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/receta.h" line="111" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_receta_1a55b3a0e40709b2974e1e6e303b7207f8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const float</type>
+        <definition>const float Receta::getGrasas</definition>
+        <argsstring>() const</argsstring>
+        <name>getGrasas</name>
+        <briefdescription>
+<para>getGrasas </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Devuelve las grasas de la receta </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/receta.h" line="117" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_receta_1a356d13d721cdc9b52b8c0883ae950bd6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const float</type>
+        <definition>const float Receta::getProteinas</definition>
+        <argsstring>() const</argsstring>
+        <name>getProteinas</name>
+        <briefdescription>
+<para>getProteinas </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Devuelve las proteinas de la receta </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/receta.h" line="123" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_receta_1a0086c7891debe181051087a9cec1b1c4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const float</type>
+        <definition>const float Receta::getFibras</definition>
+        <argsstring>() const</argsstring>
+        <name>getFibras</name>
+        <briefdescription>
+<para>getFibras </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Devuelve las fibras de la receta </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/receta.h" line="129" column="17"/>
       </memberdef>
       <memberdef kind="function" id="class_receta_1a06b8d8f633037580798daf0adbf5e145" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>const int</type>
@@ -317,7 +402,142 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/receta.h" line="104" column="15"/>
+        <location file="include/receta.h" line="135" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_receta_1aca744705502cb5bb664a8cc0a738b458" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Receta::setCalorias</definition>
+        <argsstring>(float calorias)</argsstring>
+        <name>setCalorias</name>
+        <param>
+          <type>float</type>
+          <declname>calorias</declname>
+        </param>
+        <briefdescription>
+<para>setCalorias </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>actualiza las calorias de la receta </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/receta.h" line="141" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_receta_1a068018acdd4a6e0bcece800984ef9423" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Receta::setHc</definition>
+        <argsstring>(float hc)</argsstring>
+        <name>setHc</name>
+        <param>
+          <type>float</type>
+          <declname>hc</declname>
+        </param>
+        <briefdescription>
+<para>setHc </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>actualiza los hidratos de carbono de la receta </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/receta.h" line="147" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_receta_1a08a537f0b6598c4f1c3c31c4e8cf0cbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Receta::setGrasas</definition>
+        <argsstring>(float grasas)</argsstring>
+        <name>setGrasas</name>
+        <param>
+          <type>float</type>
+          <declname>grasas</declname>
+        </param>
+        <briefdescription>
+<para>setGrasas </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>actualiza las grasas de la receta </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/receta.h" line="153" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_receta_1ab5adfe6295075176f29c2c83f9eeadf2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Receta::setProteinas</definition>
+        <argsstring>(float proteinas)</argsstring>
+        <name>setProteinas</name>
+        <param>
+          <type>float</type>
+          <declname>proteinas</declname>
+        </param>
+        <briefdescription>
+<para>setProteinas </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>actualiza las proteinas de la receta </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/receta.h" line="159" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_receta_1ae3da21e878f6b5f44e14a8eb19ee0db6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Receta::setFibra</definition>
+        <argsstring>(float fibra)</argsstring>
+        <name>setFibra</name>
+        <param>
+          <type>float</type>
+          <declname>fibra</declname>
+        </param>
+        <briefdescription>
+<para>setFibra </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>actualiza las fibras de la receta </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/receta.h" line="165" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_receta_1a686d2134c6ae879602f81ba9c6be5b21" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Receta::obtieneNutricional</definition>
+        <argsstring>(Ingredientes &amp;ingredientes)</argsstring>
+        <name>obtieneNutricional</name>
+        <param>
+          <type><ref refid="class_ingredientes" kindref="compound">Ingredientes</ref> &amp;</type>
+          <declname>ingredientes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/receta.h" line="167" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_receta_1a6d473ac07d9005a93d671ebb86da356d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Receta::muestraNutricional</definition>
+        <argsstring>()</argsstring>
+        <name>muestraNutricional</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/receta.h" line="169" column="10"/>
       </memberdef>
       <memberdef kind="function" id="class_receta_1ab02ca172c4fe07ae50536e0f22299464" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="class_receta_1_1iterator" kindref="compound">iterator</ref></type>
@@ -331,7 +551,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/receta.h" line="205" column="14" bodyfile="include/receta.h" bodystart="205" bodyend="209"/>
+        <location file="include/receta.h" line="270" column="14" bodyfile="include/receta.h" bodystart="270" bodyend="274"/>
       </memberdef>
       <memberdef kind="function" id="class_receta_1a65d46cc6760bf2079f23f769253c91d3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="class_receta_1_1iterator" kindref="compound">iterator</ref></type>
@@ -345,7 +565,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/receta.h" line="214" column="14" bodyfile="include/receta.h" bodystart="214" bodyend="218"/>
+        <location file="include/receta.h" line="279" column="14" bodyfile="include/receta.h" bodystart="279" bodyend="283"/>
       </memberdef>
       <memberdef kind="function" id="class_receta_1a13de69b62e8ecefd1ef5a437f95be0ea" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="class_receta_1_1const__iterator" kindref="compound">const_iterator</ref></type>
@@ -359,7 +579,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/receta.h" line="223" column="20" bodyfile="include/receta.h" bodystart="223" bodyend="227"/>
+        <location file="include/receta.h" line="288" column="20" bodyfile="include/receta.h" bodystart="288" bodyend="292"/>
       </memberdef>
       <memberdef kind="function" id="class_receta_1a002638d4140f2bf36cce10f98c8b893b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="class_receta_1_1const__iterator" kindref="compound">const_iterator</ref></type>
@@ -373,7 +593,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/receta.h" line="231" column="20" bodyfile="include/receta.h" bodystart="231" bodyend="235"/>
+        <location file="include/receta.h" line="296" column="20" bodyfile="include/receta.h" bodystart="296" bodyend="300"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="friend">
@@ -418,7 +638,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/receta.h" line="113" column="12"/>
+        <location file="include/receta.h" line="178" column="12"/>
       </memberdef>
       <memberdef kind="friend" id="class_receta_1a812dfa7fcc7baa5767968177e5158dd9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>friend istream &amp;</type>
@@ -469,7 +689,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/receta.h" line="123" column="20"/>
+        <location file="include/receta.h" line="188" column="20"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -488,7 +708,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/receta.h" line="239" column="6"/>
+        <location file="include/receta.h" line="304" column="6"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -505,7 +725,7 @@
 </simplesect>
 </para>
     </detaileddescription>
-    <location file="include/receta.h" line="35" column="13" bodyfile="include/receta.h" bodystart="35" bodyend="241"/>
+    <location file="include/receta.h" line="36" column="13" bodyfile="include/receta.h" bodystart="36" bodyend="306"/>
     <listofallmembers>
       <member refid="class_receta_1ab02ca172c4fe07ae50536e0f22299464" prot="public" virt="non-virtual"><scope>Receta</scope><name>begin</name></member>
       <member refid="class_receta_1a13de69b62e8ecefd1ef5a437f95be0ea" prot="public" virt="non-virtual"><scope>Receta</scope><name>begin</name></member>
@@ -515,13 +735,20 @@
       <member refid="class_receta_1a65d46cc6760bf2079f23f769253c91d3" prot="public" virt="non-virtual"><scope>Receta</scope><name>end</name></member>
       <member refid="class_receta_1a002638d4140f2bf36cce10f98c8b893b" prot="public" virt="non-virtual"><scope>Receta</scope><name>end</name></member>
       <member refid="class_receta_1a49c91277688f42c3d904e242511be00b" prot="private" virt="non-virtual"><scope>Receta</scope><name>fibra</name></member>
+      <member refid="class_receta_1a6843da885b9c6dde786bcffa79b9bd05" prot="public" virt="non-virtual"><scope>Receta</scope><name>getCalorias</name></member>
       <member refid="class_receta_1a2822d63fe8ea293434bfbc518d0b23f0" prot="public" virt="non-virtual"><scope>Receta</scope><name>getCode</name></member>
+      <member refid="class_receta_1a0086c7891debe181051087a9cec1b1c4" prot="public" virt="non-virtual"><scope>Receta</scope><name>getFibras</name></member>
+      <member refid="class_receta_1a55b3a0e40709b2974e1e6e303b7207f8" prot="public" virt="non-virtual"><scope>Receta</scope><name>getGrasas</name></member>
+      <member refid="class_receta_1af09f8f43a072dbe8f507b2e2232a30db" prot="public" virt="non-virtual"><scope>Receta</scope><name>getHc</name></member>
       <member refid="class_receta_1ac8a501375a19e653dc302c0b8e3521eb" prot="public" virt="non-virtual"><scope>Receta</scope><name>getNombre</name></member>
+      <member refid="class_receta_1a356d13d721cdc9b52b8c0883ae950bd6" prot="public" virt="non-virtual"><scope>Receta</scope><name>getProteinas</name></member>
       <member refid="class_receta_1aa9c9cc526a85bc92c0dde3ee78c0de5d" prot="private" virt="non-virtual"><scope>Receta</scope><name>grasas</name></member>
       <member refid="class_receta_1a78a3630107fb41cb1b4075664defd4cc" prot="private" virt="non-virtual"><scope>Receta</scope><name>hc</name></member>
       <member refid="class_receta_1a859805a3106fa033b8010fe602e1f4c6" prot="private" virt="non-virtual"><scope>Receta</scope><name>ings</name></member>
+      <member refid="class_receta_1a6d473ac07d9005a93d671ebb86da356d" prot="public" virt="non-virtual"><scope>Receta</scope><name>muestraNutricional</name></member>
       <member refid="class_receta_1a06b8d8f633037580798daf0adbf5e145" prot="public" virt="non-virtual"><scope>Receta</scope><name>ningredientes</name></member>
       <member refid="class_receta_1af3f8bcc9778afab1987c82e7b5e53d07" prot="private" virt="non-virtual"><scope>Receta</scope><name>nombre</name></member>
+      <member refid="class_receta_1a686d2134c6ae879602f81ba9c6be5b21" prot="public" virt="non-virtual"><scope>Receta</scope><name>obtieneNutricional</name></member>
       <member refid="class_receta_1a80137137b6d575163a2abccf9e4082ac" prot="public" virt="non-virtual"><scope>Receta</scope><name>operator&lt;&lt;</name></member>
       <member refid="class_receta_1a6651b572a5b3df06e11d51fc49b36201" prot="public" virt="non-virtual"><scope>Receta</scope><name>operator=</name></member>
       <member refid="class_receta_1a812dfa7fcc7baa5767968177e5158dd9" prot="public" virt="non-virtual"><scope>Receta</scope><name>operator&gt;&gt;</name></member>
@@ -530,6 +757,11 @@
       <member refid="class_receta_1a507bee2a7acf0f095f7f5f539fa26900" prot="public" virt="non-virtual"><scope>Receta</scope><name>Receta</name></member>
       <member refid="class_receta_1aec652197fc45e41e6c20e10fe504a1e6" prot="public" virt="non-virtual"><scope>Receta</scope><name>Receta</name></member>
       <member refid="class_receta_1acb5bb989fb0a5c57cf85146f936a544d" prot="public" virt="non-virtual"><scope>Receta</scope><name>Receta</name></member>
+      <member refid="class_receta_1aca744705502cb5bb664a8cc0a738b458" prot="public" virt="non-virtual"><scope>Receta</scope><name>setCalorias</name></member>
+      <member refid="class_receta_1ae3da21e878f6b5f44e14a8eb19ee0db6" prot="public" virt="non-virtual"><scope>Receta</scope><name>setFibra</name></member>
+      <member refid="class_receta_1a08a537f0b6598c4f1c3c31c4e8cf0cbd" prot="public" virt="non-virtual"><scope>Receta</scope><name>setGrasas</name></member>
+      <member refid="class_receta_1a068018acdd4a6e0bcece800984ef9423" prot="public" virt="non-virtual"><scope>Receta</scope><name>setHc</name></member>
+      <member refid="class_receta_1ab5adfe6295075176f29c2c83f9eeadf2" prot="public" virt="non-virtual"><scope>Receta</scope><name>setProteinas</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

@@ -205,3 +205,29 @@ istream &operator>>(istream &is, Receta &receta){
 
     return is;
 }
+
+void Receta::obtieneNutricional(Ingredientes &ingredientes){
+    for(list<pair<string,unsigned int> >::const_iterator it = ings.cend(); it != ings.cend(); ++it){
+        string nombre = it->first;
+        unsigned int gramos = it->second;
+        nombre.pop_back();
+        this->calorias += ingredientes.get(nombre).getCalorias() * gramos * 0.01;
+        this->hc += ingredientes.get(nombre).getHidratos() * gramos * 0.01;
+        this->grasas += ingredientes.get(nombre).getGrasas() * gramos * 0.01;
+        this->proteinas += ingredientes.get(nombre).getProteinas() * gramos * 0.01;
+        this->fibra += ingredientes.get(nombre).getFibras() * gramos * 0.01;
+    }
+    cout << "Calorias:" << this->getCalorias() << endl;
+    cout << "Hidratos de Carbono:" << this->getHc() << endl;
+    cout << "Proteinas:" << this->getProteinas() << endl;
+    cout << "Grasas:" << this->getGrasas() << endl;
+    cout << "Fibra:" << this->getFibras() << endl;
+}   
+
+void Receta::muestraNutricional(){
+    cout << "Calorias:" << this->getCalorias() << endl;
+    cout << "Hidratos de Carbono:" << this->getHc() << endl;
+    cout << "Proteinas:" << this->getProteinas() << endl;
+    cout << "Grasas:" << this->getGrasas() << endl;
+    cout << "Fibra:" << this->getFibras() << endl;
+}

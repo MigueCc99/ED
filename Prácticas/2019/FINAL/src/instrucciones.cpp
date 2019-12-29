@@ -1,5 +1,7 @@
 #include "instrucciones.h"
 
+Acciones Instrucciones::acc;
+
 Instrucciones::Instrucciones(){}
 
 Instrucciones::Instrucciones(ArbolBinario<string> &arbol, Acciones acc){
@@ -22,7 +24,7 @@ istream &operator>>(istream &is, Instrucciones &instrucciones){
     const char salto_linea = '\n';
 
     stack<ArbolBinario<string> > pila;
-
+    cout <<"TEST PARA COMPROBAR LA CREACIÓN DEL ÁRBOL DE INSTRUCCIONES - AQUÍ SE MUESTRA SU CORRECTO FUNCIONAMIENTO" << endl;
     while(is.peek() != EOF){
         getline(is,linea,salto_linea);
         for(string::iterator it = linea.begin(); it != linea.end(); ++it){
@@ -37,29 +39,35 @@ istream &operator>>(istream &is, Instrucciones &instrucciones){
         ArbolBinario<string> arbol(accion);
 
         if(!ingrediente.empty()){
-            if(instrucciones.acc.getAriedad(accion) == 1){
+            if(instrucciones.acc.getAriedad(accion) == '1'){
                 arbol.Insertar_Hi(arbol.getRaiz(),ingrediente);
+                pila.push(arbol);
             }
-            else if(instrucciones.acc.getAriedad(accion) == 2){
-                arbol.Insertar_Hi(arbol.getRaiz(),ingrediente);
-                arbol.Insertar_Hd(arbol.getRaiz(),pila.top());
+            else if(instrucciones.acc.getAriedad(accion) == '2'){
+                arbol.Insertar_Hd(arbol.getRaiz(),ingrediente);
+                arbol.Insertar_Hi(arbol.getRaiz(),pila.top());
                 pila.pop();
+                pila.push(arbol);
             }
         }
         else{
-            if(instrucciones.acc.getAriedad(accion) == 1){
+            if(instrucciones.acc.getAriedad(accion) == '1'){
                 arbol.Insertar_Hi(arbol.getRaiz(),pila.top());
                 pila.pop();
+                pila.push(arbol);
             }
-            else if(instrucciones.acc.getAriedad(accion) == 2){
+            else if(instrucciones.acc.getAriedad(accion) == '2'){
                 arbol.Insertar_Hd(arbol.getRaiz(),pila.top());
                 pila.pop();
                 arbol.Insertar_Hi(arbol.getRaiz(),pila.top());
                 pila.pop();
+                pila.push(arbol);
             }
         }
-        arbol.RecorridoPostOrden(cout);
-        //instrucciones.datos = arbol;
+
+        cout <<"\nARIEDAD --->>" << instrucciones.acc.getAriedad(accion) << endl;
+        arbol.RecorridoPreOrden(cout);
+        cout << endl << endl;
         //cout << "Accion:" << accion << endl;
         //cout << "Ingrediente:" << ingrediente << endl;
         linea = "";
@@ -67,5 +75,8 @@ istream &operator>>(istream &is, Instrucciones &instrucciones){
         ingrediente = "";
         hay_esp = false;
     }
+    ArbolBinario<string> aux (pila.top());
+    //instrucciones.datos = aux;
+    pila.pop();
     return is;
 }

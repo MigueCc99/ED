@@ -1,0 +1,466 @@
+.TH "ArbolBinario< T >" 3 "Domingo, 29 de Diciembre de 2019" "Version 0.1" "Práctica 3 - Estructura de Datos" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ArbolBinario< T >
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <arbolbinario\&.h>\fP
+.SS "Clases"
+
+.in +1c
+.ti -1c
+.RI "class \fBinorden_iterador\fP"
+.br
+.ti -1c
+.RI "class \fBnodo\fP"
+.br
+.ti -1c
+.RI "class \fBpostorden_iterador\fP"
+.br
+.ti -1c
+.RI "class \fBpreorden_iterador\fP"
+.br
+.in -1c
+.SS "Métodos públicos"
+
+.in +1c
+.ti -1c
+.RI "\fBArbolBinario\fP ()"
+.br
+.RI "Constructor por defecto\&. "
+.ti -1c
+.RI "\fBArbolBinario\fP (const T &e)"
+.br
+.RI "Constructor con parametros\&. "
+.ti -1c
+.RI "\fBArbolBinario\fP (typename \fBArbolBinario\fP< T >::\fBnodo\fP n)"
+.br
+.ti -1c
+.RI "\fBArbolBinario\fP (const \fBArbolBinario\fP< T > &ab)"
+.br
+.RI "Constructor por copia\&. "
+.ti -1c
+.RI "\fB~ArbolBinario\fP ()"
+.br
+.RI "Destructor\&. "
+.ti -1c
+.RI "\fBArbolBinario\fP< T > & \fBoperator=\fP (const \fBArbolBinario\fP< T > &ab)"
+.br
+.RI "Operador de asignacion\&. "
+.ti -1c
+.RI "\fBArbolBinario\fP< T >::\fBnodo\fP \fBgetRaiz\fP () const"
+.br
+.RI "Obtiene un nodo apuntando a la raiz del arbol\&. "
+.ti -1c
+.RI "\fBArbolBinario\fP< T >::\fBnodo\fP \fBInsertar_Hi\fP (typename \fBArbolBinario\fP< T >::\fBnodo\fP n, const T &e)"
+.br
+.RI "Inserta un subarbol como hijo izquierdo del nodo\&. Este suabarbol solamente tiene un nodo\&. "
+.ti -1c
+.RI "\fBArbolBinario\fP< T >::\fBnodo\fP \fBInsertar_Hi\fP (typename \fBArbolBinario\fP< T >::\fBnodo\fP n, \fBArbolBinario\fP< T > &tree)"
+.br
+.RI "Inserta un subarbol como hijo izquierdo del nodo\&. "
+.ti -1c
+.RI "\fBArbolBinario\fP< T >::\fBnodo\fP \fBInsertar_Hd\fP (typename \fBArbolBinario\fP< T >::\fBnodo\fP n, const T &e)"
+.br
+.RI "Inserta un subarbol como hijo derecho del nodo\&. Este suabarbol solamente tiene un nodo\&. "
+.ti -1c
+.RI "\fBArbolBinario\fP< T >::\fBnodo\fP \fBInsertar_Hd\fP (typename \fBArbolBinario\fP< T >::\fBnodo\fP n, \fBArbolBinario\fP< T > &tree)"
+.br
+.RI "Inserta un subarbol como hijo derecho del nodo\&. "
+.ti -1c
+.RI "void \fBPodar_Hi\fP (typename \fBArbolBinario\fP< T >::\fBnodo\fP pos)"
+.br
+.RI "Poda el hijo izquierdo del nodo dado @pos: posicion del nodo\&. "
+.ti -1c
+.RI "void \fBPodar_Hd\fP (typename \fBArbolBinario\fP< T >::\fBnodo\fP pos)"
+.br
+.RI "Poda el hijo derecho del nodo dado @pos: posicion del nodo\&. "
+.ti -1c
+.RI "\fBArbolBinario\fP< T > \fBPodarHi_GetSubtree\fP (typename \fBArbolBinario\fP< T >::\fBnodo\fP pos)"
+.br
+.RI "Poda el hijo derecho o izquierda del nodo del nodo dado @pos: posicion del nodo\&. "
+.ti -1c
+.RI "\fBArbolBinario\fP< T > \fBPodarHd_GetSubtree\fP (typename \fBArbolBinario\fP< T >::\fBnodo\fP pos)"
+.br
+.ti -1c
+.RI "void \fBSustituye_Subarbol\fP (typename \fBArbolBinario\fP< T >::\fBnodo\fP pos_this, const \fBArbolBinario\fP< T > &a, typename \fBArbolBinario\fP< T >::\fBnodo\fP pos_a)"
+.br
+.RI "Se sustituye el subarbol por otro subarbol de otro arbol\&. "
+.ti -1c
+.RI "void \fBclear\fP ()"
+.br
+.RI "Borra todo arbol, dejandolo como un arbol vacio\&. "
+.ti -1c
+.RI "bool \fBempty\fP () const"
+.br
+.RI "Arbol vacio\&. "
+.ti -1c
+.RI "unsigned int \fBsize\fP () const"
+.br
+.RI "Tamaño de un arbol\&. "
+.ti -1c
+.RI "bool \fBoperator==\fP (const \fBArbolBinario\fP< T > &a) const"
+.br
+.RI "Igualdad entre dos arboles\&. "
+.ti -1c
+.RI "bool \fBoperator!=\fP (const \fBArbolBinario\fP< T > &a) const"
+.br
+.RI "Desigualdad entre dos arboles\&. "
+.ti -1c
+.RI "void \fBRecorridoPreOrden\fP (ostream &os) const"
+.br
+.RI "Recorrido en Preorden\&. "
+.ti -1c
+.RI "void \fBRecorridoInOrden\fP (ostream &os) const"
+.br
+.RI "Recorrido en Inorden\&. "
+.ti -1c
+.RI "void \fBRecorridoPostOrden\fP (ostream &os) const"
+.br
+.RI "Recorrido en Postorden\&. "
+.ti -1c
+.RI "void \fBRecorridoNiveles\fP (ostream &os) const"
+.br
+.RI "Recorrido por niveles\&. "
+.ti -1c
+.RI "\fBpreorden_iterador\fP \fBbeginpreorden\fP () const"
+.br
+.RI "Comienzo de un iterador \fBpreorden_iterador\fP\&. "
+.ti -1c
+.RI "\fBpreorden_iterador\fP \fBendpreorden\fP () const"
+.br
+.RI "Final de un iterador \fBpreorden_iterador\fP\&. "
+.ti -1c
+.RI "\fBinorden_iterador\fP \fBbegininorden\fP () const"
+.br
+.RI "Comienzo de un iterador \fBinorden_iterador\fP\&. "
+.ti -1c
+.RI "\fBinorden_iterador\fP \fBendinorden\fP () const"
+.br
+.RI "Final de un iterador \fBinorden_iterador\fP\&. "
+.ti -1c
+.RI "\fBpostorden_iterador\fP \fBbeginpostorden\fP () const"
+.br
+.RI "Comienzo de un iterador \fBpostorden_iterador\fP\&. "
+.ti -1c
+.RI "\fBpostorden_iterador\fP \fBendpostorden\fP () const"
+.br
+.RI "Final de un iterador \fBpostorden_iterador\fP\&. "
+.in -1c
+.SS "Amigas"
+
+.in +1c
+.ti -1c
+.RI "template<class U > ostream & \fBoperator<<\fP (ostream &os, const \fBArbolBinario\fP< U > &ab)"
+.br
+.RI "Escritura de un arbol binario\&. "
+.ti -1c
+.RI "template<class U > istream & \fBoperator>>\fP (istream &is, \fBArbolBinario\fP< U > &ab)"
+.br
+.RI "Lectura de un arbol binario\&. "
+.in -1c
+.SH "Descripción detallada"
+.PP 
+
+.SS "template<class T>
+.br
+class ArbolBinario< T >"
+TDA \fBArbolBinario\fP @doc Definición : Una instancia \fIa\fP del tipo de dato abstracto \fBArbolBinario\fP sobre un dominio T se puede construir como:
+.IP "\(bu" 2
+Un objeto vacío si no contiene ningun elemento
+.IP "\(bu" 2
+Un arbol que contiene un elemento destacad la raíz con un valor e en el dominio T denominado etiqueta y dos subarboles (Ti:subarbol izquierdo, y Td:subarbol derecho) del T\&.D\&.A Arbolbinario sobre T\&. Se establece una relación padre-hijo entre cada nodo y los nodos raíz de los subarboles ( si existen) que cuelgan de el\&. Lo denotamos como {e,{Ti},{Td}} Para poder usar el TDA \fBArbolBinario\fP se debe incluir \fBArbolBinario\&.h\fP Son mutables\&. El espacio requerido para el almacenamiento es O(n) siendo n el numero de nodos\&. 
+.PP
+
+.PP
+Definición en la línea 22 del archivo arbolbinario\&.h\&.
+.SH "Documentación de las funciones miembro"
+.PP 
+.SS "template<class T> \fBinorden_iterador\fP \fBArbolBinario\fP< T >::begininorden () const"
+
+.PP
+Comienzo de un iterador \fBinorden_iterador\fP\&. 
+.PP
+\fBDevuelve\fP
+.RS 4
+un iterador de tipo inorden apuntando a la raiz 
+.RE
+.PP
+
+.SS "template<class T> \fBpostorden_iterador\fP \fBArbolBinario\fP< T >::beginpostorden () const"
+
+.PP
+Comienzo de un iterador \fBpostorden_iterador\fP\&. 
+.PP
+\fBDevuelve\fP
+.RS 4
+un iterador de tipo postorden apuntando a la raiz 
+.RE
+.PP
+
+.SS "template<class T> \fBpreorden_iterador\fP \fBArbolBinario\fP< T >::beginpreorden () const"
+
+.PP
+Comienzo de un iterador \fBpreorden_iterador\fP\&. 
+.PP
+\fBDevuelve\fP
+.RS 4
+un iterador de tipo preorden apuntando a la raiz 
+.RE
+.PP
+
+.SS "template<class T> bool \fBArbolBinario\fP< T >::empty () const"
+
+.PP
+Arbol vacio\&. 
+.PP
+\fBDevuelve\fP
+.RS 4
+Devuelve si el arbol es vacio (true), y falso en caso contrario 
+.RE
+.PP
+
+.SS "template<class T> \fBinorden_iterador\fP \fBArbolBinario\fP< T >::endinorden () const"
+
+.PP
+Final de un iterador \fBinorden_iterador\fP\&. 
+.PP
+\fBDevuelve\fP
+.RS 4
+un iterador de tipo inorden apuntando al final 
+.RE
+.PP
+
+.SS "template<class T> \fBpostorden_iterador\fP \fBArbolBinario\fP< T >::endpostorden () const"
+
+.PP
+Final de un iterador \fBpostorden_iterador\fP\&. 
+.PP
+\fBDevuelve\fP
+.RS 4
+un iterador de tipo postorden apuntando al final 
+.RE
+.PP
+
+.SS "template<class T> \fBpreorden_iterador\fP \fBArbolBinario\fP< T >::endpreorden () const"
+
+.PP
+Final de un iterador \fBpreorden_iterador\fP\&. 
+.PP
+\fBDevuelve\fP
+.RS 4
+un iterador de tipo preorden apuntando al final 
+.RE
+.PP
+
+.SS "template<class T> \fBArbolBinario\fP<T>::\fBnodo\fP \fBArbolBinario\fP< T >::Insertar_Hd (typename \fBArbolBinario\fP< T >::\fBnodo\fP n, \fBArbolBinario\fP< T > & tree)"
+
+.PP
+Inserta un subarbol como hijo derecho del nodo\&. 
+.PP
+\fBParámetros\fP
+.RS 4
+\fIn\fP posicion del nodo donde insertar el subarbol como hijo derecho 
+.br
+\fItree\fP subarbol que se inserta\&. ES MODIFICADO 
+.RE
+.PP
+
+.SS "template<class T> \fBArbolBinario\fP<T>::\fBnodo\fP \fBArbolBinario\fP< T >::Insertar_Hd (typename \fBArbolBinario\fP< T >::\fBnodo\fP n, const T & e)"
+
+.PP
+Inserta un subarbol como hijo derecho del nodo\&. Este suabarbol solamente tiene un nodo\&. 
+.PP
+\fBParámetros\fP
+.RS 4
+\fIn\fP posicion del nodo donde insertar el subarbol como hijo derecho 
+.br
+\fIe\fP etiqueta de la raiz del subarbol que se inserta 
+.RE
+.PP
+
+.SS "template<class T> \fBArbolBinario\fP<T>::\fBnodo\fP \fBArbolBinario\fP< T >::Insertar_Hi (typename \fBArbolBinario\fP< T >::\fBnodo\fP n, \fBArbolBinario\fP< T > & tree)"
+
+.PP
+Inserta un subarbol como hijo izquierdo del nodo\&. 
+.PP
+\fBParámetros\fP
+.RS 4
+\fIn\fP posicion del nodo donde insertar el subarbol como hijo izquierdo 
+.br
+\fItree:subarbol\fP que se inserta\&. ES MODIFICADO 
+.RE
+.PP
+
+.SS "template<class T> \fBArbolBinario\fP<T>::\fBnodo\fP \fBArbolBinario\fP< T >::Insertar_Hi (typename \fBArbolBinario\fP< T >::\fBnodo\fP n, const T & e)"
+
+.PP
+Inserta un subarbol como hijo izquierdo del nodo\&. Este suabarbol solamente tiene un nodo\&. 
+.PP
+\fBParámetros\fP
+.RS 4
+\fIn\fP posicion del nodo donde insertar el subarbol como hijo izquierdo 
+.br
+\fIe\fP etiqueta de la raiz del subarbol que se inserta 
+.RE
+.PP
+
+.SS "template<class T> bool \fBArbolBinario\fP< T >::operator!= (const \fBArbolBinario\fP< T > & a) const"
+
+.PP
+Desigualdad entre dos arboles\&. 
+.PP
+\fBParámetros\fP
+.RS 4
+\fIa\fP arbo binario con el que se compara 
+.RE
+.PP
+\fBDevuelve\fP
+.RS 4
+true si los dos arboles son distintos false en caso contrario 
+.RE
+.PP
+
+.SS "template<class T> \fBArbolBinario\fP<T>& \fBArbolBinario\fP< T >::operator= (const \fBArbolBinario\fP< T > & ab)"
+
+.PP
+Operador de asignacion\&. 
+.PP
+\fBParámetros\fP
+.RS 4
+\fIab\fP arbol binario del que se copia 
+.RE
+.PP
+
+.SS "template<class T> bool \fBArbolBinario\fP< T >::operator== (const \fBArbolBinario\fP< T > & a) const"
+
+.PP
+Igualdad entre dos arboles\&. 
+.PP
+\fBParámetros\fP
+.RS 4
+\fIa\fP arbo binario con el que se compara 
+.RE
+.PP
+\fBDevuelve\fP
+.RS 4
+true si los dos arboles son iguales false en caso contrario 
+.RE
+.PP
+
+.SS "template<class T> \fBArbolBinario\fP<T> \fBArbolBinario\fP< T >::PodarHi_GetSubtree (typename \fBArbolBinario\fP< T >::\fBnodo\fP pos)"
+
+.PP
+Poda el hijo derecho o izquierda del nodo del nodo dado @pos: posicion del nodo\&. 
+.PP
+\fBDevuelve\fP
+.RS 4
+un arbol nuevo con esta rama eliminada 
+.RE
+.PP
+
+.SS "template<class T> void \fBArbolBinario\fP< T >::RecorridoInOrden (ostream & os) const"
+
+.PP
+Recorrido en Inorden\&. 
+.PP
+\fBParámetros\fP
+.RS 4
+\fIos\fP flujo sobre el que se da el recorrido del arbol en Inorden 
+.RE
+.PP
+
+.SS "template<class T> void \fBArbolBinario\fP< T >::RecorridoNiveles (ostream & os) const"
+
+.PP
+Recorrido por niveles\&. 
+.PP
+\fBParámetros\fP
+.RS 4
+\fIos\fP flujo sobre el que se da el recorrido del arbol por niveles 
+.RE
+.PP
+
+.SS "template<class T> void \fBArbolBinario\fP< T >::RecorridoPostOrden (ostream & os) const"
+
+.PP
+Recorrido en Postorden\&. 
+.PP
+\fBParámetros\fP
+.RS 4
+\fIos\fP flujo sobre el que se da el recorrido del arbol en Postorden 
+.RE
+.PP
+
+.SS "template<class T> void \fBArbolBinario\fP< T >::RecorridoPreOrden (ostream & os) const"
+
+.PP
+Recorrido en Preorden\&. 
+.PP
+\fBParámetros\fP
+.RS 4
+\fIos\fP flujo sobre el que se da el recorrido del arbol en preorden 
+.RE
+.PP
+
+.SS "template<class T> unsigned int \fBArbolBinario\fP< T >::size () const"
+
+.PP
+Tamaño de un arbol\&. 
+.PP
+\fBDevuelve\fP
+.RS 4
+Devuelve el numero de nodos que tiene el arbol 
+.RE
+.PP
+
+.SS "template<class T> void \fBArbolBinario\fP< T >::Sustituye_Subarbol (typename \fBArbolBinario\fP< T >::\fBnodo\fP pos_this, const \fBArbolBinario\fP< T > & a, typename \fBArbolBinario\fP< T >::\fBnodo\fP pos_a)"
+
+.PP
+Se sustituye el subarbol por otro subarbol de otro arbol\&. 
+.PP
+\fBParámetros\fP
+.RS 4
+\fIpos_this\fP posicion de la raiz del subarbol a ser copiado\&. El que hubiese previo se elimina\&. 
+.br
+\fIa\fP arbol fuente\&. 
+.br
+\fIpos_a\fP posicion de la raiz del suarbol de \fIa\fP que va a ser copiado\&. 
+.RE
+.PP
+
+.SH "Documentación de las funciones relacionadas y clases amigas"
+.PP 
+.SS "template<class T> template<class U > ostream& operator<< (ostream & os, const \fBArbolBinario\fP< U > & ab)\fC [friend]\fP"
+
+.PP
+Escritura de un arbol binario\&. 
+.PP
+\fBParámetros\fP
+.RS 4
+\fIos\fP flujo de salida 
+.br
+\fIab\fP arbol binario que se escribe 
+.RE
+.PP
+
+.SS "template<class T> template<class U > istream& operator>> (istream & is, \fBArbolBinario\fP< U > & ab)\fC [friend]\fP"
+
+.PP
+Lectura de un arbol binario\&. 
+.PP
+\fBParámetros\fP
+.RS 4
+\fIos\fP flujo de entrada 
+.br
+\fIab\fP arbol binario sobre el que se lee 
+.RE
+.PP
+
+
+.SH "Autor"
+.PP 
+Generado automáticamente por Doxygen para Práctica 3 - Estructura de Datos del código fuente\&.

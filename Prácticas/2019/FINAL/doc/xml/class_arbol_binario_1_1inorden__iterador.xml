@@ -1,0 +1,328 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="class_arbol_binario_1_1inorden__iterador" kind="class" language="C++" prot="public">
+    <compoundname>ArbolBinario::inorden_iterador</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_arbol_binario_1_1inorden__iterador_1ad7c8f3804b30c426ff772712f6d3db63" prot="private" static="no" mutable="no">
+        <type>info_nodo *</type>
+        <definition>info_nodo* ArbolBinario&lt; T &gt;::inorden_iterador::p</definition>
+        <argsstring></argsstring>
+        <name>p</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/arbolbinario.h" line="516" column="20" bodyfile="include/arbolbinario.h" bodystart="516" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_arbol_binario_1_1inorden__iterador_1a7aaf1bc41122321eaeb4dcc50d489fe8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class ArbolBinario</definition>
+        <argsstring></argsstring>
+        <name>ArbolBinario</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/arbolbinario.h" line="601" column="2" bodyfile="include/arbolbinario.h" bodystart="601" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_arbol_binario_1_1inorden__iterador_1abeff96499253dfb2d19b0cbaba8ac6d8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ArbolBinario&lt; T &gt;::inorden_iterador::inorden_iterador</definition>
+        <argsstring>(info_nodo *i)</argsstring>
+        <name>inorden_iterador</name>
+        <param>
+          <type>info_nodo *</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>Constructor con parametros. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nodo que se copia </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/arbolbinario.h" line="521" column="10" bodyfile="include/arbolbinario.h" bodystart="521" bodyend="521"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_arbol_binario_1_1inorden__iterador_1a4d7a32537f0d10c0c7f8c069724a4226" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ArbolBinario&lt; T &gt;::inorden_iterador::inorden_iterador</definition>
+        <argsstring>()</argsstring>
+        <name>inorden_iterador</name>
+        <briefdescription>
+<para>Contructor por defecto. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/arbolbinario.h" line="526" column="10" bodyfile="include/arbolbinario.h" bodystart="526" bodyend="526"/>
+      </memberdef>
+      <memberdef kind="function" id="class_arbol_binario_1_1inorden__iterador_1afd45e81f9c3c521104938227b17316a9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ArbolBinario&lt; T &gt;::inorden_iterador::inorden_iterador</definition>
+        <argsstring>(const nodo &amp;n)</argsstring>
+        <name>inorden_iterador</name>
+        <param>
+          <type>const <ref refid="class_arbol_binario_1_1nodo" kindref="compound">nodo</ref> &amp;</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Constructor con nodo. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nodo fuente </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/arbolbinario.h" line="532" column="10" bodyfile="include/arbolbinario.h" bodystart="532" bodyend="532"/>
+      </memberdef>
+      <memberdef kind="function" id="class_arbol_binario_1_1inorden__iterador_1ac253108ace744471eb4e64278a44071a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ArbolBinario&lt; T &gt;::inorden_iterador::inorden_iterador</definition>
+        <argsstring>(const inorden_iterador &amp;n)</argsstring>
+        <name>inorden_iterador</name>
+        <param>
+          <type>const <ref refid="class_arbol_binario_1_1inorden__iterador" kindref="compound">inorden_iterador</ref> &amp;</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Constructo de copia. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nodo fuente </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/arbolbinario.h" line="537" column="10" bodyfile="include/arbolbinario.h" bodystart="537" bodyend="537"/>
+      </memberdef>
+      <memberdef kind="function" id="class_arbol_binario_1_1inorden__iterador_1a912ac0406b2e17bc49baf1321b2609ce" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const T &amp;</type>
+        <definition>const T&amp; ArbolBinario&lt; T &gt;::inorden_iterador::operator*</definition>
+        <argsstring>() const</argsstring>
+        <name>operator*</name>
+        <briefdescription>
+<para>acceso a la informacion del nodo </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/arbolbinario.h" line="541" column="18" bodyfile="include/arbolbinario.h" bodystart="541" bodyend="544"/>
+      </memberdef>
+      <memberdef kind="function" id="class_arbol_binario_1_1inorden__iterador_1a69442e2ed391de0de15197fa4bce1347" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T &amp;</type>
+        <definition>T&amp; ArbolBinario&lt; T &gt;::inorden_iterador::operator*</definition>
+        <argsstring>()</argsstring>
+        <name>operator*</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/arbolbinario.h" line="545" column="11" bodyfile="include/arbolbinario.h" bodystart="545" bodyend="548"/>
+      </memberdef>
+      <memberdef kind="function" id="class_arbol_binario_1_1inorden__iterador_1aeb20011529e5d235be3f001d55ca330f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ArbolBinario&lt; T &gt;::inorden_iterador::operator==</definition>
+        <argsstring>(const inorden_iterador &amp;n)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="class_arbol_binario_1_1inorden__iterador" kindref="compound">inorden_iterador</ref> &amp;</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>operacion de igualdad entre dos posiciones </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nodo con el que se compara </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true si son iguales false en caso contrario </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/arbolbinario.h" line="554" column="7" bodyfile="include/arbolbinario.h" bodystart="554" bodyend="556"/>
+      </memberdef>
+      <memberdef kind="function" id="class_arbol_binario_1_1inorden__iterador_1a783f6a48c29594dde6ddf8f477989ac2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ArbolBinario&lt; T &gt;::inorden_iterador::operator!=</definition>
+        <argsstring>(const inorden_iterador &amp;n)</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="class_arbol_binario_1_1inorden__iterador" kindref="compound">inorden_iterador</ref> &amp;</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>operacion de desigualdad entre dos posiciones </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nodo con el que se compara </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true si son desiguales false en caso contrario </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/arbolbinario.h" line="562" column="7" bodyfile="include/arbolbinario.h" bodystart="562" bodyend="564"/>
+      </memberdef>
+      <memberdef kind="function" id="class_arbol_binario_1_1inorden__iterador_1a3beb2133e8319be6791854b9c470a9c5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_arbol_binario_1_1inorden__iterador" kindref="compound">inorden_iterador</ref></type>
+        <definition>inorden_iterador ArbolBinario&lt; T &gt;::inorden_iterador::padre</definition>
+        <argsstring>()</argsstring>
+        <name>padre</name>
+        <briefdescription>
+<para>Nodo del padre. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>devuelve un nodo apuntando padre </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/arbolbinario.h" line="569" column="19" bodyfile="include/arbolbinario.h" bodystart="569" bodyend="573"/>
+      </memberdef>
+      <memberdef kind="function" id="class_arbol_binario_1_1inorden__iterador_1a37fae9f00d9a8ac43ddd0a36ad5873c4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_arbol_binario_1_1inorden__iterador" kindref="compound">inorden_iterador</ref></type>
+        <definition>inorden_iterador ArbolBinario&lt; T &gt;::inorden_iterador::hi</definition>
+        <argsstring>()</argsstring>
+        <name>hi</name>
+        <briefdescription>
+<para>Nodo del padre. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>devuelve un nodo apuntando al hijo a la izquierda </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/arbolbinario.h" line="578" column="19" bodyfile="include/arbolbinario.h" bodystart="578" bodyend="582"/>
+      </memberdef>
+      <memberdef kind="function" id="class_arbol_binario_1_1inorden__iterador_1a05e0bd4966015fb259e53c230ff2eab0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_arbol_binario_1_1inorden__iterador" kindref="compound">inorden_iterador</ref></type>
+        <definition>inorden_iterador ArbolBinario&lt; T &gt;::inorden_iterador::hd</definition>
+        <argsstring>()</argsstring>
+        <name>hd</name>
+        <briefdescription>
+<para>Nodo del padre. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>devuelve un nodo apuntando al hijo a la derecha </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/arbolbinario.h" line="587" column="19" bodyfile="include/arbolbinario.h" bodystart="587" bodyend="591"/>
+      </memberdef>
+      <memberdef kind="function" id="class_arbol_binario_1_1inorden__iterador_1afcd755553d0a646627a39d4b44ee2897" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ArbolBinario&lt; T &gt;::inorden_iterador::nulo</definition>
+        <argsstring>()</argsstring>
+        <name>nulo</name>
+        <briefdescription>
+<para>dice si un nodo es nulo </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true si es nulo false en caso contrario </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/arbolbinario.h" line="596" column="7" bodyfile="include/arbolbinario.h" bodystart="596" bodyend="598"/>
+      </memberdef>
+      <memberdef kind="function" id="class_arbol_binario_1_1inorden__iterador_1a9df6040a8f315f92fe163ec0aefb2da7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_arbol_binario_1_1inorden__iterador" kindref="compound">inorden_iterador</ref> &amp;</type>
+        <definition>inorden_iterador&amp; ArbolBinario&lt; T &gt;::inorden_iterador::operator++</definition>
+        <argsstring>()</argsstring>
+        <name>operator++</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/arbolbinario.h" line="599" column="19"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/arbolbinario.h" line="514" column="27" bodyfile="include/arbolbinario.h" bodystart="514" bodyend="604"/>
+    <listofallmembers>
+      <member refid="class_arbol_binario_1_1inorden__iterador_1a7aaf1bc41122321eaeb4dcc50d489fe8" prot="public" virt="non-virtual"><scope>ArbolBinario::inorden_iterador</scope><name>ArbolBinario</name></member>
+      <member refid="class_arbol_binario_1_1inorden__iterador_1a05e0bd4966015fb259e53c230ff2eab0" prot="public" virt="non-virtual"><scope>ArbolBinario::inorden_iterador</scope><name>hd</name></member>
+      <member refid="class_arbol_binario_1_1inorden__iterador_1a37fae9f00d9a8ac43ddd0a36ad5873c4" prot="public" virt="non-virtual"><scope>ArbolBinario::inorden_iterador</scope><name>hi</name></member>
+      <member refid="class_arbol_binario_1_1inorden__iterador_1abeff96499253dfb2d19b0cbaba8ac6d8" prot="private" virt="non-virtual"><scope>ArbolBinario::inorden_iterador</scope><name>inorden_iterador</name></member>
+      <member refid="class_arbol_binario_1_1inorden__iterador_1a4d7a32537f0d10c0c7f8c069724a4226" prot="public" virt="non-virtual"><scope>ArbolBinario::inorden_iterador</scope><name>inorden_iterador</name></member>
+      <member refid="class_arbol_binario_1_1inorden__iterador_1afd45e81f9c3c521104938227b17316a9" prot="public" virt="non-virtual"><scope>ArbolBinario::inorden_iterador</scope><name>inorden_iterador</name></member>
+      <member refid="class_arbol_binario_1_1inorden__iterador_1ac253108ace744471eb4e64278a44071a" prot="public" virt="non-virtual"><scope>ArbolBinario::inorden_iterador</scope><name>inorden_iterador</name></member>
+      <member refid="class_arbol_binario_1_1inorden__iterador_1afcd755553d0a646627a39d4b44ee2897" prot="public" virt="non-virtual"><scope>ArbolBinario::inorden_iterador</scope><name>nulo</name></member>
+      <member refid="class_arbol_binario_1_1inorden__iterador_1a783f6a48c29594dde6ddf8f477989ac2" prot="public" virt="non-virtual"><scope>ArbolBinario::inorden_iterador</scope><name>operator!=</name></member>
+      <member refid="class_arbol_binario_1_1inorden__iterador_1a912ac0406b2e17bc49baf1321b2609ce" prot="public" virt="non-virtual"><scope>ArbolBinario::inorden_iterador</scope><name>operator*</name></member>
+      <member refid="class_arbol_binario_1_1inorden__iterador_1a69442e2ed391de0de15197fa4bce1347" prot="public" virt="non-virtual"><scope>ArbolBinario::inorden_iterador</scope><name>operator*</name></member>
+      <member refid="class_arbol_binario_1_1inorden__iterador_1a9df6040a8f315f92fe163ec0aefb2da7" prot="public" virt="non-virtual"><scope>ArbolBinario::inorden_iterador</scope><name>operator++</name></member>
+      <member refid="class_arbol_binario_1_1inorden__iterador_1aeb20011529e5d235be3f001d55ca330f" prot="public" virt="non-virtual"><scope>ArbolBinario::inorden_iterador</scope><name>operator==</name></member>
+      <member refid="class_arbol_binario_1_1inorden__iterador_1ad7c8f3804b30c426ff772712f6d3db63" prot="private" virt="non-virtual"><scope>ArbolBinario::inorden_iterador</scope><name>p</name></member>
+      <member refid="class_arbol_binario_1_1inorden__iterador_1a3beb2133e8319be6791854b9c470a9c5" prot="public" virt="non-virtual"><scope>ArbolBinario::inorden_iterador</scope><name>padre</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

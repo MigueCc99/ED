@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/recetas.h" line="49" column="9" bodyfile="include/recetas.h" bodystart="49" bodyend="-1"/>
+        <location file="include/recetas.h" line="47" column="9" bodyfile="include/recetas.h" bodystart="47" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -33,7 +33,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/recetas.h" line="55" column="3"/>
+        <location file="include/recetas.h" line="53" column="3"/>
       </memberdef>
       <memberdef kind="function" id="class_recetas_1abaab6aa870733db8feb3f298304d3a7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -63,7 +63,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/recetas.h" line="62" column="3"/>
+        <location file="include/recetas.h" line="60" column="3"/>
       </memberdef>
       <memberdef kind="function" id="class_recetas_1a319168cd2bb248978f7ae2489c16e548" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -91,7 +91,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/recetas.h" line="68" column="3"/>
+        <location file="include/recetas.h" line="66" column="3"/>
       </memberdef>
       <memberdef kind="function" id="class_recetas_1a6ba67d84c73f5fbced2a3bd849f00c69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>const int</type>
@@ -108,7 +108,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/recetas.h" line="74" column="13"/>
+        <location file="include/recetas.h" line="72" column="13"/>
       </memberdef>
       <memberdef kind="function" id="class_recetas_1a09b86a8a08f7ac76109328958aae1f5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -138,7 +138,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/recetas.h" line="81" column="8"/>
+        <location file="include/recetas.h" line="79" column="8"/>
       </memberdef>
       <memberdef kind="function" id="class_recetas_1ab1445c6ad46bc6f99a24c9962569a86a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_recetas" kindref="compound">Recetas</ref> &amp;</type>
@@ -166,7 +166,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/recetas.h" line="87" column="12"/>
+        <location file="include/recetas.h" line="85" column="12"/>
       </memberdef>
       <memberdef kind="function" id="class_recetas_1a61ecc05b9a9569d44b913e8b9be6b0ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_receta" kindref="compound">Receta</ref> &amp;</type>
@@ -196,7 +196,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/recetas.h" line="94" column="11"/>
+        <location file="include/recetas.h" line="92" column="11"/>
       </memberdef>
       <memberdef kind="function" id="class_recetas_1a8ca28bf55e2306eb4695f359382f9b83" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="class_recetas_1_1iterator" kindref="compound">iterator</ref></type>
@@ -210,7 +210,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/recetas.h" line="194" column="14" bodyfile="include/recetas.h" bodystart="194" bodyend="198"/>
+        <location file="include/recetas.h" line="192" column="14" bodyfile="include/recetas.h" bodystart="192" bodyend="196"/>
       </memberdef>
       <memberdef kind="function" id="class_recetas_1a0ecd852b30d02a203b7c06dbf4420311" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="class_recetas_1_1iterator" kindref="compound">iterator</ref></type>
@@ -224,7 +224,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/recetas.h" line="203" column="14" bodyfile="include/recetas.h" bodystart="203" bodyend="207"/>
+        <location file="include/recetas.h" line="201" column="14" bodyfile="include/recetas.h" bodystart="201" bodyend="205"/>
       </memberdef>
       <memberdef kind="function" id="class_recetas_1a0ebc21c8c47afc23d890eb71c671775e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="class_recetas_1_1const__iterator" kindref="compound">const_iterator</ref></type>
@@ -238,7 +238,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/recetas.h" line="212" column="20" bodyfile="include/recetas.h" bodystart="212" bodyend="216"/>
+        <location file="include/recetas.h" line="210" column="20" bodyfile="include/recetas.h" bodystart="210" bodyend="214"/>
       </memberdef>
       <memberdef kind="function" id="class_recetas_1a98eb0106975e82d7dead2b95effc7102" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="class_recetas_1_1const__iterator" kindref="compound">const_iterator</ref></type>
@@ -252,7 +252,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/recetas.h" line="220" column="20" bodyfile="include/recetas.h" bodystart="220" bodyend="224"/>
+        <location file="include/recetas.h" line="218" column="20" bodyfile="include/recetas.h" bodystart="218" bodyend="222"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="friend">
@@ -297,7 +297,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/recetas.h" line="103" column="10"/>
+        <location file="include/recetas.h" line="101" column="10"/>
       </memberdef>
       <memberdef kind="friend" id="class_recetas_1a7d25a1b1132b5dd271d11c7010bfc331" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>friend istream &amp;</type>
@@ -348,7 +348,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/recetas.h" line="113" column="18"/>
+        <location file="include/recetas.h" line="111" column="18"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -365,7 +365,7 @@
 </simplesect>
 </para>
     </detaileddescription>
-    <location file="include/recetas.h" line="34" column="14" bodyfile="include/recetas.h" bodystart="34" bodyend="225"/>
+    <location file="include/recetas.h" line="32" column="14" bodyfile="include/recetas.h" bodystart="32" bodyend="223"/>
     <listofallmembers>
       <member refid="class_recetas_1a8ca28bf55e2306eb4695f359382f9b83" prot="public" virt="non-virtual"><scope>Recetas</scope><name>begin</name></member>
       <member refid="class_recetas_1a0ebc21c8c47afc23d890eb71c671775e" prot="public" virt="non-virtual"><scope>Recetas</scope><name>begin</name></member>

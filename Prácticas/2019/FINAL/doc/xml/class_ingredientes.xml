@@ -478,6 +478,23 @@
         </inbodydescription>
         <location file="include/ingredientes.h" line="166" column="10"/>
       </memberdef>
+      <memberdef kind="function" id="class_ingredientes_1a904c29818655718b0997f1b37506a1a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_ingrediente" kindref="compound">Ingrediente</ref></type>
+        <definition>Ingrediente Ingredientes::getIngrediente</definition>
+        <argsstring>(const string nombre)</argsstring>
+        <name>getIngrediente</name>
+        <param>
+          <type>const string</type>
+          <declname>nombre</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ingredientes.h" line="168" column="17"/>
+      </memberdef>
       <memberdef kind="function" id="class_ingredientes_1afccf277d57a0d27f6a9ab6c7f3a3a954" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int *</type>
         <definition>int* Ingredientes::obtenerDatosCalorias</definition>
@@ -489,7 +506,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ingredientes.h" line="186" column="10"/>
+        <location file="include/ingredientes.h" line="188" column="10"/>
       </memberdef>
       <memberdef kind="function" id="class_ingredientes_1aef39d8820ac7f3e2aea585436124b0df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int *</type>
@@ -502,7 +519,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ingredientes.h" line="188" column="10"/>
+        <location file="include/ingredientes.h" line="190" column="10"/>
       </memberdef>
       <memberdef kind="function" id="class_ingredientes_1acf0d27096141cca1108bf38d876230f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int *</type>
@@ -515,7 +532,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ingredientes.h" line="190" column="10"/>
+        <location file="include/ingredientes.h" line="192" column="10"/>
       </memberdef>
       <memberdef kind="function" id="class_ingredientes_1afb8cbed9e81b56175a6fdc04f2d73ca1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int *</type>
@@ -528,7 +545,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ingredientes.h" line="192" column="10"/>
+        <location file="include/ingredientes.h" line="194" column="10"/>
       </memberdef>
       <memberdef kind="function" id="class_ingredientes_1abe2bf4ef266352d9a10896f98ae794f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int *</type>
@@ -541,7 +558,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ingredientes.h" line="194" column="10"/>
+        <location file="include/ingredientes.h" line="196" column="10"/>
       </memberdef>
       <memberdef kind="function" id="class_ingredientes_1a482df358a0cc18f0e1aca28246547df2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>float</type>
@@ -558,7 +575,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ingredientes.h" line="196" column="11"/>
+        <location file="include/ingredientes.h" line="198" column="11"/>
       </memberdef>
       <memberdef kind="function" id="class_ingredientes_1ac9d7e56a91a4e92b24aa4721c3d51efb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>float</type>
@@ -575,7 +592,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ingredientes.h" line="198" column="11"/>
+        <location file="include/ingredientes.h" line="200" column="11"/>
       </memberdef>
       <memberdef kind="function" id="class_ingredientes_1a1a4e05bbe75fd58a191607f285f9fc08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>float</type>
@@ -596,7 +613,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ingredientes.h" line="200" column="11"/>
+        <location file="include/ingredientes.h" line="202" column="11"/>
       </memberdef>
       <memberdef kind="function" id="class_ingredientes_1a1d7f5971d3062d18228bf8a00518add4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -609,7 +626,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ingredientes.h" line="202" column="10"/>
+        <location file="include/ingredientes.h" line="204" column="10"/>
       </memberdef>
       <memberdef kind="function" id="class_ingredientes_1a03a0d01130ccbafb9d32781902213d1c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -622,7 +639,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ingredientes.h" line="204" column="10"/>
+        <location file="include/ingredientes.h" line="206" column="10"/>
       </memberdef>
       <memberdef kind="function" id="class_ingredientes_1af714f2431abc9f391271a5ce36d20fba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="class_ingredientes_1_1iterator" kindref="compound">iterator</ref></type>
@@ -636,7 +653,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ingredientes.h" line="287" column="14" bodyfile="include/ingredientes.h" bodystart="287" bodyend="291"/>
+        <location file="include/ingredientes.h" line="289" column="14" bodyfile="include/ingredientes.h" bodystart="289" bodyend="293"/>
       </memberdef>
       <memberdef kind="function" id="class_ingredientes_1a743696bb30ce1ff6d970496be6273383" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="class_ingredientes_1_1iterator" kindref="compound">iterator</ref></type>
@@ -650,7 +667,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ingredientes.h" line="296" column="14" bodyfile="include/ingredientes.h" bodystart="296" bodyend="300"/>
+        <location file="include/ingredientes.h" line="298" column="14" bodyfile="include/ingredientes.h" bodystart="298" bodyend="302"/>
       </memberdef>
       <memberdef kind="function" id="class_ingredientes_1a18c3774d89ce0e1f12b29e381d77f795" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="class_ingredientes_1_1const__iterator" kindref="compound">const_iterator</ref></type>
@@ -664,7 +681,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ingredientes.h" line="305" column="20" bodyfile="include/ingredientes.h" bodystart="305" bodyend="309"/>
+        <location file="include/ingredientes.h" line="307" column="20" bodyfile="include/ingredientes.h" bodystart="307" bodyend="311"/>
       </memberdef>
       <memberdef kind="function" id="class_ingredientes_1a952de40063794632409a027d166cd6c9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="class_ingredientes_1_1const__iterator" kindref="compound">const_iterator</ref></type>
@@ -678,7 +695,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ingredientes.h" line="314" column="20" bodyfile="include/ingredientes.h" bodystart="314" bodyend="318"/>
+        <location file="include/ingredientes.h" line="316" column="20" bodyfile="include/ingredientes.h" bodystart="316" bodyend="320"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="friend">
@@ -722,7 +739,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ingredientes.h" line="174" column="12"/>
+        <location file="include/ingredientes.h" line="176" column="12"/>
       </memberdef>
       <memberdef kind="friend" id="class_ingredientes_1a2f2a26cb7e5d982fcbe248027671937d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>friend istream &amp;</type>
@@ -773,7 +790,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ingredientes.h" line="183" column="20"/>
+        <location file="include/ingredientes.h" line="185" column="20"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -790,7 +807,7 @@
 </simplesect>
 </para>
     </detaileddescription>
-    <location file="include/ingredientes.h" line="32" column="19" bodyfile="include/ingredientes.h" bodystart="32" bodyend="320"/>
+    <location file="include/ingredientes.h" line="32" column="19" bodyfile="include/ingredientes.h" bodystart="32" bodyend="322"/>
     <listofallmembers>
       <member refid="class_ingredientes_1af714f2431abc9f391271a5ce36d20fba" prot="public" virt="non-virtual"><scope>Ingredientes</scope><name>begin</name></member>
       <member refid="class_ingredientes_1a18c3774d89ce0e1f12b29e381d77f795" prot="public" virt="non-virtual"><scope>Ingredientes</scope><name>begin</name></member>
@@ -804,6 +821,7 @@
       <member refid="class_ingredientes_1a03a0d01130ccbafb9d32781902213d1c" prot="public" virt="non-virtual"><scope>Ingredientes</scope><name>getEstadistico</name></member>
       <member refid="class_ingredientes_1a2f30f251726c114a425e655a07a21d80" prot="public" virt="non-virtual"><scope>Ingredientes</scope><name>getInformacion</name></member>
       <member refid="class_ingredientes_1aeb8017d2e1182f78e3935ca72b766ef8" prot="public" virt="non-virtual"><scope>Ingredientes</scope><name>getIngrediente</name></member>
+      <member refid="class_ingredientes_1a904c29818655718b0997f1b37506a1a0" prot="public" virt="non-virtual"><scope>Ingredientes</scope><name>getIngrediente</name></member>
       <member refid="class_ingredientes_1ad49a4d1142a214e8c077871efed59c60" prot="public" virt="non-virtual"><scope>Ingredientes</scope><name>getIngredientesTipo</name></member>
       <member refid="class_ingredientes_1a485db5688382e8068feb4680caea9a5f" prot="public" virt="non-virtual"><scope>Ingredientes</scope><name>getNumIngredientes</name></member>
       <member refid="class_ingredientes_1a9869f4642af46cd91d426c9a4e22019a" prot="public" virt="non-virtual"><scope>Ingredientes</scope><name>getTipos</name></member>

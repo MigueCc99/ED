@@ -162,7 +162,11 @@ public:
      * @brief setFibra
      * @return actualiza las fibras de la receta
      */    
-    void setFibra(float fibra);     
+    void setFibra(float fibra);
+
+    void obtieneNutricional(Ingredientes &ingredientes);  
+
+    void muestraNutricional();   
 
     /**
      * @brief Salida de una Receta a ostream

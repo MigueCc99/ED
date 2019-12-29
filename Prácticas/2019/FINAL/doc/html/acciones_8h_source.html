@@ -1,0 +1,211 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Práctica 3 - Estructura de Datos: Fichero Fuente include/acciones.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Práctica 3 - Estructura de Datos
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">acciones.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="acciones_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef _ACCIONES_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define _ACCIONES_H</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;cstring&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_acciones.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_acciones.html">Acciones</a>{</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  map&lt;string, unsigned char &gt; datos;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <a class="code" href="class_acciones.html">Acciones</a>();</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <a class="code" href="class_acciones.html">Acciones</a>(map&lt;string, unsigned char &gt; datos);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <a class="code" href="class_acciones.html">Acciones</a>(<span class="keyword">const</span> <a class="code" href="class_acciones.html">Acciones</a> &amp;acciones);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> getAriedad(<span class="keywordtype">string</span> accion);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <a class="code" href="class_acciones.html">Acciones</a> &amp; operator=(<span class="keyword">const</span> <a class="code" href="class_acciones.html">Acciones</a> &amp;acciones);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keyword">friend</span> ostream &amp;operator&lt;&lt;(ostream &amp;os, <span class="keyword">const</span> <a class="code" href="class_acciones.html">Acciones</a> &amp;acciones);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keyword">friend</span> istream &amp;operator&gt;&gt;(istream &amp;is, <a class="code" href="class_acciones.html">Acciones</a> &amp;acciones);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="class_acciones_1_1iterator.html">   68</a></span>&#160;  <span class="keyword">class </span><a class="code" href="class_acciones_1_1iterator.html">iterator</a>{</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      map&lt;string,unsigned char&gt;::iterator it;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      <a class="code" href="class_acciones_1_1iterator.html">iterator</a> &amp; operator++(){</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        ++it;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      <a class="code" href="class_acciones_1_1iterator.html">iterator</a> &amp; operator--(){</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        --it;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      pair&lt;const string,unsigned char &gt; &amp; operator*(){</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keywordflow">return</span> (*it);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;      }</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;      <span class="keywordtype">bool</span> operator==(<span class="keyword">const</span> <a class="code" href="class_acciones_1_1iterator.html">iterator</a> &amp;i){</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keywordflow">return</span> i.it == it;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;      }</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      <span class="keywordtype">bool</span> operator!=(<span class="keyword">const</span> <a class="code" href="class_acciones_1_1iterator.html">iterator</a> &amp;i){</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="keywordflow">return</span> i.it != it;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      }</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      <a class="code" href="class_acciones_1_1iterator.html">iterator</a> &amp; operator=(<span class="keyword">const</span> <a class="code" href="class_acciones_1_1iterator.html">iterator</a> &amp;i){</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        it = i.it;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;      }</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;      <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_acciones.html">Acciones</a>;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  };</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="class_acciones_1_1const__iterator.html">  105</a></span>&#160;  <span class="keyword">class </span><a class="code" href="class_acciones_1_1const__iterator.html">const_iterator</a>{</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;      map&lt;string,unsigned char&gt;::const_iterator it;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;      <a class="code" href="class_acciones_1_1const__iterator.html">const_iterator</a> &amp; operator++(){</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        ++it;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;      }</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;      <a class="code" href="class_acciones_1_1const__iterator.html">const_iterator</a> &amp; operator--(){</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        --it;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;      }</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;      <span class="keyword">const</span> pair&lt;const string,unsigned char &gt; &amp; operator*(){</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <span class="keywordflow">return</span> (*it);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;      }</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;      <span class="keywordtype">bool</span> operator==(<span class="keyword">const</span> <a class="code" href="class_acciones_1_1const__iterator.html">const_iterator</a> &amp;i){</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <span class="keywordflow">return</span> i.it == it;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;      }</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;      <span class="keywordtype">bool</span> operator!=(<span class="keyword">const</span> <a class="code" href="class_acciones_1_1const__iterator.html">const_iterator</a> &amp;i){</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <span class="keywordflow">return</span> i.it != it;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;      }</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;      <a class="code" href="class_acciones_1_1const__iterator.html">const_iterator</a> &amp; operator=(<span class="keyword">const</span> <a class="code" href="class_acciones_1_1const__iterator.html">const_iterator</a> &amp;i){</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        it = i.it;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;      }</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;      <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_acciones.html">Acciones</a>;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;  };</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
+<div class="line"><a name="l00142"></a><span class="lineno"><a class="line" href="class_acciones.html#a1a74f7e62810e656d5decf1a28480c1f">  142</a></span>&#160;  <a class="code" href="class_acciones_1_1iterator.html">iterator</a> <a class="code" href="class_acciones.html#a1a74f7e62810e656d5decf1a28480c1f">begin</a>(){</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <a class="code" href="class_acciones_1_1iterator.html">iterator</a> i;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    i.it = datos.begin();</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="keywordflow">return</span> i;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  }</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160; </div>
+<div class="line"><a name="l00151"></a><span class="lineno"><a class="line" href="class_acciones.html#ad5374e47df1c307470cc1400233f5e20">  151</a></span>&#160;  <a class="code" href="class_acciones_1_1iterator.html">iterator</a> <a class="code" href="class_acciones.html#ad5374e47df1c307470cc1400233f5e20">end</a>(){</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <a class="code" href="class_acciones_1_1iterator.html">iterator</a> i;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    i.it = datos.end();</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="keywordflow">return</span> i;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  }</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160; </div>
+<div class="line"><a name="l00160"></a><span class="lineno"><a class="line" href="class_acciones.html#ad90c56418f6c7b62c6da9f2a944e1205">  160</a></span>&#160;  <a class="code" href="class_acciones_1_1const__iterator.html">const_iterator</a> <a class="code" href="class_acciones.html#ad90c56418f6c7b62c6da9f2a944e1205">begin</a>()<span class="keyword">const</span>{</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <a class="code" href="class_acciones_1_1const__iterator.html">const_iterator</a> i;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    i.it = datos.begin();</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keywordflow">return</span> i;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  }</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160; </div>
+<div class="line"><a name="l00169"></a><span class="lineno"><a class="line" href="class_acciones.html#a746840a76a82bd56c0ca6284c8ab5c26">  169</a></span>&#160;  <a class="code" href="class_acciones_1_1const__iterator.html">const_iterator</a> <a class="code" href="class_acciones.html#a746840a76a82bd56c0ca6284c8ab5c26">end</a>()<span class="keyword">const</span>{</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <a class="code" href="class_acciones_1_1const__iterator.html">const_iterator</a> i;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    i.it = datos.end();</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <span class="keywordflow">return</span> i;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;  }</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160; </div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;};</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160; </div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _ACCIONES_H */</span><span class="preprocessor"></span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_acciones_html_ad90c56418f6c7b62c6da9f2a944e1205"><div class="ttname"><a href="class_acciones.html#ad90c56418f6c7b62c6da9f2a944e1205">Acciones::begin</a></div><div class="ttdeci">const_iterator begin() const</div><div class="ttdoc">Inicializa un const_iterator al comienzo de Acciones.</div><div class="ttdef"><b>Definition:</b> <a href="acciones_8h_source.html#l00160">acciones.h:160</a></div></div>
+<div class="ttc" id="aclass_acciones_html_ad5374e47df1c307470cc1400233f5e20"><div class="ttname"><a href="class_acciones.html#ad5374e47df1c307470cc1400233f5e20">Acciones::end</a></div><div class="ttdeci">iterator end()</div><div class="ttdoc">Inicializa un iterator al final de Acciones.</div><div class="ttdef"><b>Definition:</b> <a href="acciones_8h_source.html#l00151">acciones.h:151</a></div></div>
+<div class="ttc" id="aclass_acciones_1_1const__iterator_html"><div class="ttname"><a href="class_acciones_1_1const__iterator.html">Acciones::const_iterator</a></div><div class="ttdoc">Clase para iterar sobre las acciones.</div><div class="ttdef"><b>Definition:</b> <a href="acciones_8h_source.html#l00105">acciones.h:105</a></div></div>
+<div class="ttc" id="aclass_acciones_html"><div class="ttname"><a href="class_acciones.html">Acciones</a></div><div class="ttdef"><b>Definition:</b> <a href="acciones_8h_source.html#l00015">acciones.h:15</a></div></div>
+<div class="ttc" id="aclass_acciones_html_a746840a76a82bd56c0ca6284c8ab5c26"><div class="ttname"><a href="class_acciones.html#a746840a76a82bd56c0ca6284c8ab5c26">Acciones::end</a></div><div class="ttdeci">const_iterator end() const</div><div class="ttdoc">Inicializa un const_iterator al final de Acciones.</div><div class="ttdef"><b>Definition:</b> <a href="acciones_8h_source.html#l00169">acciones.h:169</a></div></div>
+<div class="ttc" id="aclass_acciones_html_a1a74f7e62810e656d5decf1a28480c1f"><div class="ttname"><a href="class_acciones.html#a1a74f7e62810e656d5decf1a28480c1f">Acciones::begin</a></div><div class="ttdeci">iterator begin()</div><div class="ttdoc">Inicializa un iterator al comienzo de Acciones.</div><div class="ttdef"><b>Definition:</b> <a href="acciones_8h_source.html#l00142">acciones.h:142</a></div></div>
+<div class="ttc" id="aclass_acciones_1_1iterator_html"><div class="ttname"><a href="class_acciones_1_1iterator.html">Acciones::iterator</a></div><div class="ttdoc">Clase para iterar sobre las acciones.</div><div class="ttdef"><b>Definition:</b> <a href="acciones_8h_source.html#l00068">acciones.h:68</a></div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.16
+</small></address>
+</body>
+</html>

@@ -1,4 +1,4 @@
-.TH "Receta" 3 "Domingo, 1 de Diciembre de 2019" "Version 0.1" "Práctica 3 - Estructura de Datos" \" -*- nroff -*-
+.TH "Receta" 3 "Domingo, 29 de Diciembre de 2019" "Version 0.1" "Práctica 3 - Estructura de Datos" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -49,9 +49,55 @@ Receta \- T\&.D\&.A \fBReceta\fP\&.
 .br
 .RI "getCode "
 .ti -1c
+.RI "const float \fBgetCalorias\fP () const"
+.br
+.RI "getCalorias "
+.ti -1c
+.RI "const float \fBgetHc\fP () const"
+.br
+.RI "getHc "
+.ti -1c
+.RI "const float \fBgetGrasas\fP () const"
+.br
+.RI "getGrasas "
+.ti -1c
+.RI "const float \fBgetProteinas\fP () const"
+.br
+.RI "getProteinas "
+.ti -1c
+.RI "const float \fBgetFibras\fP () const"
+.br
+.RI "getFibras "
+.ti -1c
 .RI "const int \fBningredientes\fP ()"
 .br
 .RI "ningredientes "
+.ti -1c
+.RI "void \fBsetCalorias\fP (float calorias)"
+.br
+.RI "setCalorias "
+.ti -1c
+.RI "void \fBsetHc\fP (float hc)"
+.br
+.RI "setHc "
+.ti -1c
+.RI "void \fBsetGrasas\fP (float grasas)"
+.br
+.RI "setGrasas "
+.ti -1c
+.RI "void \fBsetProteinas\fP (float proteinas)"
+.br
+.RI "setProteinas "
+.ti -1c
+.RI "void \fBsetFibra\fP (float fibra)"
+.br
+.RI "setFibra "
+.ti -1c
+.RI "void \fBobtieneNutricional\fP (\fBIngredientes\fP &ingredientes)"
+.br
+.ti -1c
+.RI "void \fBmuestraNutricional\fP ()"
+.br
 .ti -1c
 .RI "\fBiterator\fP \fBbegin\fP ()"
 .br
@@ -110,7 +156,7 @@ Octubre 2019
 .PP
 
 .PP
-Definición en la línea 35 del archivo receta\&.h\&.
+Definición en la línea 36 del archivo receta\&.h\&.
 .SH "Documentación del constructor y destructor"
 .PP 
 .SS "Receta::Receta (string code, int plato, string nombre, list< pair< string, unsigned int > > ings)"
@@ -153,6 +199,17 @@ Constructor de copia de la clase\&.
 
 .SH "Documentación de las funciones miembro"
 .PP 
+.SS "const float Receta::getCalorias () const"
+
+.PP
+getCalorias 
+.PP
+\fBDevuelve\fP
+.RS 4
+Devuelve las calorias de la receta 
+.RE
+.PP
+
 .SS "const string Receta::getCode () const"
 
 .PP
@@ -164,6 +221,39 @@ Devuelve el code de la receta
 .RE
 .PP
 
+.SS "const float Receta::getFibras () const"
+
+.PP
+getFibras 
+.PP
+\fBDevuelve\fP
+.RS 4
+Devuelve las fibras de la receta 
+.RE
+.PP
+
+.SS "const float Receta::getGrasas () const"
+
+.PP
+getGrasas 
+.PP
+\fBDevuelve\fP
+.RS 4
+Devuelve las grasas de la receta 
+.RE
+.PP
+
+.SS "const float Receta::getHc () const"
+
+.PP
+getHc 
+.PP
+\fBDevuelve\fP
+.RS 4
+Devuelve los hidratos de carbono de la receta 
+.RE
+.PP
+
 .SS "const string Receta::getNombre () const"
 
 .PP
@@ -172,6 +262,17 @@ getNombre
 \fBDevuelve\fP
 .RS 4
 Devuelve el nombre de la receta 
+.RE
+.PP
+
+.SS "const float Receta::getProteinas () const"
+
+.PP
+getProteinas 
+.PP
+\fBDevuelve\fP
+.RS 4
+Devuelve las proteinas de la receta 
 .RE
 .PP
 
@@ -194,6 +295,61 @@ Sobrecarga del operador=\&.
 \fBParámetros\fP
 .RS 4
 \fIreceta\fP receta a igualar al objeto implícito 
+.RE
+.PP
+
+.SS "void Receta::setCalorias (float calorias)"
+
+.PP
+setCalorias 
+.PP
+\fBDevuelve\fP
+.RS 4
+actualiza las calorias de la receta 
+.RE
+.PP
+
+.SS "void Receta::setFibra (float fibra)"
+
+.PP
+setFibra 
+.PP
+\fBDevuelve\fP
+.RS 4
+actualiza las fibras de la receta 
+.RE
+.PP
+
+.SS "void Receta::setGrasas (float grasas)"
+
+.PP
+setGrasas 
+.PP
+\fBDevuelve\fP
+.RS 4
+actualiza las grasas de la receta 
+.RE
+.PP
+
+.SS "void Receta::setHc (float hc)"
+
+.PP
+setHc 
+.PP
+\fBDevuelve\fP
+.RS 4
+actualiza los hidratos de carbono de la receta 
+.RE
+.PP
+
+.SS "void Receta::setProteinas (float proteinas)"
+
+.PP
+setProteinas 
+.PP
+\fBDevuelve\fP
+.RS 4
+actualiza las proteinas de la receta 
 .RE
 .PP
 

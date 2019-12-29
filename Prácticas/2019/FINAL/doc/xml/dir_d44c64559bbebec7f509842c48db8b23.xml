@@ -2,6 +2,8 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
   <compounddef id="dir_d44c64559bbebec7f509842c48db8b23" kind="dir">
     <compoundname>include</compoundname>
+    <innerfile refid="acciones_8h">acciones.h</innerfile>
+    <innerfile refid="arbolbinario_8h">arbolbinario.h</innerfile>
     <innerfile refid="ingrediente_8h">ingrediente.h</innerfile>
     <innerfile refid="ingredientes_8h">ingredientes.h</innerfile>
     <innerfile refid="receta_8h">receta.h</innerfile>

@@ -7,41 +7,6 @@
 #include <fstream>
 using namespace std;
 
-void calcular_valor_nutricional(Recetas &recetas, Ingredientes &ingredientes){
-  Receta receta;
-  Ingrediente ingrediente;
-  bool encontrado = false;
-  float gramos,calorias,cal_100,hc,prot,grasas,fibra,aux = 0;
-  for(Recetas::iterator it = recetas.begin(); it != recetas.end(); ++it){
-    receta =(*it);
-    for(Receta::iterator ir = receta.begin(); ir != receta.end(); ++ir){
-      for(Ingredientes::iterator ii = ingredientes.begin(); ii != ingredientes.end() && !encontrado; ++ii){
-        ingrediente = (*ii);
-        if((*ir).first == ingrediente.getNombre()){
-          cal_100 = ingrediente.getCalorias();
-          gramos = (*ir).second;
-          calorias += (cal_100/100)*gramos;
-          aux = ingrediente.getHidratos();
-          hc += gramos*(aux/100);
-          aux = ingrediente.getProteinas();
-          prot += gramos*(aux/100);
-          aux = ingrediente.getGrasas();
-          gramos += gramos*(aux/100);
-          aux = ingrediente.getFibras();
-          fibra += gramos*(aux/100);
-          encontrado = true;
-        }
-      }
-      encontrado = false;
-    }
-  }
-      receta.setCalorias(calorias);
-      receta.setHc(hc);
-      receta.setProteinas(prot);
-      receta.setGrasas(grasas);
-      receta.setFibra(fibra);
-}
-
 void mostrar_ingredientes(Receta &receta){
   cout << "Ingredientes:" << endl << endl;
   for(Receta::iterator it = receta.begin(); it != receta.end(); ++it){
@@ -49,16 +14,11 @@ void mostrar_ingredientes(Receta &receta){
   }
 }
 
-void info_nutricional(Receta &receta){
-  cout << "Información Nutricional:" << endl << endl;
-  cout << "Calorias:" << receta.getCalorias() << endl;
-  cout << "Hidratos de Carbono:" << receta.getHc() << endl;
-  cout << "Grasas:" << receta.getGrasas() << endl;
-  cout << "Proteina:" << receta.getProteinas() << endl;
-  cout << "Fibra:" << receta.getFibras() << endl;
+void calcular_valor_nutricional(Recetas &rall,Ingredientes &allingre){
+  for(Recetas::iterator it = rall.begin(); it != rall.end(); ++it){
+    (*it).obtieneNutricional(allingre);
+  }
 }
-
-Acciones Instrucciones::acc;
 
 int main(int argc,char *argv[]){
 
@@ -76,9 +36,11 @@ int main(int argc,char *argv[]){
   }
 
   Acciones acc;
+  //ArbolBinario<string> arbol;
   Instrucciones instr;
   f_acciones >> acc;
   instr.acc = acc;
+  //Instrucciones instr (arbol, acc);
   cout << "Todas las Acciones:" << endl;
   cout << acc<< endl;
   cout << "Pulse una tecla para continuar"<< endl;
@@ -153,8 +115,10 @@ int main(int argc,char *argv[]){
 
   mostrar_ingredientes(receta);
   cout << endl;
-  info_nutricional(receta);
+  receta.muestraNutricional();
   
-  cout << "Pasos a seguir: " << instr << endl;
+  cout << "\nPasos a seguir: " << instr << endl;
+  cout << "Hay un error al mostrar los pasos a seguir. Me da error al ultilizar el operator= para asignar los datos del arbol a los datos de las instrucciones para posteriormente mostrarlos por pantalla con el ostream " << endl;
+  cout << instr << endl;
 
 }

@@ -1,0 +1,191 @@
+.TH "ArbolBinario< T >::nodo" 3 "Domingo, 29 de Diciembre de 2019" "Version 0.1" "Práctica 3 - Estructura de Datos" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ArbolBinario< T >::nodo
+.SH SYNOPSIS
+.br
+.PP
+.SS "Métodos públicos"
+
+.in +1c
+.ti -1c
+.RI "\fBnodo\fP ()"
+.br
+.RI "Contructor por defecto\&. "
+.ti -1c
+.RI "\fBnodo\fP (const \fBnodo\fP &n)"
+.br
+.RI "Constructo de copia\&. "
+.ti -1c
+.RI "const T & \fBoperator*\fP () const"
+.br
+.RI "acceso a la informacion del nodo "
+.ti -1c
+.RI "T & \fBoperator*\fP ()"
+.br
+.ti -1c
+.RI "bool \fBoperator==\fP (const \fBnodo\fP &n)"
+.br
+.RI "operacion de igualdad entre dos posiciones "
+.ti -1c
+.RI "bool \fBoperator!=\fP (const \fBnodo\fP &n)"
+.br
+.RI "operacion de desigualdad entre dos posiciones "
+.ti -1c
+.RI "\fBnodo\fP \fBpadre\fP ()"
+.br
+.RI "Nodo del padre\&. "
+.ti -1c
+.RI "\fBnodo\fP \fBhi\fP ()"
+.br
+.RI "Nodo del padre\&. "
+.ti -1c
+.RI "\fBnodo\fP \fBhd\fP ()"
+.br
+.RI "Nodo del padre\&. "
+.ti -1c
+.RI "bool \fBnulo\fP ()"
+.br
+.RI "dice si un nodo es nulo "
+.in -1c
+.SS "Amigas"
+
+.in +1c
+.ti -1c
+.RI "class \fBArbolBinario\fP"
+.br
+.ti -1c
+.RI "class \fBpreorden_iterador\fP"
+.br
+.ti -1c
+.RI "class \fBinorden_iterador\fP"
+.br
+.ti -1c
+.RI "class \fBpostorden_iterador\fP"
+.br
+.in -1c
+.SH "Descripción detallada"
+.PP 
+
+.SS "template<class T>
+.br
+class ArbolBinario< T >::nodo"
+
+.PP
+Definición en la línea 329 del archivo arbolbinario\&.h\&.
+.SH "Documentación del constructor y destructor"
+.PP 
+.SS "template<class T> \fBArbolBinario\fP< T >::nodo::nodo (const \fBnodo\fP & n)\fC [inline]\fP"
+
+.PP
+Constructo de copia\&. 
+.PP
+\fBParámetros\fP
+.RS 4
+\fIn\fP nodo fuente 
+.RE
+.PP
+
+.PP
+Definición en la línea 347 del archivo arbolbinario\&.h\&.
+.SH "Documentación de las funciones miembro"
+.PP 
+.SS "template<class T> \fBnodo\fP \fBArbolBinario\fP< T >::nodo::hd ()\fC [inline]\fP"
+
+.PP
+Nodo del padre\&. 
+.PP
+\fBDevuelve\fP
+.RS 4
+devuelve un nodo apuntando al hijo a la derecha 
+.RE
+.PP
+
+.PP
+Definición en la línea 397 del archivo arbolbinario\&.h\&.
+.SS "template<class T> \fBnodo\fP \fBArbolBinario\fP< T >::nodo::hi ()\fC [inline]\fP"
+
+.PP
+Nodo del padre\&. 
+.PP
+\fBDevuelve\fP
+.RS 4
+devuelve un nodo apuntando al hijo a la izquierda 
+.RE
+.PP
+
+.PP
+Definición en la línea 388 del archivo arbolbinario\&.h\&.
+.SS "template<class T> bool \fBArbolBinario\fP< T >::nodo::nulo ()\fC [inline]\fP"
+
+.PP
+dice si un nodo es nulo 
+.PP
+\fBDevuelve\fP
+.RS 4
+true si es nulo false en caso contrario 
+.RE
+.PP
+
+.PP
+Definición en la línea 406 del archivo arbolbinario\&.h\&.
+.SS "template<class T> bool \fBArbolBinario\fP< T >::nodo::operator!= (const \fBnodo\fP & n)\fC [inline]\fP"
+
+.PP
+operacion de desigualdad entre dos posiciones 
+.PP
+\fBParámetros\fP
+.RS 4
+\fIn\fP nodo con el que se compara 
+.RE
+.PP
+\fBDevuelve\fP
+.RS 4
+true si son desiguales false en caso contrario 
+.RE
+.PP
+
+.PP
+Definición en la línea 372 del archivo arbolbinario\&.h\&.
+.SS "template<class T> const T& \fBArbolBinario\fP< T >::nodo::operator* () const\fC [inline]\fP"
+
+.PP
+acceso a la informacion del nodo 
+.PP
+Definición en la línea 351 del archivo arbolbinario\&.h\&.
+.SS "template<class T> bool \fBArbolBinario\fP< T >::nodo::operator== (const \fBnodo\fP & n)\fC [inline]\fP"
+
+.PP
+operacion de igualdad entre dos posiciones 
+.PP
+\fBParámetros\fP
+.RS 4
+\fIn\fP nodo con el que se compara 
+.RE
+.PP
+\fBDevuelve\fP
+.RS 4
+true si son iguales false en caso contrario 
+.RE
+.PP
+
+.PP
+Definición en la línea 364 del archivo arbolbinario\&.h\&.
+.SS "template<class T> \fBnodo\fP \fBArbolBinario\fP< T >::nodo::padre ()\fC [inline]\fP"
+
+.PP
+Nodo del padre\&. 
+.PP
+\fBDevuelve\fP
+.RS 4
+devuelve un nodo apuntando padre 
+.RE
+.PP
+
+.PP
+Definición en la línea 379 del archivo arbolbinario\&.h\&.
+
+.SH "Autor"
+.PP 
+Generado automáticamente por Doxygen para Práctica 3 - Estructura de Datos del código fuente\&.

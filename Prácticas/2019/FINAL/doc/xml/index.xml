@@ -1,5 +1,73 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.16">
+  <compound refid="class_acciones" kind="class"><name>Acciones</name>
+    <member refid="class_acciones_1a82bf836fd1536c465d8feaa42e35546c" kind="variable"><name>datos</name></member>
+    <member refid="class_acciones_1a52ddbeeba4e5f331305ce7202c6035f3" kind="function"><name>Acciones</name></member>
+    <member refid="class_acciones_1a74d03fe7642470ed4af3901cc09b5de3" kind="function"><name>Acciones</name></member>
+    <member refid="class_acciones_1ad744a13ef964c5f35c2d7c3e332933c3" kind="function"><name>Acciones</name></member>
+    <member refid="class_acciones_1acde0f486eedb90ca55a9d8a483d6f847" kind="function"><name>getAriedad</name></member>
+    <member refid="class_acciones_1a4c8df508541c2bf55fe72704a04afeb7" kind="function"><name>operator=</name></member>
+    <member refid="class_acciones_1a1a74f7e62810e656d5decf1a28480c1f" kind="function"><name>begin</name></member>
+    <member refid="class_acciones_1ad5374e47df1c307470cc1400233f5e20" kind="function"><name>end</name></member>
+    <member refid="class_acciones_1ad90c56418f6c7b62c6da9f2a944e1205" kind="function"><name>begin</name></member>
+    <member refid="class_acciones_1a746840a76a82bd56c0ca6284c8ab5c26" kind="function"><name>end</name></member>
+    <member refid="class_acciones_1af3953cc74a70d0d3cb2b2b174d45690c" kind="friend"><name>operator&lt;&lt;</name></member>
+    <member refid="class_acciones_1a6d77f879289451ddda3b4b328458a68e" kind="friend"><name>operator&gt;&gt;</name></member>
+  </compound>
+  <compound refid="class_arbol_binario" kind="class"><name>ArbolBinario</name>
+    <member refid="class_arbol_binario_1a116619c6d1e1f8af4ebc95399a062801" kind="variable"><name>raiz</name></member>
+    <member refid="class_arbol_binario_1a2f4333678ab24a80ea88f05151d3b5ab" kind="function"><name>CopiarInfo</name></member>
+    <member refid="class_arbol_binario_1a9a9320b7ec787b55a9fd65c041fea135" kind="function"><name>BorrarInfo</name></member>
+    <member refid="class_arbol_binario_1abd35b63011c7bc50852ab039ea8500f0" kind="function"><name>numero_nodos</name></member>
+    <member refid="class_arbol_binario_1a8618907c8154d008f64252403e871bf4" kind="function"><name>iguales</name></member>
+    <member refid="class_arbol_binario_1aca7d7c365ead3aa2040ffc64e1dfb1f4" kind="function"><name>InsertarHijoIzquierda</name></member>
+    <member refid="class_arbol_binario_1a87341ffccfe5ef304783c70adf86238d" kind="function"><name>InsertarHijoIzquierda</name></member>
+    <member refid="class_arbol_binario_1a8f4971f20eb2a059b9b1ae117e7fe912" kind="function"><name>InsertarHijoDerecha</name></member>
+    <member refid="class_arbol_binario_1ad625a7ef38fa30f0420b101e1655b4aa" kind="function"><name>InsertarHijoDerecha</name></member>
+    <member refid="class_arbol_binario_1a289083bf048ca95e482264ccf0ce4f42" kind="function"><name>PodarHijoIzquierda</name></member>
+    <member refid="class_arbol_binario_1afe7738999aed926e580faf68078bbe46" kind="function"><name>PodarHijoDerecha</name></member>
+    <member refid="class_arbol_binario_1a307e743bfe1264ff6cba2d484f0eb578" kind="function"><name>PodarHijoIzq_GetSubtree</name></member>
+    <member refid="class_arbol_binario_1a4cb0bca4695c076648c41e968e7dae48" kind="function"><name>PodarHijoDer_GetSubtree</name></member>
+    <member refid="class_arbol_binario_1a1a7dd97d706bfcf3c60a4cca1352f79c" kind="function"><name>RecorridoPreorden</name></member>
+    <member refid="class_arbol_binario_1a84f79da821dfe396411e9a3145222199" kind="function"><name>RecorridoPostorden</name></member>
+    <member refid="class_arbol_binario_1a072dec8f8e0f43d3e4ec295702a287ec" kind="function"><name>RecorridoInorden</name></member>
+    <member refid="class_arbol_binario_1a4030c86c360d2b07538ed03680d3fb89" kind="function"><name>RecorridoNiveles</name></member>
+    <member refid="class_arbol_binario_1a4bc2c798ca826b372308d4c26e0ff4cb" kind="function"><name>Lee</name></member>
+    <member refid="class_arbol_binario_1a7f3b03ed5ed75ad3ea38c18f93470616" kind="function"><name>Escribe</name></member>
+    <member refid="class_arbol_binario_1a1bad900ff9a1a811446c5e729e92fc5e" kind="function"><name>ArbolBinario</name></member>
+    <member refid="class_arbol_binario_1a9d4e385399072873beb86170628449bb" kind="function"><name>ArbolBinario</name></member>
+    <member refid="class_arbol_binario_1a9f2da510e19bff23fd061ff0f1309433" kind="function"><name>ArbolBinario</name></member>
+    <member refid="class_arbol_binario_1a3be887e389952b296ea5af62852621d5" kind="function"><name>ArbolBinario</name></member>
+    <member refid="class_arbol_binario_1af1f1594a37b45c20b4fcbab88613d52d" kind="function"><name>~ArbolBinario</name></member>
+    <member refid="class_arbol_binario_1a3817bd260b6cb4687eef91928d94be17" kind="function"><name>operator=</name></member>
+    <member refid="class_arbol_binario_1a8ced95c7eae98ffd79eb46dcc99df523" kind="function"><name>getRaiz</name></member>
+    <member refid="class_arbol_binario_1a82155da74eeeac7e52b9b0cc2f2d05f2" kind="function"><name>Insertar_Hi</name></member>
+    <member refid="class_arbol_binario_1aa917f4b80d735b3494e1793de9457fb4" kind="function"><name>Insertar_Hi</name></member>
+    <member refid="class_arbol_binario_1a1896b66e7b38f98ea4010e131998f376" kind="function"><name>Insertar_Hd</name></member>
+    <member refid="class_arbol_binario_1a7e0b2453f969c6289809aaba1f03fe62" kind="function"><name>Insertar_Hd</name></member>
+    <member refid="class_arbol_binario_1afaa11ef16d36b20bb116a1ec892e0e46" kind="function"><name>Podar_Hi</name></member>
+    <member refid="class_arbol_binario_1a08564b2f73b4013437572860de8aafad" kind="function"><name>Podar_Hd</name></member>
+    <member refid="class_arbol_binario_1ae48b89acb45fc83cc67ca8e78e31f903" kind="function"><name>PodarHi_GetSubtree</name></member>
+    <member refid="class_arbol_binario_1a2292c407fe19a90088d9c1e23b58bdbd" kind="function"><name>PodarHd_GetSubtree</name></member>
+    <member refid="class_arbol_binario_1a9afe576ade74a09a9b19fb0874749cdb" kind="function"><name>Sustituye_Subarbol</name></member>
+    <member refid="class_arbol_binario_1a667e476cc2058a4edbafa546bba5ec0f" kind="function"><name>clear</name></member>
+    <member refid="class_arbol_binario_1a574a76889f9bb8a80080288a16f9441f" kind="function"><name>empty</name></member>
+    <member refid="class_arbol_binario_1a3df34c7cbcbaa42b68884e5fcde93334" kind="function"><name>size</name></member>
+    <member refid="class_arbol_binario_1a238f5acc35279cca386b0b68ae20de42" kind="function"><name>operator==</name></member>
+    <member refid="class_arbol_binario_1ac773f91e274ab6ec695492e5dfea4fff" kind="function"><name>operator!=</name></member>
+    <member refid="class_arbol_binario_1af8cd1ed84675bcb2075ba1a502d8ee39" kind="function"><name>RecorridoPreOrden</name></member>
+    <member refid="class_arbol_binario_1a717119bc343e038c8af7c00423c9b103" kind="function"><name>RecorridoInOrden</name></member>
+    <member refid="class_arbol_binario_1aa8380fa17126e49693942ddeadf3adc5" kind="function"><name>RecorridoPostOrden</name></member>
+    <member refid="class_arbol_binario_1af1617842b59246c0bbb6e2a81b7638b6" kind="function"><name>RecorridoNiveles</name></member>
+    <member refid="class_arbol_binario_1aa0fc3ba9f91f7167d1f83df2f3b1a8b9" kind="function"><name>beginpreorden</name></member>
+    <member refid="class_arbol_binario_1ad1c64408fd252fa134125d7ca5717e3a" kind="function"><name>endpreorden</name></member>
+    <member refid="class_arbol_binario_1af55ee35607b74ebc3036dc9c5c1c2ce7" kind="function"><name>begininorden</name></member>
+    <member refid="class_arbol_binario_1a62a0048bb6d35947409496b55b5bd303" kind="function"><name>endinorden</name></member>
+    <member refid="class_arbol_binario_1a1bcccd1312f5127ad811c90dad94931d" kind="function"><name>beginpostorden</name></member>
+    <member refid="class_arbol_binario_1ad4ead2ad6b0e81f185fb540184a15bdb" kind="function"><name>endpostorden</name></member>
+    <member refid="class_arbol_binario_1a58c82e89a546bd6f38ad116466eabcb8" kind="friend"><name>operator&lt;&lt;</name></member>
+    <member refid="class_arbol_binario_1a917493bedd4f7e4430d3283f367ce599" kind="friend"><name>operator&gt;&gt;</name></member>
+  </compound>
   <compound refid="class_receta_1_1const__iterator" kind="class"><name>Receta::const_iterator</name>
     <member refid="class_receta_1_1const__iterator_1ad33750400848ee13fa02e783a116a6e0" kind="variable"><name>it</name></member>
     <member refid="class_receta_1_1const__iterator_1aa89c775820d25d3de1743f0d60d69cdd" kind="friend"><name>Receta</name></member>
@@ -20,6 +88,16 @@
     <member refid="class_ingredientes_1_1const__iterator_1a4894a635351685d4f541a20b7da9af09" kind="function"><name>operator!=</name></member>
     <member refid="class_ingredientes_1_1const__iterator_1a9d817c2d61fa0a72c59d2e9e98f01390" kind="function"><name>operator=</name></member>
   </compound>
+  <compound refid="class_acciones_1_1const__iterator" kind="class"><name>Acciones::const_iterator</name>
+    <member refid="class_acciones_1_1const__iterator_1aa7d7cf986ec74dbf5e96f9b7f2f4baa9" kind="variable"><name>it</name></member>
+    <member refid="class_acciones_1_1const__iterator_1aab022c3664dbdb7864f97a2f7ce9d187" kind="friend"><name>Acciones</name></member>
+    <member refid="class_acciones_1_1const__iterator_1a70518a787e393da44250fc736b86ffb7" kind="function"><name>operator++</name></member>
+    <member refid="class_acciones_1_1const__iterator_1abd7f63a7d54d9964a84a86c13bb2a56f" kind="function"><name>operator--</name></member>
+    <member refid="class_acciones_1_1const__iterator_1a31032c415088897f67e13a75bb4e8017" kind="function"><name>operator*</name></member>
+    <member refid="class_acciones_1_1const__iterator_1aa0be39e09b28fc8c17ce30abf281faf8" kind="function"><name>operator==</name></member>
+    <member refid="class_acciones_1_1const__iterator_1a2cf09528bff1fcdd1e9739cbe1da1306" kind="function"><name>operator!=</name></member>
+    <member refid="class_acciones_1_1const__iterator_1a466b40276ce388a20d81200f5eb96b53" kind="function"><name>operator=</name></member>
+  </compound>
   <compound refid="class_recetas_1_1const__iterator" kind="class"><name>Recetas::const_iterator</name>
     <member refid="class_recetas_1_1const__iterator_1a49382a977dd96feca686e85d28804b49" kind="variable"><name>it</name></member>
     <member refid="class_recetas_1_1const__iterator_1acbf7ff62084899901495168937b96214" kind="friend"><name>Recetas</name></member>
@@ -29,6 +107,14 @@
     <member refid="class_recetas_1_1const__iterator_1a0bdfc3826cc856574e2ada44d6c38087" kind="function"><name>operator==</name></member>
     <member refid="class_recetas_1_1const__iterator_1ab96e145f821a31d697a8175595ddec40" kind="function"><name>operator!=</name></member>
     <member refid="class_recetas_1_1const__iterator_1ae59a377c12e8021150945875a6bc63e3" kind="function"><name>operator=</name></member>
+  </compound>
+  <compound refid="struct_arbol_binario_1_1info__nodo" kind="struct"><name>ArbolBinario::info_nodo</name>
+    <member refid="struct_arbol_binario_1_1info__nodo_1ac010219cb5ca20e2e25530839aca587a" kind="variable"><name>et</name></member>
+    <member refid="struct_arbol_binario_1_1info__nodo_1adc97502851c4fbf79e63c8f5ff51f9d5" kind="variable"><name>padre</name></member>
+    <member refid="struct_arbol_binario_1_1info__nodo_1ad99755f4fec90f1b32c4d60ec88a7856" kind="variable"><name>hizq</name></member>
+    <member refid="struct_arbol_binario_1_1info__nodo_1af05a633561cd318185f16b1e5006f0da" kind="variable"><name>hder</name></member>
+    <member refid="struct_arbol_binario_1_1info__nodo_1a0636fb5af573fa024872954da99e08fd" kind="function"><name>info_nodo</name></member>
+    <member refid="struct_arbol_binario_1_1info__nodo_1a298b155ece6a61d935469b0f9071505d" kind="function"><name>info_nodo</name></member>
   </compound>
   <compound refid="class_ingrediente" kind="class"><name>Ingrediente</name>
     <member refid="class_ingrediente_1a57f2f0125f393fdd52de048a69804cb1" kind="variable"><name>nombre</name></member>
@@ -80,6 +166,7 @@
     <member refid="class_ingredientes_1aadb58cad448a8983ece8d87803439034" kind="function"><name>ordenaPorTipo</name></member>
     <member refid="class_ingredientes_1ab56b335eeb1662c1869d428df28fb035" kind="function"><name>imprimirPorTipo</name></member>
     <member refid="class_ingredientes_1a0ee5c7350ec2956cf1f36d8a6e718347" kind="function"><name>getEstadistica</name></member>
+    <member refid="class_ingredientes_1a904c29818655718b0997f1b37506a1a0" kind="function"><name>getIngrediente</name></member>
     <member refid="class_ingredientes_1afccf277d57a0d27f6a9ab6c7f3a3a954" kind="function"><name>obtenerDatosCalorias</name></member>
     <member refid="class_ingredientes_1aef39d8820ac7f3e2aea585436124b0df" kind="function"><name>obtenerDatosHc</name></member>
     <member refid="class_ingredientes_1acf0d27096141cca1108bf38d876230f6" kind="function"><name>obtenerDatosProteinas</name></member>
@@ -97,15 +184,22 @@
     <member refid="class_ingredientes_1a11a8ab6e1628b050812fbf57b33265ea" kind="friend"><name>operator&lt;&lt;</name></member>
     <member refid="class_ingredientes_1a2f2a26cb7e5d982fcbe248027671937d" kind="friend"><name>operator&gt;&gt;</name></member>
   </compound>
-  <compound refid="class_ingredientes_1_1iterator" kind="class"><name>Ingredientes::iterator</name>
-    <member refid="class_ingredientes_1_1iterator_1aee7b139c3e51613587b38e47f67a1f38" kind="variable"><name>it</name></member>
-    <member refid="class_ingredientes_1_1iterator_1a1a8c7f96971fda9a9b26b6d2a72e548b" kind="friend"><name>Ingredientes</name></member>
-    <member refid="class_ingredientes_1_1iterator_1afc3cec14af8dad173afab85ad29e04e5" kind="function"><name>operator++</name></member>
-    <member refid="class_ingredientes_1_1iterator_1ac201c4291be38d5c5f0ce85b189ae029" kind="function"><name>operator--</name></member>
-    <member refid="class_ingredientes_1_1iterator_1ae0a925e6da382460e59d85aa21984930" kind="function"><name>operator*</name></member>
-    <member refid="class_ingredientes_1_1iterator_1a1ae8b326420322ce6ecded7dc8212f4a" kind="function"><name>operator==</name></member>
-    <member refid="class_ingredientes_1_1iterator_1a08b673984da153bde04dd66096e455dd" kind="function"><name>operator!=</name></member>
-    <member refid="class_ingredientes_1_1iterator_1a763e4a199da02fa210d84467b8b07d05" kind="function"><name>operator=</name></member>
+  <compound refid="class_arbol_binario_1_1inorden__iterador" kind="class"><name>ArbolBinario::inorden_iterador</name>
+    <member refid="class_arbol_binario_1_1inorden__iterador_1ad7c8f3804b30c426ff772712f6d3db63" kind="variable"><name>p</name></member>
+    <member refid="class_arbol_binario_1_1inorden__iterador_1a7aaf1bc41122321eaeb4dcc50d489fe8" kind="friend"><name>ArbolBinario</name></member>
+    <member refid="class_arbol_binario_1_1inorden__iterador_1abeff96499253dfb2d19b0cbaba8ac6d8" kind="function"><name>inorden_iterador</name></member>
+    <member refid="class_arbol_binario_1_1inorden__iterador_1a4d7a32537f0d10c0c7f8c069724a4226" kind="function"><name>inorden_iterador</name></member>
+    <member refid="class_arbol_binario_1_1inorden__iterador_1afd45e81f9c3c521104938227b17316a9" kind="function"><name>inorden_iterador</name></member>
+    <member refid="class_arbol_binario_1_1inorden__iterador_1ac253108ace744471eb4e64278a44071a" kind="function"><name>inorden_iterador</name></member>
+    <member refid="class_arbol_binario_1_1inorden__iterador_1a912ac0406b2e17bc49baf1321b2609ce" kind="function"><name>operator*</name></member>
+    <member refid="class_arbol_binario_1_1inorden__iterador_1a69442e2ed391de0de15197fa4bce1347" kind="function"><name>operator*</name></member>
+    <member refid="class_arbol_binario_1_1inorden__iterador_1aeb20011529e5d235be3f001d55ca330f" kind="function"><name>operator==</name></member>
+    <member refid="class_arbol_binario_1_1inorden__iterador_1a783f6a48c29594dde6ddf8f477989ac2" kind="function"><name>operator!=</name></member>
+    <member refid="class_arbol_binario_1_1inorden__iterador_1a3beb2133e8319be6791854b9c470a9c5" kind="function"><name>padre</name></member>
+    <member refid="class_arbol_binario_1_1inorden__iterador_1a37fae9f00d9a8ac43ddd0a36ad5873c4" kind="function"><name>hi</name></member>
+    <member refid="class_arbol_binario_1_1inorden__iterador_1a05e0bd4966015fb259e53c230ff2eab0" kind="function"><name>hd</name></member>
+    <member refid="class_arbol_binario_1_1inorden__iterador_1afcd755553d0a646627a39d4b44ee2897" kind="function"><name>nulo</name></member>
+    <member refid="class_arbol_binario_1_1inorden__iterador_1a9df6040a8f315f92fe163ec0aefb2da7" kind="function"><name>operator++</name></member>
   </compound>
   <compound refid="class_recetas_1_1iterator" kind="class"><name>Recetas::iterator</name>
     <member refid="class_recetas_1_1iterator_1aa425caecb174fd3455ec9319ee30faa2" kind="variable"><name>it</name></member>
@@ -117,15 +211,87 @@
     <member refid="class_recetas_1_1iterator_1acb36c627cc157885eeff3edb2052eeb1" kind="function"><name>operator!=</name></member>
     <member refid="class_recetas_1_1iterator_1a9fa5910bdf0c9457cb8e9c0802476b33" kind="function"><name>operator=</name></member>
   </compound>
+  <compound refid="class_ingredientes_1_1iterator" kind="class"><name>Ingredientes::iterator</name>
+    <member refid="class_ingredientes_1_1iterator_1aee7b139c3e51613587b38e47f67a1f38" kind="variable"><name>it</name></member>
+    <member refid="class_ingredientes_1_1iterator_1a1a8c7f96971fda9a9b26b6d2a72e548b" kind="friend"><name>Ingredientes</name></member>
+    <member refid="class_ingredientes_1_1iterator_1afc3cec14af8dad173afab85ad29e04e5" kind="function"><name>operator++</name></member>
+    <member refid="class_ingredientes_1_1iterator_1ac201c4291be38d5c5f0ce85b189ae029" kind="function"><name>operator--</name></member>
+    <member refid="class_ingredientes_1_1iterator_1ae0a925e6da382460e59d85aa21984930" kind="function"><name>operator*</name></member>
+    <member refid="class_ingredientes_1_1iterator_1a1ae8b326420322ce6ecded7dc8212f4a" kind="function"><name>operator==</name></member>
+    <member refid="class_ingredientes_1_1iterator_1a08b673984da153bde04dd66096e455dd" kind="function"><name>operator!=</name></member>
+    <member refid="class_ingredientes_1_1iterator_1a763e4a199da02fa210d84467b8b07d05" kind="function"><name>operator=</name></member>
+  </compound>
   <compound refid="class_receta_1_1iterator" kind="class"><name>Receta::iterator</name>
     <member refid="class_receta_1_1iterator_1a869d7e040d04c76572d68df666a0145f" kind="variable"><name>it</name></member>
     <member refid="class_receta_1_1iterator_1aa89c775820d25d3de1743f0d60d69cdd" kind="friend"><name>Receta</name></member>
     <member refid="class_receta_1_1iterator_1ac317a274806d5a997b05c1769e778f0c" kind="function"><name>operator++</name></member>
     <member refid="class_receta_1_1iterator_1a947072ef3cfd2c22edf441b46bbc527b" kind="function"><name>operator--</name></member>
-    <member refid="class_receta_1_1iterator_1ac92a938a938d40831293d77b5850b797" kind="function"><name>operator*</name></member>
+    <member refid="class_receta_1_1iterator_1ae10c28b878201c54167aeebab9807a9f" kind="function"><name>operator*</name></member>
     <member refid="class_receta_1_1iterator_1a19f1086a313909f0fcd3a387d0c01d94" kind="function"><name>operator==</name></member>
     <member refid="class_receta_1_1iterator_1a1d348facec39ca741fca3fa6aaa8a934" kind="function"><name>operator!=</name></member>
     <member refid="class_receta_1_1iterator_1abcf49f80de72cc14c8b0e49c5fcab73f" kind="function"><name>operator=</name></member>
+  </compound>
+  <compound refid="class_acciones_1_1iterator" kind="class"><name>Acciones::iterator</name>
+    <member refid="class_acciones_1_1iterator_1a78664257c712a8501c023c73e5708655" kind="variable"><name>it</name></member>
+    <member refid="class_acciones_1_1iterator_1aab022c3664dbdb7864f97a2f7ce9d187" kind="friend"><name>Acciones</name></member>
+    <member refid="class_acciones_1_1iterator_1a26e8e10523050711179f07ee547795bc" kind="function"><name>operator++</name></member>
+    <member refid="class_acciones_1_1iterator_1abc7813930ab6035eb7dd4874e815bc15" kind="function"><name>operator--</name></member>
+    <member refid="class_acciones_1_1iterator_1a44375a863d53a910a96bcf7117378bf7" kind="function"><name>operator*</name></member>
+    <member refid="class_acciones_1_1iterator_1a409b98e836fe41badd40f25d47c4f016" kind="function"><name>operator==</name></member>
+    <member refid="class_acciones_1_1iterator_1aa0ee950062bc9d5f4a7fb6e8d7a4c286" kind="function"><name>operator!=</name></member>
+    <member refid="class_acciones_1_1iterator_1ae79dbbe70c5e3cbc879b7dd32969d70a" kind="function"><name>operator=</name></member>
+  </compound>
+  <compound refid="class_arbol_binario_1_1nodo" kind="class"><name>ArbolBinario::nodo</name>
+    <member refid="class_arbol_binario_1_1nodo_1a7be0572f10c8181362aec9878ff210f0" kind="variable"><name>p</name></member>
+    <member refid="class_arbol_binario_1_1nodo_1a7aaf1bc41122321eaeb4dcc50d489fe8" kind="friend"><name>ArbolBinario</name></member>
+    <member refid="class_arbol_binario_1_1nodo_1a4aa0da8bfbc320a8daff98451ee65b6c" kind="friend"><name>preorden_iterador</name></member>
+    <member refid="class_arbol_binario_1_1nodo_1ac74c0fa737805eb9e7cca733f43f4e62" kind="friend"><name>inorden_iterador</name></member>
+    <member refid="class_arbol_binario_1_1nodo_1a4c0a969b995bdaf811e374833b2bafd4" kind="friend"><name>postorden_iterador</name></member>
+    <member refid="class_arbol_binario_1_1nodo_1a9c0015bf78e40fc811ad106804cba939" kind="function"><name>nodo</name></member>
+    <member refid="class_arbol_binario_1_1nodo_1ac714bbecdf111e68b7725b44048e0d02" kind="function"><name>nodo</name></member>
+    <member refid="class_arbol_binario_1_1nodo_1ab73087719276b298b3801c772da82fdf" kind="function"><name>nodo</name></member>
+    <member refid="class_arbol_binario_1_1nodo_1a99010585e481f5f8172fbcf42e39827b" kind="function"><name>operator*</name></member>
+    <member refid="class_arbol_binario_1_1nodo_1a1438c24ae9ccbd9b8eab6e632c52e702" kind="function"><name>operator*</name></member>
+    <member refid="class_arbol_binario_1_1nodo_1a02dfaed2a589195911bc8e75bd97d298" kind="function"><name>operator==</name></member>
+    <member refid="class_arbol_binario_1_1nodo_1a274a6b1912079430c2be6fa3a9f2010d" kind="function"><name>operator!=</name></member>
+    <member refid="class_arbol_binario_1_1nodo_1a78b4d51bc9bd22f16a70c8e2bee3fef1" kind="function"><name>padre</name></member>
+    <member refid="class_arbol_binario_1_1nodo_1a6dd19bf49c4336014f85f83f6a9f5943" kind="function"><name>hi</name></member>
+    <member refid="class_arbol_binario_1_1nodo_1ab4bd1d7b0ae90543b89a3b7e4d7d4470" kind="function"><name>hd</name></member>
+    <member refid="class_arbol_binario_1_1nodo_1a92f885c1e463d5c24a66281c6589b4a3" kind="function"><name>nulo</name></member>
+  </compound>
+  <compound refid="class_arbol_binario_1_1postorden__iterador" kind="class"><name>ArbolBinario::postorden_iterador</name>
+    <member refid="class_arbol_binario_1_1postorden__iterador_1a7864da027ee0969c3f784b3e8e0fe497" kind="variable"><name>p</name></member>
+    <member refid="class_arbol_binario_1_1postorden__iterador_1a7aaf1bc41122321eaeb4dcc50d489fe8" kind="friend"><name>ArbolBinario</name></member>
+    <member refid="class_arbol_binario_1_1postorden__iterador_1af856eb02daa61de877ed51b3f7957dca" kind="function"><name>postorden_iterador</name></member>
+    <member refid="class_arbol_binario_1_1postorden__iterador_1a0c33704342f3b3dee5b3d21f2f2aa311" kind="function"><name>postorden_iterador</name></member>
+    <member refid="class_arbol_binario_1_1postorden__iterador_1a9eb37bb1b877b1c297889680055ace86" kind="function"><name>postorden_iterador</name></member>
+    <member refid="class_arbol_binario_1_1postorden__iterador_1a083070e5bf8f1f4f5e73e11ae5129a64" kind="function"><name>postorden_iterador</name></member>
+    <member refid="class_arbol_binario_1_1postorden__iterador_1a7bda7ca81089b176089a32dd94013346" kind="function"><name>operator*</name></member>
+    <member refid="class_arbol_binario_1_1postorden__iterador_1a01f615fcbadf49398d21a0e32536fb7d" kind="function"><name>operator*</name></member>
+    <member refid="class_arbol_binario_1_1postorden__iterador_1a4cdc13f9e5ab8479f777d6a18a984cf4" kind="function"><name>operator==</name></member>
+    <member refid="class_arbol_binario_1_1postorden__iterador_1a0a322877b7d8b222e69ad3c503c939a8" kind="function"><name>operator!=</name></member>
+    <member refid="class_arbol_binario_1_1postorden__iterador_1a7893b03a1cf0ab8b58ecf3bdb24dcc4c" kind="function"><name>padre</name></member>
+    <member refid="class_arbol_binario_1_1postorden__iterador_1a48a46e7e33e0d385edb9e66b92bac042" kind="function"><name>hi</name></member>
+    <member refid="class_arbol_binario_1_1postorden__iterador_1a8c22fe0d4114f7e6be801e711a4b21e8" kind="function"><name>hd</name></member>
+    <member refid="class_arbol_binario_1_1postorden__iterador_1a27af730213949c932dc3d3b69ac8d756" kind="function"><name>nulo</name></member>
+    <member refid="class_arbol_binario_1_1postorden__iterador_1a9aa25bdcb42240096d3a40e9342eca49" kind="function"><name>operator++</name></member>
+  </compound>
+  <compound refid="class_arbol_binario_1_1preorden__iterador" kind="class"><name>ArbolBinario::preorden_iterador</name>
+    <member refid="class_arbol_binario_1_1preorden__iterador_1a1a0cb29b3eb01d2e549aa7b293b6aff1" kind="variable"><name>p</name></member>
+    <member refid="class_arbol_binario_1_1preorden__iterador_1a7aaf1bc41122321eaeb4dcc50d489fe8" kind="friend"><name>ArbolBinario</name></member>
+    <member refid="class_arbol_binario_1_1preorden__iterador_1a92fb618fbbec65a3a1d4ef434e0b7784" kind="function"><name>preorden_iterador</name></member>
+    <member refid="class_arbol_binario_1_1preorden__iterador_1a487be2b709b98ae509530648d528df28" kind="function"><name>preorden_iterador</name></member>
+    <member refid="class_arbol_binario_1_1preorden__iterador_1a1f65086e56a315eea9b1ed0482b42709" kind="function"><name>preorden_iterador</name></member>
+    <member refid="class_arbol_binario_1_1preorden__iterador_1a5986920ce2e2e8b86e1a32fcc831161d" kind="function"><name>preorden_iterador</name></member>
+    <member refid="class_arbol_binario_1_1preorden__iterador_1a0a274b3660799bd0e3eb210e30489d63" kind="function"><name>operator*</name></member>
+    <member refid="class_arbol_binario_1_1preorden__iterador_1ae81ca66951a3fc379f7a80f3a1c3f21c" kind="function"><name>operator*</name></member>
+    <member refid="class_arbol_binario_1_1preorden__iterador_1abe1fbd66b147f97257a25be21db67b3f" kind="function"><name>operator==</name></member>
+    <member refid="class_arbol_binario_1_1preorden__iterador_1a484dec30f4c2c6084cd5bbcefe7ccfa8" kind="function"><name>operator!=</name></member>
+    <member refid="class_arbol_binario_1_1preorden__iterador_1ab4313745be1b076ee9ddadead9a9f31c" kind="function"><name>padre</name></member>
+    <member refid="class_arbol_binario_1_1preorden__iterador_1ab5544b595b19971dd01fea9db98de720" kind="function"><name>hi</name></member>
+    <member refid="class_arbol_binario_1_1preorden__iterador_1a3bae3e50aa8ee51f6cf862efa9f56270" kind="function"><name>hd</name></member>
+    <member refid="class_arbol_binario_1_1preorden__iterador_1afd2b641bb148fddafb617ea0af3e174c" kind="function"><name>nulo</name></member>
+    <member refid="class_arbol_binario_1_1preorden__iterador_1a2fcfef237d6d68e4685c00a0f6ba6576" kind="function"><name>operator++</name></member>
   </compound>
   <compound refid="class_receta" kind="class"><name>Receta</name>
     <member refid="class_receta_1adb1e8560135fc7eaa706f17968a1cf54" kind="variable"><name>code</name></member>
@@ -143,7 +309,19 @@
     <member refid="class_receta_1a6651b572a5b3df06e11d51fc49b36201" kind="function"><name>operator=</name></member>
     <member refid="class_receta_1ac8a501375a19e653dc302c0b8e3521eb" kind="function"><name>getNombre</name></member>
     <member refid="class_receta_1a2822d63fe8ea293434bfbc518d0b23f0" kind="function"><name>getCode</name></member>
+    <member refid="class_receta_1a6843da885b9c6dde786bcffa79b9bd05" kind="function"><name>getCalorias</name></member>
+    <member refid="class_receta_1af09f8f43a072dbe8f507b2e2232a30db" kind="function"><name>getHc</name></member>
+    <member refid="class_receta_1a55b3a0e40709b2974e1e6e303b7207f8" kind="function"><name>getGrasas</name></member>
+    <member refid="class_receta_1a356d13d721cdc9b52b8c0883ae950bd6" kind="function"><name>getProteinas</name></member>
+    <member refid="class_receta_1a0086c7891debe181051087a9cec1b1c4" kind="function"><name>getFibras</name></member>
     <member refid="class_receta_1a06b8d8f633037580798daf0adbf5e145" kind="function"><name>ningredientes</name></member>
+    <member refid="class_receta_1aca744705502cb5bb664a8cc0a738b458" kind="function"><name>setCalorias</name></member>
+    <member refid="class_receta_1a068018acdd4a6e0bcece800984ef9423" kind="function"><name>setHc</name></member>
+    <member refid="class_receta_1a08a537f0b6598c4f1c3c31c4e8cf0cbd" kind="function"><name>setGrasas</name></member>
+    <member refid="class_receta_1ab5adfe6295075176f29c2c83f9eeadf2" kind="function"><name>setProteinas</name></member>
+    <member refid="class_receta_1ae3da21e878f6b5f44e14a8eb19ee0db6" kind="function"><name>setFibra</name></member>
+    <member refid="class_receta_1a686d2134c6ae879602f81ba9c6be5b21" kind="function"><name>obtieneNutricional</name></member>
+    <member refid="class_receta_1a6d473ac07d9005a93d671ebb86da356d" kind="function"><name>muestraNutricional</name></member>
     <member refid="class_receta_1ab02ca172c4fe07ae50536e0f22299464" kind="function"><name>begin</name></member>
     <member refid="class_receta_1a65d46cc6760bf2079f23f769253c91d3" kind="function"><name>end</name></member>
     <member refid="class_receta_1a13de69b62e8ecefd1ef5a437f95be0ea" kind="function"><name>begin</name></member>
@@ -169,6 +347,10 @@
     <member refid="class_recetas_1a7d25a1b1132b5dd271d11c7010bfc331" kind="friend"><name>operator&gt;&gt;</name></member>
   </compound>
   <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="acciones_8h" kind="file"><name>acciones.h</name>
+  </compound>
+  <compound refid="arbolbinario_8h" kind="file"><name>arbolbinario.h</name>
   </compound>
   <compound refid="ingrediente_8h" kind="file"><name>ingrediente.h</name>
   </compound>

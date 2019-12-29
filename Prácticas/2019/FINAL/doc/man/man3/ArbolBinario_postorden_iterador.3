@@ -1,0 +1,202 @@
+.TH "ArbolBinario< T >::postorden_iterador" 3 "Domingo, 29 de Diciembre de 2019" "Version 0.1" "Práctica 3 - Estructura de Datos" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ArbolBinario< T >::postorden_iterador
+.SH SYNOPSIS
+.br
+.PP
+.SS "Métodos públicos"
+
+.in +1c
+.ti -1c
+.RI "\fBpostorden_iterador\fP ()"
+.br
+.RI "Contructor por defecto\&. "
+.ti -1c
+.RI "\fBpostorden_iterador\fP (const \fBnodo\fP &n)"
+.br
+.RI "Constructor con nodo\&. "
+.ti -1c
+.RI "\fBpostorden_iterador\fP (const \fBpostorden_iterador\fP &n)"
+.br
+.RI "Constructo de copia\&. "
+.ti -1c
+.RI "const T & \fBoperator*\fP () const"
+.br
+.RI "acceso a la informacion del nodo "
+.ti -1c
+.RI "T & \fBoperator*\fP ()"
+.br
+.ti -1c
+.RI "bool \fBoperator==\fP (const \fBpostorden_iterador\fP &n)"
+.br
+.RI "operacion de igualdad entre dos posiciones "
+.ti -1c
+.RI "bool \fBoperator!=\fP (const \fBpostorden_iterador\fP &n)"
+.br
+.RI "operacion de desigualdad entre dos posiciones "
+.ti -1c
+.RI "\fBpostorden_iterador\fP \fBpadre\fP ()"
+.br
+.RI "Nodo del padre\&. "
+.ti -1c
+.RI "\fBpostorden_iterador\fP \fBhi\fP ()"
+.br
+.RI "Nodo del padre\&. "
+.ti -1c
+.RI "\fBpostorden_iterador\fP \fBhd\fP ()"
+.br
+.RI "Nodo del padre\&. "
+.ti -1c
+.RI "bool \fBnulo\fP ()"
+.br
+.RI "dice si un nodo es nulo "
+.ti -1c
+.RI "\fBpostorden_iterador\fP & \fBoperator++\fP ()"
+.br
+.in -1c
+.SS "Amigas"
+
+.in +1c
+.ti -1c
+.RI "class \fBArbolBinario\fP"
+.br
+.in -1c
+.SH "Descripción detallada"
+.PP 
+
+.SS "template<class T>
+.br
+class ArbolBinario< T >::postorden_iterador"
+
+.PP
+Definición en la línea 609 del archivo arbolbinario\&.h\&.
+.SH "Documentación del constructor y destructor"
+.PP 
+.SS "template<class T> \fBArbolBinario\fP< T >::postorden_iterador::postorden_iterador (const \fBnodo\fP & n)\fC [inline]\fP"
+
+.PP
+Constructor con nodo\&. 
+.PP
+\fBParámetros\fP
+.RS 4
+\fIn\fP nodo fuente 
+.RE
+.PP
+
+.PP
+Definición en la línea 627 del archivo arbolbinario\&.h\&.
+.SS "template<class T> \fBArbolBinario\fP< T >::postorden_iterador::postorden_iterador (const \fBpostorden_iterador\fP & n)\fC [inline]\fP"
+
+.PP
+Constructo de copia\&. 
+.PP
+\fBParámetros\fP
+.RS 4
+\fIn\fP nodo fuente 
+.RE
+.PP
+
+.PP
+Definición en la línea 632 del archivo arbolbinario\&.h\&.
+.SH "Documentación de las funciones miembro"
+.PP 
+.SS "template<class T> \fBpostorden_iterador\fP \fBArbolBinario\fP< T >::postorden_iterador::hd ()\fC [inline]\fP"
+
+.PP
+Nodo del padre\&. 
+.PP
+\fBDevuelve\fP
+.RS 4
+devuelve un nodo apuntando al hijo a la derecha 
+.RE
+.PP
+
+.PP
+Definición en la línea 682 del archivo arbolbinario\&.h\&.
+.SS "template<class T> \fBpostorden_iterador\fP \fBArbolBinario\fP< T >::postorden_iterador::hi ()\fC [inline]\fP"
+
+.PP
+Nodo del padre\&. 
+.PP
+\fBDevuelve\fP
+.RS 4
+devuelve un nodo apuntando al hijo a la izquierda 
+.RE
+.PP
+
+.PP
+Definición en la línea 673 del archivo arbolbinario\&.h\&.
+.SS "template<class T> bool \fBArbolBinario\fP< T >::postorden_iterador::nulo ()\fC [inline]\fP"
+
+.PP
+dice si un nodo es nulo 
+.PP
+\fBDevuelve\fP
+.RS 4
+true si es nulo false en caso contrario 
+.RE
+.PP
+
+.PP
+Definición en la línea 691 del archivo arbolbinario\&.h\&.
+.SS "template<class T> bool \fBArbolBinario\fP< T >::postorden_iterador::operator!= (const \fBpostorden_iterador\fP & n)\fC [inline]\fP"
+
+.PP
+operacion de desigualdad entre dos posiciones 
+.PP
+\fBParámetros\fP
+.RS 4
+\fIn\fP nodo con el que se compara 
+.RE
+.PP
+\fBDevuelve\fP
+.RS 4
+true si son desiguales false en caso contrario 
+.RE
+.PP
+
+.PP
+Definición en la línea 657 del archivo arbolbinario\&.h\&.
+.SS "template<class T> const T& \fBArbolBinario\fP< T >::postorden_iterador::operator* () const\fC [inline]\fP"
+
+.PP
+acceso a la informacion del nodo 
+.PP
+Definición en la línea 636 del archivo arbolbinario\&.h\&.
+.SS "template<class T> bool \fBArbolBinario\fP< T >::postorden_iterador::operator== (const \fBpostorden_iterador\fP & n)\fC [inline]\fP"
+
+.PP
+operacion de igualdad entre dos posiciones 
+.PP
+\fBParámetros\fP
+.RS 4
+\fIn\fP nodo con el que se compara 
+.RE
+.PP
+\fBDevuelve\fP
+.RS 4
+true si son iguales false en caso contrario 
+.RE
+.PP
+
+.PP
+Definición en la línea 649 del archivo arbolbinario\&.h\&.
+.SS "template<class T> \fBpostorden_iterador\fP \fBArbolBinario\fP< T >::postorden_iterador::padre ()\fC [inline]\fP"
+
+.PP
+Nodo del padre\&. 
+.PP
+\fBDevuelve\fP
+.RS 4
+devuelve un nodo apuntando padre 
+.RE
+.PP
+
+.PP
+Definición en la línea 664 del archivo arbolbinario\&.h\&.
+
+.SH "Autor"
+.PP 
+Generado automáticamente por Doxygen para Práctica 3 - Estructura de Datos del código fuente\&.

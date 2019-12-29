@@ -17,7 +17,7 @@
       return *this;
   }
 
-  int Acciones::getAriedad(string accion){
+unsigned char Acciones::getAriedad(string accion){
       return datos[accion];
   }
 
