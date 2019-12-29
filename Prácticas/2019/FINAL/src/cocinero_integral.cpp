@@ -1,11 +1,68 @@
 #include "acciones.h"
+#include "instrucciones.h"
+#include "ingrediente.h"
 #include "ingredientes.h"
 #include "recetas.h"
+#include "receta.h"
 #include <fstream>
 using namespace std;
+
+void calcular_valor_nutricional(Recetas &recetas, Ingredientes &ingredientes){
+  Receta receta;
+  Ingrediente ingrediente;
+  bool encontrado = false;
+  float gramos,calorias,cal_100,hc,prot,grasas,fibra,aux = 0;
+  for(Recetas::iterator it = recetas.begin(); it != recetas.end(); ++it){
+    receta =(*it);
+    for(Receta::iterator ir = receta.begin(); ir != receta.end(); ++ir){
+      for(Ingredientes::iterator ii = ingredientes.begin(); ii != ingredientes.end() && !encontrado; ++ii){
+        ingrediente = (*ii);
+        if((*ir).first == ingrediente.getNombre()){
+          cal_100 = ingrediente.getCalorias();
+          gramos = (*ir).second;
+          calorias += (cal_100/100)*gramos;
+          aux = ingrediente.getHidratos();
+          hc += gramos*(aux/100);
+          aux = ingrediente.getProteinas();
+          prot += gramos*(aux/100);
+          aux = ingrediente.getGrasas();
+          gramos += gramos*(aux/100);
+          aux = ingrediente.getFibras();
+          fibra += gramos*(aux/100);
+          encontrado = true;
+        }
+      }
+      encontrado = false;
+    }
+  }
+      receta.setCalorias(calorias);
+      receta.setHc(hc);
+      receta.setProteinas(prot);
+      receta.setGrasas(grasas);
+      receta.setFibra(fibra);
+}
+
+void mostrar_ingredientes(Receta &receta){
+  cout << "Ingredientes:" << endl << endl;
+  for(Receta::iterator it = receta.begin(); it != receta.end(); ++it){
+    cout << (*it).first << " " << (*it).second << endl;
+  }
+}
+
+void info_nutricional(Receta &receta){
+  cout << "Información Nutricional:" << endl << endl;
+  cout << "Calorias:" << receta.getCalorias() << endl;
+  cout << "Hidratos de Carbono:" << receta.getHc() << endl;
+  cout << "Grasas:" << receta.getGrasas() << endl;
+  cout << "Proteina:" << receta.getProteinas() << endl;
+  cout << "Fibra:" << receta.getFibras() << endl;
+}
+
+Acciones Instrucciones::acc;
+
 int main(int argc,char *argv[]){
 
-  if (argc!=4){
+  if (argc!=5){
     cout<<"FORMATO => ./bin/cocinero_integral datos/Acciones.txt datos/recetas.txt datos/ingredientes.txt datos/instrucciones/"<<endl;
     return 0;
   }
@@ -19,8 +76,9 @@ int main(int argc,char *argv[]){
   }
 
   Acciones acc;
-
+  Instrucciones instr;
   f_acciones >> acc;
+  instr.acc = acc;
   cout << "Todas las Acciones:" << endl;
   cout << acc<< endl;
   cout << "Pulse una tecla para continuar"<< endl;
@@ -58,7 +116,7 @@ int main(int argc,char *argv[]){
   /***********************************************************************/
   //Fase 4: OBTENER EL VALOR NUTRICIONAL DE TODAS LAS RECETAS USANDO LOS INGREDIENTES
 
-  //rall.obtener_valor_nutricional();
+  calcular_valor_nutricional(rall,allingre);
 
   /***********************************************************************/
   //Fase 5: MOSTRAR LAS RECETAS
@@ -79,12 +137,23 @@ int main(int argc,char *argv[]){
   cin >> code;
   cout << endl;
 
+  string ruta = argv[4] + code + "m.txt";
+  ifstream f_instrucciones(ruta);
+  if (!f_instrucciones){
+	  cout<<"No existe el fichero "<<ruta<<endl;
+  }
+  cout << "ruta" << ruta << endl;
+  f_instrucciones >> instr;
+
   /***********************************************************************/
-  //Fase 5: MOSTRAR LA RECETA ESCOGIDA
+  //Fase 7: MOSTRAR LA RECETA ESCOGIDA
   
   receta = rall[code];
   cout << "Receta escogida: " << receta << endl;
 
-  /***********************************************************************/
-  //Fase 6: MOSTRAR LA RECETA ESCOGIDA
+  mostrar_ingredientes(receta);
+  cout << endl;
+  info_nutricional(receta);
+  
+
 }

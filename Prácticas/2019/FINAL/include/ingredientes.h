@@ -165,6 +165,8 @@ public:
       */
     void getEstadistica(const string tipo);
 
+    Ingrediente getIngrediente(const string nombre);
+
     /**
       * @brief Salida de Ingredientes a ostream
       * @param os stream de salida

@@ -9,16 +9,23 @@
 
 #include <iostream>
 #include <string>
+#include <stack>
 #include "arbolbinario.h"
 #include "acciones.h"
 using namespace std;
 
-class instrucciones{
+class Instrucciones{
 private:
   ArbolBinario<string> datos;
-  static acciones &acc;
 public:
-  friend ostream &operator<<(ostream &os, const instrucciones &instrucciones);  // recorrer el arbol binario en postorden
+  static Acciones acc;
+
+  Instrucciones();
+
+  Instrucciones(ArbolBinario<string> &arbol, Acciones acc);
+
+  friend ostream &operator<<(ostream &os, const Instrucciones &instrucciones);  // recorrer el arbol binario en postorden
+  friend istream &operator>>(istream &is, Instrucciones &instrucciones);  // recorrer el arbol binario en postorden
 
 };
 

@@ -119,6 +119,19 @@ void Ingredientes::imprimirPorTipo(ostream &os){
     for(int i=0; i<getNumIngredientes(); i++)
         cout << datos[indice_tipo[i]] << endl;
 }
+
+Ingrediente Ingredientes::getIngrediente(const string nombre){
+  Ingrediente aux;
+  bool encontrado = false;
+  for(int i = 0; i < getNumIngredientes() && !encontrado; i++){
+    if(datos[i].getNombre() == nombre){
+      aux = datos[i];
+      encontrado = true;
+    }    
+  }
+  return aux;
+}
+
 /*
 void Ingredientes::getEstadistica(const string tipo){
 Ingredientes ingredientes_tipo = getIngredientesTipo(tipo);

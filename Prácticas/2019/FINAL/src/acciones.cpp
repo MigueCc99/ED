@@ -17,8 +17,8 @@
       return *this;
   }
 
-  const int Acciones::size(){
-      return datos.size();
+  int Acciones::getAriedad(string accion){
+      return datos[accion];
   }
 
   ostream &operator<<(ostream &os, const Acciones &acciones){
@@ -30,7 +30,6 @@
 
   istream &operator>>(istream &is, Acciones &acciones){
       std::pair<string,unsigned char> accion;
-      Acciones::iterator i_acciones;
       string aux = "";
       const char delim= ' ';
 

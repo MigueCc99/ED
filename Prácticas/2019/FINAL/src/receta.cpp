@@ -46,8 +46,48 @@ const string Receta::getCode() const{
     return this->code;
 }
 
+const float Receta::getCalorias() const{
+    return this->calorias;
+}
+
+const float Receta::getHc() const{
+    return this->hc;
+}
+
+const float Receta::getGrasas() const{
+    return this->grasas;
+}
+
+const float Receta::getProteinas() const{
+    return this->proteinas;
+}
+
+const float Receta::getFibras() const{
+    return this->fibra;
+}
+
 const int Receta::ningredientes(){
     return ings.size();
+}
+
+void Receta::setCalorias(float calorias){
+    this->calorias = calorias;
+}
+ 
+void Receta::setHc(float hc){
+    this->hc = hc;
+}
+ 
+void Receta::setGrasas(float grasas){
+    this->grasas = grasas;
+}    
+ 
+void Receta::setProteinas(float proteinas){
+    this->proteinas = proteinas;
+}
+  
+void Receta::setFibra(float fibra){
+    this->fibra = fibra;
 }
 
 ostream &operator<<(ostream &os, const Receta &receta){
@@ -164,8 +204,4 @@ istream &operator>>(istream &is, Receta &receta){
     receta = r;
 
     return is;
-}
-
-void Receta::valor_nutricional(){
-    
 }

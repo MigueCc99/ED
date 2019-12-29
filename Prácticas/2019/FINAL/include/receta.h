@@ -10,6 +10,7 @@
 #include <iostream>
 #include <string>
 #include <list>
+#include "ingredientes.h"
 using namespace std;
 
 /**
@@ -98,12 +99,70 @@ public:
     const string getCode() const;
 
     /**
+     * @brief getCalorias
+     * @return Devuelve las calorias de la receta
+     */
+    const float getCalorias() const;
+
+    /**
+     * @brief getHc
+     * @return Devuelve los hidratos de carbono de la receta
+     */
+    const float getHc() const;
+
+    /**
+     * @brief getGrasas
+     * @return Devuelve las grasas de la receta
+     */
+    const float getGrasas() const;
+
+    /**
+     * @brief getProteinas
+     * @return Devuelve las proteinas de la receta
+     */
+    const float getProteinas() const;
+
+    /**
+     * @brief getFibras
+     * @return Devuelve las fibras de la receta
+     */
+    const float getFibras() const;
+
+    /**
      * @brief ningredientes
      * @return Devuelve el número de ingredientes de la receta
      */
     const int ningredientes();
 
-    void valor_nutricional();
+    /**
+     * @brief setCalorias
+     * @return actualiza las calorias de la receta
+     */    
+    void setCalorias(float calorias);
+
+    /**
+     * @brief setHc
+     * @return actualiza los hidratos de carbono de la receta
+     */    
+    void setHc(float hc);
+
+    /**
+     * @brief setGrasas
+     * @return actualiza las grasas de la receta
+     */    
+    void setGrasas(float grasas);    
+
+    /**
+     * @brief setProteinas
+     * @return actualiza las proteinas de la receta
+     */    
+    void setProteinas(float proteinas);  
+
+    /**
+     * @brief setFibra
+     * @return actualiza las fibras de la receta
+     */    
+    void setFibra(float fibra);     
 
     /**
      * @brief Salida de una Receta a ostream
