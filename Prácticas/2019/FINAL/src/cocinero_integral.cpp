@@ -142,7 +142,7 @@ int main(int argc,char *argv[]){
   if (!f_instrucciones){
 	  cout<<"No existe el fichero "<<ruta<<endl;
   }
-  cout << "ruta" << ruta << endl;
+  cout << "ruta" << ruta << endl << endl;
   f_instrucciones >> instr;
 
   /***********************************************************************/
@@ -155,5 +155,6 @@ int main(int argc,char *argv[]){
   cout << endl;
   info_nutricional(receta);
   
+  cout << "Pasos a seguir: " << instr << endl;
 
 }

@@ -8,7 +8,8 @@ Instrucciones::Instrucciones(ArbolBinario<string> &arbol, Acciones acc){
 }
 
 ostream &operator<<(ostream &os, const Instrucciones &instrucciones){
-    instrucciones.datos.RecorridoPostOrden();
+    instrucciones.datos.RecorridoPostOrden(os);
+    return os;
 }
 
 istream &operator>>(istream &is, Instrucciones &instrucciones){
@@ -36,7 +37,14 @@ istream &operator>>(istream &is, Instrucciones &instrucciones){
         ArbolBinario<string> arbol(accion);
 
         if(!ingrediente.empty()){
-            arbol.Insertar_Hi(arbol.getRaiz(),ingrediente);
+            if(instrucciones.acc.getAriedad(accion) == 1){
+                arbol.Insertar_Hi(arbol.getRaiz(),ingrediente);
+            }
+            else if(instrucciones.acc.getAriedad(accion) == 2){
+                arbol.Insertar_Hi(arbol.getRaiz(),ingrediente);
+                arbol.Insertar_Hd(arbol.getRaiz(),pila.top());
+                pila.pop();
+            }
         }
         else{
             if(instrucciones.acc.getAriedad(accion) == 1){
@@ -50,9 +58,10 @@ istream &operator>>(istream &is, Instrucciones &instrucciones){
                 pila.pop();
             }
         }
-
-        cout << "Accion:" << accion << endl;
-        cout << "Ingrediente:" << ingrediente << endl;
+        arbol.RecorridoPostOrden(cout);
+        //instrucciones.datos = arbol;
+        //cout << "Accion:" << accion << endl;
+        //cout << "Ingrediente:" << ingrediente << endl;
         linea = "";
         accion = "";
         ingrediente = "";
