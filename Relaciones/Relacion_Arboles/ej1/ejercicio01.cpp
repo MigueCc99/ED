@@ -7,7 +7,7 @@
 #include "bintree.h"
 
 using namespace std;
-/*
+
 template <class T>
 typename bintree<T>::node hoja_profunda(const bintree<T> &btree){
     bintree<T>::node hoja_p;
@@ -34,7 +34,7 @@ typename bintree<T>::node hoja_profunda(const bintree<T> &btree){
     }
     return hoja_p;
 } 
-*/
+
 int main(){
   // Creamos el ?bol: 
   //        7
@@ -57,10 +57,10 @@ int main(){
   for (bintree<int>::preorder_iterator i= btree.begin_preorder(); i!=btree.end_preorder(); ++i)
     cout << *i << " ";
   cout << endl;
-/*
+
   bintree<int>::node hoja_p = hoja_profunda(btree);
 
   cout << "La hoja más profunda de el arbol es: " << *hoja_p << endl;
-*/
+
   return 0;
 }
